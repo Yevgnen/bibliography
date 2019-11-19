@@ -1,0 +1,95 @@
+* Han, X., Zhu, H., Yu, P., Wang, Z., Yao, Y., Liu, Z., & Sun, M. (2018): FewRel: a large-scale supervised few-shot relation classification dataset with state-of-the-art evaluation
+:PROPERTIES:
+:Custom_ID: han-2018-fewrel
+:END:
+
+** 关系抽取
+
+- Kernel Methods
+- Embedding Methods
+- Neural Methods
+- Distant Supervision
+
+** Few-Shot Learning
+
+- Transfer Learning Methods
+- Metric Methods
+- Meta-Learning Methods
+
+** 主要贡献
+
+1. 将关系抽取定义成一个Few-Shot Learning任务，并提出了一个大型有监督few-shot关系抽取数据集（同一个关系的表达比较丰富）．
+
+2. 对比多个SOTA Few-Shot Learning的关系抽取模型．
+
+3. 用上述的模型在提出的数据集上进行评估．
+
+** 训练策略
+
+将已有模型与Few-Shot Learning结合的方法：
+
+1. 微调
+
+   在训练集上学习分类所有关系，然后在支撑集上微调．
+
+2. k-NN
+
+其它Few-Shot Learning方法：
+
+1. Meta Network
+2. GNN
+3. SNAIL
+4. Prototypical Network
+
+** 结论
+
+结合Few-Shot Learning的方法总是比直接使用编码器加微调或k-NN的方法要好．
+
+* Gao, T., Han, X., Zhu, H., Liu, Z., Li, P., Sun, M., & Zhou, J. (2019): FewRel 2.0: towards more challenging few-shot relation classification
+:PROPERTIES:
+:Custom_ID: gao-etal-2019-fewrel-2
+:END:
+
+** 关系抽取里Few-Shot Learning的两个挑战
+
+1. Few-shot domain adaptation (few-shot DA)
+
+   评估Few-Shot模型的领域迁移能力．
+
+2. Few-shot none-of-the-above detection (few-shot NOTA)
+
+相对few-shot NOTA来说，few-shot DA目前的难度更大．
+
+** Few-Shot Domain Adaptation
+
+除了语料的形态与语法不一致之外，迁移过程里的两个语料库所涉及的关系集合也是不一样的．
+
+对于few-shot DA，使用的训练语料与FewRel 1.0一样，但测试集使用新的不同领域的测试集（一个医疗领域的数据集，一个SemEval-2010 task8的数据集）．
+
+*** 已有模型
+
+- Subspace Mapping
+- Finding Domain-Invariant Spaces
+- Feature Augmentation
+- Minimax Estimator
+- Adversarial Training （目前比较有效）
+
+** Few-Shot None-of-the Above Detection
+
+NOTA通常会被当成额外的一类，识别它的难点在于由于评测的时候关系集并不是固定的，所以NOTA关系每次需要覆盖不同的语义空间．
+
+在测试阶段所有的queries都来源于测试集，但是模型可以从训练集中采样数据作为NOTA关系的支撑集．评测使用的是FewRel 1.0的测试集而不是few-shot DA里的新测试集．
+
+*** NOTA rate
+
+测试集里NOTA queries所占的比例．
+
+*** 已有模型
+
+1. 直接把NOTA关系作为新的一类进行(\(N\) + 1)-way \(K\)-shot learning（在\(N\)类关系外的数据为NOTA采样作为支撑集）．
+
+   效果可能不会太好，因为NOTA类的支撑集属于不同的其它关系，在特征空间里的分布比较离散．
+
+2. BERT-PAIR
+
+   将query与支撑集里的每一条数据进行配对拼接输入到BERT里，然后让模型输出一个二维向量分别计算这N类关系的概率与NOTA关系的概率，依旧使用交叉熵进行训练．

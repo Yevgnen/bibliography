@@ -93,3 +93,51 @@ NOTA通常会被当成额外的一类，识别它的难点在于由于评测的�
 2. BERT-PAIR
 
    将query与支撑集里的每一条数据进行配对拼接输入到BERT里，然后让模型输出一个二维向量分别计算这N类关系的概率与NOTA关系的概率，依旧使用交叉熵进行训练．
+
+* Cui, L., & Zhang, Yue (2019): Hierarchically-refined label attention network for sequence labeling
+:PROPERTIES:
+:Custom_ID: cui-2019-bilstm-lan
+:END:
+
+Bi-LSTM-CRF并不是时时比Bi-LSTM(-softmax)好．一个可能的原因是深层句子的编码表示可能使得模型能够隐式地捕捉到长距离标签依赖．另外带CFR层可能受限于Markov假设并且解码速度受到影响．
+
+** Bi-LSTM-LAN
+
+1. 没有Markov假设与CRF层，输出的搜索空间巨大，指数级别．
+
+2. 结合每个词与它标签的边缘概率建模，并且层级堆叠．
+
+3. 模型对标签表示做attention并且与词表示一同作为隐层的输入．
+
+4. 与Bi-LSTM的区别是：单层模型时两者等价；多层模型时，Bi-LSTM只堆叠编码器，而Bi-LSTM-LAN相当于同时堆叠softmax层．
+
+6. 本文着重研究指数级标签序列的编码（长距离标签依赖），并且应该是首次使用层级attention网络对标签空间建模．
+
+*** 结构
+
+1. Bi-LSTM Encoding Sublayer
+
+   Bi-LSTM隐层大小需要和标签表示层的大小一样．
+
+2. Label-Attention Inference Sublayer
+
+   #+begin_src latex :results drawer :exports results
+   \begin{eqnarray}
+     H^{l} & = &  \text{attention}(Q, K, V) = \alpha V \nonumber \\
+     \alpha & = & \text{softmax}(\frac{QK^{T}}{\sqrt{d_{h}}}) \nonumber
+   \end{eqnarray}
+   #+end_src
+
+   除了使用标准的attention之外，还可以使用multi-head attention来同时捕捉多个标签分布．
+
+** 实验
+
+1. 一般来说Bi-LSTM-LAN都使用两层以上，但即使只使用一层，它也比Bi-LSTM稍好，原因在于使用了标签编码．
+
+2. 从和Bi-LSTM与Bi-LSTM-CRF的对比来看，模型的结构比模型的深度对效果的提升更重要．
+
+3. 训练前期Bi-LSTM-LAN收敛速度比Bi-LSTM-CRF要慢一些，可能因为模型更复杂．
+
+4. 标签表示会随着训练过程聚焦成簇．
+
+5. Bi-LSTM学习长距离依赖相对困难，而Bi-LSTM-CRF虽然没这个问题，但对全局信息的捕捉有所欠缺．

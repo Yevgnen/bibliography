@@ -141,3 +141,115 @@ Bi-LSTM-CRF并不是时时比Bi-LSTM(-softmax)好．一个可能的原因是深�
 4. 标签表示会随着训练过程聚焦成簇．
 
 5. Bi-LSTM学习长距离依赖相对困难，而Bi-LSTM-CRF虽然没这个问题，但对全局信息的捕捉有所欠缺．
+
+* Shang, J., Liu, L., Ren, X., Gu, X., Ren, T., & Han, J. (2018): Learning named entity tagger using domain-specific dictionary
+:PROPERTIES:
+:Custom_ID: shang-2018-autoner
+:END:
+
+** 动机
+
+深度学习虽然减少了人工特征的需要，但依然需要大量有标注的数据．而远程监督需要减少了标注数据的需求，但产生的标签带有噪声．本文提取了两个模型来处理带噪声的基于词典的远程监督数据．
+
+远程监督通过一些诸如规则匹配的方法来处理实体块识别的问题，这些方法通常会导致FN较高．本文从语料库挖掘出高质量的短语，并将之标识为“未知”类型．而每个实体块可以带有多个类型标签．
+
+** 主要贡献
+
+1. 为远程监督训练提出一种Tie or Break标注方式．
+
+2. 修改CRF层提出Fuazzy-LSTM-CRF以支持多标签的标注方式．
+
+3. 探索了一些调整远程监督NER性能的方法，如挖掘高质量短语并用来减少FN的标签．
+
+4. 提出的AutoNER模型仅需要词典，相对有监督方法有竞争力．
+
+** 概述
+
+*** 词典的构造
+
+1. 每一词条包含标准名与同义词．
+
+2. 每一词条包含实体类型．
+
+并通过挖掘高质量词条构造出潜在的“未知”类型实体．
+
+*** 标签的构造
+
+通过精确字符串匹配与最大化匹配数量来标注．
+
+给定一个原始语料库，每一个token会被标注成以下三种中的一种：
+
+1. 属于一种或多种已知类型．
+
+2. 属于未知类型．
+
+3. 非实体．
+
+** 模型
+
+*** Fuzzy-LSTM-CRF与修正版的IOBES
+
+#+downloaded: file:///Users/Yomisuko/Desktop/fuzzy-lstm-crf.png @ 2019-12-02 20:55:02
+#+attr_html: :width 800px
+#+attr_latex: :width 12cm
+[[file:images/%E6%A8%A1%E5%9E%8B/2019-12-02_20-55-02_fuzzy-lstm-crf.png]]
+
+为了支持多标签的序列，损失函数目标为极大化所有可能的标签序列的概率总和．当所有标签已知并唯一，等价于传统的CRF．
+
+*** AutoNER与Tie or Break标注
+
+#+downloaded: file:///Users/Yomisuko/Desktop/tie-or-break.png @ 2019-12-02 21:06:08
+#+attr_html: :width 800px
+#+attr_latex: :width 12cm
+[[file:images/Shang,_J.,_Liu,_L.,_Ren,_X.,_Gu,_X.,_Ren,_T.,_&_Han,_J._(2018):_Learning_named_entity_tagger_using_domain-specific_dictionary/2019-12-02_21-06-08_tie-or-break.png]]
+
+Tie or Break标注主要考虑相邻token是否属于同一实体还是应该分隔：
+
+1. Tie：如果两个token属于同一实体．
+
+2. Unknown：至少一个token属于“未知”类型的高质量短语．
+
+3. Break：其它情况．
+
+任意两个Break之间形成一个token块，而每个token块与它所有的匹配类型关联．无类型关联的标记为None．
+
+**** 合理性
+
+1. 远程监督的产生的实体边界可能会不正确，但其内部通常是正确的．
+
+2. Unigram实体通常为FP，但在Tie or Break的标注方式下，它们总是位于两个Break标签之间，所以不会引入错误标签的问题．
+
+**** AutoNER流程
+
+1. Entity Span Detection
+
+   通过LSTM的输出与一个sigmoid层来预测Break标签．
+
+2. Entity Type Prediction
+
+   对齐LSTM的输出，对每一块的类型进行预测．由于每一块可能被标注有多种实体类型，所以损失函数使用了一种交叉熵的变种．
+** 远程监督的优化
+
+*** Corpus-Aware Dictionary Tailoring
+
+盲目使用全部词典可能会造成FP较多．这里只考虑至少出现过一次标准名的词条．
+
+*** Unknown-Typed High-Quality Phrases
+
+为了减缓FN过多的问题，引入AutoPhrase抽取高质量词条添加到词典并作为潜在实体，并标注为“未知”类型．这些只有无法被这个扩展词典匹配的token块会被标记为非实体．
+
+** 实验
+
+只允许使用原始文本作为远程监督模型的输入．
+
+1. AutoNER击败了上一个SOTA Distant-LSTM-CRF．
+
+2. AutoNER性能可与有监督模型匹敌．
+
+3. 使用[[*Corpus-Aware Dictionary Tailoring][修剪过的词典]]效果更好．
+
+4. 添加了“未知”类型的[[*Unknown-Typed High-Quality Phrases][高质量短语]]效果也有提升．
+
+5. 添加了gold training set之后（这里是怎么用的？），随着它数量的增多，远程监督甚至比有监督效果更好！（作者猜测远程监督可能强调实体的可匹配性，而标注数据有可能错过这些可匹配的实体．）
+
+6. 有监督的模型需要一定数量的标注数据才达到AutoNER的相同效果．

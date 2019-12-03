@@ -253,3 +253,52 @@ Tie or Break标注主要考虑相邻token是否属于同一实体还是应该分
 5. 添加了gold training set之后（这里是怎么用的？），随着它数量的增多，远程监督甚至比有监督效果更好！（作者猜测远程监督可能强调实体的可匹配性，而标注数据有可能错过这些可匹配的实体．）
 
 6. 有监督的模型需要一定数量的标注数据才达到AutoNER的相同效果．
+
+* Shang, J., Liu, J., Jiang, M., Ren, X., Voss, C. R., & Han, J. (2017): Automated phrase mining from massive text corpora
+:PROPERTIES:
+:Custom_ID: shang-2017-autophrase
+:END:
+
+** 概述
+
+1. 已有方法依赖于复杂的语言学分析器．
+
+2. 已有的SOTA并非全自动化．
+
+为了减少人工标注和进一步提高效果，使用了这两种方式：
+
+1. Robust Positive-Only Distant Training
+
+   利用知识库里的high quality phrases标注正样本和domain corpora标注负样本并建立多个独立的分类器．
+
+2. POS-Guided Phrase Segmentation
+
+
+Domain independence与lingustic knowledge之间的存在着泛化与精度矛盾．而POS tags作为一种比较浅层的语法信息，可以帮助phrasal segmentation model去定位phrase的边界．
+
+** 主要贡献
+
+1. 研究Automated Phrase Mining的主要挑战．
+
+2. 提出一种robust positive-only distant training method来进行短语质量估计，以最小化人工干预．
+
+3. 当POS tagger可用的时候，利用一种phrasal segmentation model来提高效果．
+
+** 回顾
+
+*** 主要问题
+
+- Candidate Generation
+- Quality Estimation
+
+*** 相关工作
+
+- Keyphrase Extraction
+- Automatic Term Recognition
+- Text Indexing Algorithms
+  + Supervised Noun Phrase Chunking Techniques
+  + Dependency Parsing
+- Phrase Quality Estimation
+- Data-driven approaches
+
+所有这些方法依然依赖于人工．

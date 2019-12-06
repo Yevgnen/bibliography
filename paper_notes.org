@@ -228,6 +228,7 @@ Tie or Break标注主要考虑相邻token是否属于同一实体还是应该分
 2. Entity Type Prediction
 
    对齐LSTM的输出，对每一块的类型进行预测．由于每一块可能被标注有多种实体类型，所以损失函数使用了一种交叉熵的变种．
+
 ** 远程监督的优化
 
 *** Corpus-Aware Dictionary Tailoring

@@ -181,7 +181,7 @@ Bi-LSTM-CRF并不是时时比Bi-LSTM(-softmax)好．一个可能的原因是深�
 
 1. 属于一种或多种已知类型．
 
-2. 属于未知类型．
+2. 属于“未知”类型．
 
 3. 非实体．
 
@@ -217,7 +217,7 @@ Tie or Break标注主要考虑相邻token是否属于同一实体还是应该分
 
 1. 远程监督的产生的实体边界可能会不正确，但其内部通常是正确的．
 
-2. Unigram实体通常为FP，但在Tie or Break的标注方式下，它们总是位于两个Break标签之间，所以不会引入错误标签的问题．
+2. Unigram实体更可能为FP，但在Tie or Break的标注方式下，它们总是位于两个Break标签之间，所以不会引入错误标签的问题．
 
 **** AutoNER流程
 
@@ -233,11 +233,11 @@ Tie or Break标注主要考虑相邻token是否属于同一实体还是应该分
 
 *** Corpus-Aware Dictionary Tailoring
 
-盲目使用全部词典可能会造成FP较多．这里只考虑至少出现过一次标准名的词条．
+针对FP：盲目使用全部词典可能会造成FP较多．这里只考虑至少出现过一次标准名的词条．
 
 *** Unknown-Typed High-Quality Phrases
 
-为了减缓FN过多的问题，引入AutoPhrase抽取高质量词条添加到词典并作为潜在实体，并标注为“未知”类型．这些只有无法被这个扩展词典匹配的token块会被标记为非实体．
+针对FN：为了减缓FN过多的问题，引入AutoPhrase抽取高质量词条添加到词典并作为潜在实体，并标注为“未知”类型．这些只有无法被这个扩展词典匹配的token块会被标记为非实体．
 
 ** 实验
 
@@ -303,3 +303,185 @@ Domain independence与lingustic knowledge之间的存在着泛化与精度矛盾
 - Data-driven approaches
 
 所有这些方法依然依赖于人工．
+
+** 预备知识
+
+目标是开发一个自动短语挖掘的方法从大规模文档库里抽取高质量短语而无需人工标注，只需要少量的浅层语言学分析．
+
+- 输入：语料库、知识库．
+- 输出：质量从高到低排序的短语列表．
+
+短语质量评估参考cite:liu-2015-segphrase．
+
+AutoPhrase会根据正负样本在POS-guided phrasal segmentation前后对短语质量进行两次评估．
+
+*** 流程
+
+#+downloaded: file:///Users/Yomisuko/Desktop/autophrase.png @ 2019-12-03 12:48:23
+#+attr_html: :width 800px
+#+attr_latex: :width 12cm
+[[file:images/Shang,_J.,_Liu,_J.,_Jiang,_M.,_Ren,_X.,_Voss,_C._R.,_&_Han,_J._(2017):_Automated_phrase_mining_from_massive_text_corpora/2019-12-03_12-48-23_autophrase.png]]
+
+**** 第一阶段
+
+根据频率和长度的阈值在语料库里筛选出n-grams候选词，通过phrase quality estimator对其质量（主要是concordance与informativeness）进行评估．这个estimator能过统计学习所得，并独立于POS tags．
+
+**** 第二阶段
+
+通过phrasal segmentation为句子寻找最优切分．根据rectified frequency（这个频率表示一个短语能成完整语义单元的频率）重新计算统计特征，进行phrase quality re-estimation．这样phrase quality estimator同时也能对completeness进行评估．
+
+* Wang, X., Zhang, Y., Li, Q., Ren, X., Shang, J., & Han, J. (2019). Distantly supervised biomedical named entity recognition with dictionary expansion
+:PROPERTIES:
+:Custom_ID: wang-2019-autobioner
+:END:
+
+** 回顾
+
+- Fully supervised methods
+
+  无法直接学到到新的实体类型．
+
+- Distant supervision
+
+  只能利用用户词典里的有限信息，尤其当词典并不完整的时候．这篇文章主要聚焦于如何通过实体集扩张处理词典不完整的问题．
+
+- AutoBioNER
+
+  + 不需要任何人工标注数据．
+
+  + 依赖于一个不完整的实体字典．
+
+  首先从用于生成候选实体的语料库与用户输入词典里挖掘统计特征用于训练数据标注．由于词典是不完整的，AutoBioNER进行自动实体集扩张用于语料库级别的实体识别和词典扩充．它将匹配到的实体作为正样本并结合上下文信息推断未能匹配的实体．扩充后的词典用于远程监督训练神经网络用于实体识别．在用户提供词典的情况下，能识别用户感兴趣的新实体．
+
+** 贡献
+
+- 提出了远程监督的框架AutoBioNER，能根据用户输入词典自动从大量语料库里识别生物医药的实体．
+
+- 提出了一种实体集扩张的方法，结合自动短语挖掘与语料库级的新实体识别与词典扩充方法．
+
+- 定性与定量词典扩充的重要性，与AutoBioNER的有效性．
+
+** 框架
+
+*** Phrase Mining and Dictionary Matching
+
+**** Phrase Mining
+
+使用AutoPhrase cite:shang-2017-autophrase 挖掘高质量短语．
+
+**** Dictionary Matching
+
+根据词典对挖掘到的短语进行类型匹配（在匹配过程里用到了Dictionary Tailoring cite:shang-2018-autoner ），由于词典不完整，未匹配的短语将在下一步利用匹配到的短语与未匹配到的短语的上下文相似性再次进行实体挖掘．
+
+*** Entity Expansion
+
+#+downloaded: file:///Users/Yomisuko/Desktop/entity_expansion.png @ 2019-12-07 16:54:43
+#+attr_html: :width 800px
+#+attr_latex: :width 12cm
+[[file:images/Wang,_X.,_Zhang,_Y.,_Li,_Q.,_Ren,_X.,_Shang,_J.,_&_Han,_J._(2019)._Distantly_supervised_biomedical_named_entity_recognition_with_dictionary_expansion/2019-12-07_16-54-43_entity_expansion.png]]
+
+**** A Simple Way
+
+直接利用候选短语与实体类型（即该类型下的实体集）的语义相似性．两个难点：
+
+1. 每种实体类型集下的种子实体比较多样且稀疏．
+
+   大的类别下可能还有很多小的类别．种子实体虽然数量庞大，但每个种子实体出现的频率相对较低，上下文信息较为稀疏，相互之间语义距离较远．（化学：药品、化学元素等．）
+
+2. 通过短语挖掘出来的候选实体对实体集扩张来说具有噪声．有些可能的高频词实际上只是噪声（如p-value, mm, Hg等）．
+
+**** AutoBioNER
+
+首先对每种实体类型下的种子实体进行聚类，减少多样性与稀疏性．然后通过种子融合与特征融合减少集合扩张过程中的噪声．
+
+The candidate entities are /ranked high for one entity type/ only if it satisfies both criteria:
+
+1. It shares more context information with the seed entities of this type.
+2. It shares context information with more seed entities of this type.
+
+***** Semantic Closeness Scoring
+
+语义相似性的度量：co-occurrence statistics与context features．本文在集合扩张过程同时使用两种特征．
+
+Given a candidate phrase set \(P\) and a skip-gram (i.e. context feature) set \(C\), we define the similarity between each pair or phrase \(p\) and context \(c\) using the IF-IDF transformation cite:wang-2019-autobioner
+
+#+begin_src latex :results drawer :exports results
+\begin{eqnarray}
+  f_{p, c} = \log (1 + X_{p, c})(\log |P| - \log \sum_{p' \in P} X_{p', c}), \nonumber
+\end{eqnarray}
+#+end_src
+
+where \(X_{p', c}\) is the raw co-occurrence count between \(p\) and \(c\). 效果比PMI与BM25好 cite:shen-2017-setexpan．
+
+Then the similarity between two phrases \(p_{1}\) and \(p_{2}\) under feature set \(C\) is defined as
+
+#+begin_src latex :results drawer :exports results
+\begin{eqnarray}
+  \text{sim}(p_{1}, p_{2}| C) = \frac{\sum_{c \in C} \min (f_{p_{1}, c}, f_{p_{2}, c})}{\sum_{c \in C} \max (f_{p_{1}, c}, f_{p_{2}, c})}. \nonumber
+\end{eqnarray}
+#+end_src
+
+Given a seed entity set \(E\) and a skip-gram feature set \(C\), each candidate phrase \(p\) can be scored as
+
+#+begin_src latex :results drawer :exports results
+\begin{eqnarray}
+  \text{score}(p| E, C) = \frac{1}{|E|} \sum_{e \in E} \text{sim} (p, e| C). \nonumber
+\end{eqnarray}
+#+end_src
+
+***** Seed Clustering
+
+由于每个实体集非常多样，对某个候选短语不可能假设它离实体集里的每个元素都距离很近．所以利用\(k\)-Means根据word2vec embedding对每个实体集进行内部聚类．然后利用feature ensemble与seed ensemble为每个seed cluster进行最佳候选实体．
+
+***** Seed Ensemble
+
+For each \(E_{th}\), we sample \(N_{E}\) subsets \(E_{th}^{(j)} (j = 1, 2, \dots, N_{E})\). Each of the seed subsets contains \(M_{E}^{'} (M_{E}^{'} < |E_{th}|)\) features. 即对每个聚类后的种子集进行多次采样．
+
+***** Feature Ensemble
+
+For a context feature set \(C\), we first score each \(c \in C\) based on its accumulated strength with entities in \(E\) (i.e., \(\sum_{e \in E} f_{e, c}\)). The \(M_{C}\) skip-grams with the highest score will be selected, from which we sample \(N_{C}\) subsets \(C_{i} (i = 1, 2, \dots, N_{C})\). Each of the subsets contains \(M_{C}^{'} (M_{C}^{'} < M_{C})\) features.
+
+For each \(C_{i}\) and \(E_{th}^{i}\), we obtain a ranking list of phrases according to their \(\text{score}(\cdot| C_{i}, E_{th}^{(j)})\). Suppose the rank of \(p\) in terms of \(\text{score}(\cdot| C_{i}, E_{th}^{(j)})\) is \(r_{pij}\), the mean reciprocal rank of \(p\) is
+
+#+begin_src latex :results drawer :exports results
+\begin{eqnarray}
+  \text{MRR}(p| E_{th}) = \frac{1}{N_{C}N_{E}} \sum_{i = 1}^{N_{c}} \sum_{j = 1}^{N_{E}} \frac{1}{r_{pij}} \nonumber.
+\end{eqnarray}
+#+end_src
+
+The phrases with \(\text{MRR}\) higher than a threshold \(\text{MRR}_{thrs}\) will be added into type \(E_{t}\).
+
+*** Distant Training
+
+参考[[#shang-2018-autoner][AutoNER]]．
+
+** 实验
+
+*** 主要问题
+
+1. AutoBioNER与SOTA NER模型的对比．
+
+2. 实体扩张的作用如何．
+
+3. 由于AutoBioNER不需要任何人工标注数据，给定词典的时候对于新实体发现表现如何．
+
+*** 结果
+
+1. 纯词典匹配precision高，recall较低．
+
+2. 进行词典扩充之后，recall有所提高．
+
+3. 相对Fuzzy-LSTM-CRF，AutoNER在所有数据集上表现较好．
+
+4. Dictionary-Match, Dictionary-Expansion和AutoNER可以看作AutoBioNER的框架的退化情况．通过实验证明框架里的每一模块对于提升效果都是必须的．我们要做的就是让recall的提升比precision的下降要更快．（从结果来看，AutoBioNER在precision下降的同时提高了recall．）
+
+5. 对\(\text{MRR}\)指标选出来的实体进行了定性的分析，结果表明实体扩张选出来的实体准确率较高．
+
+6. 对实体扩张过程里使用到的skip-grams与co-occurrence统计和直接使用word embedding两种方法的效果进行了比较．结果表明直接使用word embedding的效果不太好．因为embedding similarities只考虑语义但忽略了co-occurrence frequency．对于较低频的实体，它们的上下文比较有限，word2vec的质量可能不太好．而本文的模型同时考虑里semantics与frequency．
+
+7. 定性分析表明对于新类型的实体，AutoBioNER通过词典的帮助能达到较高的recall．
+
+* References
+
+bibliographystyle:unsrt
+bibliography:references.bib

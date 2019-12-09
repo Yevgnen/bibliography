@@ -198,7 +198,7 @@ An ideal /Automated Phrase Mining/ method is supposed to be domain-independent, 
   + Dependency Parsing
 - Phrase Quality Estimation
 - Data-driven approaches
-  
+
   需要解决的问题是：
 
   - Candidate Generation
@@ -247,7 +247,13 @@ AutoPhrase会根据正负样本在POS-guided phrasal segmentation前后对短语
 
 注意negative pool里可能有高质量短语，它们只是无法与已有的知识匹配．因些不能直接在带噪声的label pool里训练一个分类器．
 
-作者使用不同的采样数据集(perturbed training set)，训练\(T\)个独立的训练器并将结果平均并融合．假定negative pool里high quality phrases的比例是10%，这种整合方式的经验错误\(p\)应该也接近这个数字．
+#+attr_html: :width 800px
+#+attr_latex: :width 8cm
+[[file:images/Shang,_J.,_Liu,_J.,_Jiang,_M.,_Ren,_X.,_Voss,_C._R.,_&_Han,_J._(2017):_Automated_phrase_mining_from_massive_text_corpora/noise_reduction.png]]
+
+作者使用不同的采样数据集(perturbed training set)，训练\(T\)个独立的训练器并将结果平均并融合．假定negative pool里high quality phrases的比例是10%，且挑选的特征能区分高质量与低质量短语，这种融合方式的经验错误\(p\)应该也接近这个数字．
+
+短语质量评分phrase quality score可以表示为将这个短语预测为高质量短语的决策树的数量的比例．
 
 *** POS-Guided Phrasal Segmentation
 * Shang, J., Liu, L., Ren, X., Gu, X., Ren, T., & Han, J. (2018): Learning named entity tagger using domain-specific dictionary

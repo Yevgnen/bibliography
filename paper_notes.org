@@ -157,16 +157,25 @@ Bi-LSTM-CRF并不是时时比Bi-LSTM(-softmax)好．一个可能的原因是深�
 
 2. 已有的SOTA并非全自动化．
 
+#+begin_quote
+An ideal /Automated Phrase Mining/ method is supposed to be domain-independent, with minimal human effort or reliance on linguistic analyzers.
+#+end_quote
+
 为了减少人工标注和进一步提高效果，使用了这两种方式：
 
 1. Robust Positive-Only Distant Training
 
-   利用知识库里的high quality phrases标注正样本和domain corpora标注负样本并建立多个独立的分类器．
+   利用可用知识库里的high quality phrases标注正样本和domain corpora标注负样本并建立多个独立的分类器．通过这些分类器结果的聚合减少负样本的噪声．
 
 2. POS-Guided Phrase Segmentation
 
+   Domain independence与lingustic knowledge之间的存在着领域迁移泛化与精度矛盾．作为折中可使用一个predictive distribution-trained POS tagger来提高性能．POS tags作为一种比较浅层的语法信息，可以帮助phrasal segmentation model去定位phrase的边界．
 
-Domain independence与lingustic knowledge之间的存在着泛化与精度矛盾．而POS tags作为一种比较浅层的语法信息，可以帮助phrasal segmentation model去定位phrase的边界．
+因此本文的唯一假设就是：
+
+1. The availability of a general knowledge base.
+
+2. Together with a predictive distribution-trained POS tagger.
 
 ** 主要贡献
 
@@ -176,12 +185,9 @@ Domain independence与lingustic knowledge之间的存在着泛化与精度矛盾
 
 3. 当POS tagger可用的时候，利用一种phrasal segmentation model来提高效果．
 
+4. 证明AutoPhrase的鲁棒性与有效性．
+
 ** 回顾
-
-*** 主要问题
-
-- Candidate Generation
-- Quality Estimation
 
 *** 相关工作
 
@@ -192,6 +198,11 @@ Domain independence与lingustic knowledge之间的存在着泛化与精度矛盾
   + Dependency Parsing
 - Phrase Quality Estimation
 - Data-driven approaches
+  
+  需要解决的问题是：
+
+  - Candidate Generation
+  - Quality Estimation
 
 所有这些方法依然依赖于人工．
 
@@ -202,7 +213,12 @@ Domain independence与lingustic knowledge之间的存在着泛化与精度矛盾
 - 输入：语料库、知识库．
 - 输出：质量从高到低排序的短语列表．
 
-短语质量评估参考cite:liu-2015-segphrase．
+短语质量评估参考cite:liu-2015-segphrase ．主要包括4个要素：
+
+- Popularity: 出现足够的频次．
+- Concordance：出现的概率要高于偶然出现．
+- Informativeness：指示特定的话题或概念．
+- Completeness：在特定的上下文环境可以解释作一个完整的语义单元．
 
 AutoPhrase会根据正负样本在POS-guided phrasal segmentation前后对短语质量进行两次评估．
 
@@ -219,7 +235,21 @@ AutoPhrase会根据正负样本在POS-guided phrasal segmentation前后对短语
 **** 第二阶段
 
 通过phrasal segmentation为句子寻找最优切分．根据rectified frequency（这个频率表示一个短语能成完整语义单元的频率）重新计算统计特征，进行phrase quality re-estimation．这样phrase quality estimator同时也能对completeness进行评估．
+** Methodology
 
+*** Robust Positive-Only Distant Training
+
+**** Label Pools
+
+公共知识库的标题、关键字与内部链接等包含大量的高质量短语．利用这些短语构成positive pool．而从给定语料库里挖掘出来无法在知识库里匹配的候选短语构成一个大而带噪声的negative pool．
+
+***** Noise Reduction
+
+注意negative pool里可能有高质量短语，它们只是无法与已有的知识匹配．因些不能直接在带噪声的label pool里训练一个分类器．
+
+作者使用不同的采样数据集(perturbed training set)，训练\(T\)个独立的训练器并将结果平均并融合．假定negative pool里high quality phrases的比例是10%，这种整合方式的经验错误\(p\)应该也接近这个数字．
+
+*** POS-Guided Phrasal Segmentation
 * Shang, J., Liu, L., Ren, X., Gu, X., Ren, T., & Han, J. (2018): Learning named entity tagger using domain-specific dictionary
 :PROPERTIES:
 :Custom_ID: shang-2018-autoner

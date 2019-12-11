@@ -259,13 +259,25 @@ AutoPhrase会根据正负样本在POS-guided phrasal segmentation前后对短语
 
 短语分割要解决的是completeness的刻画，主要通过字符串匹配找到语料库的所有提及并对它们出现的频率作出调整．POS-guided phrasal segmentation是一种考虑上下文的方法．
 
+**** Phrase Quality Estimator
+
+Given a phrase candidate \(w_{1}w_{2}\dots w_{n}\), its phrase quality is
+
+#+begin_src latex :results drawer :exports results
+\begin{eqnarray}
+  Q(w_{1}w_{2}\dots w_{n}) = p(\lceil w_{1}w_{2}\dots w_{n} \rfloor | w_{1}w_{2}\dots w_{n}) \in [0, 1], \nonumber
+\end{eqnarray}
+#+end_src
+
+where \(\lceil w_{1}w_{2}\dots w_{n} \rfloor\) refers to the event that these words constitute a phrase. \(Q(\cdot)\), also known as the phrase quality estimator, is initially learned from data based on statistical features.
+
 **** POS quality score
 
 POS quality score表示它对应的单词序列能成为一个完整语义单位的条件概率．可以看作是用于对短语的一种补偿得分
 
 #+begin_src latex :results drawer :exports results
 \begin{eqnarray}
-  T(t_{[l, r)}) = p(\lceil w_{l}, \dots, w_{r} \rfloor | t) \in [0, 1]. \nonumber
+  T(t_{[l, r)}) = p(\lceil w_{l} \dots w_{r} \rfloor | t) \in [0, 1]. \nonumber
 \end{eqnarray}
 #+end_src
 
@@ -281,7 +293,7 @@ POS quality score表示它对应的单词序列能成为一个完整语义单位
 
 #+begin_src latex :results drawer :exports results
 \begin{eqnarray}
-  \delta(t_{x}, t_{y}) = p(\lceil \dots, w_{1}, w_{2}, \dots \rfloor | \Omega, \text{tag}(w_{1}) = t_{x} \land \text{tag}(w_{2}) = t_{y}). \nonumber
+  \delta(t_{x}, t_{y}) = p(\lceil \dots w_{1} w_{2} \dots \rfloor | \Omega, \text{tag}(w_{1}) = t_{x} \land \text{tag}(w_{2}) = t_{y}). \nonumber
 \end{eqnarray}
 #+end_src
 
@@ -308,7 +320,7 @@ POS quality score是length penalty model cite:liu-2015-segphrase 的一种推广
    #+begin_src latex :results drawer :exports results
    \begin{eqnarray}
      p(b_{i + 1}| b_{i}, t) = T(t_{[b_{i}, b_{i + 1})}). \nonumber
-   \end{eqnarray}n
+   \end{eqnarray}
    #+end_src
 
 2. 给定结束索引\(b_{i}\)和\(b_{i + 1}\)，利用所有长度为\(b_{i + 1} - b_{i}\)分割片段上的多项分布生成单词序列\(w_{[b_{i}, b_{i + 1})}\)：

@@ -369,6 +369,31 @@ POS quality score是length penalty model cite:liu-2015-segphrase 的一种推广
 
 给定\(\theta_{u}\)和\(\delta(t_{x}, t_{y})\)，通过动态规划求解最优分割．
 
+
+** 实验流程
+
+1. 加载停用词表．
+
+2. 加载训练语料．
+
+   - 构建词表，记下总token数与总单词token数．记下哪些token是数字，哪些token不是数字．
+
+   - 记下每个token的上下文语法特征、词的大小写特征．
+
+   - 计算每个token的IDF．
+
+   - 构建POS tags词表，与POS tags序列（只对单词token序列构建）．
+
+3. 对训练语料进行句子切分．
+
+4. 频繁项挖掘，输出挖掘结果pattens的ranking列表．
+
+5. 对每个pattern进行特征提取，并是考虑的是项的每个出现位置上的总体统计特征．
+
+6. 构造正负样本集．例如要构造的集合类型为DPDN的时候，需要quality phrases的词表与全部的词表（如wiki_all）；而构建 的集合类型为EPEN的时候，则需要两个expert annotated labels的词表．此步构建出来的是频繁项的一个子集．
+
+7. 构造分类正负样本的分类器，并对训练集进行预测．
+
 * Shang, J., Liu, L., Ren, X., Gu, X., Ren, T., & Han, J. (2018): Learning named entity tagger using domain-specific dictionary
 :PROPERTIES:
 :Custom_ID: shang-2018-autoner

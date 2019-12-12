@@ -663,6 +663,106 @@ The phrases with \(\text{MRR}\) higher than a threshold \(\text{MRR}_{thrs}\) wi
 
 7. 定性分析表明对于新类型的实体，AutoBioNER通过词典的帮助能达到较高的recall．
 
+* Sui, D., Chen, Y., Liu, K., Zhao, J., & Liu, S. (2019). Leverage lexical knowledge for Chinese named entity recognition via collaborative graph network
+
+** Motivation
+
+由于中文句子没有分隔符，所以做中文NER的一个直接想法是基于字符表示．但是，单词的信息对中文NER非常重要．
+
+解决这个问题的常用做法是：
+
+1. 基于词级别去做，但会面对错误传播的问题．
+2. 联合训练，但花费大且标注方法可能比较多样．
+3. 利用自动构建出来的在大型分割好的语料上pre-trained的词典．
+
+这里单词信息的含义主要指：
+
+- 单词边界信息：由单词本身提供．
+- 单词语义信息：由pre-trained embedding提供．
+
+利用词典知识的两个挑战是：
+
+1. 怎样利用self-matched lexical words．
+
+   #+begin_example
+给定句子：希尔顿离开北京机场了．
+
+比如单词“机场”和“北京机场”是字符“机”的self-matched words，但“离开”则不是．“北京机场”可以帮助预测“机”的正确标签是“I-LOC”而不是其它．
+   #+end_example
+
+2. 怎样直接利用最近邻上下文单词信息．
+
+   #+begin_example
+给定句子同上，“离开”是字符“顿”的最近邻上下文单词，它可以帮助预测“顿”的正确标签是“I-PER”，而不是“I-ORG”.
+   #+end_example
+
+** 回顾
+
+- NER与中文NER上的改进，主要是分词信息等．
+
+- GCN/GAT及它们在NLP上的应用及问题，已有模型都有别的依赖，存在误差传播的问题．
+
+** 主要贡献
+
+- 提出了能利用词典信息的CGN用于中文NER．
+
+- 为了解决self-matched lexical words与nearest contextual lesical words的问题，提出了无需要其它外部工具辅助的3个word-character interactive graphs构建方法．图之间的交互能捕捉不同的词典知识．
+
+- 在主流中文NER数据集上取得了SOTA．
+
+** 图的构建
+
+三个不同的word-character  interactive graphs分别是：
+
+- Word-Character Containing Graph (C-Graph)
+
+  帮助字符捕捉self-matched lexical words的边界和语义信息．
+
+- Word-Character Transition Graph (T-Graph)
+
+  帮助字符捕捉最近邻上下文词典词的语义信息．
+
+- Word-Character Lattice Graph (L-Graph)
+
+  网格结构可以捕捉到最近邻上下文词典词信息与self-matched lexical words的信息．
+
+以上几个图具有相同听结点集，但采用各不相同的边集构建方式．
+
+*** Word-Character Containing Graph
+
+#+attr_html: :width 600px
+#+attr_latex: :width 8cm
+[[file:images/Sui,_D.,_Chen,_Y.,_Liu,_K.,_Zhao,_J.,_&_Liu,_S._(2019)._Leverage_lexical_knowledge_for_Chinese_named_entity_recognition_via_collaborative_graph_network/c-graph.png]]
+
+每个匹配到的self-matched lexical word与它每一个字符相连．
+
+*** Word-Character Transition Graph
+
+#+attr_html: :width 600px
+#+attr_latex: :width 8cm
+[[file:images/Sui,_D.,_Chen,_Y.,_Liu,_K.,_Zhao,_J.,_&_Liu,_S._(2019)._Leverage_lexical_knowledge_for_Chinese_named_entity_recognition_via_collaborative_graph_network/t-graph.png]]
+
+- 每个词典词或字符与它的前后字符相连．
+
+- 匹配到的相邻词典词之间也要相连．
+
+*** Word-Character Lattice Graph
+
+#+attr_html: :width 600px
+#+attr_latex: :width 8cm
+[[file:images/Sui,_D.,_Chen,_Y.,_Liu,_K.,_Zhao,_J.,_&_Liu,_S._(2019)._Leverage_lexical_knowledge_for_Chinese_named_entity_recognition_via_collaborative_graph_network/l-graph.png]]
+
+
+- 每个字符之间相连．
+
+- 每个词典词与它的起始字符相连．
+
+** 模型
+
+#+attr_html: :width 800px
+#+attr_latex: :width 10cm
+[[file:images/Sui,_D.,_Chen,_Y.,_Liu,_K.,_Zhao,_J.,_&_Liu,_S._(2019)._Leverage_lexical_knowledge_for_Chinese_named_entity_recognition_via_collaborative_graph_network/cgn.png]]
+
 * References
 
 bibliographystyle:unsrt

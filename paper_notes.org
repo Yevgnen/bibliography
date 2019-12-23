@@ -376,7 +376,7 @@ POS quality score是length penalty model cite:liu-2015-segphrase 的一种推广
 
 2. 加载训练语料．
 
-   - 构建词表，记下总token数与总单词token数．记下哪些token是数字，哪些token不是数字．
+   - 构建词表，记下总token数与总单词token数．其中token已经被转换成数字．
 
    - 记下每个token的上下文语法特征、词的大小写特征．
 

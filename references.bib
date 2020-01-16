@@ -11617,3 +11617,624 @@ archivePrefix = {arXiv},
   pages        = {2725-2746},
   year         = 2016
 }
+
+@inproceedings{kuru-2016-charner,
+  title        = "{C}har{NER}: Character-Level Named Entity Recognition",
+  author       = "Kuru, Onur and Can, Ozan Arkan and Yuret, Deniz",
+  booktitle    = "Proceedings of {COLING} 2016, the 26th International
+                  Conference on Computational Linguistics: Technical Papers",
+  month        = dec,
+  year         = 2016,
+  address      = "Osaka, Japan",
+  publisher    = "The COLING 2016 Organizing Committee",
+  url          = "https://www.aclweb.org/anthology/C16-1087",
+  pages        = "911-921",
+  abstract     = "We describe and evaluate a character-level tagger for
+                  language-independent Named Entity Recognition (NER). Instead
+                  of words, a sentence is represented as a sequence of
+                  characters. The model consists of stacked bidirectional LSTMs
+                  which inputs characters and outputs tag probabilities for
+                  each character. These probabilities are then converted to
+                  consistent word level named entity tags using a Viterbi
+                  decoder. We are able to achieve close to state-of-the-art NER
+                  performance in seven languages with the same basic model
+                  using only labeled NER data and no hand-engineered features
+                  or other external resources like syntactic taggers or
+                  Gazetteers."
+}
+
+@ARTICLE{ma-2016-lstm-cnn-crf,
+  author       = {{Ma}, Xuezhe and {Hovy}, Eduard},
+  title        = "{End-to-end Sequence Labeling via Bi-directional
+                  LSTM-CNNs-CRF}",
+  journal      = {arXiv e-prints},
+  keywords     = {Computer Science - Machine Learning, Computer Science -
+                  Computation and Language, Statistics - Machine Learning},
+  year         = 2016,
+  month        = "Mar",
+  eid          = {arXiv:1603.01354},
+  pages        = {arXiv:1603.01354},
+  archivePrefix= {arXiv},
+  eprint       = {1603.01354},
+  primaryClass = {cs.LG},
+  adsurl       = {https://ui.adsabs.harvard.edu/abs/2016arXiv160301354M},
+  adsnote      = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{yang-2017-neural-reranking,
+  author       = {Jie Yang and Yue Zhang and Fei Dong},
+  title        = {Neural Reranking for Named Entity Recognition},
+  journal      = {CoRR},
+  volume       = {abs/1707.05127},
+  year         = 2017,
+  url          = {http://arxiv.org/abs/1707.05127},
+  archivePrefix= {arXiv},
+  eprint       = {1707.05127},
+  timestamp    = {Wed, 20 Nov 2019 08:54:08 +0100},
+  biburl       = {https://dblp.org/rec/bib/journals/corr/YangZD17aa},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{li-2017-ner-recursive-nn,
+  title        = "Leveraging Linguistic Structures for Named Entity Recognition
+                  with Bidirectional Recursive Neural Networks",
+  author       = "Li, Peng-Hsuan and Dong, Ruo-Ping and Wang, Yu-Siang and
+                  Chou, Ju-Chieh and Ma, Wei-Yun",
+  booktitle    = "Proceedings of the 2017 Conference on Empirical Methods in
+                  Natural Language Processing",
+  month        = sep,
+  year         = 2017,
+  address      = "Copenhagen, Denmark",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/D17-1282",
+  doi          = "10.18653/v1/D17-1282",
+  pages        = "2664-2669",
+  abstract     = "In this paper, we utilize the linguistic structures of texts
+                  to improve named entity recognition by BRNN-CNN, a special
+                  bidirectional recursive network attached with a convolutional
+                  network. Motivated by the observation that named entities are
+                  highly related to linguistic constituents, we propose a
+                  constituent-based BRNN-CNN for named entity recognition. In
+                  contrast to classical sequential labeling methods, the system
+                  first identifies which text chunks are possible named
+                  entities by whether they are linguistic constituents. Then it
+                  classifies these chunks with a constituency tree structure by
+                  recursively propagating syntactic and semantic information to
+                  each constituent node. This method surpasses current
+                  state-of-the-art on OntoNotes 5.0 with automatically
+                  generated parses."
+}
+
+@inproceedings{tran-2017-stack-residual-lstm,
+  title        = "Named Entity Recognition with Stack Residual {LSTM} and
+                  Trainable Bias Decoding",
+  author       = "Tran, Quan and MacKinlay, Andrew and Jimeno Yepes, Antonio",
+  booktitle    = "Proceedings of the Eighth International Joint Conference on
+                  Natural Language Processing (Volume 1: Long Papers)",
+  month        = nov,
+  year         = 2017,
+  address      = "Taipei, Taiwan",
+  publisher    = "Asian Federation of Natural Language Processing",
+  url          = "https://www.aclweb.org/anthology/I17-1057",
+  pages        = "566-575",
+  abstract     = "Recurrent Neural Network models are the state-of-the-art for
+                  Named Entity Recognition (NER). We present two innovations to
+                  improve the performance of these models. The first innovation
+                  is the introduction of residual connections between the
+                  Stacked Recurrent Neural Network model to address the
+                  degradation problem of deep neural networks. The second
+                  innovation is a bias decoding mechanism that allows the
+                  trained system to adapt to non-differentiable and externally
+                  computed objectives, such as the entity-based F-measure. Our
+                  work improves the state-of-the-art results for both Spanish
+                  and English languages on the standard train/development/test
+                  split of the CoNLL 2003 Shared Task NER dataset."
+}
+
+@article{wei-2016-disease-ner,
+  title        = {Disease named entity recognition by combining conditional
+                  random fields and bidirectional recurrent neural networks},
+  author       = {Wei, Qikang and Chen, Tao and Xu, Ruifeng and He, Yulan and
+                  Gui, Lin},
+  journal      = {Database},
+  volume       = 2016,
+  year         = 2016,
+  publisher    = {Oxford University Press}
+}
+
+@inproceedings{strubell-etal-2017-iterated-dilated-conv,
+    title = "Fast and Accurate Entity Recognition with Iterated Dilated Convolutions",
+    author = "Strubell, Emma  and
+      Verga, Patrick  and
+      Belanger, David  and
+      McCallum, Andrew",
+    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D17-1283",
+    doi = "10.18653/v1/D17-1283",
+    pages = "2670--2680",
+    abstract = "Today when many practitioners run basic NLP on the entire web and large-volume traffic, faster methods are paramount to saving time and energy costs. Recent advances in GPU hardware have led to the emergence of bi-directional LSTMs as a standard method for obtaining per-token vector representations serving as input to labeling tasks such as NER (often followed by prediction in a linear-chain CRF). Though expressive and accurate, these models fail to fully exploit GPU parallelism, limiting their computational efficiency. This paper proposes a faster alternative to Bi-LSTMs for NER: Iterated Dilated Convolutional Neural Networks (ID-CNNs), which have better capacity than traditional CNNs for large context and structured prediction. Unlike LSTMs whose sequential processing on sentences of length N requires O(N) time even in the face of parallelism, ID-CNNs permit fixed-depth convolutions to run in parallel across entire documents. We describe a distinct combination of network structure, parameter sharing and training procedures that enable dramatic 14-20x test-time speedups while retaining accuracy comparable to the Bi-LSTM-CRF. Moreover, ID-CNNs trained to aggregate context from the entire document are more accurate than Bi-LSTM-CRFs while attaining 8x faster test time speeds.",
+}
+
+@inproceedings{lin-2017-multi-channel-bi-lstm-crf,
+  title        = "Multi-channel {B}i{LSTM}-{CRF} Model for Emerging Named
+                  Entity Recognition in Social Media",
+  author       = "Lin, Bill Y.  and Xu, Frank and Luo, Zhiyi and Zhu, Kenny",
+  booktitle    = "Proceedings of the 3rd Workshop on Noisy User-generated Text",
+  month        = sep,
+  year         = 2017,
+  address      = "Copenhagen, Denmark",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/W17-4421",
+  doi          = "10.18653/v1/W17-4421",
+  pages        = "160-165",
+  abstract     = "In this paper, we present our multi-channel neural
+                  architecture for recognizing emerging named entity in social
+                  media messages, which we applied in the Novel and Emerging
+                  Named Entity Recognition shared task at the EMNLP 2017
+                  Workshop on Noisy User-generated Text (W-NUT). We propose a
+                  novel approach, which incorporates comprehensive word
+                  representations with multi-channel information and
+                  Conditional Random Fields (CRF) into a traditional
+                  Bidirectional Long Short-Term Memory (BiLSTM) neural network
+                  without using any additional hand-craft features such as
+                  gazetteers. In comparison with other systems participating in
+                  the shared task, our system won the 2nd place."
+}
+
+@inproceedings{ghaddar-2018-robust-lexical-features,
+  title        = "Robust Lexical Features for Improved Neural Network
+                  Named-Entity Recognition",
+  author       = "Ghaddar, Abbas and Langlais, Phillippe",
+  booktitle    = "Proceedings of the 27th International Conference on
+                  Computational Linguistics",
+  month        = aug,
+  year         = 2018,
+  address      = "Santa Fe, New Mexico, USA",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/C18-1161",
+  pages        = "1896-1907",
+  abstract     = "Neural network approaches to Named-Entity Recognition reduce
+                  the need for carefully hand-crafted features. While some
+                  features do remain in state-of-the-art systems, lexical
+                  features have been mostly discarded, with the exception of
+                  gazetteers. In this work, we show that this is unfair:
+                  lexical features are actually quite useful. We propose to
+                  embed words and entity types into a low-dimensional vector
+                  space we train from annotated data produced by distant
+                  supervision thanks to Wikipedia. From this, we compute {---}
+                  offline {---} a feature vector representing each word. When
+                  used with a vanilla recurrent neural network model, this
+                  representation yields substantial improvements. We establish
+                  a new state-of-the-art F1 score of 87.95 on ONTONOTES 5.0,
+                  while matching state-of-the-art performance with a F1 score
+                  of 91.73 on the over-studied CONLL-2003 dataset."
+}
+
+@article{wu-2015-clinical-text-ner,
+  title        = {Named entity recognition in Chinese clinical text using deep
+                  neural network},
+  author       = {Wu, Yonghui and Jiang, Min and Lei, Jianbo and Xu, Hua},
+  journal      = {Studies in health technology and informatics},
+  volume       = 216,
+  pages        = 624,
+  year         = 2015,
+  publisher    = {NIH Public Access}
+}
+
+@incollection{zhou-2017-joint-extraction,
+  title        = {Joint extraction of multiple relations and entities by using
+                  a hybrid neural network},
+  author       = {Zhou, Peng and Zheng, Suncong and Xu, Jiaming and Qi, Zhenyu
+                  and Bao, Hongyun and Xu, Bo},
+  booktitle    = {Chinese Computational Linguistics and Natural Language
+                  Processing Based on Naturally Annotated Big Data},
+  pages        = {135-146},
+  year         = 2017,
+  publisher    = {Springer}
+}
+
+@article{nguyen-2016-mention-detection-rnn,
+  author       = {Thien Huu Nguyen and Avirup Sil and Georgiana Dinu and Radu
+                  Florian},
+  title        = {Toward Mention Detection Robustness with Recurrent Neural
+                  Networks},
+  journal      = {CoRR},
+  volume       = {abs/1602.07749},
+  year         = 2016,
+  url          = {http://arxiv.org/abs/1602.07749},
+  archivePrefix= {arXiv},
+  eprint       = {1602.07749},
+  timestamp    = {Mon, 13 Aug 2018 16:48:51 +0200},
+  biburl       = {https://dblp.org/rec/bib/journals/corr/NguyenSDF16},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{zhai-2017-sequence-chunking,
+  author       = {Feifei Zhai and Saloni Potdar and Bing Xiang and Bowen Zhou},
+  title        = {Neural Models for Sequence Chunking},
+  journal      = {CoRR},
+  volume       = {abs/1701.04027},
+  year         = 2017,
+  url          = {http://arxiv.org/abs/1701.04027},
+  archivePrefix= {arXiv},
+  eprint       = {1701.04027},
+  timestamp    = {Mon, 13 Aug 2018 16:48:01 +0200},
+  biburl       = {https://dblp.org/rec/bib/journals/corr/ZhaiPXZ17},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{zukov-gregoric-2018-ner-parallel-rnn,
+  title        = "Named Entity Recognition With Parallel Recurrent Neural
+                  Networks",
+  author       = "{\v{Z}}ukov-Gregori{\v{c}}, Andrej and Bachrach, Yoram and
+                  Coope, Sam",
+  booktitle    = "Proceedings of the 56th Annual Meeting of the Association for
+                  Computational Linguistics (Volume 2: Short Papers)",
+  month        = jul,
+  year         = 2018,
+  address      = "Melbourne, Australia",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/P18-2012",
+  doi          = "10.18653/v1/P18-2012",
+  pages        = "69-74",
+  abstract     = "We present a new architecture for named entity
+                  recognition. Our model employs multiple independent
+                  bidirectional LSTM units across the same input and promotes
+                  diversity among them by employing an inter-model
+                  regularization term. By distributing computation across
+                  multiple smaller LSTMs we find a significant reduction in the
+                  total number of parameters. We find our architecture achieves
+                  state-of-the-art performance on the CoNLL 2003 NER dataset."
+}
+
+@inproceedings{rei-2017-semi-supervised-multitask,
+  title        = "Semi-supervised Multitask Learning for Sequence Labeling",
+  author       = "Rei, Marek",
+  booktitle    = "Proceedings of the 55th Annual Meeting of the Association for
+                  Computational Linguistics (Volume 1: Long Papers)",
+  month        = jul,
+  year         = 2017,
+  address      = "Vancouver, Canada",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/P17-1194",
+  doi          = "10.18653/v1/P17-1194",
+  pages        = "2121-2130",
+  abstract     = "We propose a sequence labeling framework with a secondary
+                  training objective, learning to predict surrounding words for
+                  every word in the dataset. This language modeling objective
+                  incentivises the system to learn general-purpose patterns of
+                  semantic and syntactic composition, which are also useful for
+                  improving accuracy on different sequence labeling tasks. The
+                  architecture was evaluated on a range of datasets, covering
+                  the tasks of error detection in learner texts, named entity
+                  recognition, chunking and POS-tagging. The novel language
+                  modeling objective provided consistent performance
+                  improvements on every benchmark, without requiring any
+                  additional annotated or unannotated data."
+}
+
+@inproceedings{zhuo-2016-gated-recursive-semi-markov-crf,
+  title        = "Segment-Level Sequence Modeling using Gated Recursive
+                  Semi-{M}arkov Conditional Random Fields",
+  author       = "Zhuo, Jingwei and Cao, Yong and Zhu, Jun and Zhang, Bo and
+                  Nie, Zaiqing",
+  booktitle    = "Proceedings of the 54th Annual Meeting of the Association for
+                  Computational Linguistics (Volume 1: Long Papers)",
+  month        = aug,
+  year         = 2016,
+  address      = "Berlin, Germany",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/P16-1134",
+  doi          = "10.18653/v1/P16-1134",
+  pages        = "1413-1423"
+}
+
+@inproceedings{ye-2018-hybrid-markov-crf,
+  title        = "Hybrid semi-{M}arkov {CRF} for Neural Sequence Labeling",
+  author       = "Ye, Zhixiu and Ling, Zhen-Hua",
+  booktitle    = "Proceedings of the 56th Annual Meeting of the Association for
+                  Computational Linguistics (Volume 2: Short Papers)",
+  month        = jul,
+  year         = 2018,
+  address      = "Melbourne, Australia",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/P18-2038",
+  doi          = "10.18653/v1/P18-2038",
+  pages        = "235-240",
+  abstract     = "This paper proposes hybrid semi-Markov conditional random
+                  fields (SCRFs) for neural sequence labeling in natural
+                  language processing. Based on conventional conditional random
+                  fields (CRFs), SCRFs have been designed for the tasks of
+                  assigning labels to segments by extracting features from and
+                  describing transitions between segments instead of words. In
+                  this paper, we improve the existing SCRF methods by employing
+                  word-level and segment-level information
+                  simultaneously. First, word-level labels are utilized to
+                  derive the segment scores in SCRFs. Second, a CRF output
+                  layer and an SCRF output layer are integrated into a unified
+                  neural network and trained jointly. Experimental results on
+                  CoNLL 2003 named entity recognition (NER) shared task show
+                  that our model achieves state-of-the-art performance when no
+                  external knowledge is used."
+}
+
+@inproceedings{aguilar-2017-multi-task-ner,
+  title        = "A Multi-task Approach for Named Entity Recognition in Social
+                  Media Data",
+  author       = "Aguilar, Gustavo and Maharjan, Suraj and L{\'o}pez-Monroy,
+                  Adrian Pastor and Solorio, Thamar",
+  booktitle    = "Proceedings of the 3rd Workshop on Noisy User-generated Text",
+  month        = sep,
+  year         = 2017,
+  address      = "Copenhagen, Denmark",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/W17-4419",
+  doi          = "10.18653/v1/W17-4419",
+  pages        = "148-153",
+  abstract     = "Named Entity Recognition for social media data is challenging
+                  because of its inherent noisiness. In addition to improper
+                  grammatical structures, it contains spelling inconsistencies
+                  and numerous informal abbreviations. We propose a novel
+                  multi-task approach by employing a more general secondary
+                  task of Named Entity (NE) segmentation together with the
+                  primary task of fine-grained NE categorization. The
+                  multi-task neural network architecture learns higher order
+                  feature representations from word and character sequences
+                  along with basic Part-of-Speech tags and gazetteer
+                  information. This neural network acts as a feature extractor
+                  to feed a Conditional Random Fields classifier. We were able
+                  to obtain the first position in the 3rd Workshop on Noisy
+                  User-generated Text (WNUT-2017) with a 41.86{\%} entity
+                  F1-score and a 40.24{\%} surface F1-score."
+}
+
+@inproceedings{peng-2017-multi-task-sequence-tagging,
+  title        = "Multi-task Domain Adaptation for Sequence Tagging",
+  author       = "Peng, Nanyun and Dredze, Mark",
+  booktitle    = "Proceedings of the 2nd Workshop on Representation Learning
+                  for {NLP}",
+  month        = aug,
+  year         = 2017,
+  address      = "Vancouver, Canada",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/W17-2612",
+  doi          = "10.18653/v1/W17-2612",
+  pages        = "91-100",
+  abstract     = "Many domain adaptation approaches rely on learning cross
+                  domain shared representations to transfer the knowledge
+                  learned in one domain to other domains. Traditional domain
+                  adaptation only considers adapting for one task. In this
+                  paper, we explore multi-task representation learning under
+                  the domain adaptation scenario. We propose a neural network
+                  framework that supports domain adaptation for multiple tasks
+                  simultaneously, and learns shared representations that better
+                  generalize for domain adaptation. We apply the proposed
+                  framework to domain adaptation for sequence tagging problems
+                  considering two tasks: Chinese word segmentation and named
+                  entity recognition. Experiments show that multi-task domain
+                  adaptation works better than disjoint domain adaptation for
+                  each task, and achieves the state-of-the-art results for both
+                  tasks in the social media domain."
+}
+
+@article{pan-2013-transfer-joint-embedding,
+  title        = {Transfer joint embedding for cross-domain named entity
+                  recognition},
+  author       = {Pan, Sinno Jialin and Toh, Zhiqiang and Su, Jian},
+  journal      = {ACM Transactions on Information Systems (TOIS)},
+  volume       = 31,
+  number       = 2,
+  pages        = 7,
+  year         = 2013,
+  publisher    = {ACM}
+}
+
+@inproceedings{qu-2016-ner-transfer-learning,
+  title        = "Named Entity Recognition for Novel Types by Transfer
+                  Learning",
+  author       = "Qu, Lizhen and Ferraro, Gabriela and Zhou, Liyuan and Hou,
+                  Weiwei and Baldwin, Timothy",
+  booktitle    = "Proceedings of the 2016 Conference on Empirical Methods in
+                  Natural Language Processing",
+  month        = nov,
+  year         = 2016,
+  address      = "Austin, Texas",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/D16-1087",
+  doi          = "10.18653/v1/D16-1087",
+  pages        = "899-905"
+}
+
+@article{yang-2017-transfer-learning-hierachical-rnn,
+  author       = {Zhilin Yang and Ruslan Salakhutdinov and William W. Cohen},
+  title        = {Transfer Learning for Sequence Tagging with Hierarchical
+                  Recurrent Networks},
+  journal      = {CoRR},
+  volume       = {abs/1703.06345},
+  year         = 2017,
+  url          = {http://arxiv.org/abs/1703.06345},
+  archivePrefix= {arXiv},
+  eprint       = {1703.06345},
+  timestamp    = {Mon, 13 Aug 2018 16:48:14 +0200},
+  biburl       = {https://dblp.org/rec/bib/journals/corr/YangSC17},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{daeniken-2017-transfer-learning-ner,
+  title        = "Transfer Learning and Sentence Level Features for Named
+                  Entity Recognition on Tweets",
+  author       = {von D{\"a}niken, Pius and Cieliebak, Mark},
+  booktitle    = "Proceedings of the 3rd Workshop on Noisy User-generated Text",
+  month        = sep,
+  year         = 2017,
+  address      = "Copenhagen, Denmark",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/W17-4422",
+  doi          = "10.18653/v1/W17-4422",
+  pages        = "166-171",
+  abstract     = "We present our system for the WNUT 2017 Named Entity
+                  Recognition challenge on Twitter data. We describe two
+                  modifications of a basic neural network architecture for
+                  sequence tagging. First, we show how we exploit additional
+                  labeled data, where the Named Entity tags differ from the
+                  target task. Then, we propose a way to incorporate sentence
+                  level features. Our system uses both methods and ranked
+                  second for entity level annotations, achieving an F1-score of
+                  40.78, and second for surface form annotations, achieving an
+                  F1-score of 39.33."
+}
+
+@inproceedings{zhao-2018-multi-task-data-selection,
+  title        = "Improve Neural Entity Recognition via Multi-Task Data
+                  Selection and Constrained Decoding",
+  author       = "Zhao, Huasha and Yang, Yi and Zhang, Qiong and Si, Luo",
+  booktitle    = "Proceedings of the 2018 Conference of the North {A}merican
+                  Chapter of the Association for Computational Linguistics:
+                  Human Language Technologies, Volume 2 (Short Papers)",
+  month        = jun,
+  year         = 2018,
+  address      = "New Orleans, Louisiana",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/N18-2056",
+  doi          = "10.18653/v1/N18-2056",
+  pages        = "346-351",
+  abstract     = "Entity recognition is a widely benchmarked task in natural
+                  language processing due to its massive applications. The
+                  state-of-the-art solution applies a neural architecture named
+                  BiLSTM-CRF to model the language sequences. In this paper, we
+                  propose an entity recognition system that improves this
+                  neural architecture with two novel techniques. The first
+                  technique is Multi-Task Data Selection, which ensures the
+                  consistency of data distribution and labeling guidelines
+                  between source and target datasets. The other one is
+                  constrained decoding using knowledge base. The decoder of the
+                  model operates at the document level, and leverages global
+                  and external information sources to further improve
+                  performance. Extensive experiments have been conducted to
+                  show the advantages of each technique. Our system achieves
+                  state-of-the-art results on the English entity recognition
+                  task in KBP 2017 official evaluation, and it also yields very
+                  strong results in other languages."
+}
+
+@inproceedings{lin-2018-neural-adaptation-layers,
+  title        = "Neural Adaptation Layers for Cross-domain Named Entity
+                  Recognition",
+  author       = "Lin, Bill Yuchen and Lu, Wei",
+  booktitle    = "Proceedings of the 2018 Conference on Empirical Methods in
+                  Natural Language Processing",
+  month        = oct # "-" # nov,
+  year         = 2018,
+  address      = "Brussels, Belgium",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/D18-1226",
+  doi          = "10.18653/v1/D18-1226",
+  pages        = "2012-2022",
+  abstract     = "Recent research efforts have shown that neural architectures
+                  can be effective in conventional information extraction tasks
+                  such as named entity recognition, yielding state-of-the-art
+                  results on standard newswire datasets. However, despite
+                  significant resources required for training such models, the
+                  performance of a model trained on one domain typically
+                  degrades dramatically when applied to a different domain, yet
+                  extracting entities from new emerging domains such as social
+                  media can be of significant interest. In this paper, we
+                  empirically investigate effective methods for conveniently
+                  adapting an existing, well-trained neural NER model for a new
+                  domain. Unlike existing approaches, we propose lightweight
+                  yet effective methods for performing domain adaptation for
+                  neural models. Specifically, we introduce adaptation layers
+                  on top of existing neural architectures, where no re-training
+                  using the source domain data is required. We conduct
+                  extensive empirical studies and show that our approach
+                  significantly outperforms state-of-the-art methods."
+}
+
+@article{shen-2017-deep-active-learning,
+  author       = {Yanyao Shen and Hyokun Yun and Zachary C. Lipton and Yakov
+                  Kronrod and Animashree Anandkumar},
+  title        = {Deep Active Learning for Named Entity Recognition},
+  journal      = {CoRR},
+  volume       = {abs/1707.05928},
+  year         = 2017,
+  url          = {http://arxiv.org/abs/1707.05928},
+  archivePrefix= {arXiv},
+  eprint       = {1707.05928},
+  timestamp    = {Mon, 13 Aug 2018 16:47:29 +0200},
+  biburl       = {https://dblp.org/rec/bib/journals/corr/ShenYLKA17},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{narasimhan-2016-ie-reinforcement-learning,
+  author       = {Karthik Narasimhan and Adam Yala and Regina Barzilay},
+  title        = {Improving Information Extraction by Acquiring External
+                  Evidence with Reinforcement Learning},
+  journal      = {CoRR},
+  volume       = {abs/1603.07954},
+  year         = 2016,
+  url          = {http://arxiv.org/abs/1603.07954},
+  archivePrefix= {arXiv},
+  eprint       = {1603.07954},
+  timestamp    = {Mon, 13 Aug 2018 16:48:30 +0200},
+  biburl       = {https://dblp.org/rec/bib/journals/corr/NarasimhanYB16},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{zhou-2019-datnet,
+  title        = "Dual Adversarial Neural Transfer for Low-Resource Named
+                  Entity Recognition",
+  author       = "Zhou, Joey Tianyi and Zhang, Hao and Jin, Di and Zhu,
+                  Hongyuan and Fang, Meng and Goh, Rick Siow Mong and Kwok,
+                  Kenneth",
+  booktitle    = "Proceedings of the 57th Annual Meeting of the Association for
+                  Computational Linguistics",
+  month        = jul,
+  year         = 2019,
+  address      = "Florence, Italy",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/P19-1336",
+  doi          = "10.18653/v1/P19-1336",
+  pages        = "3461-3471",
+  abstract     = "We propose a new neural transfer method termed Dual
+                  Adversarial Transfer Network (DATNet) for addressing
+                  low-resource Named Entity Recognition (NER). Specifically,
+                  two variants of DATNet, i.e., DATNet-F and DATNet-P, are
+                  investigated to explore effective feature fusion between high
+                  and low resource. To address the noisy and imbalanced
+                  training data, we propose a novel Generalized
+                  Resource-Adversarial Discriminator (GRAD). Additionally,
+                  adversarial training is adopted to boost model
+                  generalization. In experiments, we examine the effects of
+                  different components in DATNet across domains and languages
+                  and show that significant improvement can be obtained
+                  especially for low-resource data, without augmenting any
+                  additional hand-crafted features and pre-trained language
+                  model."
+}
+
+@inproceedings{zukov-gregoric-2017-ner-self-attention,
+  title        = {Neural named entity recognition using a self-attention
+                  mechanism},
+  author       = {Zukov-Gregoric, Andrej and Bachrach, Yoram and Minkovsky,
+                  Pasha and Coope, Sam and Maksak, Bogdan},
+  booktitle    = {2017 IEEE 29th International Conference on Tools with
+                  Artificial Intelligence (ICTAI)},
+  pages        = {652-656},
+  year         = 2017,
+  organization = {IEEE}
+}
+
+@inproceedings{xu-2018-ner-global-attention,
+  title        = {Improving clinical named entity recognition with global
+                  neural attention},
+  author       = {Xu, Guohai and Wang, Chengyu and He, Xiaofeng},
+  booktitle    = {Asia-Pacific Web (APWeb) and Web-Age Information Management
+                  (WAIM) Joint International Conference on Web and Big Data},
+  pages        = {264-279},
+  year         = 2018,
+  organization = {Springer}
+}

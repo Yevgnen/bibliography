@@ -4227,10 +4227,10 @@
   year         = 2014
 }
 
-@inproceedings{socher-2013-parsing-compositional,
+@inproceedings{socher-2013-su-rnn,
   title        = {Parsing with compositional vector grammars},
-  author       = {Socher, Richard and Bauer, John and Manning, Christopher D and
-                  others},
+  author       = {Socher, Richard and Bauer, John and Manning, Christopher D
+                  and others},
   booktitle    = {Proceedings of the 51st Annual Meeting of the Association for
                   Computational Linguistics (Volume 1: Long Papers)},
   volume       = 1,
@@ -5444,7 +5444,7 @@
   year         = 2016
 }
 
-@ARTICLE{loshchilov-2017-fixin-weigh,
+@ARTICLE{loshchilov-2017-adamw,
   author       = {{Loshchilov}, I. and {Hutter}, F.},
   title        = {{Fixing Weight Decay Regularization in Adam}},
   journal      = {ArXiv e-prints},
@@ -7534,20 +7534,6 @@
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 
-@article{tenney-2019-bert-redis,
-  author       = {Ian Tenney and Dipanjan Das and Ellie Pavlick},
-  title        = {{BERT} Rediscovers the Classical {NLP} Pipeline},
-  journal      = {CoRR},
-  volume       = {abs/1905.05950},
-  year         = 2019,
-  url          = {http://arxiv.org/abs/1905.05950},
-  archivePrefix= {arXiv},
-  eprint       = {1905.05950},
-  timestamp    = {Tue, 28 May 2019 12:48:08 +0200},
-  biburl       = {https://dblp.org/rec/bib/journals/corr/abs-1905-05950},
-  bibsource    = {dblp computer science bibliography, https://dblp.org}
-}
-
 @article{balles-2017-follow-signs,
   author       = {Lukas Balles and Philipp Hennig},
   title        = {Follow the Signs for Robust Stochastic Optimization},
@@ -9053,7 +9039,7 @@
   location     = "Brussels, Belgium"
 }
 
-@article{lample-2019-cross-languag-model-pretr,
+@article{lample-2019-xlms,
   author       = {Guillaume Lample and Alexis Conneau},
   title        = {Cross-lingual Language Model Pretraining},
   journal      = {CoRR},
@@ -12839,3 +12825,726 @@ archivePrefix = {arXiv},
   biburl       = {https://dblp.org/rec/journals/corr/XieT15.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
+
+@article{sokolova-2009-measure-analysis,
+  title        = "A systematic analysis of performance measures for
+                  classification tasks",
+  journal      = "Information Processing & Management",
+  volume       = 45,
+  number       = 4,
+  pages        = "427-437",
+  year         = 2009,
+  issn         = "0306-4573",
+  doi          = "https://doi.org/10.1016/j.ipm.2009.03.002",
+  url          =
+                  "http://www.sciencedirect.com/science/article/pii/S0306457309000259",
+  author       = "Marina Sokolova and Guy Lapalme",
+  keywords     = "Performance evaluation, Machine Learning, Text
+                  classification",
+  abstract     = "This paper presents a systematic analysis of twenty four
+                  performance measures used in the complete spectrum of Machine
+                  Learning classification tasks, i.e., binary, multi-class,
+                  multi-labelled, and hierarchical. For each classification
+                  task, the study relates a set of changes in a confusion
+                  matrix to specific characteristics of data. Then the analysis
+                  concentrates on the type of changes to a confusion matrix
+                  that do not change a measure, therefore, preserve a
+                  classifier’s evaluation (measure invariance). The result is
+                  the measure invariance taxonomy with respect to all relevant
+                  label distribution changes in a classification problem. This
+                  formal analysis is supported by examples of applications
+                  where invariance properties of measures lead to a more
+                  reliable evaluation of classifiers. Text classification
+                  supplements the discussion with several case studies."
+}
+
+@inproceedings{yang-2018-sgm,
+  title        = "{SGM}: Sequence Generation Model for Multi-label
+                  Classification",
+  author       = "Yang, Pengcheng and Sun, Xu and Li, Wei and Ma, Shuming and
+                  Wu, Wei and Wang, Houfeng",
+  booktitle    = "Proceedings of the 27th International Conference on
+                  Computational Linguistics",
+  month        = aug,
+  year         = 2018,
+  address      = "Santa Fe, New Mexico, USA",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/C18-1330",
+  pages        = "3915-3926",
+  abstract     = "Multi-label classification is an important yet challenging
+                  task in natural language processing. It is more complex than
+                  single-label classification in that the labels tend to be
+                  correlated. Existing methods tend to ignore the correlations
+                  between labels. Besides, different parts of the text can
+                  contribute differently for predicting different labels, which
+                  is not considered by existing models. In this paper, we
+                  propose to view the multi-label classification task as a
+                  sequence generation problem, and apply a sequence generation
+                  model with a novel decoder structure to solve it. Extensive
+                  experimental results show that our proposed methods
+                  outperform previous work by a substantial margin. Further
+                  analysis of experimental results demonstrates that the
+                  proposed methods not only capture the correlations between
+                  labels, but also select the most informative words
+                  automatically when predicting different labels."
+}
+
+@ARTICLE{chen-2016-esim,
+  author       = {{Chen}, Qian and {Zhu}, Xiaodan and {Ling}, Zhenhua and
+                  {Wei}, Si and {Jiang}, Hui and {Inkpen}, Diana},
+  title        = "{Enhanced LSTM for Natural Language Inference}",
+  journal      = {arXiv e-prints},
+  keywords     = {Computer Science - Computation and Language},
+  year         = 2016,
+  month        = sep,
+  eid          = {arXiv:1609.06038},
+  pages        = {arXiv:1609.06038},
+  archivePrefix= {arXiv},
+  eprint       = {1609.06038},
+  primaryClass = {cs.CL},
+  adsurl       = {https://ui.adsabs.harvard.edu/abs/2016arXiv160906038C},
+  adsnote      = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{tay-2018-cafe,
+  author       = {Yi Tay and Luu Anh Tuan and Siu Cheung Hui},
+  title        = {A Compare-Propagate Architecture with Alignment Factorization
+                  for Natural Language Inference},
+  journal      = {CoRR},
+  volume       = {abs/1801.00102},
+  year         = 2018,
+  url          = {http://arxiv.org/abs/1801.00102},
+  archivePrefix= {arXiv},
+  eprint       = {1801.00102},
+  timestamp    = {Mon, 13 Aug 2018 16:47:31 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1801-00102.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@ARTICLE{lan-2019-albert,
+  author       = {{Lan}, Zhenzhong and {Chen}, Mingda and {Goodman}, Sebastian
+                  and {Gimpel}, Kevin and {Sharma}, Piyush and {Soricut}, Radu},
+  title        = "{ALBERT: A Lite BERT for Self-supervised Learning of Language
+                  Representations}",
+  journal      = {arXiv e-prints},
+  keywords     = {Computer Science - Computation and Language, Computer Science
+                  - Artificial Intelligence},
+  year         = 2019,
+  month        = sep,
+  eid          = {arXiv:1909.11942},
+  pages        = {arXiv:1909.11942},
+  archivePrefix= {arXiv},
+  eprint       = {1909.11942},
+  primaryClass = {cs.CL},
+  adsurl       = {https://ui.adsabs.harvard.edu/abs/2019arXiv190911942L},
+  adsnote      = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{jiao-2019-tinybert,
+  author       = {{Jiao}, Xiaoqi and {Yin}, Yichun and {Shang}, Lifeng and
+                  {Jiang}, Xin and {Chen}, Xiao and {Li}, Linlin and {Wang},
+                  Fang and {Liu}, Qun},
+  title        = "{TinyBERT: Distilling BERT for Natural Language
+                  Understanding}",
+  journal      = {arXiv e-prints},
+  keywords     = {Computer Science - Computation and Language, Computer Science
+                  - Artificial Intelligence, Computer Science - Machine
+                  Learning},
+  year         = 2019,
+  month        = sep,
+  eid          = {arXiv:1909.10351},
+  pages        = {arXiv:1909.10351},
+  archivePrefix= {arXiv},
+  eprint       = {1909.10351},
+  primaryClass = {cs.CL},
+  adsurl       = {https://ui.adsabs.harvard.edu/abs/2019arXiv190910351J},
+  adsnote      = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{joshi-2019-spanbert,
+  author       = {Mandar Joshi and Danqi Chen and Yinhan Liu and Daniel S. Weld
+                  and Luke Zettlemoyer and Omer Levy},
+  title        = {SpanBERT: Improving Pre-training by Representing and
+                  Predicting Spans},
+  journal      = {CoRR},
+  volume       = {abs/1907.10529},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1907.10529},
+  archivePrefix= {arXiv},
+  eprint       = {1907.10529},
+  timestamp    = {Thu, 01 Aug 2019 08:59:33 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1907-10529.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{radford-2019-gpt2,
+  title        = {Language Models are Unsupervised Multitask Learners},
+  author       = {Alec Radford and Jeffrey Wu and Rewon Child and David Luan
+                  and Dario Amodei and Ilya Sutskever},
+  year         = 2019
+}
+
+@article{boutell-2004-binary-relevance,
+  title        = "Learning multi-label scene classification",
+  journal      = "Pattern Recognition",
+  volume       = 37,
+  number       = 9,
+  pages        = "1757-1771",
+  year         = 2004,
+  issn         = "0031-3203",
+  doi          = "https://doi.org/10.1016/j.patcog.2004.03.009",
+  url          =
+                  "http://www.sciencedirect.com/science/article/pii/S0031320304001074",
+  author       = "Matthew R. Boutell and Jiebo Luo and Xipeng Shen and
+                  Christopher M. Brown",
+  keywords     = "Image understanding, Semantic scene classification,
+                  Multi-label classification, Multi-label training, Multi-label
+                  evaluation, Image organization, Cross-training, Jaccard
+                  similarity",
+  abstract     = "In classic pattern recognition problems, classes are mutually
+                  exclusive by definition. Classification errors occur when the
+                  classes overlap in the feature space. We examine a different
+                  situation, occurring when the classes are, by definition, not
+                  mutually exclusive. Such problems arise in semantic scene and
+                  document classification and in medical diagnosis. We present
+                  a framework to handle such problems and apply it to the
+                  problem of semantic scene classification, where a natural
+                  scene may contain multiple objects such that the scene can be
+                  described by multiple class labels (e.g., a field scene with
+                  a mountain in the background). Such a problem poses
+                  challenges to the classic pattern recognition paradigm and
+                  demands a different treatment. We discuss approaches for
+                  training and testing in this scenario and introduce new
+                  metrics for evaluating individual examples, class recall and
+                  precision, and overall accuracy. Experiments show that our
+                  methods are suitable for scene classification; furthermore,
+                  our work appears to generalize to other classification
+                  problems of the same nature."
+}
+
+@inproceedings{read-2009-classifier-chains,
+  title        = {Classifier chains for multi-label classification},
+  author       = {Read, Jesse and Pfahringer, Bernhard and Holmes, Geoff and
+                  Frank, Eibe},
+  booktitle    = {Joint European Conference on Machine Learning and Knowledge
+                  Discovery in Databases},
+  pages        = {254-269},
+  year         = 2009,
+  organization = {Springer}
+}
+
+@inproceedings{zhang-2019-ernie,
+  title        = "{ERNIE}: Enhanced Language Representation with Informative
+                  Entities",
+  author       = "Zhang, Zhengyan and Han, Xu and Liu, Zhiyuan and Jiang, Xin
+                  and Sun, Maosong and Liu, Qun",
+  booktitle    = "Proceedings of the 57th Annual Meeting of the Association for
+                  Computational Linguistics",
+  month        = jul,
+  year         = 2019,
+  address      = "Florence, Italy",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/P19-1139",
+  doi          = "10.18653/v1/P19-1139",
+  pages        = "1441-1451",
+  abstract     = "Neural language representation models such as BERT
+                  pre-trained on large-scale corpora can well capture rich
+                  semantic patterns from plain text, and be fine-tuned to
+                  consistently improve the performance of various NLP
+                  tasks. However, the existing pre-trained language models
+                  rarely consider incorporating knowledge graphs (KGs), which
+                  can provide rich structured knowledge facts for better
+                  language understanding. We argue that informative entities in
+                  KGs can enhance language representation with external
+                  knowledge. In this paper, we utilize both large-scale textual
+                  corpora and KGs to train an enhanced language representation
+                  model (ERNIE), which can take full advantage of lexical,
+                  syntactic, and knowledge information simultaneously. The
+                  experimental results have demonstrated that ERNIE achieves
+                  significant improvements on various knowledge-driven tasks,
+                  and meanwhile is comparable with the state-of-the-art model
+                  BERT on other common NLP tasks. The code and datasets will be
+                  available in the future."
+}
+
+@article{sun-2019-ernie2,
+  author       = {Yu Sun and Shuohuan Wang and Yu{-}Kun Li and Shikun Feng and
+                  Hao Tian and Hua Wu and Haifeng Wang},
+  title        = {{ERNIE} 2.0: {A} Continual Pre-training Framework for
+                  Language Understanding},
+  journal      = {CoRR},
+  volume       = {abs/1907.12412},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1907.12412},
+  archivePrefix= {arXiv},
+  eprint       = {1907.12412},
+  timestamp    = {Tue, 21 Jan 2020 07:56:31 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1907-12412.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{dong-2019-unilm,
+  author       = {Li Dong and Nan Yang and Wenhui Wang and Furu Wei and
+                  Xiaodong Liu and Yu Wang and Jianfeng Gao and Ming Zhou and
+                  Hsiao{-}Wuen Hon},
+  title        = {Unified Language Model Pre-training for Natural Language
+                  Understanding and Generation},
+  journal      = {CoRR},
+  volume       = {abs/1905.03197},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1905.03197},
+  archivePrefix= {arXiv},
+  eprint       = {1905.03197},
+  timestamp    = {Wed, 19 Feb 2020 17:11:34 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1905-03197.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{clark-2019-electra,
+  title        = {ELECTRA: Pre-training Text Encoders as Discriminators Rather
+                  Than Generators},
+  author       = {Clark, Kevin and Luong, Minh-Thang and Le, Quoc V and
+                  Manning, Christopher D},
+  booktitle    = {International Conference on Learning Representations},
+  year         = 2019
+}
+
+@article{liu-2019-mt-dnn,
+  author       = {Xiaodong Liu and Pengcheng He and Weizhu Chen and Jianfeng
+                  Gao},
+  title        = {Multi-Task Deep Neural Networks for Natural Language
+                  Understanding},
+  journal      = {CoRR},
+  volume       = {abs/1901.11504},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1901.11504},
+  archivePrefix= {arXiv},
+  eprint       = {1901.11504},
+  timestamp    = {Mon, 04 Feb 2019 08:11:03 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1901-11504.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{yang-2019-xlnet,
+  author       = {Zhilin Yang and Zihang Dai and Yiming Yang and Jaime
+                  G. Carbonell and Ruslan Salakhutdinov and Quoc V. Le},
+  title        = {XLNet: Generalized Autoregressive Pretraining for Language
+                  Understanding},
+  journal      = {CoRR},
+  volume       = {abs/1906.08237},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1906.08237},
+  archivePrefix= {arXiv},
+  eprint       = {1906.08237},
+  timestamp    = {Mon, 24 Jun 2019 17:28:45 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1906-08237.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@ARTICLE{cui-2019-bert-wwm,
+  author       = {{Cui}, Yiming and {Che}, Wanxiang and {Liu}, Ting and {Qin},
+                  Bing and {Yang}, Ziqing and {Wang}, Shijin and {Hu}, Guoping},
+  title        = "{Pre-Training with Whole Word Masking for Chinese BERT}",
+  journal      = {arXiv e-prints},
+  keywords     = {Computer Science - Computation and Language, Computer Science
+                  - Machine Learning},
+  year         = 2019,
+  month        = jun,
+  eid          = {arXiv:1906.08101},
+  pages        = {arXiv:1906.08101},
+  archivePrefix= {arXiv},
+  eprint       = {1906.08101},
+  primaryClass = {cs.CL},
+  adsurl       = {https://ui.adsabs.harvard.edu/abs/2019arXiv190608101C},
+  adsnote      = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@inproceedings{socher-2011-rnn,
+  title        = {Parsing natural scenes and natural language with recursive
+                  neural networks},
+  author       = {Socher, Richard and Lin, Cliff C and Manning, Chris and Ng,
+                  Andrew Y},
+  booktitle    = {Proceedings of the 28th international conference on machine
+                  learning (ICML-11)},
+  pages        = {129-136},
+  year         = 2011
+}
+
+@inproceedings{socher-2013-sentiment-treebank,
+  title        = "Recursive Deep Models for Semantic Compositionality Over a
+                  Sentiment Treebank",
+  author       = "Socher, Richard and Perelygin, Alex and Wu, Jean and Chuang,
+                  Jason and Manning, Christopher D.  and Ng, Andrew and Potts,
+                  Christopher",
+  booktitle    = "Proceedings of the 2013 Conference on Empirical Methods in
+                  Natural Language Processing",
+  month        = oct,
+  year         = 2013,
+  address      = "Seattle, Washington, USA",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/D13-1170",
+  pages        = "1631-1642"
+}
+
+@article{pollack-1990-raam,
+  title        = "Recursive distributed representations",
+  journal      = "Artificial Intelligence",
+  volume       = 46,
+  number       = 1,
+  pages        = "77-105",
+  year         = 1990,
+  issn         = "0004-3702",
+  doi          = "https://doi.org/10.1016/0004-3702(90)90005-K",
+  url          =
+                  "http://www.sciencedirect.com/science/article/pii/000437029090005K",
+  author       = "Jordan B. Pollack",
+  abstract     = "A longstanding difficulty for connectionist modeling has been
+                  how to represent variable-sized recursive data structures,
+                  such as trees and lists, in fixed-width patterns. This paper
+                  presents a connectionist architecture which automatically
+                  develops compact distributed representations for such
+                  compositional structures, as well as efficient accessing
+                  mechanisms for them. Patterns which stand for the internal
+                  nodes of fixed-valence trees are devised through the
+                  recursive use of backpropagation on three-layer
+                  auto-associative encoder networks. The resulting
+                  representations are novel, in that they combine apparently
+                  immiscible aspects of features, pointers, and symbol
+                  structures. They form a bridge between the data structures
+                  necessary for high-level cognitive tasks and the associative,
+                  pattern recognition machinery provided by neural networks."
+}
+
+@inproceedings{shen-2018-straight-tree,
+  title        = "Straight to the Tree: Constituency Parsing with Neural
+                  Syntactic Distance",
+  author       = "Shen, Yikang and Lin, Zhouhan and Jacob, Athul Paul and
+                  Sordoni, Alessandro and Courville, Aaron and Bengio, Yoshua",
+  booktitle    = "Proceedings of the 56th Annual Meeting of the Association for
+                  Computational Linguistics (Volume 1: Long Papers)",
+  month        = jul,
+  year         = 2018,
+  address      = "Melbourne, Australia",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/P18-1108",
+  doi          = "10.18653/v1/P18-1108",
+  pages        = "1171-1180",
+  abstract     = "In this work, we propose a novel constituency parsing
+                  scheme. The model first predicts a real-valued scalar, named
+                  syntactic distance, for each split position in the
+                  sentence. The topology of grammar tree is then determined by
+                  the values of syntactic distances. Compared to traditional
+                  shift-reduce parsing schemes, our approach is free from the
+                  potentially disastrous compounding error. It is also easier
+                  to parallelize and much faster. Our model achieves the
+                  state-of-the-art single model F1 score of 92.1 on PTB and
+                  86.4 on CTB dataset, which surpasses the previous single
+                  model results by a large margin."
+}
+
+@inproceedings{socher-2012-mv-rnn,
+  title        = "Semantic Compositionality through Recursive Matrix-Vector
+                  Spaces",
+  author       = "Socher, Richard and Huval, Brody and Manning, Christopher D.
+                  and Ng, Andrew Y.",
+  booktitle    = "Proceedings of the 2012 Joint Conference on Empirical Methods
+                  in Natural Language Processing and Computational Natural
+                  Language Learning",
+  month        = jul,
+  year         = 2012,
+  address      = "Jeju Island, Korea",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/D12-1110",
+  pages        = "1201-1211"
+}
+
+@article{tai-2015-tree-lstm,
+  author       = {Kai Sheng Tai and Richard Socher and Christopher D. Manning},
+  title        = {Improved Semantic Representations From Tree-Structured Long
+                  Short-Term Memory Networks},
+  journal      = {CoRR},
+  volume       = {abs/1503.00075},
+  year         = 2015,
+  url          = {http://arxiv.org/abs/1503.00075},
+  archivePrefix= {arXiv},
+  eprint       = {1503.00075},
+  timestamp    = {Mon, 13 Aug 2018 16:48:20 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/TaiSM15.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@ARTICLE{zhu-2020-crosswoz,
+  author       = {{Zhu}, Qi and {Huang}, Kaili and {Zhang}, Zheng and {Zhu},
+                  Xiaoyan and {Huang}, Minlie},
+  title        = "{CrossWOZ: A Large-Scale Chinese Cross-Domain Task-Oriented
+                  Dialogue Dataset}",
+  journal      = {arXiv e-prints},
+  keywords     = {Computer Science - Computation and Language},
+  year         = 2020,
+  month        = feb,
+  eid          = {arXiv:2002.11893},
+  pages        = {arXiv:2002.11893},
+  archivePrefix= {arXiv},
+  eprint       = {2002.11893},
+  primaryClass = {cs.CL},
+  adsurl       = {https://ui.adsabs.harvard.edu/abs/2020arXiv200211893Z},
+  adsnote      = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@inproceedings{nie-2019-k-multiple-means,
+  author       = {Nie, Feiping and Wang, Cheng-Long and Li, Xuelong},
+  title        = {K-Multiple-Means: A Multiple-Means Clustering Method with
+                  Specified K Clusters},
+  year         = 2019,
+  isbn         = 9781450362016,
+  publisher    = {Association for Computing Machinery},
+  address      = {New York, NY, USA},
+  url          = {https://doi.org/10.1145/3292500.3330846},
+  doi          = {10.1145/3292500.3330846},
+  booktitle    = {Proceedings of the 25th ACM SIGKDD International Conference
+                  on Knowledge Discovery & Data Mining},
+  pages        = {959–967},
+  numpages     = 9,
+  keywords     = {graph laplacian, clustering, K-means, multiple means},
+  location     = {Anchorage, AK, USA},
+  series       = {KDD ’19}
+}
+
+@article{lee-2019-biobert,
+  author       = {Jinhyuk Lee and Wonjin Yoon and Sungdong Kim and Donghyeon
+                  Kim and Sunkyu Kim and Chan Ho So and Jaewoo Kang},
+  title        = {BioBERT: a pre-trained biomedical language representation
+                  model for biomedical text mining},
+  journal      = {CoRR},
+  volume       = {abs/1901.08746},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1901.08746},
+  archivePrefix= {arXiv},
+  eprint       = {1901.08746},
+  timestamp    = {Sat, 02 Feb 2019 16:56:00 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1901-08746.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{alsentzer-2019-clinical-bert,
+  title        = "Publicly Available Clinical {BERT} Embeddings",
+  author       = "Alsentzer, Emily and Murphy, John and Boag, William and Weng,
+                  Wei-Hung and Jindi, Di and Naumann, Tristan and McDermott,
+                  Matthew",
+  booktitle    = "Proceedings of the 2nd Clinical Natural Language Processing
+                  Workshop",
+  month        = jun,
+  year         = 2019,
+  address      = "Minneapolis, Minnesota, USA",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/W19-1909",
+  doi          = "10.18653/v1/W19-1909",
+  pages        = "72-78",
+  abstract     = "Contextual word embedding models such as ELMo and BERT have
+                  dramatically improved performance for many natural language
+                  processing (NLP) tasks in recent months. However, these
+                  models have been minimally explored on specialty corpora,
+                  such as clinical text; moreover, in the clinical domain, no
+                  publicly-available pre-trained BERT models yet exist. In this
+                  work, we address this need by exploring and releasing BERT
+                  models for clinical text: one for generic clinical text and
+                  another for discharge summaries specifically. We demonstrate
+                  that using a domain-specific model yields performance
+                  improvements on 3/5 clinical NLP tasks, establishing a new
+                  state-of-the-art on the MedNLI dataset. We find that these
+                  domain-specific models are not as performant on 2 clinical
+                  de-identification tasks, and argue that this is a natural
+                  consequence of the differences between de-identified source
+                  text and synthetically non de-identified task text."
+}
+
+@ARTICLE{shang-2019-g-bert,
+  author       = {{Shang}, Junyuan and {Ma}, Tengfei and {Xiao}, Cao and {Sun},
+                  Jimeng},
+  title        = "{Pre-training of Graph Augmented Transformers for Medication
+                  Recommendation}",
+  journal      = {arXiv e-prints},
+  keywords     = {Computer Science - Artificial Intelligence, Computer Science
+                  - Computation and Language, Computer Science - Machine
+                  Learning},
+  year         = 2019,
+  month        = jun,
+  eid          = {arXiv:1906.00346},
+  pages        = {arXiv:1906.00346},
+  archivePrefix= {arXiv},
+  eprint       = {1906.00346},
+  primaryClass = {cs.AI},
+  adsurl       = {https://ui.adsabs.harvard.edu/abs/2019arXiv190600346S},
+  adsnote      = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@inproceedings{chevalier-boisvert-2019-babyai,
+  title        = {Baby{AI}: First Steps Towards Grounded Language Learning With
+                  a Human In the Loop},
+  author       = {Maxime Chevalier-Boisvert and Dzmitry Bahdanau and Salem
+                  Lahlou and Lucas Willems and Chitwan Saharia and Thien Huu
+                  Nguyen and Yoshua Bengio},
+  booktitle    = {International Conference on Learning Representations},
+  year         = 2019,
+  url          = {https://openreview.net/forum?id=rJeXCo0cYX}
+}
+
+@article{beltagy-2019-scibert,
+  author       = {Iz Beltagy and Arman Cohan and Kyle Lo},
+  title        = {SciBERT: Pretrained Contextualized Embeddings for Scientific
+                  Text},
+  journal      = {CoRR},
+  volume       = {abs/1903.10676},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1903.10676},
+  archivePrefix= {arXiv},
+  eprint       = {1903.10676},
+  timestamp    = {Mon, 01 Apr 2019 14:07:37 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1903-10676.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@ARTICLE{pires-2019-m-bert,
+  author       = {{Pires}, Telmo and {Schlinger}, Eva and {Garrette}, Dan},
+  title        = "{How multilingual is Multilingual BERT?}",
+  journal      = {arXiv e-prints},
+  keywords     = {Computer Science - Computation and Language, Computer Science
+                  - Artificial Intelligence, Computer Science - Machine
+                  Learning},
+  year         = 2019,
+  month        = jun,
+  eid          = {arXiv:1906.01502},
+  pages        = {arXiv:1906.01502},
+  archivePrefix= {arXiv},
+  eprint       = {1906.01502},
+  primaryClass = {cs.CL},
+  adsurl       = {https://ui.adsabs.harvard.edu/abs/2019arXiv190601502P},
+  adsnote      = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{lee-2019-patent-bert,
+  author       = {{Lee}, Jieh-Sheng and {Hsiang}, Jieh},
+  title        = "{PatentBERT: Patent Classification with Fine-Tuning a
+                  pre-trained BERT Model}",
+  journal      = {arXiv e-prints},
+  keywords     = {Computer Science - Computation and Language, Computer Science
+                  - Machine Learning, Statistics - Machine Learning},
+  year         = 2019,
+  month        = may,
+  eid          = {arXiv:1906.02124},
+  pages        = {arXiv:1906.02124},
+  archivePrefix= {arXiv},
+  eprint       = {1906.02124},
+  primaryClass = {cs.CL},
+  adsurl       = {https://ui.adsabs.harvard.edu/abs/2019arXiv190602124L},
+  adsnote      = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{adhikari-2019-docbert,
+  author       = {Ashutosh Adhikari and Achyudh Ram and Raphael Tang and Jimmy
+                  Lin},
+  title        = {DocBERT: {BERT} for Document Classification},
+  journal      = {CoRR},
+  volume       = {abs/1904.08398},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1904.08398},
+  archivePrefix= {arXiv},
+  eprint       = {1904.08398},
+  timestamp    = {Fri, 26 Apr 2019 13:18:53 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1904-08398.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{coenen-2019-bert-geometry,
+  author       = {Andy Coenen and Emily Reif and Ann Yuan and Been Kim and Adam
+                  Pearce and Fernanda B. Vi{\'{e}}gas and Martin Wattenberg},
+  title        = {Visualizing and Measuring the Geometry of {BERT}},
+  journal      = {CoRR},
+  volume       = {abs/1906.02715},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1906.02715},
+  archivePrefix= {arXiv},
+  eprint       = {1906.02715},
+  timestamp    = {Thu, 13 Jun 2019 13:36:00 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1906-02715.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{michel-2019-sixteen-heads,
+  author       = {Paul Michel and Omer Levy and Graham Neubig},
+  title        = {Are Sixteen Heads Really Better than One?},
+  journal      = {CoRR},
+  volume       = {abs/1905.10650},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1905.10650},
+  archivePrefix= {arXiv},
+  eprint       = {1905.10650},
+  timestamp    = {Mon, 03 Jun 2019 13:42:33 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1905-10650.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{zellers-2019-hellaswag,
+  author       = {Rowan Zellers and Ari Holtzman and Yonatan Bisk and Ali
+                  Farhadi and Yejin Choi},
+  title        = {HellaSwag: Can a Machine Really Finish Your Sentence?},
+  journal      = {CoRR},
+  volume       = {abs/1905.07830},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1905.07830},
+  archivePrefix= {arXiv},
+  eprint       = {1905.07830},
+  timestamp    = {Tue, 28 May 2019 12:48:08 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1905-07830.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{tenney-2019-bert-rediscover,
+  author       = {Ian Tenney and Dipanjan Das and Ellie Pavlick},
+  title        = {{BERT} Rediscovers the Classical {NLP} Pipeline},
+  journal      = {CoRR},
+  volume       = {abs/1905.05950},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1905.05950},
+  archivePrefix= {arXiv},
+  eprint       = {1905.05950},
+  timestamp    = {Tue, 28 May 2019 12:48:08 +0200},
+  biburl       = {https://dblp.org/rec/bib/journals/corr/abs-1905-05950},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@ARTICLE{clark-2019-bert-attention,
+  author       = {{Clark}, Kevin and {Khandelwal}, Urvashi and {Levy}, Omer and
+                  {Manning}, Christopher D.},
+  title        = "{What Does BERT Look At? An Analysis of BERT's Attention}",
+  journal      = {arXiv e-prints},
+  keywords     = {Computer Science - Computation and Language},
+  year         = 2019,
+  month        = jun,
+  eid          = {arXiv:1906.04341},
+  pages        = {arXiv:1906.04341},
+  archivePrefix= {arXiv},
+  eprint       = {1906.04341},
+  primaryClass = {cs.CL},
+  adsurl       = {https://ui.adsabs.harvard.edu/abs/2019arXiv190604341C},
+  adsnote      = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{loshchilov-2016-sgdr,
+  author       = {{Loshchilov}, Ilya and {Hutter}, Frank},
+  title        = "{SGDR: Stochastic Gradient Descent with Warm Restarts}",
+  journal      = {arXiv e-prints},
+  keywords     = {Computer Science - Machine Learning, Computer Science -
+                  Neural and Evolutionary Computing, Mathematics - Optimization
+                  and Control},
+  year         = 2016,
+  month        = aug,
+  eid          = {arXiv:1608.03983},
+  pages        = {arXiv:1608.03983},
+  archivePrefix= {arXiv},
+  eprint       = {1608.03983},
+  primaryClass = {cs.LG},
+  adsurl       = {https://ui.adsabs.harvard.edu/abs/2016arXiv160803983L},
+  adsnote      = {Provided by the SAO/NASA Astrophysics Data System}
+}
+

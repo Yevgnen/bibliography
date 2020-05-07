@@ -5520,7 +5520,7 @@
   primaryClass = "cs.CL"
 }
 
-@ARTICLE{smith-2015-cyclic-learn,
+@ARTICLE{smith-2015-cyclic-lr,
   author       = "{Smith}, L.~N.",
   title        = "{Cyclical Learning Rates for Training Neural Networks}",
   journal      = "ArXiv e-prints",
@@ -14310,6 +14310,7 @@
   eprint       = "1503.02531",
   primaryClass = "stat.ML"
 }
+
 @article{tang-2015-soft-target,
   author       = "Tang, Zhiyuan and Wang, Dong and Zhang, Zhiyong",
   title        = "Recurrent Neural Network Training With Dark Knowledge
@@ -14365,6 +14366,7 @@
   eprint       = "1708.03888",
   primaryClass = "cs.CV"
 }
+
 @article{le-2015-identity-rnn,
   author       = "Le, Quoc V. and Jaitly, Navdeep and Hinton, Geoffrey E.",
   title        = "A Simple Way To Initialize Recurrent Networks of Rectified
@@ -14401,7 +14403,7 @@
   location     = "Atlanta, GA, USA",
   series       = "ICML’13"
 }
-  
+
 @article{raffel-2019-t5,
   author       = "Raffel, Colin and Shazeer, Noam and Roberts, Adam and Lee,
                   Katherine and Narang, Sharan and Matena, Michael and Zhou,
@@ -14432,4 +14434,636 @@
   archivePrefix= "arXiv",
   eprint       = "1910.10683",
   primaryClass = "cs.LG"
+}
+@inproceedings{kolitsas-2018-end-to-end-el,
+  author       = "Kolitsas, Nikolaos and Ganea, Octavian-Eugen and Hofmann,
+                  Thomas",
+  title        = "End-to-End Neural Entity Linking",
+  booktitle    = "Proceedings of the 22nd Conference on Computational Natural
+                  Language Learning",
+  year         = 2018,
+  pages        = "519-529",
+  doi          = "10.18653/v1/K18-1050",
+  url          = "https://doi.org/10.18653/v1/K18-1050",
+  abstract     = "Entity Linking (EL) is an essential task for semantic text
+                  understanding and information extraction. Popular methods
+                  separately address the Mention Detection (MD) and Entity
+                  Disambiguation (ED) stages of EL, without leveraging their
+                  mutual dependency. We here propose the first neural
+                  end-to-end EL system that jointly discovers and links
+                  entities in a text document. The main idea is to consider all
+                  possible spans as potential mentions and learn contextual
+                  similarity scores over their entity candidates that are
+                  useful for both MD and ED decisions. Key components are
+                  context-aware mention embeddings, entity embeddings and a
+                  probabilistic mention - entity map, without demanding other
+                  engineered features. Empirically, we show that our end-to-end
+                  method significantly outperforms popular systems on the
+                  Gerbil platform when enough training data is
+                  available. Conversely, if testing datasets follow different
+                  annotation conventions compared to the training set
+                  (e.g. queries/ tweets vs news documents), our ED model
+                  coupled with a traditional NER system offers the best or
+                  second best EL accuracy.",
+  address      = "Brussels, Belgium",
+  month        = oct,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@article{raiman-2018-deeptype,
+  author       = "Raiman, Jonathan and Raiman, Olivier",
+  title        = "Deeptype: Multilingual Entity Linking By Neural Type System
+                  Evolution",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1802.01021v1",
+  abstract     = "The wealth of structured (e.g. Wikidata) and unstructured
+                  data about the world available today presents an incredible
+                  opportunity for tomorrow's Artificial Intelligence. So far,
+                  integration of these two different modalities is a difficult
+                  process, involving many decisions concerning how best to
+                  represent the information so that it will be captured or
+                  useful, and hand-labeling large amounts of data. DeepType
+                  overcomes this challenge by explicitly integrating symbolic
+                  information into the reasoning process of a neural network
+                  with a type system. First we construct a type system, and
+                  second, we use it to constrain the outputs of a neural
+                  network to respect the symbolic structure. We achieve this by
+                  reformulating the design problem into a mixed integer
+                  problem: create a type system and subsequently train a neural
+                  network with it. In this reformulation discrete variables
+                  select which parent-child relations from an ontology are
+                  types within the type system, while continuous variables
+                  control a classifier fit to the type system. The original
+                  problem cannot be solved exactly, so we propose a 2-step
+                  algorithm: 1) heuristic search or stochastic optimization
+                  over discrete variables that define a type system informed by
+                  an Oracle and a Learnability heuristic, 2) gradient descent
+                  to fit classifier parameters. We apply DeepType to the
+                  problem of Entity Linking on three standard datasets
+                  (i.e. WikiDisamb30, CoNLL (YAGO), TAC KBP 2010) and find that
+                  it outperforms all existing solutions by a wide margin,
+                  including approaches that rely on a human-designed type
+                  system or recent deep learning-based entity embeddings, while
+                  explicitly using symbolic information lets it integrate new
+                  entities without retraining.",
+  archivePrefix= "arXiv",
+  eprint       = "1802.01021",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{le-2018-el-latent-relation,
+  title        = "Improving Entity Linking by Modeling Latent Relations between
+                  Mentions",
+  author       = "Le, Phong and Titov, Ivan",
+  booktitle    = "Proceedings of the 56th Annual Meeting of the Association for
+                  Computational Linguistics (Volume 1: Long Papers)",
+  month        = jul,
+  year         = 2018,
+  address      = "Melbourne, Australia",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/P18-1148",
+  doi          = "10.18653/v1/P18-1148",
+  pages        = "1595-1604",
+  abstract     = "Entity linking involves aligning textual mentions of named
+                  entities to their corresponding entries in a knowledge
+                  base. Entity linking systems often exploit relations between
+                  textual mentions in a document (e.g., coreference) to decide
+                  if the linking decisions are compatible. Unlike previous
+                  approaches, which relied on supervised systems or heuristics
+                  to predict these relations, we treat relations as latent
+                  variables in our neural entity-linking model. We induce the
+                  relations without any supervision while optimizing the
+                  entity-linking system in an end-to-end fashion. Our
+                  multi-relational model achieves the best reported scores on
+                  the standard benchmark (AIDA-CoNLL) and substantially
+                  outperforms its relation-agnostic version. Its training also
+                  converges much faster, suggesting that the injected
+                  structural bias helps to explain regularities in the training
+                  data."
+}
+
+@inproceedings{ganea-2017-deep-ed,
+  title        = "Deep Joint Entity Disambiguation with Local Neural Attention",
+  author       = "Ganea, Octavian-Eugen and Hofmann, Thomas",
+  booktitle    = "Proceedings of the 2017 Conference on Empirical Methods in
+                  Natural Language Processing",
+  month        = sep,
+  year         = 2017,
+  address      = "Copenhagen, Denmark",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/D17-1277",
+  doi          = "10.18653/v1/D17-1277",
+  pages        = "2619-2629",
+  abstract     = "We propose a novel deep learning model for joint
+                  document-level entity disambiguation, which leverages learned
+                  neural representations. Key components are entity embeddings,
+                  a neural attention mechanism over local context windows, and
+                  a differentiable joint inference stage for
+                  disambiguation. Our approach thereby combines benefits of
+                  deep learning with more traditional approaches such as
+                  graphical models and probabilistic mention-entity
+                  maps. Extensive experiments show that we are able to obtain
+                  competitive or state-of-the-art accuracy at moderate
+                  computational costs."
+}
+
+@article{vashishth-2020-medtype,
+  author       = "Vashishth, Shikhar and Joshi, Rishabh and Dutt, Ritam and
+                  Newman-Griffis, Denis and Rose, Carolyn",
+  title        = "Medtype: Improving Medical Entity Linking With Semantic Type
+                  Prediction",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2005.00460v1",
+  abstract     = "Medical entity linking is the task of identifying and
+                  standardizing concepts referred in a scientific article or
+                  clinical record. Existing methods adopt a two-step approach
+                  of detecting mentions and identifying a list of candidate
+                  concepts for them. In this paper, we probe the impact of
+                  incorporating an entity disambiguation step in existing
+                  entity linkers. For this, we present MedType, a novel method
+                  that leverages the surrounding context to identify the
+                  semantic type of a mention and uses it for filtering out
+                  candidate concepts of the wrong types. We further present two
+                  novel largescale, automatically-created datasets of medical
+                  entity mentions: WIKIMED, a Wikipediabased dataset for
+                  cross-domain transfer learning, and PUBMEDDS, a
+                  distantly-supervised dataset of medical entity mentions in
+                  biomedical abstracts. Through extensive experiments across
+                  several datasets and methods, we demonstrate that MedType
+                  pre-trained on our proposed datasets substantially improve
+                  medical entity linking and gives state-of-the-art
+                  performance. We make our source code and datasets publicly
+                  available for medical entity linking research.",
+  archivePrefix= "arXiv",
+  eprint       = "2005.00460",
+  primaryClass = "cs.CL"
+}
+
+@article{shi-2020-sentence-level-el,
+  author       = "Shi, Wei and Zhang, Siyuan and Zhang, Zhiwei and Cheng, Hong
+                  and Yu, Jeffrey Xu",
+  title        = "Joint Embedding in Named Entity Linking on Sentence Level",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2002.04936v1",
+  abstract     = "Named entity linking is to map an ambiguous mention in
+                  documents to an entity in a knowledge base. The named entity
+                  linking is challenging, given the fact that there are
+                  multiple candidate entities for a mention in a document. It
+                  is difficult to link a mention when it appears multiple times
+                  in a document, since there are conflicts by the contexts
+                  around the appearances of the mention. In addition, it is
+                  difficult since the given training dataset is small due to
+                  the reason that it is done manually to link a mention to its
+                  mapping entity. In the literature, there are many reported
+                  studies among which the recent embedding methods learn
+                  vectors of entities from the training dataset at document
+                  level.  To address these issues, we focus on how to link
+                  entity for mentions at a sentence level, which reduces the
+                  noises introduced by different appearances of the same
+                  mention in a document at the expense of insufficient
+                  information to be used. We propose a new unified embedding
+                  method by maximizing the relationships learned from knowledge
+                  graphs. We confirm the effectiveness of our method in our
+                  experimental studies.",
+  archivePrefix= "arXiv",
+  eprint       = "2002.04936",
+  primaryClass = "cs.CL"
+}
+
+@article{broscheit-2020-bert-el,
+  author       = "Broscheit, Samuel",
+  title        = "Investigating Entity Knowledge in Bert With Simple Neural
+                  End-To-End Entity Linking",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2003.05473v1",
+  abstract     = "A typical architecture for end-to-end entity linking systems
+                  consists of three steps: mention detection, candidate
+                  generation and entity disambiguation.  In this study we
+                  investigate the following questions: (a) Can all those steps
+                  be learned jointly with a model for contextualized
+                  text-representations, i.e.  BERT (Devlin et al., 2019)? (b)
+                  How much entity knowledge is already contained in pretrained
+                  BERT? (c) Does additional entity knowledge improve BERT's
+                  performance in downstream tasks? To this end, we propose an
+                  extreme simplification of the entity linking setup that works
+                  surprisingly well: simply cast it as a per token
+                  classification over the entire entity vocabulary (over 700K
+                  classes in our case). We show on an entity linking benchmark
+                  that (i) this model improves the entity representations over
+                  plain BERT, (ii) that it outperforms entity linking
+                  architectures that optimize the tasks separately and (iii)
+                  that it only comes second to the current state-of-the-art
+                  that does mention detection and entity disambiguation
+                  jointly. Additionally, we investigate the usefulness of
+                  entity-aware token-representations in the text-understanding
+                  benchmark GLUE, as well as the question answering benchmarks
+                  SQUAD V2 and SWAG and also the EN-DE WMT14 machine
+                  translation benchmark. To our surprise, we find that most of
+                  those benchmarks do not benefit from additional entity
+                  knowledge, except for a task with very small training data,
+                  the RTE task in GLUE, which improves by 2 \%.",
+  archivePrefix= "arXiv",
+  eprint       = "2003.05473",
+  primaryClass = "cs.CL"
+}
+
+@article{chen-2020-latent-entity-type,
+  author       = "Chen, Shuang and Wang, Jinpeng and Jiang, Feng and Lin,
+                  Chin-Yew",
+  title        = "Improving Entity Linking By Modeling Latent Entity Type
+                  Information",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2001.01447v1",
+  abstract     = "Existing state of the art neural entity linking models employ
+                  attention-based bag-of-words context model and pre-trained
+                  entity embeddings bootstrapped from word embeddings to assess
+                  topic level context compatibility. However, the latent entity
+                  type information in the immediate context of the mention is
+                  neglected, which causes the models often link mentions to
+                  incorrect entities with incorrect type. To tackle this
+                  problem, we propose to inject latent entity type information
+                  into the entity embeddings based on pre-trained BERT. In
+                  addition, we integrate a BERT-based entity similarity score
+                  into the local context model of a state-of-the-art model to
+                  better capture latent entity type information. Our model
+                  significantly outperforms the state-of-the-art entity linking
+                  models on standard benchmark (AIDA-CoNLL). Detailed
+                  experiment analysis demonstrates that our model corrects most
+                  of the type errors produced by the direct baseline.",
+  archivePrefix= "arXiv",
+  eprint       = "2001.01447",
+  primaryClass = "cs.CL"
+}
+
+@article{zhu-2019-latte,
+  author       = "Zhu, Ming and Celikkaya, Busra and Bhatia, Parminder and
+                  Reddy, Chandan K.",
+  title        = "Latte: Latent Type Modeling for Biomedical Entity Linking",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1911.09787v2",
+  abstract     = "Entity linking is the task of linking mentions of named
+                  entities in natural language text, to entities in a curated
+                  knowledge-base. This is of significant importance in the
+                  biomedical domain, where it could be used to semantically
+                  annotate a large volume of clinical records and biomedical
+                  literature, to standardized concepts described in an ontology
+                  such as Unified Medical Language System (UMLS). We observe
+                  that with precise type information, entity disambiguation
+                  becomes a straightforward task. However, fine-grained type
+                  information is usually not available in biomedical
+                  domain. Thus, we propose LATTE, a LATent Type Entity Linking
+                  model, that improves entity linking by modeling the latent
+                  fine-grained type information about mentions and entities.
+                  Unlike previous methods that perform entity linking directly
+                  between the mentions and the entities, LATTE jointly does
+                  entity disambiguation, and latent fine-grained type learning,
+                  without direct supervision. We evaluate our model on two
+                  biomedical datasets: MedMentions, a large scale public
+                  dataset annotated with UMLS concepts, and a de-identified
+                  corpus of dictated doctor's notes that has been annotated
+                  with ICD concepts. Extensive experimental evaluation shows
+                  our model achieves significant performance improvements over
+                  several state-of-the-art techniques.",
+  archivePrefix= "arXiv",
+  eprint       = "1911.09787",
+  primaryClass = "cs.CL"
+}
+
+@article{chen-2019-yelm,
+  author       = "Chen, Haotian and Wadhwa, Sahil and Li, Xi David and
+                  Zukov-Gregoric, Andrej",
+  title        = "Yelm: End-To-End Contextualized Entity Linking",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1911.03834v1",
+  abstract     = "We propose yet another entity linking model (YELM) which
+                  links words to entities instead of spans. This overcomes any
+                  difficulties associated with the selection of good candidate
+                  mention spans and makes the joint training of mention
+                  detection (MD) and entity disambiguation (ED) easily
+                  possible. Our model is based on BERT and produces
+                  contextualized word embeddings which are trained against a
+                  joint MD and ED objective. We achieve state-of-the-art
+                  results on several standard entity linking (EL) datasets.",
+  archivePrefix= "arXiv",
+  eprint       = "1911.03834",
+  primaryClass = "cs.CL"
+}
+
+@article{martins-2019-joint-ner-el,
+  author       = "Martins, Pedro Henrique and Marinho, Zita and Martins,
+                  Andr{\'e} F. T.",
+  title        = "Joint Learning of Named Entity Recognition and Entity
+                  Linking",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1907.08243v1",
+  abstract     = "Named entity recognition (NER) and entity linking (EL) are
+                  two fundamentally related tasks, since in order to perform
+                  EL, first the mentions to entities have to be
+                  detected. However, most entity linking approaches disregard
+                  the mention detection part, assuming that the correct
+                  mentions have been previously detected. In this paper, we
+                  perform joint learning of NER and EL to leverage their
+                  relatedness and obtain a more robust and generalisable
+                  system. For that, we introduce a model inspired by the
+                  Stack-LSTM approach (Dyer et al., 2015).  We observe that, in
+                  fact, doing multi-task learning of NER and EL improves the
+                  performance in both tasks when comparing with models trained
+                  with individual objectives. Furthermore, we achieve results
+                  competitive with the state-of-the-art in both NER and EL.",
+  archivePrefix= "arXiv",
+  eprint       = "1907.08243",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{logeswaran-2019-zero-shot-el,
+  title        = "Zero-Shot Entity Linking by Reading Entity Descriptions",
+  author       = "Logeswaran, Lajanugen and Chang, Ming-Wei and Lee, Kenton and
+                  Toutanova, Kristina and Devlin, Jacob and Lee, Honglak",
+  booktitle    = "Proceedings of the 57th Annual Meeting of the Association for
+                  Computational Linguistics",
+  month        = jul,
+  year         = 2019,
+  address      = "Florence, Italy",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/P19-1335",
+  doi          = "10.18653/v1/P19-1335",
+  pages        = "3449-3460",
+  abstract     = "We present the zero-shot entity linking task, where mentions
+                  must be linked to unseen entities without in-domain labeled
+                  data. The goal is to enable robust transfer to highly
+                  specialized domains, and so no metadata or alias tables are
+                  assumed. In this setting, entities are only identified by
+                  text descriptions, and models must rely strictly on language
+                  understanding to resolve the new entities. First, we show
+                  that strong reading comprehension models pre-trained on large
+                  unlabeled data can be used to generalize to unseen
+                  entities. Second, we propose a simple and effective adaptive
+                  pre-training strategy, which we term domain-adaptive
+                  pre-training (DAP), to address the domain shift problem
+                  associated with linking unseen entities in a new domain. We
+                  present experiments on a new dataset that we construct for
+                  this task and show that DAP improves over strong pre-training
+                  baselines, including BERT. The data and code are available at
+                  https://github.com/lajanugen/zeshel."
+}
+
+@inproceedings{le-2019-distant-el,
+  title        = "Distant Learning for Entity Linking with Automatic Noise
+                  Detection",
+  author       = "Le, Phong and Titov, Ivan",
+  booktitle    = "Proceedings of the 57th Annual Meeting of the Association for
+                  Computational Linguistics",
+  month        = jul,
+  year         = 2019,
+  address      = "Florence, Italy",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/P19-1400",
+  doi          = "10.18653/v1/P19-1400",
+  pages        = "4081-4090",
+  abstract     = "Accurate entity linkers have been produced for domains and
+                  languages where annotated data (i.e., texts linked to a
+                  knowledge base) is available. However, little progress has
+                  been made for the settings where no or very limited amounts
+                  of labeled data are present (e.g., legal or most scientific
+                  domains). In this work, we show how we can learn to link
+                  mentions without having any labeled examples, only a
+                  knowledge base and a collection of unannotated texts from the
+                  corresponding domain. In order to achieve this, we frame the
+                  task as a multi-instance learning problem and rely on surface
+                  matching to create initial noisy labels. As the learning
+                  signal is weak and our surrogate labels are noisy, we
+                  introduce a noise detection component in our model: it lets
+                  the model detect and disregard examples which are likely to
+                  be noisy. Our method, jointly learning to detect noise and
+                  link entities, greatly outperforms the surface matching
+                  baseline. For a subset of entity categories, it even
+                  approaches the performance of supervised learning."
+}
+
+@inproceedings{mondal-2019-triplet-network-el,
+  title        = "Medical Entity Linking using Triplet Network",
+  author       = "Mondal, Ishani and Purkayastha, Sukannya and Sarkar, Sudeshna
+                  and Goyal, Pawan and Pillai, Jitesh and Bhattacharyya,
+                  Amitava and Gattu, Mahanandeeshwar",
+  booktitle    = "Proceedings of the 2nd Clinical Natural Language Processing
+                  Workshop",
+  month        = jun,
+  year         = 2019,
+  address      = "Minneapolis, Minnesota, USA",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/W19-1912",
+  doi          = "10.18653/v1/W19-1912",
+  pages        = "95-100",
+  abstract     = "Entity linking (or Normalization) is an essential task in
+                  text mining that maps the entity mentions in the medical text
+                  to standard entities in a given Knowledge Base (KB). This
+                  task is of great importance in the medical domain. It can
+                  also be used for merging different medical and clinical
+                  ontologies. In this paper, we center around the problem of
+                  disease linking or normalization. This task is executed in
+                  two phases: candidate generation and candidate scoring. In
+                  this paper, we present an approach to rank the candidate
+                  Knowledge Base entries based on their similarity with disease
+                  mention. We make use of the Triplet Network for candidate
+                  ranking. While the existing methods have used carefully
+                  generated sieves and external resources for candidate
+                  generation, we introduce a robust and portable candidate
+                  generation scheme that does not make use of the hand-crafted
+                  rules. Experimental results on the standard benchmark NCBI
+                  disease dataset demonstrate that our system outperforms the
+                  prior methods by a significant margin."
+}
+
+@article{yang-2019-dca,
+  author       = "Yang, Xiyuan and Gu, Xiaotao and Lin, Sheng and Tang, Siliang
+                  and Zhuang, Yueting and Wu, Fei and Chen, Zhigang and Hu,
+                  Guoping and Ren, Xiang",
+  title        = "Learning Dynamic Context Augmentation for Global Entity
+                  Linking",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1909.02117v1",
+  abstract     = "Despite of the recent success of collective entity linking
+                  (EL) methods, these ``global`` inference methods may yield
+                  sub-optimal results when the ``all-mention coherence``
+                  assumption breaks, and often suffer from high computational
+                  cost at the inference stage, due to the complex search
+                  space. In this paper, we propose a simple yet effective
+                  solution, called Dynamic Context Augmentation (DCA), for
+                  collective EL, which requires only one pass through the
+                  mentions in a document. DCA sequentially accumulates context
+                  information to make efficient, collective inference, and can
+                  cope with different local EL models as a plug-and-enhance
+                  module. We explore both supervised and reinforcement learning
+                  strategies for learning the DCA model. Extensive experiments
+                  show the effectiveness of our model with different learning
+                  settings, base models, decision orders and attention
+                  mechanisms.",
+  archivePrefix= "arXiv",
+  eprint       = "1909.02117",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{murty-2018-hierarchical-losses,
+  title        = "Hierarchical Losses and New Resources for Fine-grained Entity
+                  Typing and Linking",
+  author       = "Murty, Shikhar and Verga, Patrick and Vilnis, Luke and
+                  Radovanovic, Irena and McCallum, Andrew",
+  booktitle    = "Proceedings of the 56th Annual Meeting of the Association for
+                  Computational Linguistics (Volume 1: Long Papers)",
+  month        = jul,
+  year         = 2018,
+  address      = "Melbourne, Australia",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/P18-1010",
+  doi          = "10.18653/v1/P18-1010",
+  pages        = "97-109",
+  abstract     = "Extraction from raw text to a knowledge base of entities and
+                  fine-grained types is often cast as prediction into a flat
+                  set of entity and type labels, neglecting the rich
+                  hierarchies over types and entities contained in curated
+                  ontologies. Previous attempts to incorporate hierarchical
+                  structure have yielded little benefit and are restricted to
+                  shallow ontologies. This paper presents new methods using
+                  real and complex bilinear mappings for integrating
+                  hierarchical information, yielding substantial improvement
+                  over flat predictions in entity linking and fine-grained
+                  entity typing, and achieving new state-of-the-art results for
+                  end-to-end models on the benchmark FIGER dataset. We also
+                  present two new human-annotated datasets containing wide and
+                  deep hierarchies which we will release to the community to
+                  encourage further research in this direction:
+                  \textit{MedMentions}, a collection of PubMed abstracts in
+                  which 246k mentions have been mapped to the massive UMLS
+                  ontology; and \textit{TypeNet}, which aligns Freebase types
+                  with the WordNet hierarchy to obtain nearly 2k entity
+                  types. In experiments on all three datasets we show
+                  substantial gains from hierarchy-aware training."
+}
+
+@inproceedings{zhong-2018-colink,
+  title        = "Colink: An unsupervised framework for user identity linkage",
+  author       = "Zhong, Zexuan and Cao, Yong and Guo, Mu and Nie, Zaiqing",
+  booktitle    = "Thirty-Second AAAI Conference on Artificial Intelligence",
+  year         = 2018
+}
+
+@inproceedings{du-2019-extract-symptoms,
+  title        = "Extracting Symptoms and their Status from Clinical
+                  Conversations",
+  author       = "Du, Nan and Chen, Kai and Kannan, Anjuli and Tran, Linh and
+                  Chen, Yuhui and Shafran, Izhak",
+  booktitle    = "Proceedings of the 57th Annual Meeting of the Association for
+                  Computational Linguistics",
+  month        = jul,
+  year         = 2019,
+  address      = "Florence, Italy",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/P19-1087",
+  doi          = "10.18653/v1/P19-1087",
+  pages        = "915-925",
+  abstract     = "This paper describes novel models tailored for a new
+                  application, that of extracting the symptoms mentioned in
+                  clinical conversations along with their status. Lack of any
+                  publicly available corpus in this privacy-sensitive domain
+                  led us to develop our own corpus, consisting of about 3K
+                  conversations annotated by professional medical scribes. We
+                  propose two novel deep learning approaches to infer the
+                  symptom names and their status: (1) a new hierarchical
+                  span-attribute tagging (SA-T) model, trained using curriculum
+                  learning, and (2) a variant of sequence-to-sequence model
+                  which decodes the symptoms and their status from a few
+                  speaker turns within a sliding window over the
+                  conversation. This task stems from a realistic application of
+                  assisting medical providers in capturing symptoms mentioned
+                  by patients from their clinical conversations. To reflect
+                  this application, we define multiple metrics. From
+                  inter-rater agreement, we find that the task is inherently
+                  difficult. We conduct comprehensive evaluations on several
+                  contrasting conditions and observe that the performance of
+                  the models range from an F-score of 0.5 to 0.8 depending on
+                  the condition. Our analysis not only reveals the inherent
+                  challenges of the task, but also provides useful directions
+                  to improve the models."
+}
+
+@article{sarrouti-2020-sembionlqa,
+  title        = "SemBioNLQA: A semantic biomedical question answering system
+                  for retrieving exact and ideal answers to natural language
+                  questions",
+  journal      = "Artificial Intelligence in Medicine",
+  volume       = 102,
+  pages        = 101767,
+  year         = 2020,
+  issn         = "0933-3657",
+  doi          = "https://doi.org/10.1016/j.artmed.2019.101767",
+  url          =
+                  "http://www.sciencedirect.com/science/article/pii/S0933365718302756",
+  author       = "Mourad Sarrouti and Said [Ouatik El Alaoui]",
+  keywords     = "Biomedical question answering, Information retrieval, Passage
+                  retrieval, Natural language processing, Machine learning,
+                  Biomedical informatics, BioASQ",
+  abstract     = "Background and objective Question answering (QA), the
+                  identification of short accurate answers to users questions
+                  written in natural language expressions, is a longstanding
+                  issue widely studied over the last decades in the
+                  open-domain. However, it still remains a real challenge in
+                  the biomedical domain as the most of the existing systems
+                  support a limited amount of question and answer types as well
+                  as still require further efforts in order to improve their
+                  performance in terms of precision for the supported
+                  questions. Here, we present a semantic biomedical QA system
+                  named SemBioNLQA which has the ability to handle the kinds of
+                  yes/no, factoid, list, and summary natural language
+                  questions.  Methods This paper describes the system
+                  architecture and an evaluation of the developed end-to-end
+                  biomedical QA system named SemBioNLQA, which consists of
+                  question classification, document retrieval, passage
+                  retrieval and answer extraction modules. It takes natural
+                  language questions as input, and outputs both short precise
+                  answers and summaries as results. The SemBioNLQA system,
+                  dealing with four types of questions, is based on (1)
+                  handcrafted lexico-syntactic patterns and a machine learning
+                  algorithm for question classification, (2) PubMed search
+                  engine and UMLS similarity for document retrieval, (3) the
+                  BM25 model, stemmed words and UMLS concepts for passage
+                  retrieval, and (4) UMLS metathesaurus, BioPortal synonyms,
+                  sentiment analysis and term frequency metric for answer
+                  extraction.  Results and conclusion Compared with the current
+                  state-of-the-art biomedical QA systems, SemBioNLQA, a fully
+                  automated system, has the potential to deal with a large
+                  amount of question and answer types. SemBioNLQA retrieves
+                  quickly users’ information needs by returning exact answers
+                  (e.g., “yes”, “no”, a biomedical entity name, etc.) and ideal
+                  answers (i.e., paragraph-sized summaries of relevant
+                  information) for yes/no, factoid and list questions, whereas
+                  it provides only the ideal answers for summary
+                  questions. Moreover, experimental evaluations performed on
+                  biomedical questions and answers provided by the BioASQ
+                  challenge especially in 2015, 2016 and 2017 (as part of our
+                  participation), show that SemBioNLQA achieves good
+                  performances compared with the most current state-of-the-art
+                  systems and allows a practical and competitive alternative to
+                  help information seekers find exact and ideal answers to
+                  their biomedical questions. The SemBioNLQA source code is
+                  publicly available at
+                  https://github.com/sarrouti/sembionlqa."
+}
+
+@article{demner-fushman-2019-health-qa,
+  title        = "Consumer health information and question answering: helping
+                  consumers find answers to their health-related information
+                  needs",
+  author       = "Dina Demner-Fushman and Yassine Mrabet and Asma Ben Abacha",
+  journal      = "Journal of the American Medical Informatics Association :
+                  JAMIA",
+  year         = 2019
 }

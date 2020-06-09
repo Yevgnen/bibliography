@@ -4679,7 +4679,7 @@
   year         = 2015
 }
 
-@ARTICLE{clark-2016-deep-reinf,
+@ARTICLE{clark-2016-rl-for-cr,
   author       = "{Clark}, K. and {Manning}, C.~D.",
   title        = "{Deep Reinforcement Learning for Mention-Ranking Coreference
                   Models}",
@@ -5405,22 +5405,6 @@
                   Pattern Recognition",
   pages        = "2414-2423",
   year         = 2016
-}
-
-@ARTICLE{loshchilov-2017-adamw,
-  author       = "{Loshchilov}, I. and {Hutter}, F.",
-  title        = "{Fixing Weight Decay Regularization in Adam}",
-  journal      = "ArXiv e-prints",
-  year         = 2017,
-  adsnote      = "Provided by the SAO/NASA Astrophysics Data System",
-  adsurl       = "http://adsabs.harvard.edu/abs/2017arXiv171105101L",
-  archivePrefix= "arXiv",
-  eprint       = "1711.05101",
-  keywords     = "Computer Science - Learning, Computer Science - Neural and
-                  Evolutionary Computing, Mathematics - Optimization and
-                  Control",
-  month        = nov,
-  primaryClass = "cs.LG"
 }
 
 @ARTICLE{kingma-2014-adam,
@@ -9564,7 +9548,7 @@
   year         = 2015
 }
 
-@article{chen-2017-readin-wikip,
+@article{chen-2017-drqa,
   author       = "Danqi Chen and Adam Fisch and Jason Weston and Antoine
                   Bordes",
   title        = "Reading Wikipedia to Answer Open-Domain Questions",
@@ -17181,5 +17165,336 @@
                   https://github.com/ymcui/cmrc2019",
   archivePrefix= "arXiv",
   eprint       = "2004.03116",
+  primaryClass = "cs.CL"
+}
+
+@article{munkhdalai-2016-neural-tree-indexers,
+  author       = "Munkhdalai, Tsendsuren and Yu, Hong",
+  title        = "Neural Tree Indexers for Text Understanding",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1607.04492v2",
+  abstract     = "Recurrent neural networks (RNNs) process input text
+                  sequentially and model the conditional transition between
+                  word tokens. In contrast, the advantages of recursive
+                  networks include that they explicitly model the
+                  compositionality and the recursive structure of natural
+                  language. However, the current recursive architecture is
+                  limited by its dependence on syntactic tree. In this paper,
+                  we introduce a robust syntactic parsing-independent tree
+                  structured model, Neural Tree Indexers (NTI) that provides a
+                  middle ground between the sequential RNNs and the syntactic
+                  treebased recursive models. NTI constructs a full n-ary tree
+                  by processing the input text with its node function in a
+                  bottom-up fashion.  Attention mechanism can then be applied
+                  to both structure and node function. We implemented and
+                  evaluated a binarytree model of NTI, showing the model
+                  achieved the state-of-the-art performance on three different
+                  NLP tasks: natural language inference, answer sentence
+                  selection, and sentence classification, outperforming
+                  state-of-the-art recurrent and recursive neural networks.",
+  archivePrefix= "arXiv",
+  eprint       = "1607.04492",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{grandvalet-2004-entropy-minimization,
+  author       = "Grandvalet, Yves and Bengio, Yoshua",
+  title        = "Semi-Supervised Learning by Entropy Minimization",
+  year         = 2004,
+  publisher    = "MIT Press",
+  address      = "Cambridge, MA, USA",
+  booktitle    = "Proceedings of the 17th International Conference on Neural
+                  Information Processing Systems",
+  pages        = "529–536",
+  numpages     = 8,
+  location     = "Vancouver, British Columbia, Canada",
+  series       = "NIPS’04"
+}
+  
+@inproceedings{duan-2017-qg-for-qa,
+  title        = "Question Generation for Question Answering",
+  author       = "Duan, Nan and Tang, Duyu and Chen, Peng and Zhou, Ming",
+  booktitle    = "Proceedings of the 2017 Conference on Empirical Methods in
+                  Natural Language Processing",
+  month        = sep,
+  year         = 2017,
+  address      = "Copenhagen, Denmark",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/D17-1090",
+  doi          = "10.18653/v1/D17-1090",
+  pages        = "866-874",
+  abstract     = "This paper presents how to generate questions from given
+                  passages using neural networks, where large scale QA pairs
+                  are automatically crawled and processed from Community-QA
+                  website, and used as training data. The contribution of the
+                  paper is 2-fold: First, two types of question generation
+                  approaches are proposed, one is a retrieval-based method
+                  using convolution neural network (CNN), the other is a
+                  generation-based method using recurrent neural network (RNN);
+                  Second, we show how to leverage the generated questions to
+                  improve existing question answering systems. We evaluate our
+                  question generation method for the answer sentence selection
+                  task on three benchmark datasets, including SQuAD, MS MARCO,
+                  and WikiQA. Experimental results show that, by using
+                  generated questions as an extra signal, significant QA
+                  improvement can be achieved."
+}
+
+@inproceedings{hadsell-2006-contrastive-loss,
+  title        = "Dimensionality reduction by learning an invariant mapping",
+  author       = "Hadsell, Raia and Chopra, Sumit and LeCun, Yann",
+  booktitle    = "2006 IEEE Computer Society Conference on Computer Vision and
+                  Pattern Recognition (CVPR'06)",
+  volume       = 2,
+  pages        = "1735-1742",
+  year         = 2006,
+  organization = "IEEE"
+}
+
+@article{wieting-2019-no-training-required,
+  author       = "Wieting, John and Kiela, Douwe",
+  title        = "No Training Required: Exploring Random Encoders for Sentence
+                  Classification",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1901.10444v1",
+  abstract     = "We explore various methods for computing sentence
+                  representations from pre-trained word embeddings without any
+                  training, i.e., using nothing but random
+                  parameterizations. Our aim is to put sentence embeddings on
+                  more solid footing by 1) looking at how much modern sentence
+                  embeddings gain over random methods---as it turns out,
+                  surprisingly little; and by 2) providing the field with more
+                  appropriate baselines going forward---which are, as it turns
+                  out, quite strong. We also make important observations about
+                  proper experimental protocol for sentence classification
+                  evaluation, together with recommendations for future
+                  research.",
+  archivePrefix= "arXiv",
+  eprint       = "1901.10444",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{mohtarami-2016-sls-semeval-task,
+  title        = "{SLS} at {S}em{E}val-2016 Task 3: Neural-based Approaches for
+                  Ranking in Community Question Answering",
+  author       = "Mohtarami, Mitra and Belinkov, Yonatan and Hsu, Wei-Ning and
+                  Zhang, Yu and Lei, Tao and Bar, Kfir and Cyphers, Scott and
+                  Glass, Jim",
+  booktitle    = "Proceedings of the 10th International Workshop on Semantic
+                  Evaluation ({S}em{E}val-2016)",
+  month        = jun,
+  year         = 2016,
+  address      = "San Diego, California",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/S16-1128",
+  doi          = "10.18653/v1/S16-1128",
+  pages        = "828-835"
+}
+
+@inproceedings{romeo-2016-neural-attention,
+  title        = "Neural Attention for Learning to Rank Questions in Community
+                  Question Answering",
+  author       = "Romeo, Salvatore and Da San Martino, Giovanni and
+                  Barr{\'o}n-Cede{\~n}o, Alberto and Moschitti, Alessandro and
+                  Belinkov, Yonatan and Hsu, Wei-Ning and Zhang, Yu and
+                  Mohtarami, Mitra and Glass, James",
+  booktitle    = "Proceedings of {COLING} 2016, the 26th International
+                  Conference on Computational Linguistics: Technical Papers",
+  month        = dec,
+  year         = 2016,
+  address      = "Osaka, Japan",
+  publisher    = "The COLING 2016 Organizing Committee",
+  url          = "https://www.aclweb.org/anthology/C16-1163",
+  pages        = "1734-1745",
+  abstract     = "In real-world data, e.g., from Web forums, text is often
+                  contaminated with redundant or irrelevant content, which
+                  leads to introducing noise in machine learning algorithms. In
+                  this paper, we apply Long Short-Term Memory networks with an
+                  attention mechanism, which can select important parts of text
+                  for the task of similar question retrieval from community
+                  Question Answering (cQA) forums. In particular, we use the
+                  attention weights for both selecting entire sentences and
+                  their subparts, i.e., word/chunk, from shallow syntactic
+                  trees. More interestingly, we apply tree kernels to the
+                  filtered text representations, thus exploiting the implicit
+                  features of the subtree space for learning question
+                  reranking. Our results show that the attention-based pruning
+                  allows for achieving the top position in the cQA challenge of
+                  SemEval 2016, with a relatively large gap from the other
+                  participants while greatly decreasing running time."
+}
+
+@inproceedings{nassif-2016-learning-semantic-relatedness,
+  title        = "Learning Semantic Relatedness in Community Question Answering
+                  Using Neural Models",
+  author       = "Nassif, Henry and Mohtarami, Mitra and Glass, James",
+  booktitle    = "Proceedings of the 1st Workshop on Representation Learning
+                  for {NLP}",
+  month        = aug,
+  year         = 2016,
+  address      = "Berlin, Germany",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/W16-1616",
+  doi          = "10.18653/v1/W16-1616",
+  pages        = "137-147"
+}
+
+@inproceedings{nakov-2016-semeval-task,
+  title        = "{S}em{E}val-2016 Task 3: Community Question Answering",
+  author       = "Nakov, Preslav and M{\`a}rquez, Llu{\'\i}s and Moschitti,
+                  Alessandro and Magdy, Walid and Mubarak, Hamdy and Freihat,
+                  Abed Alhakim and Glass, Jim and Randeree, Bilal",
+  booktitle    = "Proceedings of the 10th International Workshop on Semantic
+                  Evaluation ({S}em{E}val-2016)",
+  month        = jun,
+  year         = 2016,
+  address      = "San Diego, California",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/S16-1083",
+  doi          = "10.18653/v1/S16-1083",
+  pages        = "525-545"
+}
+
+@inproceedings{belinkov-2015-vectorslu,
+  title        = "{V}ector{SLU}: A Continuous Word Vector Approach to Answer
+                  Selection in Community Question Answering Systems",
+  author       = "Belinkov, Yonatan and Mohtarami, Mitra and Cyphers, Scott and
+                  Glass, James",
+  booktitle    = "Proceedings of the 9th International Workshop on Semantic
+                  Evaluation ({S}em{E}val 2015)",
+  month        = jun,
+  year         = 2015,
+  address      = "Denver, Colorado",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/S15-2048",
+  doi          = "10.18653/v1/S15-2048",
+  pages        = "282-287"
+}
+
+@inproceedings{nakov-2015-semeval-task,
+  title        = "{S}em{E}val-2015 Task 3: Answer Selection in Community
+                  Question Answering",
+  author       = "Nakov, Preslav and M{\`a}rquez, Llu{\'\i}s and Magdy, Walid
+                  and Moschitti, Alessandro and Glass, Jim and Randeree, Bilal",
+  booktitle    = "Proceedings of the 9th International Workshop on Semantic
+                  Evaluation ({S}em{E}val 2015)",
+  month        = jun,
+  year         = 2015,
+  address      = "Denver, Colorado",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/S15-2047",
+  doi          = "10.18653/v1/S15-2047",
+  pages        = "269-281"
+}
+
+@article{loshchilov-2017-adamw,
+  author       = "Loshchilov, Ilya and Hutter, Frank",
+  title        = "Decoupled Weight Decay Regularization",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1711.05101v3",
+  abstract     = "L$_2$ regularization and weight decay regularization are
+                  equivalent for standard stochastic gradient descent (when
+                  rescaled by the learning rate), but as we demonstrate this is
+                  \emph{not} the case for adaptive gradient algorithms, such as
+                  Adam. While common implementations of these algorithms employ
+                  L$_2$ regularization (often calling it ``weight decay`` in
+                  what may be misleading due to the inequivalence we expose),
+                  we propose a simple modification to recover the original
+                  formulation of weight decay regularization by
+                  \emph{decoupling} the weight decay from the optimization
+                  steps taken w.r.t. the loss function. We provide empirical
+                  evidence that our proposed modification (i) decouples the
+                  optimal choice of weight decay factor from the setting of the
+                  learning rate for both standard SGD and Adam and (ii)
+                  substantially improves Adam's generalization performance,
+                  allowing it to compete with SGD with momentum on image
+                  classification datasets (on which it was previously typically
+                  outperformed by the latter). Our proposed decoupled weight
+                  decay has already been adopted by many researchers, and the
+                  community has implemented it in TensorFlow and PyTorch; the
+                  complete source code for our experiments is available at
+                  https://github.com/loshchil/AdamW-and-SGDW",
+  archivePrefix= "arXiv",
+  eprint       = "1711.05101",
+  primaryClass = "cs.LG"
+}
+
+@article{wang-2014-hashining-similarity-search,
+  author       = "Wang, Jingdong and Shen, Heng Tao and Song, Jingkuan and Ji,
+                  Jianqiu",
+  title        = "Hashing for Similarity Search: a Survey",
+  journal      = "CoRR",
+  year         = 2014,
+  url          = "http://arxiv.org/abs/1408.2927v1",
+  abstract     = "Similarity search (nearest neighbor search) is a problem of
+                  pursuing the data items whose distances to a query item are
+                  the smallest from a large database.  Various methods have
+                  been developed to address this problem, and recently a lot of
+                  efforts have been devoted to approximate search. In this
+                  paper, we present a survey on one of the main solutions,
+                  hashing, which has been widely studied since the pioneering
+                  work locality sensitive hashing. We divide the hashing
+                  algorithms two main categories: locality sensitive hashing,
+                  which designs hash functions without exploring the data
+                  distribution and learning to hash, which learns hash
+                  functions according the data distribution, and review them
+                  from various aspects, including hash function design and
+                  distance measure and search scheme in the hash coding space.",
+  archivePrefix= "arXiv",
+  eprint       = "1408.2927",
+  primaryClass = "cs.DS"
+}
+
+@inproceedings{yang-2008-ilp,
+  title        = "An Entity-Mention Model for Coreference Resolution with
+                  Inductive Logic Programming",
+  author       = "Yang, Xiaofeng and Su, Jian and Lang, Jun and Tan, Chew Lim
+                  and Liu, Ting and Li, Sheng",
+  booktitle    = "Proceedings of ACL-08: HLT",
+  month        = jun,
+  year         = 2008,
+  address      = "Columbus, Ohio",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/P08-1096",
+  pages        = "843-851"
+}
+
+@article{cui-2019-kbqa,
+  author       = "Cui, Wanyun and Xiao, Yanghua and Wang, Haixun and Song,
+                  Yangqiu and Hwang, Seung-won and Wang, Wei",
+  title        = "Kbqa: Learning Question Answering Over Qa Corpora and
+                  Knowledge Bases",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1903.02419v1",
+  abstract     = "Question answering (QA) has become a popular way for humans
+                  to access billion-scale knowledge bases. Unlike web search,
+                  QA over a knowledge base gives out accurate and concise
+                  results, provided that natural language questions can be
+                  understood and mapped precisely to structured queries over
+                  the knowledge base. The challenge, however, is that a human
+                  can ask one question in many different ways. Previous
+                  approaches have natural limits due to their representations:
+                  rule based approaches only understand a small set of
+                  ``canned`` questions, while keyword based or synonym based
+                  approaches cannot fully understand the questions. In this
+                  paper, we design a new kind of question representation:
+                  templates, over a billion scale knowledge base and a million
+                  scale QA corpora. For example, for questions about a city's
+                  population, we learn templates such as What's the population
+                  of $city?, How many people are there in $city?. We learned 27
+                  million templates for 2782 intents. Based on these templates,
+                  our QA system KBQA effectively supports binary factoid
+                  questions, as well as complex questions which are composed of
+                  a series of binary factoid questions. Furthermore, we expand
+                  predicates in RDF knowledge base, which boosts the coverage
+                  of knowledge base by 57 times. Our QA system beats all other
+                  state-of-art works on both effectiveness and efficiency over
+                  QALD benchmarks.",
+  archivePrefix= "arXiv",
+  eprint       = "1903.02419",
   primaryClass = "cs.CL"
 }

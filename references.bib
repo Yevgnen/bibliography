@@ -9535,7 +9535,7 @@
   year         = 2015
 }
 
-@inproceedings{yih-2015-seman-parsin,
+@inproceedings{yih-2015-query-graph,
   title        = "Semantic Parsing via Staged Query Graph Generation: Question
                   Answering with Knowledge Base",
   author       = "Yih, Wen-tau and Chang, Ming-Wei and He, Xiaodong and Gao,
@@ -17211,7 +17211,7 @@
   location     = "Vancouver, British Columbia, Canada",
   series       = "NIPS’04"
 }
-  
+
 @inproceedings{duan-2017-qg-for-qa,
   title        = "Question Generation for Question Answering",
   author       = "Duan, Nan and Tang, Duyu and Chen, Peng and Zhou, Ming",
@@ -17496,5 +17496,862 @@
                   QALD benchmarks.",
   archivePrefix= "arXiv",
   eprint       = "1903.02419",
+  primaryClass = "cs.CL"
+}
+
+@article{bordes-2014-open-qa,
+  author       = "Bordes, Antoine and Weston, Jason and Usunier, Nicolas",
+  title        = "Open Question Answering With Weakly Supervised Embedding
+                  Models",
+  journal      = "CoRR",
+  year         = 2014,
+  url          = "http://arxiv.org/abs/1404.4326v1",
+  abstract     = "Building computers able to answer questions on any subject is
+                  a long standing goal of artificial intelligence. Promising
+                  progress has recently been achieved by methods that learn to
+                  map questions to logical forms or database queries.  Such
+                  approaches can be effective but at the cost of either large
+                  amounts of human-labeled data or by defining lexicons and
+                  grammars tailored by practitioners. In this paper, we instead
+                  take the radical approach of learning to map questions to
+                  vectorial feature representations. By mapping answers into
+                  the same space one can query any knowledge base independent
+                  of its schema, without requiring any grammar or lexicon. Our
+                  method is trained with a new optimization procedure combining
+                  stochastic gradient descent followed by a fine-tuning step
+                  using the weak supervision provided by blending automatically
+                  and collaboratively generated resources. We empirically
+                  demonstrate that our model can capture meaningful signals
+                  from its noisy supervision leading to major improvements over
+                  paralex, the only existing method able to be trained on
+                  similar weakly labeled data.",
+  archivePrefix= "arXiv",
+  eprint       = "1404.4326",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{zhao-2011-auto-qg,
+  title        = "Automatically Generating Questions from Queries for
+                  Community-based Question Answering",
+  author       = "Zhao, Shiqi and Wang, Haifeng and Li, Chao and Liu, Ting and
+                  Guan, Yi",
+  booktitle    = "Proceedings of 5th International Joint Conference on Natural
+                  Language Processing",
+  month        = nov,
+  year         = 2011,
+  address      = "Chiang Mai, Thailand",
+  publisher    = "Asian Federation of Natural Language Processing",
+  url          = "https://www.aclweb.org/anthology/I11-1104",
+  pages        = "929-937"
+}
+
+@article{yuan-2017-neural-qg,
+  author       = "Yuan, Xingdi and Wang, Tong and Gulcehre, Caglar and Sordoni,
+                  Alessandro and Bachman, Philip and Subramanian, Sandeep and
+                  Zhang, Saizheng and Trischler, Adam",
+  title        = "Machine Comprehension By Text-To-Text Neural Question
+                  Generation",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1705.02012v2",
+  abstract     = "We propose a recurrent neural model that generates
+                  natural-language questions from documents, conditioned on
+                  answers. We show how to train the model using a combination
+                  of supervised and reinforcement learning. After teacher
+                  forcing for standard maximum likelihood training, we
+                  fine-tune the model using policy gradient techniques to
+                  maximize several rewards that measure question quality.  Most
+                  notably, one of these rewards is the performance of a
+                  question-answering system. We motivate question generation as
+                  a means to improve the performance of question answering
+                  systems. Our model is trained and evaluated on the recent
+                  question-answering dataset SQuAD.",
+  archivePrefix= "arXiv",
+  eprint       = "1705.02012",
+  primaryClass = "cs.CL"
+}
+
+@article{subramanian-2017-neural-qg,
+  author       = "Subramanian, Sandeep and Wang, Tong and Yuan, Xingdi and
+                  Zhang, Saizheng and Bengio, Yoshua and Trischler, Adam",
+  title        = "Neural Models for Key Phrase Detection and Question
+                  Generation",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1706.04560v3",
+  abstract     = "We propose a two-stage neural model to tackle question
+                  generation from documents. First, our model estimates the
+                  probability that word sequences in a document are ones that a
+                  human would pick when selecting candidate answers by training
+                  a neural key-phrase extractor on the answers in a
+                  question-answering corpus. Predicted key phrases then act as
+                  target answers and condition a sequence-to-sequence
+                  question-generation model with a copy mechanism.
+                  Empirically, our key-phrase extraction model significantly
+                  outperforms an entity-tagging baseline and existing
+                  rule-based approaches. We further demonstrate that our
+                  question generation system formulates fluent, answerable
+                  questions from key phrases. This two-stage system could be
+                  used to augment or generate reading comprehension datasets,
+                  which may be leveraged to improve machine reading systems or
+                  in educational settings.",
+  archivePrefix= "arXiv",
+  eprint       = "1706.04560",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{rao-2019-gan-qg,
+  title        = "{A}nswer-based {A}dversarial {T}raining for {G}enerating
+                  {C}larification {Q}uestions",
+  author       = "Rao, Sudha and Daum{\'e} III, Hal",
+  booktitle    = "Proceedings of the 2019 Conference of the North {A}merican
+                  Chapter of the Association for Computational Linguistics:
+                  Human Language Technologies, Volume 1 (Long and Short
+                  Papers)",
+  month        = jun,
+  year         = 2019,
+  address      = "Minneapolis, Minnesota",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/N19-1013",
+  doi          = "10.18653/v1/N19-1013",
+  pages        = "143-155",
+  abstract     = "We present an approach for generating clarification questions
+                  with the goal of eliciting new information that would make
+                  the given textual context more complete. We propose that
+                  modeling hypothetical answers (to clarification questions) as
+                  latent variables can guide our approach into generating more
+                  useful clarification questions. We develop a Generative
+                  Adversarial Network (GAN) where the generator is a
+                  sequence-to-sequence model and the discriminator is a utility
+                  function that models the value of updating the context with
+                  the answer to the clarification question. We evaluate on two
+                  datasets, using both automatic metrics and human judgments of
+                  usefulness, specificity and relevance, showing that our
+                  approach outperforms both a retrieval-based model and
+                  ablations that exclude the utility model and the adversarial
+                  training."
+}
+
+@inproceedings{heilman-2010-good-question,
+  title        = "Good question! statistical ranking for question generation",
+  author       = "Heilman, Michael and Smith, Noah A",
+  booktitle    = "Human Language Technologies: The 2010 Annual Conference of
+                  the North American Chapter of the Association for
+                  Computational Linguistics",
+  pages        = "609-617",
+  year         = 2010,
+  organization = "Association for Computational Linguistics"
+}
+
+@article{tang-2017-qa-qg-dual-task,
+  author       = "Tang, Duyu and Duan, Nan and Qin, Tao and Yan, Zhao and Zhou,
+                  Ming",
+  title        = "Question Answering and Question Generation As Dual Tasks",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1706.02027v2",
+  abstract     = "We study the problem of joint question answering (QA) and
+                  question generation (QG) in this paper.  Our intuition is
+                  that QA and QG have intrinsic connections and these two tasks
+                  could improve each other.  On one side, the QA model judges
+                  whether the generated question of a QG model is relevant to
+                  the answer.  On the other side, the QG model provides the
+                  probability of generating a question given the answer, which
+                  is a useful evidence that in turn facilitates QA.  In this
+                  paper we regard QA and QG as dual tasks.  We propose a
+                  training framework that trains the models of QA and QG
+                  simultaneously, and explicitly leverages their probabilistic
+                  correlation to guide the training process of both models.  We
+                  implement a QG model based on sequence-to-sequence learning,
+                  and a QA model based on recurrent neural network.  As all the
+                  components of the QA and QG models are differentiable, all
+                  the parameters involved in these two models could be
+                  conventionally learned with back propagation.  We conduct
+                  experiments on three datasets. Empirical results show that
+                  our training framework improves both QA and QG tasks.  The
+                  improved QA model performs comparably with strong baseline
+                  approaches on all three datasets.",
+  archivePrefix= "arXiv",
+  eprint       = "1706.02027",
+  primaryClass = "cs.CL"
+}
+
+@article{wang-2017-joint-qa-qg,
+  author       = "Wang, Tong and Yuan, Xingdi and Trischler, Adam",
+  title        = "A Joint Model for Question Answering and Question Generation",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1706.01450v1",
+  abstract     = "We propose a generative machine comprehension model that
+                  learns jointly to ask and answer questions based on
+                  documents. The proposed model uses a sequence-to-sequence
+                  framework that encodes the document and generates a question
+                  (answer) given an answer (question). Significant improvement
+                  in model performance is observed empirically on the SQuAD
+                  corpus, confirming our hypothesis that the model benefits
+                  from jointly learning to perform both tasks.  We believe the
+                  joint model's novelty offers a new perspective on machine
+                  comprehension beyond architectural engineering, and serves as
+                  a first step towards autonomous information seeking.",
+  archivePrefix= "arXiv",
+  eprint       = "1706.01450",
+  primaryClass = "cs.CL"
+}
+
+@article{yang-2017-qa-dan,
+  author       = "Yang, Zhilin and Hu, Junjie and Salakhutdinov, Ruslan and
+                  Cohen, William W.",
+  title        = "Semi-Supervised Qa With Generative Domain-Adaptive Nets",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1702.02206v2",
+  abstract     = "We study the problem of semi-supervised question
+                  answering----utilizing unlabeled text to boost the
+                  performance of question answering models. We propose a novel
+                  training framework, the Generative Domain-Adaptive Nets. In
+                  this framework, we train a generative model to generate
+                  questions based on the unlabeled text, and combine
+                  model-generated questions with human-generated questions for
+                  training question answering models. We develop novel domain
+                  adaptation algorithms, based on reinforcement learning, to
+                  alleviate the discrepancy between the model-generated data
+                  distribution and the human-generated data
+                  distribution. Experiments show that our proposed framework
+                  obtains substantial improvement from unlabeled text.",
+  archivePrefix= "arXiv",
+  eprint       = "1702.02206",
+  primaryClass = "cs.CL"
+}
+
+@article{jegou-2011-product-quantization,
+  author       = "Jegou, Herve and Douze, Matthijs and Schmid, Cordelia",
+  title        = "Product Quantization for Nearest Neighbor Search",
+  year         = 2011,
+  issue_date   = "January 2011",
+  publisher    = "IEEE Computer Society",
+  address      = "USA",
+  volume       = 33,
+  number       = 1,
+  issn         = "0162-8828",
+  url          = "https://doi.org/10.1109/TPAMI.2010.57",
+  doi          = "10.1109/TPAMI.2010.57",
+  journal      = "IEEE Trans. Pattern Anal. Mach. Intell.",
+  month        = jan,
+  pages        = "117–128",
+  numpages     = 12,
+  keywords     = "High-dimensional indexing, image indexing, very large
+                  databases, High-dimensional indexing, image indexing, very
+                  large databases, approximate search., approximate search."
+}
+
+@article{tay-2018-csran,
+  author       = "Tay, Yi and Tuan, Luu Anh and Hui, Siu Cheung",
+  title        = "Co-Stack Residual Affinity Networks With Multi-Level
+                  Attention Refinement for Matching Text Sequences",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1810.02938v1",
+  abstract     = "Learning a matching function between two text sequences is a
+                  long standing problem in NLP research. This task enables many
+                  potential applications such as question answering and
+                  paraphrase identification. This paper proposes Co-Stack
+                  Residual Affinity Networks (CSRAN), a new and universal
+                  neural architecture for this problem. CSRAN is a deep
+                  architecture, involving stacked (multi-layered) recurrent
+                  encoders. Stacked/Deep architectures are traditionally
+                  difficult to train, due to the inherent weaknesses such as
+                  difficulty with feature propagation and vanishing
+                  gradients. CSRAN incorporates two novel components to take
+                  advantage of the stacked architecture. Firstly, it introduces
+                  a new bidirectional alignment mechanism that learns affinity
+                  weights by fusing sequence pairs across stacked
+                  hierarchies. Secondly, it leverages a multi-level attention
+                  refinement component between stacked recurrent layers. The
+                  key intuition is that, by leveraging information across all
+                  network hierarchies, we can not only improve gradient flow
+                  but also improve overall performance. We conduct extensive
+                  experiments on six well-studied text sequence matching
+                  datasets, achieving state-of-the-art performance on all.",
+  archivePrefix= "arXiv",
+  eprint       = "1810.02938",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{he-2016-pairwise-word-interaction,
+  title        = "Pairwise Word Interaction Modeling with Deep Neural Networks
+                  for Semantic Similarity Measurement",
+  author       = "He, Hua and Lin, Jimmy",
+  booktitle    = "Proceedings of the 2016 Conference of the North {A}merican
+                  Chapter of the Association for Computational Linguistics:
+                  Human Language Technologies",
+  month        = jun,
+  year         = 2016,
+  address      = "San Diego, California",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/N16-1108",
+  doi          = "10.18653/v1/N16-1108",
+  pages        = "937-948"
+}
+
+@article{zhang-2020-soft-masked-bert,
+  author       = "Zhang, Shaohua and Huang, Haoran and Liu, Jicong and Li,
+                  Hang",
+  title        = "Spelling Error Correction With Soft-Masked Bert",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2005.07421v1",
+  abstract     = "Spelling error correction is an important yet challenging
+                  task because a satisfactory solution of it essentially needs
+                  human-level language understanding ability. Without loss of
+                  generality we consider Chinese spelling error correction
+                  (CSC) in this paper. A state-of-the-art method for the task
+                  selects a character from a list of candidates for correction
+                  (including non-correction) at each position of the sentence
+                  on the basis of BERT, the language representation model. The
+                  accuracy of the method can be sub-optimal, however, because
+                  BERT does not have sufficient capability to detect whether
+                  there is an error at each position, apparently due to the way
+                  of pre-training it using mask language modeling. In this
+                  work, we propose a novel neural architecture to address the
+                  aforementioned issue, which consists of a network for error
+                  detection and a network for error correction based on BERT,
+                  with the former being connected to the latter with what we
+                  call soft-masking technique.  Our method of using
+                  `Soft-Masked BERT' is general, and it may be employed in
+                  other language detection-correction problems. Experimental
+                  results on two datasets demonstrate that the performance of
+                  our proposed method is significantly better than the
+                  baselines including the one solely based on BERT.",
+  archivePrefix= "arXiv",
+  eprint       = "2005.07421",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{sarikaya-2016-cortana,
+  title        = "An overview of end-to-end language understanding and dialog
+                  management for personal digital assistants",
+  author       = "Sarikaya, Ruhi and Crook, Paul A and Marin, Alex and Jeong,
+                  Minwoo and Robichaud, Jean-Philippe and Celikyilmaz, Asli and
+                  Kim, Young-Bum and Rochette, Alexandre and Khan, Omar Zia and
+                  Liu, Xiaohu and others",
+  booktitle    = "2016 ieee spoken language technology workshop (slt)",
+  pages        = "391-397",
+  year         = 2016,
+  organization = "IEEE"
+}
+
+@article{williams-2017-hcn,
+  author       = "Williams, Jason D. and Asadi, Kavosh and Zweig, Geoffrey",
+  title        = "Hybrid Code Networks: Practical and Efficient End-To-End
+                  Dialog Control With Supervised and Reinforcement Learning",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1702.03274v2",
+  abstract     = "End-to-end learning of recurrent neural networks (RNNs) is an
+                  attractive solution for dialog systems; however, current
+                  techniques are data-intensive and require thousands of
+                  dialogs to learn simple behaviors. We introduce Hybrid Code
+                  Networks (HCNs), which combine an RNN with domain-specific
+                  knowledge encoded as software and system action
+                  templates. Compared to existing end-to-end approaches, HCNs
+                  considerably reduce the amount of training data required,
+                  while retaining the key benefit of inferring a latent
+                  representation of dialog state. In addition, HCNs can be
+                  optimized with supervised learning, reinforcement learning,
+                  or a mixture of both. HCNs attain state-of-the-art
+                  performance on the bAbI dialog dataset, and outperform two
+                  commercially deployed customer-facing dialog systems.",
+  archivePrefix= "arXiv",
+  eprint       = "1702.03274",
+  primaryClass = "cs.AI"
+}
+
+@article{anh-2017-hybrid-bi-lstm-crf,
+  author       = "Anh, L. T. and Arkhipov, M. Y. and Burtsev, M. S.",
+  title        = "Application of a Hybrid Bi-Lstm-Crf Model To the Task of
+                  Russian Named Entity Recognition",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1709.09686v2",
+  abstract     = "Named Entity Recognition (NER) is one of the most common
+                  tasks of the natural language processing. The purpose of NER
+                  is to find and classify tokens in text documents into
+                  predefined categories called tags, such as person names,
+                  quantity expressions, percentage expressions, names of
+                  locations, organizations, as well as expression of time,
+                  currency and others. Although there is a number of approaches
+                  have been proposed for this task in Russian language, it
+                  still has a substantial potential for the better
+                  solutions. In this work, we studied several deep neural
+                  network models starting from vanilla Bi-directional Long
+                  Short-Term Memory (Bi-LSTM) then supplementing it with
+                  Conditional Random Fields (CRF) as well as highway networks
+                  and finally adding external word embeddings. All models were
+                  evaluated across three datasets: Gareev's dataset,
+                  Person-1000, FactRuEval-2016. We found that extension of
+                  Bi-LSTM model with CRF significantly increased the quality of
+                  predictions.  Encoding input tokens with external word
+                  embeddings reduced training time and allowed to achieve state
+                  of the art for the Russian NER task.",
+  archivePrefix= "arXiv",
+  eprint       = "1709.09686",
+  primaryClass = "cs.CL"
+}
+
+@article{le-2019-deep-neural,
+  author       = "Lê, Thế Anh",
+  year         = 2019,
+  month        = 02,
+  title        = "A Deep Neural Network Model for the task of Named Entity
+                  Recognition",
+  volume       = 9,
+  journal      = "International Journal of Machine Learning and Computing",
+  doi          = "10.18178/ijmlc.2019.9.1.758"
+}
+
+@inproceedings{le-2020-sla-to-sbd,
+  author       = "Le, The Anh",
+  title        = "Sequence Labeling Approach to the Task of Sentence Boundary
+                  Detection",
+  year         = 2020,
+  isbn         = 9781450376310,
+  publisher    = "Association for Computing Machinery",
+  address      = "New York, NY, USA",
+  url          = "https://doi.org/10.1145/3380688.3380703",
+  doi          = "10.1145/3380688.3380703",
+  booktitle    = "Proceedings of the 4th International Conference on Machine
+                  Learning and Soft Computing",
+  pages        = "144–148",
+  numpages     = 5,
+  keywords     = "voice-enabled chatbot, sequence labeling, Sentence boundary
+                  detection",
+  location     = "Haiphong City, Viet Nam",
+  series       = "ICMLSC 2020"
+}
+
+@article{gao-2018-neural-conversation,
+  author       = "Gao, Jianfeng and Galley, Michel and Li, Lihong",
+  title        = "Neural Approaches To Conversational Ai",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1809.08267v3",
+  abstract     = "The present paper surveys neural approaches to conversational
+                  AI that have been developed in the last few years. We group
+                  conversational systems into three categories: (1) question
+                  answering agents, (2) task-oriented dialogue agents, and (3)
+                  chatbots. For each category, we present a review of
+                  state-of-the-art neural approaches, draw the connection
+                  between them and traditional approaches, and discuss the
+                  progress that has been made and challenges still being faced,
+                  using specific systems and models as case studies.",
+  archivePrefix= "arXiv",
+  eprint       = "1809.08267",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{kurata-2016-sentence-level-slot-filling,
+  title        = "Leveraging Sentence-level Information with Encoder {LSTM} for
+                  Semantic Slot Filling",
+  author       = "Kurata, Gakuto and Xiang, Bing and Zhou, Bowen and Yu, Mo",
+  booktitle    = "Proceedings of the 2016 Conference on Empirical Methods in
+                  Natural Language Processing",
+  month        = nov,
+  year         = 2016,
+  address      = "Austin, Texas",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/D16-1223",
+  doi          = "10.18653/v1/D16-1223",
+  pages        = "2077-2083"
+}
+
+@article{jaech-2016-da-for-nlu,
+  author       = "Jaech, Aaron and Heck, Larry and Ostendorf, Mari",
+  title        = "Domain Adaptation of Recurrent Neural Networks for Natural
+                  Language Understanding",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1604.00117v2",
+  abstract     = "The goal of this paper is to use multi-task learning to
+                  efficiently scale slot filling models for natural language
+                  understanding to handle multiple target tasks or domains. The
+                  key to scalability is reducing the amount of training data
+                  needed to learn a model for a new task. The proposed
+                  multi-task model delivers better performance with less data
+                  by leveraging patterns that it learns from the other
+                  tasks. The approach supports an open vocabulary, which allows
+                  the models to generalize to unseen words, which is
+                  particularly important when very little training data is
+                  used. A newly collected crowd-sourced data set, covering four
+                  different domains, is used to demonstrate the effectiveness
+                  of the domain adaptation and open vocabulary techniques.",
+  archivePrefix= "arXiv",
+  eprint       = "1604.00117",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{tafforeau-2016-multitask-slu,
+  title        = "Joint Syntactic and Semantic Analysis with a Multitask Deep
+                  Learning Framework for Spoken Language Understanding",
+  author       = "J{\'e}r{\'e}mie Tafforeau and Fr{\'e}d{\'e}ric B{\'e}chet and
+                  Thierry Arti{\`e}res and Beno{\^i}t Favre",
+  booktitle    = "INTERSPEECH",
+  year         = 2016
+}
+
+@InProceedings{hakkani-tur-2016-joint-semantic-frame-parsing,
+  author       = "Hakkani-Tür, Dilek and Tur, Gokhan and Celikyilmaz, Asli and
+                  Chen, Yun-Nung Vivian and Gao, Jianfeng and Deng, Li and
+                  Wang, Ye-Yi",
+  title        = "Multi-Domain Joint Semantic Frame Parsing using
+                  Bi-directional RNN-LSTM",
+  booktitle    = "Proceedings of The 17th Annual Meeting of the International
+                  Speech Communication Association (INTERSPEECH 2016)",
+  year         = 2016,
+  month        = "June",
+  abstract     = "Sequence-to-sequence deep learning has recently emerged as a
+                  new paradigm in supervised learning for spoken language
+                  understanding. However, most of the previous studies explored
+                  this framework for building single domain models for each
+                  task, such as slot filling or domain classification,
+                  comparing deep learning based approaches with conventional
+                  ones like conditional random fields. This paper proposes a
+                  holistic multi-domain, multi-task (i.e. slot filling, domain
+                  and intent detection) modeling approach to estimate complete
+                  semantic frames for all user utterances addressed to a
+                  conversational system, demonstrating the distinctive power of
+                  deep learning methods, namely bi-directional recurrent neural
+                  network (RNN) with long-short term memory (LSTM) cells
+                  (RNN-LSTM) to handle such complexity. The contributions of
+                  the presented work are three-fold: (i) we propose an RNN-LSTM
+                  architecture for joint modeling of slot filling, intent
+                  determination, and domain classification; (ii) we build a
+                  joint multi-domain model enabling multi-task deep learning
+                  where the data from each domain reinforces each other; (iii)
+                  we investigate alternative architectures for modeling lexical
+                  context in spoken language understanding. In addition to the
+                  simplicity of the single model framework, experimental
+                  results show the power of such an approach on Microsoft
+                  Cortana real user data over alternative methods based on
+                  single domain/task deep learning.",
+  publisher    = "ISCA",
+  url          =
+                  "https://www.microsoft.com/en-us/research/publication/multijoint/",
+  edition      = "Proceedings of The 17th Annual Meeting of the International
+                  Speech Communication Association (INTERSPEECH 2016)"
+}
+
+@article{liu-2016-joint-intent-detection-slot-filling,
+  author       = "Liu, Bing and Lane, Ian",
+  title        = "Attention-Based Recurrent Neural Network Models for Joint
+                  Intent Detection and Slot Filling",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1609.01454v1",
+  abstract     = "Attention-based encoder-decoder neural network models have
+                  recently shown promising results in machine translation and
+                  speech recognition. In this work, we propose an
+                  attention-based neural network model for joint intent
+                  detection and slot filling, both of which are critical steps
+                  for many speech understanding and dialog systems. Unlike in
+                  machine translation and speech recognition, alignment is
+                  explicit in slot filling. We explore different strategies in
+                  incorporating this alignment information to the
+                  encoder-decoder framework. Learning from the attention
+                  mechanism in encoder-decoder model, we further propose
+                  introducing attention to the alignment-based RNN models. Such
+                  attentions provide additional information to the intent
+                  classification and slot label prediction. Our independent
+                  task models achieve state-of-the-art intent detection error
+                  rate and slot filling F1 score on the benchmark ATIS
+                  task. Our joint training model further obtains 0.56 \%
+                  absolute (23.8 \% relative) error reduction on intent
+                  detection and 0.23 \% absolute gain on slot filling over the
+                  independent task models.",
+  archivePrefix= "arXiv",
+  eprint       = "1609.01454",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{hori-2016-contextual-slu,
+  title        = "Context-Sensitive and Role-Dependent Spoken Language
+                  Understanding Using Bidirectional and Attention LSTMs",
+  author       = "Chiori Hori and Takaaki Hori and Shinji Watanabe and John
+                  R. Hershey",
+  booktitle    = "INTERSPEECH",
+  year         = 2016
+}
+
+@INPROCEEDINGS{bhargava-2013-easy-slot-detection,
+  author       = "A. {Bhargava} and A. {Celikyilmaz} and D. {Hakkani-Tür} and
+                  R. {Sarikaya}",
+  booktitle    = "2013 IEEE International Conference on Acoustics, Speech and
+                  Signal Processing",
+  title        = "Easy contextual intent prediction and slot detection",
+  year         = 2013,
+  pages        = "8337-8341"
+}
+
+@InProceedings{chen-2016-mm-for-slu,
+  author       = "Chen, Yun-Nung Vivian and Hakkani-Tür, Dilek and Tur, Gokhan
+                  and Gao, Jianfeng and Deng, Li",
+  title        = "End-to-End Memory Networks with Knowledge Carryover for
+                  Multi-Turn Spoken Language Understanding",
+  booktitle    = "Proceedings of The 17th Annual Meeting of the International
+                  Speech Communication Association (INTERSPEECH 2016)",
+  year         = 2016,
+  month        = "June",
+  abstract     = "Spoken language understanding (SLU) is a core component of a
+                  spoken dialogue system. In the traditional architecture of
+                  dialogue systems, the SLU component treats each utterance
+                  independent of each other, and then the following components
+                  aggregate the multi-turn information in the separate
+                  phases. However, there are two challenges: 1) errors from
+                  previous turns may be propagated and then degrade the
+                  performance of the current turn; 2) knowledge mentioned in
+                  the long history may not be carried into the current
+                  turn. This paper addresses the above issues by proposing an
+                  architecture using end-to-end memory networks to model
+                  knowledge carryover in multi-turn conversations, where
+                  utterances encoded with intents and slots can be stored as
+                  embeddings in the memory and the decoding phase applies an
+                  attention model to leverage previously stored semantics for
+                  intent prediction and slot tagging simultaneously. The
+                  experiments on Microsoft Cortana conversational data show
+                  that the proposed memory network architecture can effectively
+                  extract salient semantics for modeling knowledge carryover in
+                  the multi-turn conversations and outperform the results using
+                  the state-of-the-art recurrent neural network framework (RNN)
+                  designed for single-turn SLU.",
+  publisher    = "ISCA",
+  url          =
+                  "https://www.microsoft.com/en-us/research/publication/contextualslu/",
+  edition      = "Proceedings of The 17th Annual Meeting of the International
+                  Speech Communication Association (INTERSPEECH 2016)"
+}
+
+@inproceedings{bapna-2017-sequential-dialogue,
+  title        = "Sequential Dialogue Context Modeling for Spoken Language
+                  Understanding",
+  author       = "Bapna, Ankur and T{\"u}r, Gokhan and Hakkani-T{\"u}r, Dilek
+                  and Heck, Larry",
+  booktitle    = "Proceedings of the 18th Annual {SIG}dial Meeting on Discourse
+                  and Dialogue",
+  month        = aug,
+  year         = 2017,
+  address      = "Saarbr{\"u}cken, Germany",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/W17-5514",
+  doi          = "10.18653/v1/W17-5514",
+  pages        = "103-114",
+  abstract     = "Spoken Language Understanding (SLU) is a key component of
+                  goal oriented dialogue systems that would parse user
+                  utterances into semantic frame representations. Traditionally
+                  SLU does not utilize the dialogue history beyond the previous
+                  system turn and contextual ambiguities are resolved by the
+                  downstream components. In this paper, we explore novel
+                  approaches for modeling dialogue context in a recurrent
+                  neural network (RNN) based language understanding system. We
+                  propose the Sequential Dialogue Encoder Network, that allows
+                  encoding context from the dialogue history in chronological
+                  order. We compare the performance of our proposed
+                  architecture with two context models, one that uses just the
+                  previous turn context and another that encodes dialogue
+                  context in a memory network, but loses the order of
+                  utterances in the dialogue history. Experiments with a
+                  multi-domain dialogue dataset demonstrate that the proposed
+                  architecture results in reduced semantic frame error rates."
+}
+
+@article{chen-2016-k-san,
+  author       = "Chen, Yun-Nung and Hakkani-Tur, Dilek and Tur, Gokhan and
+                  Celikyilmaz, Asli and Gao, Jianfeng and Deng, Li",
+  title        = "Knowledge As a Teacher: Knowledge-Guided Structural Attention
+                  Networks",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1609.03286v1",
+  abstract     = "Natural language understanding (NLU) is a core component of a
+                  spoken dialogue system. Recently recurrent neural networks
+                  (RNN) obtained strong results on NLU due to their superior
+                  ability of preserving sequential information over time.
+                  Traditionally, the NLU module tags semantic slots for
+                  utterances considering their flat structures, as the
+                  underlying RNN structure is a linear chain.  However, natural
+                  language exhibits linguistic properties that provide rich,
+                  structured information for better understanding. This paper
+                  introduces a novel model, knowledge-guided structural
+                  attention networks (K-SAN), a generalization of RNN to
+                  additionally incorporate non-flat network topologies guided
+                  by prior knowledge. There are two characteristics: 1)
+                  important substructures can be captured from small training
+                  data, allowing the model to generalize to previously unseen
+                  test data; 2) the model automatically figures out the salient
+                  substructures that are essential to predict the semantic tags
+                  of the given sentences, so that the understanding performance
+                  can be improved. The experiments on the benchmark Air Travel
+                  Information System (ATIS) data show that the proposed K-SAN
+                  architecture can effectively extract salient knowledge from
+                  substructures with an attention mechanism, and outperform the
+                  performance of the state-of-the-art neural network based
+                  frameworks.",
+  archivePrefix= "arXiv",
+  eprint       = "1609.03286",
+  primaryClass = "cs.AI"
+}
+
+@article{li-2017-lu-importance,
+  author       = "Li, Xiujun and Chen, Yun-Nung and Li, Lihong and Gao,
+                  Jianfeng and Celikyilmaz, Asli",
+  title        = "Investigation of Language Understanding Impact for
+                  Reinforcement Learning Based Dialogue Systems",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1703.07055v1",
+  abstract     = "Language understanding is a key component in a spoken
+                  dialogue system. In this paper, we investigate how the
+                  language understanding module influences the dialogue system
+                  performance by conducting a series of systematic experiments
+                  on a task-oriented neural dialogue system in a reinforcement
+                  learning based setting. The empirical study shows that among
+                  different types of language understanding errors, slot-level
+                  errors can have more impact on the overall performance of a
+                  dialogue system compared to intent-level errors. In addition,
+                  our experiments demonstrate that the reinforcement learning
+                  based dialogue system is able to learn when and what to
+                  confirm in order to achieve better performance and greater
+                  robustness.",
+  archivePrefix= "arXiv",
+  eprint       = "1703.07055",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{henderson-2013-nn-for-dst,
+  title        = "Deep Neural Network Approach for the Dialog State Tracking
+                  Challenge",
+  author       = "Henderson, Matthew and Thomson, Blaise and Young, Steve",
+  booktitle    = "Proceedings of the {SIGDIAL} 2013 Conference",
+  month        = aug,
+  year         = 2013,
+  address      = "Metz, France",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/W13-4073",
+  pages        = "467-471"
+}
+
+@inproceedings{henderson-2015-ml-for-dst,
+  title        = "Machine Learning for Dialog State Tracking: A Review",
+  author       = "Matthew Henderson",
+  year         = 2015,
+  booktitle    = "Proceedings of The First International Workshop on Machine
+                  Learning in Spoken Language Processing"
+}
+
+@article{mrksic-2015-rnn-for-dst,
+  author       = "Mrk{\v{s}}i{\'c}, Nikola and S{\'e}aghdha, Diarmuid {\'O} and
+                  Thomson, Blaise and Ga{\v{s}}i{\'c}, Milica and Su, Pei-Hao
+                  and Vandyke, David and Wen, Tsung-Hsien and Young, Steve",
+  title        = "Multi-Domain Dialog State Tracking Using Recurrent Neural
+                  Networks",
+  journal      = "CoRR",
+  year         = 2015,
+  url          = "http://arxiv.org/abs/1506.07190v1",
+  abstract     = "Dialog state tracking is a key component of many modern
+                  dialog systems, most of which are designed with a single,
+                  well-defined domain in mind. This paper shows that dialog
+                  data drawn from different dialog domains can be used to train
+                  a general belief tracking model which can operate across all
+                  of these domains, exhibiting superior performance to each of
+                  the domain-specific models. We propose a training procedure
+                  which uses out-of-domain data to initialise belief tracking
+                  models for entirely new domains. This procedure leads to
+                  improvements in belief tracking performance regardless of the
+                  amount of in-domain data available for training the model.",
+  archivePrefix= "arXiv",
+  eprint       = "1506.07190",
+  primaryClass = "cs.CL"
+}
+
+@article{mrksic-2016-neural-belief-tracker,
+  author       = "Mrk{\v{s}}i{\'c}, Nikola and S{\'e}aghdha, Diarmuid {\'O} and
+                  Wen, Tsung-Hsien and Thomson, Blaise and Young, Steve",
+  title        = "Neural Belief Tracker: Data-Driven Dialogue State Tracking",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1606.03777v2",
+  abstract     = "One of the core components of modern spoken dialogue systems
+                  is the belief tracker, which estimates the user's goal at
+                  every step of the dialogue.  However, most current approaches
+                  have difficulty scaling to larger, more complex dialogue
+                  domains. This is due to their dependency on either: a) Spoken
+                  Language Understanding models that require large amounts of
+                  annotated training data; or b) hand-crafted lexicons for
+                  capturing some of the linguistic variation in users'
+                  language. We propose a novel Neural Belief Tracking (NBT)
+                  framework which overcomes these problems by building on
+                  recent advances in representation learning. NBT models reason
+                  over pre-trained word vectors, learning to compose them into
+                  distributed representations of user utterances and dialogue
+                  context. Our evaluation on two datasets shows that this
+                  approach surpasses past limitations, matching the performance
+                  of state-of-the-art models which rely on hand-crafted
+                  semantic lexicons and outperforming them when such lexicons
+                  are not provided.",
+  archivePrefix= "arXiv",
+  eprint       = "1606.03777",
+  primaryClass = "cs.CL"
+}
+
+@article{shi-2017-cnn-for-dst,
+  author       = "Shi, Hongjie and Ushio, Takashi and Endo, Mitsuru and
+                  Yamagami, Katsuyoshi and Horii, Noriaki",
+  title        = "A Multichannel Convolutional Neural Network for
+                  Cross-Language Dialog State Tracking",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1701.06247v1",
+  abstract     = "The fifth Dialog State Tracking Challenge (DSTC5) introduces
+                  a new cross-language dialog state tracking scenario, where
+                  the participants are asked to build their trackers based on
+                  the English training corpus, while evaluating them with the
+                  unlabeled Chinese corpus. Although the computer-generated
+                  translations for both English and Chinese corpus are provided
+                  in the dataset, these translations contain errors and
+                  careless use of them can easily hurt the performance of the
+                  built trackers. To address this problem, we propose a
+                  multichannel Convolutional Neural Networks (CNN)
+                  architecture, in which we treat English and Chinese language
+                  as different input channels of one single CNN model. In the
+                  evaluation of DSTC5, we found that such multichannel
+                  architecture can effectively improve the robustness against
+                  translation errors.  Additionally, our method for DSTC5 is
+                  purely machine learning based and requires no prior knowledge
+                  about the target language. We consider this a desirable
+                  property for building a tracker in the cross-language
+                  context, as not every developer will be familiar with both
+                  languages.",
+  archivePrefix= "arXiv",
+  eprint       = "1701.06247",
+  primaryClass = "cs.CL"
+}
+
+@article{nguyen-2017-kbc-overview,
+  author       = "Nguyen, Dat Quoc",
+  title        = "An Overview of Embedding Models of Entities and Relationships
+                  for Knowledge Base Completion",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1703.08098v7",
+  abstract     = "Knowledge bases (KBs) of real-world facts about entities and
+                  their relationships are useful resources for a variety of
+                  natural language processing tasks. However, because knowledge
+                  bases are typically incomplete, it is useful to be able to
+                  perform knowledge base completion or link prediction, i.e.,
+                  predict whether a relationship not in the knowledge base is
+                  likely to be true.  This paper serves as a comprehensive
+                  overview of embedding models of entities and relationships
+                  for knowledge base completion, summarizing up-to-date
+                  experimental results on standard benchmark datasets.",
+  archivePrefix= "arXiv",
+  eprint       = "1703.08098",
   primaryClass = "cs.CL"
 }

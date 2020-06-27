@@ -16772,7 +16772,7 @@
                   datasets, achieving state-of-the-art performance on all."
 }
 
-@inproceedings{tan-2018-multiway-attention,
+@inproceedings{tan-2018-multiway-attention-mwan,
   title        = "Multiway Attention Networks for Modeling Sentence Pairs",
   author       = "Chuanqi Tan and Furu Wei and Wenhui Wang and Weifeng Lv and
                   Ming Zhou",
@@ -18354,4 +18354,332 @@
   archivePrefix= "arXiv",
   eprint       = "1703.08098",
   primaryClass = "cs.CL"
+}
+
+@article{li-2019-bertsel,
+  author       = "Li, Dongfang and Yu, Yifei and Chen, Qingcai and Li, Xinyu",
+  title        = "Bertsel: Answer Selection With Pre-Trained Models",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1905.07588v1",
+  abstract     = "Recently, pre-trained models have been the dominant paradigm
+                  in natural language processing. They achieved remarkable
+                  state-of-the-art performance across a wide range of related
+                  tasks, such as textual entailment, natural language
+                  inference, question answering, etc. BERT, proposed by Devlin
+                  et.al., has achieved a better marked result in GLUE
+                  leaderboard with a deep transformer architecture. Despite its
+                  soaring popularity, however, BERT has not yet been applied to
+                  answer selection. This task is different from others with a
+                  few nuances: first, modeling the relevance and correctness of
+                  candidates matters compared to semantic relatedness and
+                  syntactic structure; second, the length of an answer may be
+                  different from other candidates and questions. In this paper.
+                  we are the first to explore the performance of fine-tuning
+                  BERT for answer selection. We achieved STOA results across
+                  five popular datasets, demonstrating the success of
+                  pre-trained models in this task.",
+  archivePrefix= "arXiv",
+  eprint       = "1905.07588",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{lai-2019-gsamn,
+  title        = "A Gated Self-attention Memory Network for Answer Selection",
+  author       = "Lai, Tuan and Tran, Quan Hung and Bui, Trung and Kihara,
+                  Daisuke",
+  booktitle    = "Proceedings of the 2019 Conference on Empirical Methods in
+                  Natural Language Processing and the 9th International Joint
+                  Conference on Natural Language Processing (EMNLP-IJCNLP)",
+  month        = nov,
+  year         = 2019,
+  address      = "Hong Kong, China",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/D19-1610",
+  doi          = "10.18653/v1/D19-1610",
+  pages        = "5953-5959",
+  abstract     = "Answer selection is an important research problem, with
+                  applications in many areas. Previous deep learning based
+                  approaches for the task mainly adopt the Compare-Aggregate
+                  architecture that performs word-level comparison followed by
+                  aggregation. In this work, we take a departure from the
+                  popular Compare-Aggregate architecture, and instead, propose
+                  a new gated self-attention memory network for the
+                  task. Combined with a simple transfer learning technique from
+                  a large-scale online corpus, our model outperforms previous
+                  methods by a large margin, achieving new state-of-the-art
+                  results on two standard answer selection datasets: TrecQA and
+                  WikiQA."
+}
+
+@article{mozafari-2019-bas,
+  author       = "Mozafari, Jamshid and Fatemi, Afsaneh and Nematbakhsh,
+                  Mohammad Ali",
+  title        = "Bas: an Answer Selection Method Using Bert Language Model",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1911.01528v3",
+  abstract     = "In recent years, Question Answering systems have become more
+                  popular and widely used by users. Despite the increasing
+                  popularity of these systems, the their performance is not
+                  even sufficient for textual data and requires further
+                  research. These systems consist of several parts that one of
+                  them is the Answer Selection component. This component
+                  detects the most relevant answer from a list of candidate
+                  answers. The methods presented in previous researches have
+                  attempted to provide an independent model to undertake the
+                  answer-selection task. An independent model cannot comprehend
+                  the syntactic and semantic features of questions and answers
+                  with a small training dataset. To fill this gap, language
+                  models can be employed in implementing the answer selection
+                  part.  This action enables the model to have a better
+                  understanding of the language in order to understand
+                  questions and answers better than previous works. In this
+                  research, we will present the `` BAS`` (BERT Answer
+                  Selection) that uses the BERT language model to comprehend
+                  language. The empirical results of applying the model on the
+                  TrecQA Raw, TrecQA Clean, and WikiQA datasets demonstrate
+                  that using a robust language model such as BERT can enhance
+                  the performance. Using a more robust classifier also enhances
+                  the effect of the language model on the answer selection
+                  component. The results demonstrate that language
+                  comprehension is an essential requirement in natural language
+                  processing tasks such as answer-selection.",
+  archivePrefix= "arXiv",
+  eprint       = "1911.01528",
+  primaryClass = "cs.CL"
+}
+
+@article{sun-2019-dream,
+  author       = "Sun, Kai and Yu, Dian and Chen, Jianshu and Yu, Dong and
+                  Choi, Yejin and Cardie, Claire",
+  title        = "Dream: a Challenge Dataset and Models for Dialogue-Based
+                  Reading Comprehension",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1902.00164v1",
+  abstract     = "We present DREAM, the first dialogue-based multiple-choice
+                  reading comprehension dataset. Collected from
+                  English-as-a-foreign-language examinations designed by human
+                  experts to evaluate the comprehension level of Chinese
+                  learners of English, our dataset contains 10,197
+                  multiple-choice questions for 6,444 dialogues. In contrast to
+                  existing reading comprehension datasets, DREAM is the first
+                  to focus on in-depth multi-turn multi-party dialogue
+                  understanding. DREAM is likely to present significant
+                  challenges for existing reading comprehension systems: 84 \%
+                  of answers are non-extractive, 85 \% of questions require
+                  reasoning beyond a single sentence, and 34 \% of questions
+                  also involve commonsense knowledge.  We apply several popular
+                  neural reading comprehension models that primarily exploit
+                  surface information within the text and find them to, at
+                  best, just barely outperform a rule-based approach. We next
+                  investigate the effects of incorporating dialogue structure
+                  and different kinds of general world knowledge into both
+                  rule-based and (neural and non-neural) machine learning-based
+                  reading comprehension models. Experimental results on the
+                  DREAM dataset show the effectiveness of dialogue structure
+                  and general world knowledge. DREAM will be available at
+                  https://dataset.org/dream/.",
+  archivePrefix= "arXiv",
+  eprint       = "1902.00164",
+  primaryClass = "cs.CL"
+}
+
+@article{sun-2019-c3,
+  author       = "Sun, Kai and Yu, Dian and Yu, Dong and Cardie, Claire",
+  title        = "Investigating Prior Knowledge for Challenging Chinese Machine
+                  Reading Comprehension",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1904.09679v3",
+  abstract     = "Machine reading comprehension tasks require a machine reader
+                  to answer questions relevant to the given document. In this
+                  paper, we present the first free-form multiple-Choice Chinese
+                  machine reading Comprehension dataset (C^3), containing
+                  13,369 documents (dialogues or more formally written
+                  mixed-genre texts) and their associated 19,577
+                  multiple-choice free-form questions collected from
+                  Chinese-as-a-second-language examinations.  We present a
+                  comprehensive analysis of the prior knowledge (i.e.,
+                  linguistic, domain-specific, and general world knowledge)
+                  needed for these real-world problems. We implement rule-based
+                  and popular neural methods and find that there is still a
+                  significant performance gap between the best performing model
+                  (68.5 \%) and human readers (96.0 \%), especially on problems
+                  that require prior knowledge. We further study the effects of
+                  distractor plausibility and data augmentation based on
+                  translated relevant datasets for English on model
+                  performance. We expect C^3 to present great challenges to
+                  existing systems as answering 86.8 \% of questions requires
+                  both knowledge within and beyond the accompanying document,
+                  and we hope that C^3 can serve as a platform to study how to
+                  leverage various kinds of prior knowledge to better
+                  understand a given written or orally oriented text. C^3 is
+                  available at https://dataset.org/c3/.",
+  archivePrefix= "arXiv",
+  eprint       = "1904.09679",
+  primaryClass = "cs.CL"
+}
+
+@article{yu-2020-dialogre,
+  author       = "Yu, Dian and Sun, Kai and Cardie, Claire and Yu, Dong",
+  title        = "Dialogue-Based Relation Extraction",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2004.08056v1",
+  abstract     = "We present the first human-annotated dialogue-based relation
+                  extraction (RE) dataset DialogRE, aiming to support the
+                  prediction of relation(s) between two arguments that appear
+                  in a dialogue. We further offer DialogRE as a platform for
+                  studying cross-sentence RE as most facts span multiple
+                  sentences. We argue that speaker-related information plays a
+                  critical role in the proposed task, based on an analysis of
+                  similarities and differences between dialogue-based and
+                  traditional RE tasks. Considering the timeliness of
+                  communication in a dialogue, we design a new metric to
+                  evaluate the performance of RE methods in a conversational
+                  setting and investigate the performance of several
+                  representative RE methods on DialogRE. Experimental results
+                  demonstrate that a speaker-aware extension on the
+                  best-performing model leads to gains in both the standard and
+                  conversational evaluation settings. DialogRE is available at
+                  https://dataset.org/dialogre/.",
+  archivePrefix= "arXiv",
+  eprint       = "2004.08056",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{ratner-2018-snorkl-metal,
+  title        = "Snorkel metal: Weak supervision for multi-task learning",
+  author       = "Ratner, Alex and Hancock, Braden and Dunnmon, Jared and
+                  Goldman, Roger and R{\'e}, Christopher",
+  booktitle    = "Proceedings of the Second Workshop on Data Management for
+                  End-To-End Machine Learning",
+  pages        = "1-4",
+  year         = 2018
+}
+
+@article{ratner-2018-snorkl-metal-1,
+  author       = "Ratner, Alexander and Hancock, Braden and Dunnmon, Jared and
+                  Sala, Frederic and Pandey, Shreyash and R{\'e}, Christopher",
+  title        = "Training Complex Models With Multi-Task Weak Supervision",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1810.02840v2",
+  abstract     = "As machine learning models continue to increase in
+                  complexity, collecting large hand-labeled training sets has
+                  become one of the biggest roadblocks in practice. Instead,
+                  weaker forms of supervision that provide noisier but cheaper
+                  labels are often used. However, these weak supervision
+                  sources have diverse and unknown accuracies, may output
+                  correlated labels, and may label different tasks or apply at
+                  different levels of granularity. We propose a framework for
+                  integrating and modeling such weak supervision sources by
+                  viewing them as labeling different related sub-tasks of a
+                  problem, which we refer to as the multi-task weak supervision
+                  setting. We show that by solving a matrix completion-style
+                  problem, we can recover the accuracies of these multi-task
+                  sources given their dependency structure, but without any
+                  labeled data, leading to higher-quality supervision for
+                  training an end model. Theoretically, we show that the
+                  generalization error of models trained with this approach
+                  improves with the number of unlabeled data points, and
+                  characterize the scaling with respect to the task and
+                  dependency structures. On three fine-grained classification
+                  problems, we show that our approach leads to average gains of
+                  20.2 points in accuracy over a traditional supervised
+                  approach, 6.8 points over a majority vote baseline, and 4.1
+                  points over a previously proposed weak supervision method
+                  that models tasks separately.",
+  archivePrefix= "arXiv",
+  eprint       = "1810.02840",
+  primaryClass = "stat.ML"
+}
+
+@article{gong-2017-ruminating-reader,
+  author       = "Gong, Yichen and Bowman, Samuel R.",
+  title        = "Ruminating Reader: Reasoning With Gated Multi-Hop Attention",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1704.07415v1",
+  abstract     = "To answer the question in machine comprehension (MC) task,
+                  the models need to establish the interaction between the
+                  question and the context. To tackle the problem that the
+                  single-pass model cannot reflect on and correct its answer,
+                  we present Ruminating Reader. Ruminating Reader adds a second
+                  pass of attention and a novel information fusion component to
+                  the Bi-Directional Attention Flow model (BiDAF). We propose
+                  novel layer structures that construct an query-aware context
+                  vector representation and fuse encoding representation with
+                  intermediate representation on top of BiDAF model. We show
+                  that a multi-hop attention mechanism can be applied to a
+                  bi-directional attention structure. In experiments on SQuAD,
+                  we find that the Reader outperforms the BiDAF baseline by a
+                  substantial margin, and matches or surpasses the performance
+                  of all other published systems.",
+  archivePrefix= "arXiv",
+  eprint       = "1704.07415",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{williams-2018-multinli,
+  title        = "A Broad-Coverage Challenge Corpus for Sentence Understanding
+                  through Inference",
+  author       = "Williams, Adina and Nangia, Nikita and Bowman, Samuel",
+  booktitle    = "Proceedings of the 2018 Conference of the North {A}merican
+                  Chapter of the Association for Computational Linguistics:
+                  Human Language Technologies, Volume 1 (Long Papers)",
+  month        = jun,
+  year         = 2018,
+  address      = "New Orleans, Louisiana",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/N18-1101",
+  doi          = "10.18653/v1/N18-1101",
+  pages        = "1112-1122",
+  abstract     = "This paper introduces the Multi-Genre Natural Language
+                  Inference (MultiNLI) corpus, a dataset designed for use in
+                  the development and evaluation of machine learning models for
+                  sentence understanding. At 433k examples, this resource is
+                  one of the largest corpora available for natural language
+                  inference (a.k.a. recognizing textual entailment), improving
+                  upon available resources in both its coverage and
+                  difficulty. MultiNLI accomplishes this by offering data from
+                  ten distinct genres of written and spoken English, making it
+                  possible to evaluate systems on nearly the full complexity of
+                  the language, while supplying an explicit setting for
+                  evaluating cross-genre domain adaptation. In addition, an
+                  evaluation using existing machine learning models designed
+                  for the Stanford NLI corpus shows that it represents a
+                  substantially more difficult task than does that corpus,
+                  despite the two showing similar levels of inter-annotator
+                  agreement."
+}
+
+@inproceedings{tomar-2017-decatt,
+  title        = "Neural Paraphrase Identification of Questions with Noisy
+                  Pretraining",
+  author       = "Tomar, Gaurav Singh and Duque, Thyago and T{\"a}ckstr{\"o}m,
+                  Oscar and Uszkoreit, Jakob and Das, Dipanjan",
+  booktitle    = "Proceedings of the First Workshop on Subword and Character
+                  Level Models in {NLP}",
+  month        = sep,
+  year         = 2017,
+  address      = "Copenhagen, Denmark",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/W17-4121",
+  doi          = "10.18653/v1/W17-4121",
+  pages        = "142-147",
+  abstract     = "We present a solution to the problem of paraphrase
+                  identification of questions. We focus on a recent dataset of
+                  question pairs annotated with binary paraphrase labels and
+                  show that a variant of the decomposable attention model
+                  (replacing the word embeddings of the decomposable attention
+                  model of Parikh et al. 2016 with character n-gram
+                  representations) results in accurate performance on this
+                  task, while being far simpler than many competing neural
+                  architectures. Furthermore, when the model is pretrained on a
+                  noisy dataset of automatically collected question
+                  paraphrases, it obtains the best reported performance on the
+                  dataset."
 }

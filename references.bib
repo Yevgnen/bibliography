@@ -18683,3 +18683,213 @@
                   paraphrases, it obtains the best reported performance on the
                   dataset."
 }
+
+@ARTICLE{wang-2020-match2,
+  author       = "{Wang}, Zizhen and {Fan}, Yixing and {Guo}, Jiafeng and
+                  {Yang}, Liu and {Zhang}, Ruqing and {Lan}, Yanyan and
+                  {Cheng}, Xueqi and {Jiang}, Hui and {Wang}, Xiaozhao",
+  title        = "{Match$^2$: A Matching over Matching Model for Similar
+                  Question Identification}",
+  journal      = "arXiv e-prints",
+  keywords     = "Computer Science - Information Retrieval, Computer Science -
+                  Computation and Language",
+  year         = 2020,
+  month        = jun,
+  eid          = "arXiv:2006.11719",
+  pages        = "arXiv:2006.11719",
+  archivePrefix= "arXiv",
+  eprint       = "2006.11719",
+  primaryClass = "cs.IR",
+  adsurl       = "https://ui.adsabs.harvard.edu/abs/2020arXiv200611719W",
+  adsnote      = "Provided by the SAO/NASA Astrophysics Data System"
+}
+
+@inproceedings{gupta-2019-faq-attentive-matching,
+  author       = "Gupta, Sparsh and Carvalho, Vitor R.",
+  title        = "FAQ Retrieval Using Attentive Matching",
+  year         = 2019,
+  isbn         = 9781450361729,
+  publisher    = "Association for Computing Machinery",
+  address      = "New York, NY, USA",
+  url          = "https://doi.org/10.1145/3331184.3331294",
+  doi          = "10.1145/3331184.3331294",
+  booktitle    = "Proceedings of the 42nd International ACM SIGIR Conference on
+                  Research and Development in Information Retrieval",
+  pages        = "929–932",
+  numpages     = 4,
+  keywords     = "neural networks, attention mechanism, learning to rank",
+  location     = "Paris, France",
+  series       = "SIGIR’19"
+}
+
+@inproceedings{ji-2012-qa-topic-model,
+  author       = "Ji, Zongcheng and Xu, Fei and Wang, Bin and He, Ben",
+  title        = "Question-Answer Topic Model for Question Retrieval in
+                  Community Question Answering",
+  year         = 2012,
+  isbn         = 9781450311564,
+  publisher    = "Association for Computing Machinery",
+  address      = "New York, NY, USA",
+  url          = "https://doi.org/10.1145/2396761.2398669",
+  doi          = "10.1145/2396761.2398669",
+  booktitle    = "Proceedings of the 21st ACM International Conference on
+                  Information and Knowledge Management",
+  pages        = "2471–2474",
+  numpages     = 4,
+  keywords     = "community question answering, question-answer topic model,
+                  question retrieval, topic model, translation model",
+  location     = "Maui, Hawaii, USA",
+  series       = "CIKM ’12"
+}
+  
+@article{sakata-2019-faq-retrieval,
+  author       = "Sakata, Wataru and Shibata, Tomohide and Tanaka, Ribeka and
+                  Kurohashi, Sadao",
+  title        = "Faq Retrieval Using Query-Question Similarity and Bert-Based
+                  Query-Answer Relevance",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1905.02851v2",
+  abstract     = "Frequently Asked Question (FAQ) retrieval is an important
+                  task where the objective is to retrieve an appropriate
+                  Question-Answer (QA) pair from a database based on a user's
+                  query. We propose a FAQ retrieval system that considers the
+                  similarity between a user's query and a question as well as
+                  the relevance between the query and an answer. Although a
+                  common approach to FAQ retrieval is to construct labeled data
+                  for training, it takes annotation costs.  Therefore, we use a
+                  traditional unsupervised information retrieval system to
+                  calculate the similarity between the query and question. On
+                  the other hand, the relevance between the query and answer
+                  can be learned by using QA pairs in a FAQ database. The
+                  recently-proposed BERT model is used for the relevance
+                  calculation. Since the number of QA pairs in FAQ page is not
+                  enough to train a model, we cope with this issue by
+                  leveraging FAQ sets that are similar to the one in
+                  question. We evaluate our approach on two datasets. The first
+                  one is localgovFAQ, a dataset we construct in a Japanese
+                  administrative municipality domain. The second is
+                  StackExchange dataset, which is the public dataset in
+                  English. We demonstrate that our proposed method outperforms
+                  baseline methods on these datasets.",
+  archivePrefix= "arXiv",
+  eprint       = "1905.02851",
+  primaryClass = "cs.IR"
+}
+
+@InProceedings{damani-2020-optimized-transformer-faq,
+  author       = "Damani, Sonam and Narahari, Kedhar Nath and Chatterjee,
+                  Ankush and Gupta, Manish and Agrawal, Puneet",
+  editor       = "Lauw, Hady W.  and Wong, Raymond Chi-Wing and Ntoulas,
+                  Alexandros and Lim, Ee-Peng and Ng, See-Kiong and Pan, Sinno
+                  Jialin",
+  title        = "Optimized Transformer Models for FAQ Answering",
+  booktitle    = "Advances in Knowledge Discovery and Data Mining",
+  year         = 2020,
+  publisher    = "Springer International Publishing",
+  address      = "Cham",
+  pages        = "235-248",
+  abstract     = "Informational chatbots provide a highly effective medium for
+                  improving operational efficiency in answering customer
+                  queries for any enterprise. Chatbots are also preferred by
+                  users/customers since unlike other alternatives like calling
+                  customer care or browsing over FAQ pages, chatbots provide
+                  instant responses, are easy to use, are less invasive and are
+                  always available. In this paper, we discuss the problem of
+                  FAQ answering which is central to designing a retrieval-based
+                  informational chatbot. Given a set of FAQ pages s for an
+                  enterprise, and a user query, we need to find the best
+                  matching question-answer pairs from s. Building such a
+                  semantic ranking system that works well across domains for
+                  large QA databases with low runtime and model size is
+                  challenging. Previous work based on feature engineering or
+                  recurrent neural models either provides low accuracy or
+                  incurs high runtime costs. We experiment with multiple
+                  transformer based deep learning models, and also propose a
+                  novel MT-DNN (Multi-task Deep Neural Network)-based
+                  architecture, which we call Masked MT-DNN (or
+                  MMT-DNN). MMT-DNN significantly outperforms other
+                  state-of-the-art transformer models for the FAQ answering
+                  task. Further, we propose an improved knowledge distillation
+                  component to achieve {\$}{\$}{\backslash}sim {\$}{\$}2.4x
+                  reduction in model-size and {\$}{\$}{\backslash}sim
+                  {\$}{\$}7x reduction in runtime while maintaining similar
+                  accuracy. On a small benchmark dataset from SemEval 2017 CQA
+                  Task 3, we show that our approach provides an NDCG@1 of
+                  83.1. On another large dataset of {\$}{\$}{\backslash}sim
+                  {\$}{\$}281K instances corresponding to
+                  {\$}{\$}{\backslash}sim {\$}{\$}30K queries from diverse
+                  domains, our distilled 174 MB model provides an NDCG@1 of
+                  75.08 with a CPU runtime of mere 31 ms establishing a new
+                  state-of-the-art for FAQ answering.",
+  isbn         = "978-3-030-47426-3"
+}
+
+@incollection{ba-2014-do-deep,
+  title        = "Do Deep Nets Really Need to be Deep?",
+  author       = "Ba, Jimmy and Caruana, Rich",
+  booktitle    = "Advances in Neural Information Processing Systems 27",
+  editor       = "Z. Ghahramani and M. Welling and C. Cortes and N. D. Lawrence
+                  and K. Q. Weinberger",
+  pages        = "2654-2662",
+  year         = 2014,
+  publisher    = "Curran Associates, Inc.",
+  url          =
+                  "http://papers.nips.cc/paper/5484-do-deep-nets-really-need-to-be-deep.pdf"
+}
+
+@article{mirzadeh-2019-teacher-assistant,
+  author       = "Mirzadeh, Seyed-Iman and Farajtabar, Mehrdad and Li, Ang and
+                  Levine, Nir and Matsukawa, Akihiro and Ghasemzadeh, Hassan",
+  title        = "Improved Knowledge Distillation Via Teacher Assistant",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1902.03393v2",
+  abstract     = "Despite the fact that deep neural networks are powerful
+                  models and achieve appealing results on many tasks, they are
+                  too large to be deployed on edge devices like smartphones or
+                  embedded sensor nodes. There have been efforts to compress
+                  these networks, and a popular method is knowledge
+                  distillation, where a large (teacher) pre-trained network is
+                  used to train a smaller (student) network. However, in this
+                  paper, we show that the student network performance degrades
+                  when the gap between student and teacher is large. Given a
+                  fixed student network, one cannot employ an arbitrarily large
+                  teacher, or in other words, a teacher can effectively
+                  transfer its knowledge to students up to a certain size, not
+                  smaller. To alleviate this shortcoming, we introduce
+                  multi-step knowledge distillation, which employs an
+                  intermediate-sized network (teacher assistant) to bridge the
+                  gap between the student and the teacher.  Moreover, we study
+                  the effect of teacher assistant size and extend the framework
+                  to multi-step distillation. Theoretical analysis and
+                  extensive experiments on CIFAR-10,100 and ImageNet datasets
+                  and on CNN and ResNet architectures substantiate the
+                  effectiveness of our proposed approach.",
+  archivePrefix= "arXiv",
+  eprint       = "1902.03393",
+  primaryClass = "cs.LG"
+}
+
+@article{schulz-2002-fast-string-correction,
+  title        = "Fast string correction with Levenshtein automata",
+  author       = "Schulz, Klaus U and Mihov, Stoyan",
+  journal      = "International Journal on Document Analysis and Recognition",
+  volume       = 5,
+  number       = 1,
+  pages        = "67-85",
+  year         = 2002,
+  publisher    = "Springer"
+}
+
+@article{mihov-2004-fast-approx-search,
+  title        = "Fast Approximate Search in Large Dictionaries",
+  author       = "Mihov, Stoyan and Schulz, Klaus U.",
+  journal      = "Computational Linguistics",
+  volume       = 30,
+  number       = 4,
+  year         = 2004,
+  url          = "https://www.aclweb.org/anthology/J04-4003",
+  doi          = "10.1162/0891201042544938",
+  pages        = "451-477"
+}

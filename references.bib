@@ -529,7 +529,7 @@
   year         = 2015
 }
 
-@article{huang-1998-extensions-kmeans,
+@article{huang-1998-k-modes,
   title        = "Extensions to the k-means algorithm for clustering large data
                   sets with categorical values",
   author       = "Huang, Zhexue",
@@ -8174,7 +8174,7 @@
   year         = 2017
 }
 
-@article{ribeiro-2016-why-should,
+@article{ribeiro-2016-lime,
   author       = "Marco T{\'{u}}lio Ribeiro and Sameer Singh and Carlos
                   Guestrin",
   title        = "``Why Should {I} Trust You?'': Explaining the Predictions of
@@ -18741,7 +18741,7 @@
   location     = "Maui, Hawaii, USA",
   series       = "CIKM ’12"
 }
-  
+
 @article{sakata-2019-faq-retrieval,
   author       = "Sakata, Wataru and Shibata, Tomohide and Tanaka, Ribeka and
                   Kurohashi, Sadao",
@@ -18893,3 +18893,793 @@
   doi          = "10.1162/0891201042544938",
   pages        = "451-477"
 }
+
+@inproceedings{lei-2018-sru,
+  title        = "Simple Recurrent Units for Highly Parallelizable Recurrence",
+  author       = "Lei, Tao and Zhang, Yu and Wang, Sida I.  and Dai, Hui and
+                  Artzi, Yoav",
+  booktitle    = "Proceedings of the 2018 Conference on Empirical Methods in
+                  Natural Language Processing",
+  month        = oct # "-" # nov,
+  year         = 2018,
+  address      = "Brussels, Belgium",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/D18-1477",
+  doi          = "10.18653/v1/D18-1477",
+  pages        = "4470-4481",
+  abstract     = "Common recurrent neural architectures scale poorly due to the
+                  intrinsic difficulty in parallelizing their state
+                  computations. In this work, we propose the Simple Recurrent
+                  Unit (SRU), a light recurrent unit that balances model
+                  capacity and scalability. SRU is designed to provide
+                  expressive recurrence, enable highly parallelized
+                  implementation, and comes with careful initialization to
+                  facilitate training of deep models. We demonstrate the
+                  effectiveness of SRU on multiple NLP tasks. SRU achieves
+                  5{---}9x speed-up over cuDNN-optimized LSTM on classification
+                  and question answering datasets, and delivers stronger
+                  results than LSTM and convolutional models. We also obtain an
+                  average of 0.7 BLEU improvement over the Transformer model
+                  (Vaswani et al., 2017) on translation by incorporating SRU
+                  into the architecture."
+}
+@article{xiong-2017-dcn,
+  author       = "Xiong, Caiming and Zhong, Victor and Socher, Richard",
+  title        = "Dcn+: Mixed Objective and Deep Residual Coattention for
+                  Question Answering",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1711.00106v2",
+  abstract     = "Traditional models for question answering optimize using
+                  cross entropy loss, which encourages exact answers at the
+                  cost of penalizing nearby or overlapping answers that are
+                  sometimes equally accurate. We propose a mixed objective that
+                  combines cross entropy loss with self-critical policy
+                  learning. The objective uses rewards derived from word
+                  overlap to solve the misalignment between evaluation metric
+                  and optimization objective. In addition to the mixed
+                  objective, we improve dynamic coattention networks (DCN) with
+                  a deep residual coattention encoder that is inspired by
+                  recent work in deep self-attention and residual networks. Our
+                  proposals improve model performance across question types and
+                  input lengths, especially for long questions that requires
+                  the ability to capture long-term dependencies. On the
+                  Stanford Question Answering Dataset, our model achieves
+                  state-of-the-art results with 75.1 \% exact match accuracy
+                  and 83.1 \% F1, while the ensemble obtains 78.9 \% exact
+                  match accuracy and 86.0 \% F1.",
+  archivePrefix= "arXiv",
+  eprint       = "1711.00106",
+  primaryClass = "cs.CL"
+}
+
+@article{andreas-2015-neural-module-networks,
+  author       = "Andreas, Jacob and Rohrbach, Marcus and Darrell, Trevor and
+                  Klein, Dan",
+  title        = "Neural Module Networks",
+  journal      = "CoRR",
+  year         = 2015,
+  url          = "http://arxiv.org/abs/1511.02799v4",
+  abstract     = "Visual question answering is fundamentally compositional in
+                  nature---a question like ``where is the dog?`` shares
+                  substructure with questions like ``what color is the dog?``
+                  and ``where is the cat?`` This paper seeks to simultaneously
+                  exploit the representational capacity of deep networks and
+                  the compositional linguistic structure of questions. We
+                  describe a procedure for constructing and learning *neural
+                  module networks*, which compose collections of
+                  jointly-trained neural ``modules`` into deep networks for
+                  question answering. Our approach decomposes questions into
+                  their linguistic substructures, and uses these structures to
+                  dynamically instantiate modular networks (with reusable
+                  components for recognizing dogs, classifying colors,
+                  etc.). The resulting compound networks are jointly
+                  trained. We evaluate our approach on two challenging datasets
+                  for visual question answering, achieving state-of-the-art
+                  results on both the VQA natural image dataset and a new
+                  dataset of complex questions about abstract shapes.",
+  archivePrefix= "arXiv",
+  eprint       = "1511.02799",
+  primaryClass = "cs.CV"
+}
+
+@article{bao-2020-unilmv2,
+  author       = "Bao, Hangbo and Dong, Li and Wei, Furu and Wang, Wenhui and
+                  Yang, Nan and Liu, Xiaodong and Wang, Yu and Piao, Songhao
+                  and Gao, Jianfeng and Zhou, Ming and Hon, Hsiao-Wuen",
+  title        = "Unilmv2: Pseudo-Masked Language Models for Unified Language
+                  Model Pre-Training",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2002.12804v1",
+  abstract     = "We propose to pre-train a unified language model for both
+                  autoencoding and partially autoregressive language modeling
+                  tasks using a novel training procedure, referred to as a
+                  pseudo-masked language model (PMLM). Given an input text with
+                  masked tokens, we rely on conventional masks to learn
+                  inter-relations between corrupted tokens and context via
+                  autoencoding, and pseudo masks to learn intra-relations
+                  between masked spans via partially autoregressive
+                  modeling. With well-designed position embeddings and
+                  self-attention masks, the context encodings are reused to
+                  avoid redundant computation. Moreover, conventional masks
+                  used for autoencoding provide global masking information, so
+                  that all the position embeddings are accessible in partially
+                  autoregressive language modeling. In addition, the two tasks
+                  pre-train a unified language model as a bidirectional encoder
+                  and a sequence-to-sequence decoder, respectively. Our
+                  experiments show that the unified language models pre-trained
+                  using PMLM achieve new state-of-the-art results on a wide
+                  range of natural language understanding and generation tasks
+                  across several widely used benchmarks.",
+  archivePrefix= "arXiv",
+  eprint       = "2002.12804",
+  primaryClass = "cs.CL"
+}
+
+@article{humeau-2019-poly-encoders,
+  author       = "Humeau, Samuel and Shuster, Kurt and Lachaux, Marie-Anne and
+                  Weston, Jason",
+  title        = "Poly-Encoders: Transformer Architectures and Pre-Training
+                  Strategies for Fast and Accurate Multi-Sentence Scoring",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1905.01969v4",
+  abstract     = "The use of deep pre-trained bidirectional transformers has
+                  led to remarkable progress in a number of applications
+                  (Devlin et al., 2018). For tasks that make pairwise
+                  comparisons between sequences, matching a given input with a
+                  corresponding label, two approaches are common:
+                  Cross-encoders performing full self-attention over the pair
+                  and Bi-encoders encoding the pair separately. The former
+                  often performs better, but is too slow for practical use. In
+                  this work, we develop a new transformer architecture, the
+                  Poly-encoder, that learns global rather than token level
+                  self-attention features. We perform a detailed comparison of
+                  all three approaches, including what pre-training and
+                  fine-tuning strategies work best. We show our models achieve
+                  state-of-the-art results on three existing tasks; that
+                  Poly-encoders are faster than Cross-encoders and more
+                  accurate than Bi-encoders; and that the best results are
+                  obtained by pre-training on large datasets similar to the
+                  downstream tasks.",
+  archivePrefix= "arXiv",
+  eprint       = "1905.01969",
+  primaryClass = "cs.CL"
+}
+
+@article{wang-2020-multi-level,
+  author       = "Wang, Shuohang and Lan, Yunshi and Tay, Yi and Jiang, Jing
+                  and Liu, Jingjing",
+  title        = "Multi-Level Head-Wise Match and Aggregation in Transformer
+                  for Textual Sequence Matching",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2001.07234v1",
+  abstract     = "Transformer has been successfully applied to many natural
+                  language processing tasks. However, for textual sequence
+                  matching, simple matching between the representation of a
+                  pair of sequences might bring in unnecessary noise. In this
+                  paper, we propose a new approach to sequence pair matching
+                  with Transformer, by learning head-wise matching
+                  representations on multiple levels. Experiments show that our
+                  proposed approach can achieve new state-of-the-art
+                  performance on multiple tasks that rely only on pre-computed
+                  sequence-vector-representation, such as SNLI, MNLI-match,
+                  MNLI-mismatch, QQP, and SQuAD-binary.",
+  archivePrefix= "arXiv",
+  eprint       = "2001.07234",
+  primaryClass = "cs.CL"
+}
+
+@article{raffel-2015-feed-forwar,
+  author       = "Raffel, Colin and Ellis, Daniel P. W.",
+  title        = "Feed-Forward Networks With Attention Can Solve Some Long-Term
+                  Memory Problems",
+  journal      = "CoRR",
+  year         = 2015,
+  url          = "http://arxiv.org/abs/1512.08756v5",
+  abstract     = "We propose a simplified model of attention which is
+                  applicable to feed-forward neural networks and demonstrate
+                  that the resulting model can solve the synthetic ``addition``
+                  and ``multiplication`` long-term memory problems for sequence
+                  lengths which are both longer and more widely varying than
+                  the best published results for these tasks.",
+  archivePrefix= "arXiv",
+  eprint       = "1512.08756",
+  primaryClass = "cs.LG"
+}
+
+@article{singh-2016-black-box,
+  author       = "Singh, Sameer and Ribeiro, Marco Tulio and Guestrin, Carlos",
+  title        = "Programs As Black-Box Explanations",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1611.07579v1",
+  abstract     = "Recent work in model-agnostic explanations of black-box
+                  machine learning has demonstrated that interpretability of
+                  complex models does not have to come at the cost of accuracy
+                  or model flexibility. However, it is not clear what kind of
+                  explanations, such as linear models, decision trees, and rule
+                  lists, are the appropriate family to consider, and different
+                  tasks and models may benefit from different kinds of
+                  explanations. Instead of picking a single family of
+                  representations, in this work we propose to use ``programs``
+                  as model-agnostic explanations. We show that small programs
+                  can be expressive yet intuitive as explanations, and
+                  generalize over a number of existing interpretable families.
+                  We propose a prototype program induction method based on
+                  simulated annealing that approximates the local behavior of
+                  black-box classifiers around a specific prediction using
+                  random perturbations. Finally, we present preliminary
+                  application on small datasets and show that the generated
+                  explanations are intuitive and accurate for a number of
+                  classifiers.",
+  archivePrefix= "arXiv",
+  eprint       = "1611.07579",
+  primaryClass = "stat.ML"
+}
+
+@article{ribeiro-2016-nothing-else,
+  author       = "Ribeiro, Marco Tulio and Singh, Sameer and Guestrin, Carlos",
+  title        = "Nothing Else Matters: Model-Agnostic Explanations By
+                  Identifying Prediction Invariance",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1611.05817v1",
+  abstract     = "At the core of interpretable machine learning is the question
+                  of whether humans are able to make accurate predictions about
+                  a model's behavior. Assumed in this question are three
+                  properties of the interpretable output: coverage, precision,
+                  and effort. Coverage refers to how often humans think they
+                  can predict the model's behavior, precision to how accurate
+                  humans are in those predictions, and effort is either the
+                  up-front effort required in interpreting the model, or the
+                  effort required to make predictions about a model's behavior.
+                  In this work, we propose anchor-LIME (aLIME), a
+                  model-agnostic technique that produces high-precision
+                  rule-based explanations for which the coverage boundaries are
+                  very clear. We compare aLIME to linear LIME with simulated
+                  experiments, and demonstrate the flexibility of aLIME with
+                  qualitative examples from a variety of domains and tasks.",
+  archivePrefix= "arXiv",
+  eprint       = "1611.05817",
+  primaryClass = "stat.ML"
+}
+
+@article{ribeiro-2016-model-agnostic,
+  author       = "Ribeiro, Marco Tulio and Singh, Sameer and Guestrin, Carlos",
+  title        = "Model-Agnostic Interpretability of Machine Learning",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1606.05386v1",
+  abstract     = "Understanding why machine learning models behave the way they
+                  do empowers both system designers and end-users in many ways:
+                  in model selection, feature engineering, in order to trust
+                  and act upon the predictions, and in more intuitive user
+                  interfaces. Thus, interpretability has become a vital concern
+                  in machine learning, and work in the area of interpretable
+                  models has found renewed interest. In some applications, such
+                  models are as accurate as non-interpretable ones, and thus
+                  are preferred for their transparency. Even when they are not
+                  accurate, they may still be preferred when interpretability
+                  is of paramount importance. However, restricting machine
+                  learning to interpretable models is often a severe
+                  limitation. In this paper we argue for explaining machine
+                  learning predictions using model-agnostic approaches. By
+                  treating the machine learning models as black-box functions,
+                  these approaches provide crucial flexibility in the choice of
+                  models, explanations, and representations, improving
+                  debugging, comparison, and interfaces for a variety of users
+                  and models. We also outline the main challenges for such
+                  methods, and review a recently-introduced model-agnostic
+                  explanation approach (LIME) that addresses these challenges.",
+  archivePrefix= "arXiv",
+  eprint       = "1606.05386",
+  primaryClass = "stat.ML"
+}
+
+@article{alvarez-melis-2018-robustness,
+  author       = "Alvarez-Melis, David and Jaakkola, Tommi S.",
+  title        = "On the Robustness of Interpretability Methods",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1806.08049v1",
+  abstract     = "We argue that robustness of explanations---i.e., that similar
+                  inputs should give rise to similar explanations---is a key
+                  desideratum for interpretability.  We introduce metrics to
+                  quantify robustness and demonstrate that current methods do
+                  not perform well according to these metrics. Finally, we
+                  propose ways that robustness can be enforced on existing
+                  interpretability approaches.",
+  archivePrefix= "arXiv",
+  eprint       = "1806.08049",
+  primaryClass = "cs.LG"
+}
+
+@inproceedings{ribeiro-2018-anchors,
+  title        = "Anchors: High-Precision Model-Agnostic Explanations",
+  author       = "Marco Tulio Ribeiro and Sameer Singh and Carlos Guestrin",
+  booktitle    = "AAAI",
+  year         = 2018
+}
+
+@article{wu-2017-beyond-sparsity,
+  author       = "Wu, Mike and Hughes, Michael C. and Parbhoo, Sonali and
+                  Zazzi, Maurizio and Roth, Volker and Doshi-Velez, Finale",
+  title        = "Beyond Sparsity: Tree Regularization of Deep Models for
+                  Interpretability",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1711.06178v1",
+  abstract     = "The lack of interpretability remains a key barrier to the
+                  adoption of deep models in many applications. In this work,
+                  we explicitly regularize deep models so human users might
+                  step through the process behind their predictions in little
+                  time. Specifically, we train deep time-series models so their
+                  class-probability predictions have high accuracy while being
+                  closely modeled by decision trees with few nodes. Using
+                  intuitive toy examples as well as medical tasks for treating
+                  sepsis and HIV, we demonstrate that this new tree
+                  regularization yields models that are easier for humans to
+                  simulate than simpler L1 or L2 penalties without sacrificing
+                  predictive power.",
+  archivePrefix= "arXiv",
+  eprint       = "1711.06178",
+  primaryClass = "stat.ML"
+}
+
+@article{zhou-2015-cam,
+  author       = "Zhou, Bolei and Khosla, Aditya and Lapedriza, Agata and
+                  Oliva, Aude and Torralba, Antonio",
+  title        = "Learning Deep Features for Discriminative Localization",
+  journal      = "CoRR",
+  year         = 2015,
+  url          = "http://arxiv.org/abs/1512.04150v1",
+  abstract     = "In this work, we revisit the global average pooling layer
+                  proposed in [13], and shed light on how it explicitly enables
+                  the convolutional neural network to have remarkable
+                  localization ability despite being trained on image-level
+                  labels. While this technique was previously proposed as a
+                  means for regularizing training, we find that it actually
+                  builds a generic localizable deep representation that can be
+                  applied to a variety of tasks. Despite the apparent
+                  simplicity of global average pooling, we are able to achieve
+                  37.1 \% top-5 error for object localization on ILSVRC 2014,
+                  which is remarkably close to the 34.2 \% top-5 error achieved
+                  by a fully supervised CNN approach. We demonstrate that our
+                  network is able to localize the discriminative image regions
+                  on a variety of tasks despite not being trained for them",
+  archivePrefix= "arXiv",
+  eprint       = "1512.04150",
+  primaryClass = "cs.CV"
+}
+
+@article{selvaraju-2016-grad-cam,
+  author       = "Selvaraju, Ramprasaath R. and Cogswell, Michael and Das,
+                  Abhishek and Vedantam, Ramakrishna and Parikh, Devi and
+                  Batra, Dhruv",
+  title        = "Grad-Cam: Visual Explanations From Deep Networks Via
+                  Gradient-Based Localization",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1610.02391v4",
+  abstract     = "We propose a technique for producing ``visual explanations``
+                  for decisions from a large class of CNN-based models, making
+                  them more transparent. Our approach - Gradient-weighted Class
+                  Activation Mapping (Grad-CAM), uses the gradients of any
+                  target concept, flowing into the final convolutional layer to
+                  produce a coarse localization map highlighting important
+                  regions in the image for predicting the concept. Grad-CAM is
+                  applicable to a wide variety of CNN model-families: (1) CNNs
+                  with fully-connected layers, (2) CNNs used for structured
+                  outputs, (3) CNNs used in tasks with multimodal inputs or
+                  reinforcement learning, without any architectural changes or
+                  re-training. We combine Grad-CAM with fine-grained
+                  visualizations to create a high-resolution
+                  class-discriminative visualization and apply it to
+                  off-the-shelf image classification, captioning, and visual
+                  question answering (VQA) models, including ResNet-based
+                  architectures. In the context of image classification models,
+                  our visualizations (a) lend insights into their failure
+                  modes, (b) are robust to adversarial images, (c) outperform
+                  previous methods on localization, (d) are more faithful to
+                  the underlying model and (e) help achieve generalization by
+                  identifying dataset bias. For captioning and VQA, we show
+                  that even non-attention based models can localize inputs. We
+                  devise a way to identify important neurons through Grad-CAM
+                  and combine it with neuron names to provide textual
+                  explanations for model decisions. Finally, we design and
+                  conduct human studies to measure if Grad-CAM helps users
+                  establish appropriate trust in predictions from models and
+                  show that Grad-CAM helps untrained users successfully discern
+                  a `stronger` nodel from a `weaker` one even when both make
+                  identical predictions. Our code is available at
+                  https://github.com/ramprs/grad-cam/, along with a demo at
+                  http://gradcam.cloudcv.org, and a video at
+                  youtu.be/COjUB9Izk6E.",
+  archivePrefix= "arXiv",
+  eprint       = "1610.02391",
+  primaryClass = "cs.CV"
+}
+
+@article{baehrens-2010-parzen,
+  author       = "Baehrens, David and Schroeter, Timon and Harmeling, Stefan
+                  and Kawanabe, Motoaki and Hansen, Katja and M\"{u}ller,
+                  Klaus-Robert",
+  title        = "How to Explain Individual Classification Decisions",
+  year         = 2010,
+  issue_date   = "3/1/2010",
+  publisher    = "JMLR.org",
+  volume       = 11,
+  issn         = "1532-4435",
+  journal      = "J. Mach. Learn. Res.",
+  month        = aug,
+  pages        = "1803–1831",
+  numpages     = 29
+}
+
+@article{mcinnes-2017-hdbscan,
+  title        = "hdbscan: Hierarchical density based clustering",
+  author       = "McInnes, Leland and Healy, John and Astels, Steve",
+  journal      = "Journal of Open Source Software",
+  volume       = 2,
+  number       = 11,
+  pages        = 205,
+  year         = 2017
+}
+
+@article{osborne-2013-data-clearning,
+  title        = "Is data cleaning and the testing of assumptions relevant in
+                  the 21st century?",
+  author       = "Osborne, Jason W",
+  journal      = "Frontiers in Psychology",
+  volume       = 4,
+  pages        = 370,
+  year         = 2013,
+  publisher    = "Frontiers"
+}
+@inproceedings{fu-2019-graph-rel,
+  author       = "Fu, Tsu-Jui and Li, Peng-Hsuan and Ma, Wei-Yun",
+  title        = "{G}raph{R}el: Modeling Text as Relational Graphs for Joint
+                  Entity and Relation Extraction",
+  booktitle    = "Proceedings of the 57th Annual Meeting of the Association for
+                  Computational Linguistics",
+  year         = 2019,
+  pages        = "1409-1418",
+  doi          = "10.18653/v1/P19-1136",
+  url          = "https://doi.org/10.18653/v1/P19-1136",
+  abstract     = "In this paper, we present GraphRel, an end-to-end relation
+                  extraction model which uses graph convolutional networks
+                  (GCNs) to jointly learn named entities and relations. In
+                  contrast to previous baselines, we consider the interaction
+                  between named entities and relations via a 2nd-phase
+                  relation-weighted GCN to better extract relations. Linear and
+                  dependency structures are both used to extract both
+                  sequential and regional features of the text, and a complete
+                  word graph is further utilized to extract implicit features
+                  among all word pairs of the text. With the graph-based
+                  approach, the prediction for overlapping relations is
+                  substantially improved over previous sequential
+                  approaches. We evaluate GraphRel on two public datasets: NYT
+                  and WebNLG. Results show that GraphRel maintains high
+                  precision while increasing recall substantially. Also,
+                  GraphRel outperforms previous work by 3.2{\%} and 5.8{\%} (F1
+                  score), achieving a new state-of-the-art for relation
+                  extraction.",
+  address      = "Florence, Italy",
+  month        = jul,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@article{xie-2019-uda,
+  author       = "Xie, Qizhe and Dai, Zihang and Hovy, Eduard and Luong,
+                  Minh-Thang and Le, Quoc V.",
+  title        = "Unsupervised Data Augmentation for Consistency Training",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1904.12848v5",
+  abstract     = "Semi-supervised learning lately has shown much promise in
+                  improving deep learning models when labeled data is
+                  scarce. Common among recent approaches is the use of
+                  consistency training on a large amount of unlabeled data to
+                  constrain model predictions to be invariant to input
+                  noise. In this work, we present a new perspective on how to
+                  effectively noise unlabeled examples and argue that the
+                  quality of noising, specifically those produced by advanced
+                  data augmentation methods, plays a crucial role in
+                  semi-supervised learning. By substituting simple noising
+                  operations with advanced data augmentation methods such as
+                  RandAugment and back-translation, our method brings
+                  substantial improvements across six language and three vision
+                  tasks under the same consistency training framework. On the
+                  IMDb text classification dataset, with only 20 labeled
+                  examples, our method achieves an error rate of 4.20,
+                  outperforming the state-of-the-art model trained on 25,000
+                  labeled examples. On a standard semi-supervised learning
+                  benchmark, CIFAR-10, our method outperforms all previous
+                  approaches and achieves an error rate of 5.43 with only 250
+                  examples. Our method also combines well with transfer
+                  learning, e.g., when finetuning from BERT, and yields
+                  improvements in high-data regime, such as ImageNet, whether
+                  when there is only 10 \% labeled data or when a full labeled
+                  set with 1.3M extra unlabeled examples is used. Code is
+                  available at https://github.com/google-research/uda.",
+  archivePrefix= "arXiv",
+  eprint       = "1904.12848",
+  primaryClass = "cs.LG"
+}
+
+@article{cubuk-2019-randaugment,
+  author       = "Cubuk, Ekin D. and Zoph, Barret and Shlens, Jonathon and Le,
+                  Quoc V.",
+  title        = "Randaugment: Practical Automated Data Augmentation With a
+                  Reduced Search Space",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1909.13719v2",
+  abstract     = "Recent work has shown that data augmentation has the
+                  potential to significantly improve the generalization of deep
+                  learning models. Recently, automated augmentation strategies
+                  have led to state-of-the-art results in image classification
+                  and object detection. While these strategies were optimized
+                  for improving validation accuracy, they also led to
+                  state-of-the-art results in semi-supervised learning and
+                  improved robustness to common corruptions of images. An
+                  obstacle to a large-scale adoption of these methods is a
+                  separate search phase which increases the training complexity
+                  and may substantially increase the computational
+                  cost. Additionally, due to the separate search phase, these
+                  approaches are unable to adjust the regularization strength
+                  based on model or dataset size. Automated augmentation
+                  policies are often found by training small models on small
+                  datasets and subsequently applied to train larger models. In
+                  this work, we remove both of these obstacles. RandAugment has
+                  a significantly reduced search space which allows it to be
+                  trained on the target task with no need for a separate proxy
+                  task. Furthermore, due to the parameterization, the
+                  regularization strength may be tailored to different model
+                  and dataset sizes. RandAugment can be used uniformly across
+                  different tasks and datasets and works out of the box,
+                  matching or surpassing all previous automated augmentation
+                  approaches on CIFAR-10/100, SVHN, and ImageNet.  On the
+                  ImageNet dataset we achieve 85.0 \% accuracy, a 0.6 \%
+                  increase over the previous state-of-the-art and 1.0 \%
+                  increase over baseline augmentation. On object detection,
+                  RandAugment leads to 1.0-1.3 \% improvement over baseline
+                  augmentation, and is within 0.3 \% mAP of AutoAugment on
+                  COCO. Finally, due to its interpretable hyperparameter,
+                  RandAugment may be used to investigate the role of data
+                  augmentation with varying model and dataset size. Code is
+                  available online.",
+  archivePrefix= "arXiv",
+  eprint       = "1909.13719",
+  primaryClass = "cs.CV"
+}
+
+@article{pan-2020-adversarial-validation,
+  author       = "Pan, Jing and Pham, Vincent and Dorairaj, Mohan and Chen,
+                  Huigang and Lee, Jeong-Yoon",
+  title        = "Adversarial Validation Approach To Concept Drift Problem in
+                  User Targeting Automation Systems At Uber",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2004.03045v2",
+  abstract     = "In user targeting automation systems, concept drift in input
+                  data is one of the main challenges. It deteriorates model
+                  performance on new data over time.  Previous research on
+                  concept drift mostly proposed model retraining after
+                  observing performance decreases. However, this approach is
+                  suboptimal because the system fixes the problem only after
+                  suffering from poor performance on new data. Here, we
+                  introduce an adversarial validation approach to concept drift
+                  problems in user targeting automation systems. With our
+                  approach, the system detects concept drift in new data before
+                  making inference, trains a model, and produces predictions
+                  adapted to the new data. We show that our approach addresses
+                  concept drift effectively with the AutoML3 Lifelong Machine
+                  Learning challenge data as well as in Uber's internal user
+                  targeting automation system, MaLTA.",
+  archivePrefix= "arXiv",
+  eprint       = "2004.03045",
+  primaryClass = "cs.LG"
+}
+
+@article{lin-2019-unknown-detection,
+  author       = "Lin, Ting-En and Xu, Hua",
+  title        = "Deep Unknown Intent Detection With Margin Loss",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1906.00434v1",
+  abstract     = "Identifying the unknown (novel) user intents that have never
+                  appeared in the training set is a challenging task in the
+                  dialogue system. In this paper, we present a two-stage method
+                  for detecting unknown intents. We use bidirectional long
+                  short-term memory (BiLSTM) network with the margin loss as
+                  the feature extractor. With margin loss, we can learn
+                  discriminative deep features by forcing the network to
+                  maximize inter-class variance and to minimize intra-class
+                  variance. Then, we feed the feature vectors to the
+                  density-based novelty detection algorithm, local outlier
+                  factor (LOF), to detect unknown intents. Experiments on two
+                  benchmark datasets show that our method can yield consistent
+                  improvements compared with the baseline methods.",
+  archivePrefix= "arXiv",
+  eprint       = "1906.00434",
+  primaryClass = "cs.CL"
+}
+
+@article{tompson-2014-spatial-dropout,
+  author       = "Tompson, Jonathan and Goroshin, Ross and Jain, Arjun and
+                  LeCun, Yann and Bregler, Christopher",
+  title        = "Efficient Object Localization Using Convolutional Networks",
+  journal      = "CoRR",
+  year         = 2014,
+  url          = "http://arxiv.org/abs/1411.4280v3",
+  abstract     = "Recent state-of-the-art performance on human-body pose
+                  estimation has been achieved with Deep Convolutional Networks
+                  (ConvNets). Traditional ConvNet architectures include pooling
+                  and sub-sampling layers which reduce computational
+                  requirements, introduce invariance and prevent over-training.
+                  These benefits of pooling come at the cost of reduced
+                  localization accuracy. We introduce a novel architecture
+                  which includes an efficient `position refinement' model that
+                  is trained to estimate the joint offset location within a
+                  small region of the image. This refinement model is jointly
+                  trained in cascade with a state-of-the-art ConvNet model to
+                  achieve improved accuracy in human joint location
+                  estimation. We show that the variance of our detector
+                  approaches the variance of human annotations on the FLIC
+                  dataset and outperforms all existing approaches on the
+                  MPII-human-pose dataset.",
+  archivePrefix= "arXiv",
+  eprint       = "1411.4280",
+  primaryClass = "cs.CV"
+}
+
+@article{yang-2018-rethinking-structure,
+  author       = "Yang, Yao-Yuan and Lin, Yi-An and Chu, Hong-Min and Lin,
+                  Hsuan-Tien",
+  title        = "Deep Learning With a Rethinking Structure for Multi-Label
+                  Classification",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1802.01697v2",
+  abstract     = "Multi-label classification (MLC) is an important class of
+                  machine learning problems that come with a wide spectrum of
+                  applications, each demanding a possibly different evaluation
+                  criterion. When solving the MLC problems, we generally expect
+                  the learning algorithm to take the hidden correlation of the
+                  labels into account to improve the prediction
+                  performance. Extracting the hidden correlation is generally a
+                  challenging task. In this work, we propose a novel deep
+                  learning framework to better extract the hidden correlation
+                  with the help of the memory structure within recurrent neural
+                  networks. The memory stores the temporary guesses on the
+                  labels and effectively allows the framework to rethink about
+                  the goodness and correlation of the guesses before making the
+                  final prediction. Furthermore, the rethinking process makes
+                  it easy to adapt to different evaluation criteria to match
+                  real-world application needs. In particular, the framework
+                  can be trained in an end-to-end style with respect to any
+                  given MLC evaluation criteria. The end-to-end design can be
+                  seamlessly combined with other deep learning techniques to
+                  conquer challenging MLC problems like image
+                  tagging. Experimental results across many real-world data
+                  sets justify that the rethinking framework indeed improves
+                  MLC performance across different evaluation criteria and
+                  leads to superior performance over state-of-the-art MLC
+                  algorithms.",
+  archivePrefix= "arXiv",
+  eprint       = "1802.01697",
+  primaryClass = "cs.LG"
+}
+
+@inproceedings{yang-2019-seq2set,
+  author       = "Yang, Pengcheng and Luo, Fuli and Ma, Shuming and Lin,
+                  Junyang and Sun, Xu",
+  title        = "A Deep Reinforced Sequence-to-Set Model for Multi-Label
+                  Classification",
+  booktitle    = "Proceedings of the 57th Annual Meeting of the Association for
+                  Computational Linguistics",
+  year         = 2019,
+  pages        = "5252-5258",
+  doi          = "10.18653/v1/P19-1518",
+  url          = "https://doi.org/10.18653/v1/P19-1518",
+  abstract     = "Multi-label classification (MLC) aims to predict a set of
+                  labels for a given instance. Based on a pre-defined label
+                  order, the sequence-to-sequence (Seq2Seq) model trained via
+                  maximum likelihood estimation method has been successfully
+                  applied to the MLC task and shows powerful ability to capture
+                  high-order correlations between labels. However, the output
+                  labels are essentially an unordered set rather than an
+                  ordered sequence. This inconsistency tends to result in some
+                  intractable problems, e.g., sensitivity to the label
+                  order. To remedy this, we propose a simple but effective
+                  sequence-to-set model. The proposed model is trained via
+                  reinforcement learning, where reward feedback is designed to
+                  be independent of the label order. In this way, we can reduce
+                  the dependence of the model on the label order, as well as
+                  capture high-order correlations between labels. Extensive
+                  experiments show that our approach can substantially
+                  outperform competitive baselines, as well as effectively
+                  reduce the sensitivity to the label order.",
+  address      = "Florence, Italy",
+  month        = jul,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@ARTICLE{zhu-2018-label-correlation,
+  author       = "Y. {Zhu} and J. T. {Kwok} and Z. {Zhou}",
+  journal      = "IEEE Transactions on Knowledge and Data Engineering",
+  title        = "Multi-Label Learning with Global and Local Label Correlation",
+  year         = 2018,
+  volume       = 30,
+  number       = 6,
+  pages        = "1081-1094"
+}
+
+@article{garg-2015-exploring-correlation,
+  author       = "Garg, Amit and Noyola, Jonathan and Verma, Romil and Saxena,
+                  Ashutosh and Jami, Aditya",
+  title        = "Exploring Correlation Between Labels To Improve Multi-Label
+                  Classification",
+  journal      = "CoRR",
+  year         = 2015,
+  url          = "http://arxiv.org/abs/1511.07953v1",
+  abstract     = "This paper attempts multi-label classification by extending
+                  the idea of independent binary classification models for each
+                  output label, and exploring how the inherent correlation
+                  between output labels can be used to improve
+                  predictions. Logistic Regression, Naive Bayes, Random Forest,
+                  and SVM models were constructed, with SVM giving the best
+                  results: an improvement of 12.9\% over binary models was
+                  achieved for hold out cross validation by augmenting with
+                  pairwise correlation probabilities of the labels.",
+  archivePrefix= "arXiv",
+  eprint       = "1511.07953",
+  primaryClass = "cs.LG"
+}
+
+@inproceedings{huang-2012-multi-label,
+  author       = "Huang, Sheng-Jun and Zhou, Zhi-Hua",
+  title        = "Multi-Label Learning by Exploiting Label Correlations
+                  Locally",
+  year         = 2012,
+  publisher    = "AAAI Press",
+  abstract     = "It is well known that exploiting label correlations is
+                  important for multi-label learning. Existing approaches
+                  typically exploit label correlations globally, by assuming
+                  that the label correlations are shared by all the
+                  instances. In real-world tasks, however, different instances
+                  may share different label correlations, and few correlations
+                  are globally applicable. In this paper, we propose the ML-LOC
+                  approach which allows label correlations to be exploited
+                  locally. To encode the local influence of label correlations,
+                  we derive a LOC code to enhance the feature representation of
+                  each instance. The global discrimination fitting and local
+                  correlation sensitivity are incorporated into a unified
+                  framework, and an alternating solution is developed for the
+                  optimization. Experimental results on a number of image, text
+                  and gene data sets validate the effectiveness of our
+                  approach.",
+  booktitle    = "Proceedings of the Twenty-Sixth AAAI Conference on Artificial
+                  Intelligence",
+  pages        = "949–955",
+  numpages     = 7,
+  location     = "Toronto, Ontario, Canada",
+  series       = "AAAI'12"
+}
+
+@article{li-2014-condensed-filter-tree,
+  author       = "Chun-Liang Li and Hsuan-Tien Lin",
+  year         = 2014,
+  month        = 01,
+  pages        = "663-673",
+  title        = "Condensed filter tree for cost-sensitive multi-label
+                  classification",
+  volume       = 1,
+  journal      = "31st International Conference on Machine Learning, ICML 2014"
+}
+
+

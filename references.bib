@@ -3291,7 +3291,7 @@
   year         = 2014
 }
 
-@ARTICLE{ranzato-2015-sequen-level,
+@ARTICLE{ranzato-2015-mixer,
   adsnote      = "Provided by the SAO/NASA Astrophysics Data System",
   adsurl       = "http://adsabs.harvard.edu/abs/2015arXiv151106732R",
   archivePrefix= "arXiv",
@@ -19304,9 +19304,9 @@
 }
 
 @article{baehrens-2010-parzen,
-  author       = "Baehrens, David and Schroeter, Timon and Harmeling, Stefan
+  author       = {Baehrens, David and Schroeter, Timon and Harmeling, Stefan
                   and Kawanabe, Motoaki and Hansen, Katja and M\"{u}ller,
-                  Klaus-Robert",
+                  Klaus-Robert},
   title        = "How to Explain Individual Classification Decisions",
   year         = 2010,
   issue_date   = "3/1/2010",
@@ -19685,8 +19685,8 @@
 @incollection{nam-2017-maximing-subset-accuracy,
   title        = "Maximizing Subset Accuracy with Recurrent Neural Networks in
                   Multi-label Classification",
-  author       = "Nam, Jinseok and Loza Menc\'{\i}a, Eneldo and Kim, Hyunwoo J
-                  and F\"{u}rnkranz, Johannes",
+  author       = {Nam, Jinseok and Loza Menc\'{\i}a, Eneldo and Kim, Hyunwoo J
+                  and F\"{u}rnkranz, Johannes},
   booktitle    = "Advances in Neural Information Processing Systems 30",
   editor       = "I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach and
                   R. Fergus and S. Vishwanathan and R. Garnett",
@@ -19696,3 +19696,588 @@
   url          =
                   "http://papers.nips.cc/paper/7125-maximizing-subset-accuracy-with-recurrent-neural-networks-in-multi-label-classification.pdf"
 }
+
+@article{rennie-2016-self-critical,
+  author       = "Rennie, Steven J. and Marcheret, Etienne and Mroueh, Youssef
+                  and Ross, Jarret and Goel, Vaibhava",
+  title        = "Self-Critical Sequence Training for Image Captioning",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1612.00563v2",
+  abstract     = "Recently it has been shown that policy-gradient methods for
+                  reinforcement learning can be utilized to train deep
+                  end-to-end systems directly on non-differentiable metrics for
+                  the task at hand. In this paper we consider the problem of
+                  optimizing image captioning systems using reinforcement
+                  learning, and show that by carefully optimizing our systems
+                  using the test metrics of the MSCOCO task, significant gains
+                  in performance can be realized. Our systems are built using a
+                  new optimization approach that we call self-critical sequence
+                  training (SCST). SCST is a form of the popular REINFORCE
+                  algorithm that, rather than estimating a ``baseline`` to
+                  normalize the rewards and reduce variance, utilizes the
+                  output of its own test-time inference algorithm to normalize
+                  the rewards it experiences. Using this approach, estimating
+                  the reward signal (as actor-critic methods must do) and
+                  estimating normalization (as REINFORCE algorithms typically
+                  do) is avoided, while at the same time harmonizing the model
+                  with respect to its test-time inference
+                  procedure. Empirically we find that directly optimizing the
+                  CIDEr metric with SCST and greedy decoding at test-time is
+                  highly effective. Our results on the MSCOCO evaluation sever
+                  establish a new state-of-the-art on the task, improving the
+                  best result in terms of CIDEr from 104.9 to 114.7.",
+  archivePrefix= "arXiv",
+  eprint       = "1612.00563",
+  primaryClass = "cs.LG"
+}
+
+@techreport{settles-2009-active-learning,
+  title        = "Active learning literature survey",
+  author       = "Settles, Burr",
+  year         = 2009,
+  institution  = "University of Wisconsin-Madison Department of Computer
+                  Sciences"
+}
+
+@incollection{aggarwal-2014-active-learning,
+  title        = "Active learning: A survey",
+  author       = "Aggarwal, Charu C and Kong, Xiangnan and Gu, Quanquan and
+                  Han, Jiawei and Philip, S Yu",
+  booktitle    = "Data Classification: Algorithms and Applications",
+  pages        = "571-605",
+  year         = 2014,
+  publisher    = "CRC Press"
+}
+@article{tang-2019-distilling-bert,
+  author       = "Tang, Raphael and Lu, Yao and Liu, Linqing and Mou, Lili and
+                  Vechtomova, Olga and Lin, Jimmy",
+  title        = "Distilling Task-Specific Knowledge From Bert Into Simple
+                  Neural Networks",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1903.12136v1",
+  abstract     = "In the natural language processing literature, neural
+                  networks are becoming increasingly deeper and complex. The
+                  recent poster child of this trend is the deep language
+                  representation model, which includes BERT, ELMo, and
+                  GPT. These developments have led to the conviction that
+                  previous-generation, shallower neural networks for language
+                  understanding are obsolete. In this paper, however, we
+                  demonstrate that rudimentary, lightweight neural networks can
+                  still be made competitive without architecture changes,
+                  external training data, or additional input features. We
+                  propose to distill knowledge from BERT, a state-of-the-art
+                  language representation model, into a single-layer BiLSTM, as
+                  well as its siamese counterpart for sentence-pair
+                  tasks. Across multiple datasets in paraphrasing, natural
+                  language inference, and sentiment classification, we achieve
+                  comparable results with ELMo, while using roughly 100 times
+                  fewer parameters and 15 times less inference time.",
+  archivePrefix= "arXiv",
+  eprint       = "1903.12136",
+  primaryClass = "cs.CL"
+}
+
+@article{tay-2020-efficient-transformers,
+  author       = "Tay, Yi and Dehghani, Mostafa and Bahri, Dara and Metzler,
+                  Donald",
+  title        = "Efficient Transformers: a Survey",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2009.06732v1",
+  abstract     = "Transformer model architectures have garnered immense
+                  interest lately due to their effectiveness across a range of
+                  domains like language, vision and reinforcement learning. In
+                  the field of natural language processing for example,
+                  Transformers have become an indispensable staple in the
+                  modern deep learning stack. Recently, a dizzying number of
+                  ``X-former`` models have been proposed - Reformer, Linformer,
+                  Performer, Longformer, to name a few - which improve upon the
+                  original Transformer architecture, many of which make
+                  improvements around computational and memory efficiency. With
+                  the aim of helping the avid researcher navigate this flurry,
+                  this paper characterizes a large and thoughtful selection of
+                  recent efficiency-flavored ``X-former`` models, providing an
+                  organized and comprehensive overview of existing work and
+                  models across multiple domains.",
+  archivePrefix= "arXiv",
+  eprint       = "2009.06732",
+  primaryClass = "cs.LG"
+}
+
+@article{wei-2019-casrel,
+  author       = "Wei, Zhepei and Su, Jianlin and Wang, Yue and Tian, Yuan and
+                  Chang, Yi",
+  title        = "A Novel Cascade Binary Tagging Framework for Relational
+                  Triple Extraction",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1909.03227v4",
+  abstract     = "Extracting relational triples from unstructured text is
+                  crucial for large-scale knowledge graph
+                  construction. However, few existing works excel in solving
+                  the overlapping triple problem where multiple relational
+                  triples in the same sentence share the same entities. In this
+                  work, we introduce a fresh perspective to revisit the
+                  relational triple extraction task and propose a novel cascade
+                  binary tagging framework (CasRel) derived from a principled
+                  problem formulation. Instead of treating relations as
+                  discrete labels as in previous works, our new framework
+                  models relations as functions that map subjects to objects in
+                  a sentence, which naturally handles the overlapping
+                  problem. Experiments show that the CasRel framework already
+                  outperforms state-of-the-art methods even when its encoder
+                  module uses a randomly initialized BERT encoder, showing the
+                  power of the new tagging framework. It enjoys further
+                  performance boost when employing a pre-trained BERT encoder,
+                  outperforming the strongest baseline by 17.5 and 30.2
+                  absolute gain in F1-score on two public datasets NYT and
+                  WebNLG, respectively. In-depth analysis on different
+                  scenarios of overlapping triples shows that the method
+                  delivers consistent performance gain across all these
+                  scenarios. The source code and data are released online.",
+  archivePrefix= "arXiv",
+  eprint       = "1909.03227",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{ma-2020-simple-lexicon,
+  title        = "Simplify the Usage of Lexicon in {C}hinese {NER}",
+  author       = "Ma, Ruotian and Peng, Minlong and Zhang, Qi and Wei, Zhongyu
+                  and Huang, Xuanjing",
+  booktitle    = "Proceedings of the 58th Annual Meeting of the Association for
+                  Computational Linguistics",
+  month        = jul,
+  year         = 2020,
+  address      = "Online",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/2020.acl-main.528",
+  doi          = "10.18653/v1/2020.acl-main.528",
+  pages        = "5951-5960",
+  abstract     = "Recently, many works have tried to augment the performance of
+                  Chinese named entity recognition (NER) using word
+                  lexicons. As a representative, Lattice-LSTM has achieved new
+                  benchmark results on several public Chinese NER
+                  datasets. However, Lattice-LSTM has a complex model
+                  architecture. This limits its application in many industrial
+                  areas where real-time NER responses are needed. In this work,
+                  we propose a simple but effective method for incorporating
+                  the word lexicon into the character representations. This
+                  method avoids designing a complicated sequence modeling
+                  architecture, and for any neural NER model, it requires only
+                  subtle adjustment of the character representation layer to
+                  introduce the lexicon information. Experimental studies on
+                  four benchmark Chinese NER datasets show that our method
+                  achieves an inference speed up to 6.15 times faster than
+                  those of state-of-the-art methods, along with a better
+                  performance. The experimental results also show that the
+                  proposed method can be easily incorporated with pre-trained
+                  models like BERT."
+}
+
+@article{li-2019-mrc4ner,
+  author       = "Li, Xiaoya and Feng, Jingrong and Meng, Yuxian and Han,
+                  Qinghong and Wu, Fei and Li, Jiwei",
+  title        = "A Unified Mrc Framework for Named Entity Recognition",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1910.11476v6",
+  abstract     = "The task of named entity recognition (NER) is normally
+                  divided into nested NER and flat NER depending on whether
+                  named entities are nested or not. Models are usually
+                  separately developed for the two tasks, since sequence
+                  labeling models, the most widely used backbone for flat NER,
+                  are only able to assign a single label to a particular token,
+                  which is unsuitable for nested NER where a token may be
+                  assigned several labels.  In this paper, we propose a unified
+                  framework that is capable of handling both flat and nested
+                  NER tasks. Instead of treating the task of NER as a sequence
+                  labeling problem, we propose to formulate it as a machine
+                  reading comprehension (MRC) task. For example, extracting
+                  entities with the \textsc{per} label is formalized as
+                  extracting answer spans to the question ``{\it which person
+                  is mentioned in the text?}``. This formulation naturally
+                  tackles the entity overlapping issue in nested NER: the
+                  extraction of two overlapping entities for different
+                  categories requires answering two independent
+                  questions. Additionally, since the query encodes informative
+                  prior knowledge, this strategy facilitates the process of
+                  entity extraction, leading to better performances for not
+                  only nested NER, but flat NER.  We conduct experiments on
+                  both {\em nested} and {\em flat} NER datasets.  Experimental
+                  results demonstrate the effectiveness of the proposed
+                  formulation.  We are able to achieve vast amount of
+                  performance boost over current SOTA models on nested NER
+                  datasets, i.e., +1.28, +2.55, +5.44, +6.37, respectively on
+                  ACE04, ACE05, GENIA and KBP17, along with SOTA results on
+                  flat NER datasets, i.e.,+0.24, +1.95, +0.21, +1.49
+                  respectively on English CoNLL 2003, English OntoNotes 5.0,
+                  Chinese MSRA, Chinese OntoNotes 4.0.",
+  archivePrefix= "arXiv",
+  eprint       = "1910.11476",
+  primaryClass = "cs.CL"
+}
+
+@article{li-2019-dice-loss,
+  author       = "Li, Xiaoya and Sun, Xiaofei and Meng, Yuxian and Liang,
+                  Junjun and Wu, Fei and Li, Jiwei",
+  title        = "Dice Loss for Data-Imbalanced Nlp Tasks",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1911.02855v3",
+  abstract     = "Many NLP tasks such as tagging and machine reading
+                  comprehension are faced with the severe data imbalance issue:
+                  negative examples significantly outnumber positive examples,
+                  and the huge number of background examples (or easy-negative
+                  examples) overwhelms the training. The most commonly used
+                  cross entropy (CE) criteria is actually an accuracy-oriented
+                  objective, and thus creates a discrepancy between training
+                  and test: at training time, each training instance
+                  contributes equally to the objective function, while at test
+                  time F1 score concerns more about positive examples. In this
+                  paper, we propose to use dice loss in replacement of the
+                  standard cross-entropy objective for data-imbalanced NLP
+                  tasks. Dice loss is based on the Sorensen-Dice coefficient or
+                  Tversky index, which attaches similar importance to false
+                  positives and false negatives, and is more immune to the
+                  data-imbalance issue. To further alleviate the dominating
+                  influence from easy-negative examples in training, we propose
+                  to associate training examples with dynamically adjusted
+                  weights to deemphasize easy-negative examples.Theoretical
+                  analysis shows that this strategy narrows down the gap
+                  between the F1 score in evaluation and the dice loss in
+                  training.  With the proposed training objective, we observe
+                  significant performance boost on a wide range of data
+                  imbalanced NLP tasks. Notably, we are able to achieve SOTA
+                  results on CTB5, CTB6 and UD1.4 for the part of speech
+                  tagging task; SOTA results on CoNLL03, OntoNotes5.0, MSRA and
+                  OntoNotes4.0 for the named entity recognition task; along
+                  with competitive results on the tasks of machine reading
+                  comprehension and paraphrase identification.",
+  archivePrefix= "arXiv",
+  eprint       = "1911.02855",
+  primaryClass = "cs.CL"
+}
+
+@article{ishida-2020-zero-loss,
+  author       = "Ishida, Takashi and Yamane, Ikko and Sakai, Tomoya and Niu,
+                  Gang and Sugiyama, Masashi",
+  title        = "Do We Need Zero Training Loss After Achieving Zero Training
+                  Error?",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2002.08709v1",
+  abstract     = "Overparameterized deep networks have the capacity to memorize
+                  training data with zero training error. Even after
+                  memorization, the training loss continues to approach zero,
+                  making the model overconfident and the test performance
+                  degraded. Since existing regularizers do not directly aim to
+                  avoid zero training loss, they often fail to maintain a
+                  moderate level of training loss, ending up with a too small
+                  or too large loss. We propose a direct solution called
+                  flooding that intentionally prevents further reduction of the
+                  training loss when it reaches a reasonably small value, which
+                  we call the flooding level. Our approach makes the loss float
+                  around the flooding level by doing mini-batched gradient
+                  descent as usual but gradient ascent if the training loss is
+                  below the flooding level. This can be implemented with one
+                  line of code, and is compatible with any stochastic optimizer
+                  and other regularizers. With flooding, the model will
+                  continue to ``random walk`` with the same non-zero training
+                  loss, and we expect it to drift into an area with a flat loss
+                  landscape that leads to better generalization. We
+                  experimentally show that flooding improves performance and as
+                  a byproduct, induces a double descent curve of the test
+                  loss.",
+  archivePrefix= "arXiv",
+  eprint       = "2002.08709",
+  primaryClass = "cs.LG"
+}
+@article{guo-2017-calibration,
+  author       = "Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger,
+                  Kilian Q.",
+  title        = "On Calibration of Modern Neural Networks",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1706.04599v2",
+  abstract     = "Confidence calibration -- the problem of predicting
+                  probability estimates representative of the true correctness
+                  likelihood -- is important for classification models in many
+                  applications. We discover that modern neural networks, unlike
+                  those from a decade ago, are poorly calibrated. Through
+                  extensive experiments, we observe that depth, width, weight
+                  decay, and Batch Normalization are important factors
+                  influencing calibration. We evaluate the performance of
+                  various post-processing calibration methods on
+                  state-of-the-art architectures with image and document
+                  classification datasets. Our analysis and experiments not
+                  only offer insights into neural network learning, but also
+                  provide a simple and straightforward recipe for practical
+                  settings: on most datasets, temperature scaling -- a
+                  single-parameter variant of Platt Scaling -- is surprisingly
+                  effective at calibrating predictions.",
+  archivePrefix= "arXiv",
+  eprint       = "1706.04599",
+  primaryClass = "cs.LG"
+}
+
+@inproceedings{lin-2004-rouge,
+  author       = "Lin, Chin-Yew",
+  title        = "{ROUGE}: A Package for Automatic Evaluation of Summaries",
+  booktitle    = "Text Summarization Branches Out",
+  year         = 2004,
+  pages        = "74-81",
+  url          = "https://www.aclweb.org/anthology/W04-1013",
+  address      = "Barcelona, Spain",
+  month        = jul,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@inproceedings{yaghoobzadeh-2015-corpus-level,
+  author       = "Yaghoobzadeh, Yadollah and Sch{\"u}tze, Hinrich",
+  title        = "Corpus-level Fine-grained Entity Typing Using Contextual
+                  Information",
+  booktitle    = "Proceedings of the 2015 Conference on Empirical Methods in
+                  Natural Language Processing",
+  year         = 2015,
+  pages        = "715-725",
+  doi          = "10.18653/v1/D15-1083",
+  url          = "https://doi.org/10.18653/v1/D15-1083",
+  address      = "Lisbon, Portugal",
+  month        = sep,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@inproceedings{ren-2016-afet,
+  author       = "Ren, Xiang and He, Wenqi and Qu, Meng and Huang, Lifu and Ji,
+                  Heng and Han, Jiawei",
+  title        = "{AFET}: Automatic Fine-Grained Entity Typing by Hierarchical
+                  Partial-Label Embedding",
+  booktitle    = "Proceedings of the 2016 Conference on Empirical Methods in
+                  Natural Language Processing",
+  year         = 2016,
+  pages        = "1369-1378",
+  doi          = "10.18653/v1/D16-1144",
+  url          = "https://doi.org/10.18653/v1/D16-1144",
+  address      = "Austin, Texas",
+  month        = nov,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@article{ren-2016-label-noise,
+  author       = "Ren, Xiang and He, Wenqi and Qu, Meng and Voss, Clare R. and
+                  Ji, Heng and Han, Jiawei",
+  title        = "Label Noise Reduction in Entity Typing By Heterogeneous
+                  Partial-Label Embedding",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1602.05307v1",
+  abstract     = "Current systems of fine-grained entity typing use distant
+                  supervision in conjunction with existing knowledge bases to
+                  assign categories (type labels) to entity mentions. However,
+                  the type labels so obtained from knowledge bases are often
+                  noisy (i.e., incorrect for the entity mention's local
+                  context). We define a new task, Label Noise Reduction in
+                  Entity Typing (LNR), to be the automatic identification of
+                  correct type labels (type-paths) for training examples, given
+                  the set of candidate type labels obtained by distant
+                  supervision with a given type hierarchy. The unknown type
+                  labels for individual entity mentions and the semantic
+                  similarity between entity types pose unique challenges for
+                  solving the LNR task. We propose a general framework, called
+                  PLE, to jointly embed entity mentions, text features and
+                  entity types into the same low-dimensional space where, in
+                  that space, objects whose types are semantically close have
+                  similar representations. Then we estimate the type-path for
+                  each training example in a top-down manner using the learned
+                  embeddings. We formulate a global objective for learning the
+                  embeddings from text corpora and knowledge bases, which
+                  adopts a novel margin-based loss that is robust to noisy
+                  labels and faithfully models type correlation derived from
+                  knowledge bases. Our experiments on three public typing
+                  datasets demonstrate the effectiveness and robustness of PLE,
+                  with an average of 25 \% improvement in accuracy compared to
+                  next best method.",
+  archivePrefix= "arXiv",
+  eprint       = "1602.05307",
+  primaryClass = "cs.CL"
+}
+
+@article{li-2020-flat,
+  author       = "Li, Xiaonan and Yan, Hang and Qiu, Xipeng and Huang,
+                  Xuanjing",
+  title        = "Flat: Chinese Ner Using Flat-Lattice Transformer",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2004.11795v2",
+  abstract     = "Recently, the character-word lattice structure has been
+                  proved to be effective for Chinese named entity recognition
+                  (NER) by incorporating the word information. However, since
+                  the lattice structure is complex and dynamic, most existing
+                  lattice-based models are hard to fully utilize the parallel
+                  computation of GPUs and usually have a low
+                  inference-speed. In this paper, we propose FLAT: Flat-LAttice
+                  Transformer for Chinese NER, which converts the lattice
+                  structure into a flat structure consisting of spans. Each
+                  span corresponds to a character or latent word and its
+                  position in the original lattice. With the power of
+                  Transformer and well-designed position encoding, FLAT can
+                  fully leverage the lattice information and has an excellent
+                  parallelization ability. Experiments on four datasets show
+                  FLAT outperforms other lexicon-based models in performance
+                  and efficiency.",
+  archivePrefix= "arXiv",
+  eprint       = "2004.11795",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{gui-2019-lr-cnn,
+  title        = "CNN-Based Chinese NER with Lexicon Rethinking",
+  author       = "Gui, Tao and Ma, Ruotian and Zhang, Qi and Zhao, Lujun and
+                  Jiang, Yu-Gang and Huang, Xuanjing",
+  booktitle    = "Proceedings of the Twenty-Eighth International Joint
+                  Conference on Artificial Intelligence, {IJCAI-19}",
+  publisher    = "International Joint Conferences on Artificial Intelligence
+                  Organization",
+  pages        = "4982-4988",
+  year         = 2019,
+  month        = 7,
+  doi          = "10.24963/ijcai.2019/692",
+  url          = "https://doi.org/10.24963/ijcai.2019/692"
+}
+
+@inproceedings{gui-2019-lgn,
+  author       = "Gui, Tao and Zou, Yicheng and Zhang, Qi and Peng, Minlong and
+                  Fu, Jinlan and Wei, Zhongyu and Huang, Xuanjing",
+  title        = "A Lexicon-Based Graph Neural Network for {C}hinese {NER}",
+  booktitle    = "Proceedings of the 2019 Conference on Empirical Methods in
+                  Natural Language Processing and the 9th International Joint
+                  Conference on Natural Language Processing (EMNLP-IJCNLP)",
+  year         = 2019,
+  pages        = "1040-1050",
+  doi          = "10.18653/v1/D19-1096",
+  url          = "https://doi.org/10.18653/v1/D19-1096",
+  abstract     = "Recurrent neural networks (RNN) used for Chinese named entity
+                  recognition (NER) that sequentially track character and word
+                  information have achieved great success. However, the
+                  characteristic of chain structure and the lack of global
+                  semantics determine that RNN-based models are vulnerable to
+                  word ambiguities. In this work, we try to alleviate this
+                  problem by introducing a lexicon-based graph neural network
+                  with global semantics, in which lexicon knowledge is used to
+                  connect characters to capture the local composition, while a
+                  global relay node can capture global sentence semantics and
+                  long-range dependency. Based on the multiple graph-based
+                  interactions among characters, potential words, and the
+                  whole-sentence semantics, word ambiguities can be effectively
+                  tackled. Experiments on four NER datasets show that the
+                  proposed model achieves significant improvements against
+                  other baseline models.",
+  address      = "Hong Kong, China",
+  month        = nov,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@inproceedings{liu-2019-wc-lstm,
+  author       = "Liu, Wei and Xu, Tongge and Xu, Qinghua and Song, Jiayu and
+                  Zu, Yueran",
+  title        = "An Encoding Strategy Based Word-Character {LSTM} for
+                  {C}hinese {NER}",
+  booktitle    = "Proceedings of the 2019 Conference of the North {A}merican
+                  Chapter of the Association for Computational Linguistics:
+                  Human Language Technologies, Volume 1 (Long and Short
+                  Papers)",
+  year         = 2019,
+  pages        = "2379-2389",
+  doi          = "10.18653/v1/N19-1247",
+  url          = "https://doi.org/10.18653/v1/N19-1247",
+  abstract     = "A recently proposed lattice model has demonstrated that words
+                  in character sequence can provide rich word boundary
+                  information for character-based Chinese NER model. In this
+                  model, word information is integrated into a shortcut path
+                  between the start and the end characters of the
+                  word. However, the existence of shortcut path may cause the
+                  model to degenerate into a partial word-based model, which
+                  will suffer from word segmentation errors. Furthermore, the
+                  lattice model can not be trained in batches due to its DAG
+                  structure. In this paper, we propose a novel word-character
+                  LSTM(WC-LSTM) model to add word information into the start or
+                  the end character of the word, alleviating the influence of
+                  word segmentation errors while obtaining the word boundary
+                  information. Four different strategies are explored in our
+                  model to encode word information into a fixed-sized
+                  representation for efficient batch training. Experiments on
+                  benchmark datasets show that our proposed model outperforms
+                  other state-of-the-arts models.",
+  address      = "Minneapolis, Minnesota",
+  month        = jun,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@inproceedings{ding-2019-multi-digraph,
+  author       = "Ding, Ruixue and Xie, Pengjun and Zhang, Xiaoyan and Lu, Wei
+                  and Li, Linlin and Si, Luo",
+  title        = "A Neural Multi-digraph Model for {C}hinese {NER} with
+                  Gazetteers",
+  booktitle    = "Proceedings of the 57th Annual Meeting of the Association for
+                  Computational Linguistics",
+  year         = 2019,
+  pages        = "1462-1467",
+  doi          = "10.18653/v1/P19-1141",
+  url          = "https://doi.org/10.18653/v1/P19-1141",
+  abstract     = "Gazetteers were shown to be useful resources for named entity
+                  recognition (NER). Many existing approaches to incorporating
+                  gazetteers into machine learning based NER systems rely on
+                  manually defined selection strategies or handcrafted
+                  templates, which may not always lead to optimal
+                  effectiveness, especially when multiple gazetteers are
+                  involved. This is especially the case for the task of Chinese
+                  NER, where the words are not naturally tokenized, leading to
+                  additional ambiguities. To automatically learn how to
+                  incorporate multiple gazetteers into an NER system, we
+                  propose a novel approach based on graph neural networks with
+                  a multi-digraph structure that captures the information that
+                  the gazetteers offer. Experiments on various datasets show
+                  that our model is effective in incorporating rich gazetteer
+                  information while resolving ambiguities, outperforming
+                  previous approaches.",
+  address      = "Florence, Italy",
+  month        = jul,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@inproceedings{zheng-2019-boundary-aware,
+  author       = "Zheng, Changmeng and Cai, Yi and Xu, Jingyun and Leung,
+                  Ho-fung and Xu, Guandong",
+  title        = "A Boundary-aware Neural Model for Nested Named Entity
+                  Recognition",
+  booktitle    = "Proceedings of the 2019 Conference on Empirical Methods in
+                  Natural Language Processing and the 9th International Joint
+                  Conference on Natural Language Processing (EMNLP-IJCNLP)",
+  year         = 2019,
+  pages        = "357-366",
+  doi          = "10.18653/v1/D19-1034",
+  url          = "https://doi.org/10.18653/v1/D19-1034",
+  abstract     = "In natural language processing, it is common that many
+                  entities contain other entities inside them. Most existing
+                  works on named entity recognition (NER) only deal with flat
+                  entities but ignore nested ones. We propose a boundary-aware
+                  neural model for nested NER which leverages entity boundaries
+                  to predict entity categorical labels. Our model can locate
+                  entities precisely by detecting boundaries using sequence
+                  labeling models. Based on the detected boundaries, our model
+                  utilizes the boundary-relevant regions to predict entity
+                  categorical labels, which can decrease computation cost and
+                  relieve error propagation problem in layered sequence
+                  labeling model. We introduce multitask learning to capture
+                  the dependencies of entity boundaries and their categorical
+                  labels, which helps to improve the performance of identifying
+                  entities. We conduct our experiments on GENIA dataset and the
+                  experimental results demonstrate that our model outperforms
+                  other state-of-the-art methods.",
+  address      = "Hong Kong, China",
+  month        = nov,
+  publisher    = "Association for Computational Linguistics"
+}
+

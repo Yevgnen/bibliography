@@ -11656,13 +11656,13 @@
   publisher    = "Oxford University Press"
 }
 
-@inproceedings{strubell-etal-2017-iterated-dilated-conv,
+@inproceedings{strubell-2017-id-cnn,
   title        = "Fast and Accurate Entity Recognition with Iterated Dilated
-  Convolutions",
+                  Convolutions",
   author       = "Strubell, Emma and Verga, Patrick and Belanger, David and
-      McCallum, Andrew",
+                  McCallum, Andrew",
   booktitle    = "Proceedings of the 2017 Conference on Empirical Methods in
-  Natural Language Processing",
+                  Natural Language Processing",
   month        = sep,
   year         = 2017,
   address      = "Copenhagen, Denmark",
@@ -11671,23 +11671,28 @@
   doi          = "10.18653/v1/D17-1283",
   pages        = "2670-2680",
   abstract     = "Today when many practitioners run basic NLP on the entire web
-  and large-volume traffic, faster methods are paramount to saving time and
-  energy costs. Recent advances in GPU hardware have led to the emergence of
-  bi-directional LSTMs as a standard method for obtaining per-token vector
-  representations serving as input to labeling tasks such as NER (often
-  followed by prediction in a linear-chain CRF). Though expressive and
-  accurate, these models fail to fully exploit GPU parallelism, limiting their
-  computational efficiency. This paper proposes a faster alternative to
-  Bi-LSTMs for NER: Iterated Dilated Convolutional Neural Networks (ID-CNNs),
-  which have better capacity than traditional CNNs for large context and
-  structured prediction. Unlike LSTMs whose sequential processing on sentences
-  of length N requires O(N) time even in the face of parallelism, ID-CNNs
-  permit fixed-depth convolutions to run in parallel across entire
-  documents. We describe a distinct combination of network structure, parameter
-  sharing and training procedures that enable dramatic 14-20x test-time
-  speedups while retaining accuracy comparable to the Bi-LSTM-CRF. Moreover,
-  ID-CNNs trained to aggregate context from the entire document are more
-  accurate than Bi-LSTM-CRFs while attaining 8x faster test time speeds."
+                  and large-volume traffic, faster methods are paramount to
+                  saving time and energy costs. Recent advances in GPU hardware
+                  have led to the emergence of bi-directional LSTMs as a
+                  standard method for obtaining per-token vector
+                  representations serving as input to labeling tasks such as
+                  NER (often followed by prediction in a linear-chain
+                  CRF). Though expressive and accurate, these models fail to
+                  fully exploit GPU parallelism, limiting their computational
+                  efficiency. This paper proposes a faster alternative to
+                  Bi-LSTMs for NER: Iterated Dilated Convolutional Neural
+                  Networks (ID-CNNs), which have better capacity than
+                  traditional CNNs for large context and structured
+                  prediction. Unlike LSTMs whose sequential processing on
+                  sentences of length N requires O(N) time even in the face of
+                  parallelism, ID-CNNs permit fixed-depth convolutions to run
+                  in parallel across entire documents. We describe a distinct
+                  combination of network structure, parameter sharing and
+                  training procedures that enable dramatic 14-20x test-time
+                  speedups while retaining accuracy comparable to the
+                  Bi-LSTM-CRF. Moreover, ID-CNNs trained to aggregate context
+                  from the entire document are more accurate than Bi-LSTM-CRFs
+                  while attaining 8x faster test time speeds."
 }
 
 @inproceedings{lin-2017-multi-channel-bi-lstm-crf,
@@ -20281,3 +20286,244 @@
   publisher    = "Association for Computational Linguistics"
 }
 
+@inproceedings{zhao-2008-unsupervised-segmentation,
+  author       = "Zhao, Hai and Kit, Chunyu",
+  title        = "Unsupervised Segmentation Helps Supervised Learning of
+                  Character Tagging for Word Segmentation and Named Entity
+                  Recognition",
+  booktitle    = "Proceedings of the Sixth {SIGHAN} Workshop on {C}hinese
+                  Language Processing",
+  year         = 2008,
+  url          = "https://www.aclweb.org/anthology/I08-4017"
+}
+
+@inproceedings{peng-2016-word-segmentation,
+  author       = "Peng, Nanyun and Dredze, Mark",
+  title        = "Improving Named Entity Recognition for {C}hinese Social Media
+                  with Word Segmentation Representation Learning",
+  booktitle    = "Proceedings of the 54th Annual Meeting of the Association for
+                  Computational Linguistics (Volume 2: Short Papers)",
+  year         = 2016,
+  pages        = "149-155",
+  doi          = "10.18653/v1/P16-2025",
+  url          = "https://doi.org/10.18653/v1/P16-2025",
+  address      = "Berlin, Germany",
+  month        = aug,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@article{li-2017-rethinking,
+  author       = "Li, Xin and Jie, Zequn and Feng, Jiashi and Liu, Changsong
+                  and Yan, Shuicheng",
+  title        = "Learning With Rethinking: Recurrently Improving Convolutional
+                  Neural Networks Through Feedback",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1708.04483v1",
+  abstract     = "Recent years have witnessed the great success of
+                  convolutional neural network (CNN) based models in the field
+                  of computer vision. CNN is able to learn hierarchically
+                  abstracted features from images in an end-to-end training
+                  manner. However, most of the existing CNN models only learn
+                  features through a feedforward structure and no feedback
+                  information from top to bottom layers is exploited to enable
+                  the networks to refine themselves. In this paper, we propose
+                  a ``Learning with Rethinking`` algorithm. By adding a
+                  feedback layer and producing the emphasis vector, the model
+                  is able to recurrently boost the performance based on
+                  previous prediction. Particularly, it can be employed to
+                  boost any pre-trained models. This algorithm is tested on
+                  four object classification benchmark datasets: CIFAR-100,
+                  CIFAR-10, MNIST-background-image and ILSVRC-2012
+                  dataset. These results have demonstrated the advantage of
+                  training CNN models with the proposed feedback mechanism.",
+  archivePrefix= "arXiv",
+  eprint       = "1708.04483",
+  primaryClass = "cs.CV"
+}
+
+@inproceedings{wang-2018-multi-scale,
+  title        = "Densely Connected CNN with Multi-scale Feature Attention for
+                  Text Classification",
+  author       = "Shiyao Wang and Minlie Huang and Zhidong Deng",
+  booktitle    = "Proceedings of the Twenty-Seventh International Joint
+                  Conference on Artificial Intelligence, {IJCAI-18}",
+  publisher    = "International Joint Conferences on Artificial Intelligence
+                  Organization",
+  pages        = "4468-4474",
+  year         = 2018,
+  month        = 7,
+  doi          = "10.24963/ijcai.2018/621",
+  url          = "https://doi.org/10.24963/ijcai.2018/621"
+}
+
+@article{mengge-2019-porous-lattice-transformer,
+  author       = "Mengge, Xue and Bowen, Yu and Tingwen, Liu and Bin, Wang and
+                  Erli, Meng and Quangang, Li",
+  title        = "Porous Lattice-Based Transformer Encoder for Chinese Ner",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1911.02733v2",
+  abstract     = "Incorporating lattices into character-level Chinese named
+                  entity recognition is an effective method to exploit explicit
+                  word information. Recent works extend recurrent and
+                  convolutional neural networks to model lattice inputs.
+                  However, due to the DAG structure or the variable-sized
+                  potential word set for lattice inputs, these models prevent
+                  the convenient use of batched computation, resulting in
+                  serious inefficient. In this paper, we propose a porous
+                  lattice-based transformer encoder for Chinese named entity
+                  recognition, which is capable to better exploit the GPU
+                  parallelism and batch the computation owing to the mask
+                  mechanism in transformer. We first investigate the
+                  lattice-aware self-attention coupled with relative position
+                  representations to explore effective word information in the
+                  lattice structure. Besides, to strengthen the local
+                  dependencies among neighboring tokens, we propose a novel
+                  porous structure during self-attentional computation
+                  processing, in which every two non-neighboring tokens are
+                  connected through a shared pivot node.  Experimental results
+                  on four datasets show that our model performs up to 9.47
+                  times faster than state-of-the-art models, while is roughly
+                  on a par with its performance. The source code of this paper
+                  can be obtained from https://github.com/xxx/xxx.",
+  archivePrefix= "arXiv",
+  eprint       = "1911.02733",
+  primaryClass = "cs.CL"
+}
+
+@article{esteva-2019-healthcare-guide,
+  title        = "A guide to deep learning in healthcare",
+  author       = "A. Esteva and Alexandre Robicquet and Bharath Ramsundar and
+                  V. Kuleshov and Mark A. DePristo and K. Chou and C. Cui and
+                  G. Corrado and S. Thrun and Jeff Dean",
+  journal      = "Nature Medicine",
+  year         = 2019,
+  volume       = 25,
+  pages        = "24-29"
+}
+
+@inproceedings{hu-2019-multi-span,
+  author       = "Hu, Minghao and Peng, Yuxing and Huang, Zhen and Li,
+                  Dongsheng",
+  title        = "A Multi-Type Multi-Span Network for Reading Comprehension
+                  that Requires Discrete Reasoning",
+  booktitle    = "Proceedings of the 2019 Conference on Empirical Methods in
+                  Natural Language Processing and the 9th International Joint
+                  Conference on Natural Language Processing (EMNLP-IJCNLP)",
+  year         = 2019,
+  pages        = "1596-1606",
+  doi          = "10.18653/v1/D19-1170",
+  url          = "https://doi.org/10.18653/v1/D19-1170",
+  abstract     = "Rapid progress has been made in the field of reading
+                  comprehension and question answering, where several systems
+                  have achieved human parity in some simplified
+                  settings. However, the performance of these models degrades
+                  significantly when they are applied to more realistic
+                  scenarios, such as answers involve various types, multiple
+                  text strings are correct answers, or discrete reasoning
+                  abilities are required. In this paper, we introduce the
+                  Multi-Type Multi-Span Network (MTMSN), a neural reading
+                  comprehension model that combines a multi-type answer
+                  predictor designed to support various answer types (e.g.,
+                  span, count, negation, and arithmetic expression) with a
+                  multi-span extraction method for dynamically producing one or
+                  multiple text spans. In addition, an arithmetic expression
+                  reranking mechanism is proposed to rank expression candidates
+                  for further confirming the prediction. Experiments show that
+                  our model achieves 79.9 F1 on the DROP hidden test set,
+                  creating new state-of-the-art results. Source code
+                  (https://github.com/huminghao16/MTMSN) is released to
+                  facilitate future work.",
+  address      = "Hong Kong, China",
+  month        = nov,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@article{segal-2019-multi-span,
+  author       = "Segal, Elad and Efrat, Avia and Shoham, Mor and Globerson,
+                  Amir and Berant, Jonathan",
+  title        = "A Simple and Effective Model for Answering Multi-Span
+                  Questions",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1909.13375v3",
+  abstract     = "Models for reading comprehension (RC) commonly restrict their
+                  output space to the set of all single contiguous spans from
+                  the input, in order to alleviate the learning problem and
+                  avoid the need for a model that generates text
+                  explicitly. However, forcing an answer to be a single span
+                  can be restrictive, and some recent datasets also include
+                  multi-span questions, i.e., questions whose answer is a set
+                  of non-contiguous spans in the text. Naturally, models that
+                  return single spans cannot answer these questions. In this
+                  work, we propose a simple architecture for answering
+                  multi-span questions by casting the task as a sequence
+                  tagging problem, namely, predicting for each input token
+                  whether it should be part of the output or not. Our model
+                  substantially improves performance on span extraction
+                  questions from DROP and Quoref by 9.9 and 5.5 EM points
+                  respectively.",
+  archivePrefix= "arXiv",
+  eprint       = "1909.13375",
+  primaryClass = "cs.CL"
+}
+
+@article{dua-2019-drop,
+  author       = "Dua, Dheeru and Wang, Yizhong and Dasigi, Pradeep and
+                  Stanovsky, Gabriel and Singh, Sameer and Gardner, Matt",
+  title        = "Drop: a Reading Comprehension Benchmark Requiring Discrete
+                  Reasoning Over Paragraphs",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1903.00161v2",
+  abstract     = "Reading comprehension has recently seen rapid progress, with
+                  systems matching humans on the most popular datasets for the
+                  task. However, a large body of work has highlighted the
+                  brittleness of these systems, showing that there is much work
+                  left to be done. We introduce a new English reading
+                  comprehension benchmark, DROP, which requires Discrete
+                  Reasoning Over the content of Paragraphs. In this
+                  crowdsourced, adversarially-created, 96k-question benchmark,
+                  a system must resolve references in a question, perhaps to
+                  multiple input positions, and perform discrete operations
+                  over them (such as addition, counting, or sorting). These
+                  operations require a much more comprehensive understanding of
+                  the content of paragraphs than what was necessary for prior
+                  datasets. We apply state-of-the-art methods from both the
+                  reading comprehension and semantic parsing literature on this
+                  dataset and show that the best systems only achieve 32.7 \%
+                  F1 on our generalized accuracy metric, while expert human
+                  performance is 96.0 \%. We additionally present a new model
+                  that combines reading comprehension methods with simple
+                  numerical reasoning to achieve 47.0 \% F1.",
+  archivePrefix= "arXiv",
+  eprint       = "1903.00161",
+  primaryClass = "cs.CL"
+}
+
+@article{simonyan-2013-gradient,
+  author       = "Simonyan, Karen and Vedaldi, Andrea and Zisserman, Andrew",
+  title        = "Deep Inside Convolutional Networks: Visualising Image
+                  Classification Models and Saliency Maps",
+  journal      = "CoRR",
+  year         = 2013,
+  url          = "http://arxiv.org/abs/1312.6034v2",
+  abstract     = "This paper addresses the visualisation of image
+                  classification models, learnt using deep Convolutional
+                  Networks (ConvNets). We consider two visualisation
+                  techniques, based on computing the gradient of the class
+                  score with respect to the input image. The first one
+                  generates an image, which maximises the class score [Erhan et
+                  al., 2009], thus visualising the notion of the class,
+                  captured by a ConvNet. The second technique computes a class
+                  saliency map, specific to a given image and class. We show
+                  that such maps can be employed for weakly supervised object
+                  segmentation using classification ConvNets. Finally, we
+                  establish the connection between the gradient-based ConvNet
+                  visualisation methods and deconvolutional networks [Zeiler et
+                  al., 2013].",
+  archivePrefix= "arXiv",
+  eprint       = "1312.6034",
+  primaryClass = "cs.CV"
+}

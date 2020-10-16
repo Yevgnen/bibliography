@@ -10310,20 +10310,6 @@
                   SimpleQuestions, Survey, WebQuestions"
 }
 
-@article{holtzman-2019-curious-case,
-  author       = "Ari Holtzman and Jan Buys and Maxwell Forbes and Yejin Choi",
-  title        = "The Curious Case of Neural Text Degeneration",
-  journal      = "CoRR",
-  volume       = "abs/1904.09751",
-  year         = 2019,
-  url          = "http://arxiv.org/abs/1904.09751",
-  archivePrefix= "arXiv",
-  eprint       = "1904.09751",
-  timestamp    = "Fri, 26 Apr 2019 13:18:53 +0200",
-  biburl       = "https://dblp.org/rec/bib/journals/corr/abs-1904-09751",
-  bibsource    = "dblp computer science bibliography, https://dblp.org"
-}
-
 @inproceedings{rakthanmanon-2012-search,
   title        = "Searching and mining trillions of time series subsequences
                   under dynamic time warping",
@@ -20054,22 +20040,6 @@
   publisher    = "Association for Computational Linguistics"
 }
 
-@inproceedings{ren-2016-afet,
-  author       = "Ren, Xiang and He, Wenqi and Qu, Meng and Huang, Lifu and Ji,
-                  Heng and Han, Jiawei",
-  title        = "{AFET}: Automatic Fine-Grained Entity Typing by Hierarchical
-                  Partial-Label Embedding",
-  booktitle    = "Proceedings of the 2016 Conference on Empirical Methods in
-                  Natural Language Processing",
-  year         = 2016,
-  pages        = "1369-1378",
-  doi          = "10.18653/v1/D16-1144",
-  url          = "https://doi.org/10.18653/v1/D16-1144",
-  address      = "Austin, Texas",
-  month        = nov,
-  publisher    = "Association for Computational Linguistics"
-}
-
 @article{ren-2016-label-noise,
   author       = "Ren, Xiang and He, Wenqi and Qu, Meng and Voss, Clare R. and
                   Ji, Heng and Han, Jiawei",
@@ -20526,4 +20496,1032 @@
   archivePrefix= "arXiv",
   eprint       = "1312.6034",
   primaryClass = "cs.CV"
+}
+
+@article{lewis-2019-bart,
+  author       = "Lewis, Mike and Liu, Yinhan and Goyal, Naman and
+                  Ghazvininejad, Marjan and Mohamed, Abdelrahman and Levy, Omer
+                  and Stoyanov, Ves and Zettlemoyer, Luke",
+  title        = "Bart: Denoising Sequence-To-Sequence Pre-Training for Natural
+                  Language Generation, Translation, and Comprehension",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1910.13461v1",
+  abstract     = "We present BART, a denoising autoencoder for pretraining
+                  sequence-to-sequence models. BART is trained by (1)
+                  corrupting text with an arbitrary noising function, and (2)
+                  learning a model to reconstruct the original text. It uses a
+                  standard Tranformer-based neural machine translation
+                  architecture which, despite its simplicity, can be seen as
+                  generalizing BERT (due to the bidirectional encoder), GPT
+                  (with the left-to-right decoder), and many other more recent
+                  pretraining schemes. We evaluate a number of noising
+                  approaches, finding the best performance by both randomly
+                  shuffling the order of the original sentences and using a
+                  novel in-filling scheme, where spans of text are replaced
+                  with a single mask token. BART is particularly effective when
+                  fine tuned for text generation but also works well for
+                  comprehension tasks. It matches the performance of RoBERTa
+                  with comparable training resources on GLUE and SQuAD,
+                  achieves new state-of-the-art results on a range of
+                  abstractive dialogue, question answering, and summarization
+                  tasks, with gains of up to 6 ROUGE. BART also provides a 1.1
+                  BLEU increase over a back-translation system for machine
+                  translation, with only target language pretraining. We also
+                  report ablation experiments that replicate other pretraining
+                  schemes within the BART framework, to better measure which
+                  factors most influence end-task performance.",
+  archivePrefix= "arXiv",
+  eprint       = "1910.13461",
+  primaryClass = "cs.CL"
+}
+
+@article{xu-2019-layoutlm,
+  author       = "Xu, Yiheng and Li, Minghao and Cui, Lei and Huang, Shaohan
+                  and Wei, Furu and Zhou, Ming",
+  title        = "Layoutlm: Pre-Training of Text and Layout for Document Image
+                  Understanding",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1912.13318v5",
+  abstract     = "Pre-training techniques have been verified successfully in a
+                  variety of NLP tasks in recent years. Despite the widespread
+                  use of pre-training models for NLP applications, they almost
+                  exclusively focus on text-level manipulation, while
+                  neglecting layout and style information that is vital for
+                  document image understanding. In this paper, we propose the
+                  \textbf{LayoutLM} to jointly model interactions between text
+                  and layout information across scanned document images, which
+                  is beneficial for a great number of real-world document image
+                  understanding tasks such as information extraction from
+                  scanned documents.  Furthermore, we also leverage image
+                  features to incorporate words' visual information into
+                  LayoutLM. To the best of our knowledge, this is the first
+                  time that text and layout are jointly learned in a single
+                  framework for document-level pre-training. It achieves new
+                  state-of-the-art results in several downstream tasks,
+                  including form understanding (from 70.72 to 79.27), receipt
+                  understanding (from 94.02 to 95.24) and document image
+                  classification (from 93.07 to 94.42). The code and
+                  pre-trained LayoutLM models are publicly available at
+                  \url{https://aka.ms/layoutlm}.",
+  archivePrefix= "arXiv",
+  eprint       = "1912.13318",
+  primaryClass = "cs.CL"
+}
+
+@article{qin-2020-pm-net,
+  author       = "Qin, Qi and Hu, Wenpeng and Liu, Bing",
+  title        = "Text Classification With Novelty Detection",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2009.11119",
+  abstract     = "This paper studies the problem of detecting novel or
+                  unexpected instances in text classification. In traditional
+                  text classification, the classes appeared in testing must
+                  have been seen in training. However, in many applications,
+                  this is not the case because in testing, we may see
+                  unexpected instances that are not from any of the training
+                  classes. In this paper, we propose a significantly more
+                  effective approach that converts the original problem to a
+                  pair-wise matching problem and then outputs how probable two
+                  instances belong to the same class. Under this approach, we
+                  present two models. The more effective model uses two
+                  embedding matrices of a pair of instances as two channels of
+                  a CNN.  The output probabilities from such pairs are used to
+                  judge whether a test instance is from a seen class or is
+                  novel/unexpected. Experimental results show that the proposed
+                  method substantially outperforms the state-of-the-art
+                  baselines.",
+  archivePrefix= "arXiv",
+  eprint       = "2009.11119",
+  primaryClass = "cs.LG"
+}
+
+@article{zubiaga-2020-tf-cr,
+  author       = "Zubiaga, Arkaitz",
+  title        = "Exploiting Class Labels To Boost Performance on
+                  Embedding-Based Text Classification",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2006.02104v2",
+  abstract     = "Text classification is one of the most frequent tasks for
+                  processing textual data, facilitating among others research
+                  from large-scale datasets. Embeddings of different kinds have
+                  recently become the de facto standard as features used for
+                  text classification. These embeddings have the capacity to
+                  capture meanings of words inferred from occurrences in large
+                  external collections. While they are built out of external
+                  collections, they are unaware of the distributional
+                  characteristics of words in the classification dataset at
+                  hand, including most importantly the distribution of words
+                  across classes in training data. To make the most of these
+                  embeddings as features and to boost the performance of
+                  classifiers using them, we introduce a weighting scheme, Term
+                  Frequency-Category Ratio (TF-CR), which can weight
+                  high-frequency, category-exclusive words higher when
+                  computing word embeddings. Our experiments on eight datasets
+                  show the effectiveness of TF-CR, leading to improved
+                  performance scores over the well-known weighting schemes
+                  TF-IDF and KLD as well as over the absence of a weighting
+                  scheme in most cases.",
+  archivePrefix= "arXiv",
+  eprint       = "2006.02104",
+  primaryClass = "cs.CL"
+}
+
+@article{schroeder-2020-active-learning-text-classification,
+  author       = "Schr{\"o}der, Christopher and Niekler, Andreas",
+  title        = "A Survey of Active Learning for Text Classification Using
+                  Deep Neural Networks",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2008.07267v1",
+  abstract     = "Natural language processing (NLP) and neural networks (NNs)
+                  have both undergone significant changes in recent years. For
+                  active learning (AL) purposes, NNs are, however, less
+                  commonly used -- despite their current popularity. By using
+                  the superior text classification performance of NNs for AL,
+                  we can either increase a model's performance using the same
+                  amount of data or reduce the data and therefore the required
+                  annotation efforts while keeping the same performance. We
+                  review AL for text classification using deep neural networks
+                  (DNNs) and elaborate on two main causes which used to hinder
+                  the adoption: (a) the inability of NNs to provide reliable
+                  uncertainty estimates, on which the most commonly used query
+                  strategies rely, and (b) the challenge of training DNNs on
+                  small data. To investigate the former, we construct a
+                  taxonomy of query strategies, which distinguishes between
+                  data-based, model-based, and prediction-based instance
+                  selection, and investigate the prevalence of these classes in
+                  recent research. Moreover, we review recent NN-based advances
+                  in NLP like word embeddings or language models in the context
+                  of (D)NNs, survey the current state-of-the-art at the
+                  intersection of AL, text classification, and DNNs and relate
+                  recent advances in NLP to AL. Finally, we analyze recent work
+                  in AL for text classification, connect the respective query
+                  strategies to the taxonomy, and outline commonalities and
+                  shortcomings. As a result, we highlight gaps in current
+                  research and present open research questions.",
+  archivePrefix= "arXiv",
+  eprint       = "2008.07267",
+  primaryClass = "cs.CL"
+}
+
+@article{liang-2019-pediatric-diseases,
+  title        = "Evaluation and accurate diagnoses of pediatric diseases using
+                  artificial intelligence",
+  author       = "Liang, Huiying and Tsui, Brian Y and Ni, Hao and Valentim,
+                  Carolina CS and Baxter, Sally L and Liu, Guangjian and Cai,
+                  Wenjia and Kermany, Daniel S and Sun, Xin and Chen, Jiancong
+                  and others",
+  journal      = "Nature medicine",
+  volume       = 25,
+  number       = 3,
+  pages        = "433-438",
+  year         = 2019,
+  publisher    = "Nature Publishing Group"
+}
+
+@article{reimers-2020-multilingua,
+  author       = "Reimers, Nils and Gurevych, Iryna",
+  title        = "Making Monolingual Sentence Embeddings Multilingual Using
+                  Knowledge Distillation",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2004.09813v1",
+  abstract     = "We present an easy and efficient method to extend existing
+                  sentence embedding models to new languages. This allows to
+                  create multilingual versions from previously monolingual
+                  models. The training is based on the idea that a translated
+                  sentence should be mapped to the same location in the vector
+                  space as the original sentence. We use the original
+                  (monolingual) model to generate sentence embeddings for the
+                  source language and then train a new system on translated
+                  sentences to mimic the original model. Compared to other
+                  methods for training multilingual sentence embeddings, this
+                  approach has several advantages: It is easy to extend
+                  existing models with relatively few samples to new languages,
+                  it is easier to ensure desired properties for the vector
+                  space, and the hardware requirements for training is
+                  lower. We demonstrate the effectiveness of our approach for
+                  10 languages from various language families.  Code to extend
+                  sentence embeddings models to more than 400 languages is
+                  publicly available.",
+  archivePrefix= "arXiv",
+  eprint       = "2004.09813",
+  primaryClass = "cs.CL"
+}
+
+@article{feng-2020-bitext,
+  author       = "Feng, Fangxiaoyu and Yang, Yinfei and Cer, Daniel and
+                  Arivazhagan, Naveen and Wang, Wei",
+  title        = "Language-Agnostic Bert Sentence Embedding",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2007.01852v1",
+  abstract     = "We adapt multilingual BERT to produce language-agnostic
+                  sentence embeddings for 109 languages.  \%The
+                  state-of-the-art for numerous monolingual and multilingual
+                  NLP tasks is masked language model (MLM) pretraining followed
+                  by task specific fine-tuning. While English sentence
+                  embeddings have been obtained by fine-tuning a pretrained
+                  BERT model, such models have not been applied to multilingual
+                  sentence embeddings. Our model combines masked language model
+                  (MLM) and translation language model (TLM) pretraining with a
+                  translation ranking task using bi-directional dual
+                  encoders. The resulting multilingual sentence embeddings
+                  improve average bi-text retrieval accuracy over 112 languages
+                  to 83.7 \%, well above the 65.5 \% achieved by the prior
+                  state-of-the-art on Tatoeba. Our sentence embeddings also
+                  establish new state-of-the-art results on BUCC and UN bi-text
+                  retrieval.",
+  archivePrefix= "arXiv",
+  eprint       = "2007.01852",
+  primaryClass = "cs.CL"
+}
+
+@article{yang-2019-multilingual,
+  author       = "Yang, Yinfei and Cer, Daniel and Ahmad, Amin and Guo, Mandy
+                  and Law, Jax and Constant, Noah and Abrego, Gustavo Hernandez
+                  and Yuan, Steve and Tar, Chris and Sung, Yun-Hsuan and
+                  Strope, Brian and Kurzweil, Ray",
+  title        = "Multilingual Universal Sentence Encoder for Semantic
+                  Retrieval",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1907.04307v1",
+  abstract     = "We introduce two pre-trained retrieval focused multilingual
+                  sentence encoding models, respectively based on the
+                  Transformer and CNN model architectures. The models embed
+                  text from 16 languages into a single semantic space using a
+                  multi-task trained dual-encoder that learns tied
+                  representations using translation based bridge tasks
+                  (Chidambaram al., 2018). The models provide performance that
+                  is competitive with the state-of-the-art on: semantic
+                  retrieval (SR), translation pair bitext retrieval (BR) and
+                  retrieval question answering (ReQA). On English transfer
+                  learning tasks, our sentence-level embeddings approach, and
+                  in some cases exceed, the performance of monolingual, English
+                  only, sentence embedding models. Our models are made
+                  available for download on TensorFlow Hub.",
+  archivePrefix= "arXiv",
+  eprint       = "1907.04307",
+  primaryClass = "cs.CL"
+}
+@inproceedings{ein-2018-triplet-networks,
+  author       = "Ein Dor, Liat and Mass, Yosi and Halfon, Alon and Venezian,
+                  Elad and Shnayderman, Ilya and Aharonov, Ranit and Slonim,
+                  Noam",
+  title        = "Learning Thematic Similarity Metric from Article Sections
+                  Using Triplet Networks",
+  booktitle    = "Proceedings of the 56th Annual Meeting of the Association for
+                  Computational Linguistics (Volume 2: Short Papers)",
+  year         = 2018,
+  pages        = "49-54",
+  doi          = "10.18653/v1/P18-2009",
+  url          = "https://doi.org/10.18653/v1/P18-2009",
+  abstract     = "In this paper we suggest to leverage the partition of
+                  articles into sections, in order to learn thematic similarity
+                  metric between sentences. We assume that a sentence is
+                  thematically closer to sentences within its section than to
+                  sentences from other sections. Based on this assumption, we
+                  use Wikipedia articles to automatically create a large
+                  dataset of weakly labeled sentence triplets, composed of a
+                  pivot sentence, one sentence from the same section and one
+                  from another section. We train a triplet network to embed
+                  sentences from the same section closer. To test the
+                  performance of the learned embeddings, we create and release
+                  a sentence clustering benchmark. We show that the triplet
+                  network learns useful thematic metrics, that significantly
+                  outperform state-of-the-art semantic similarity methods and
+                  multipurpose embeddings on the task of thematic clustering of
+                  sentences. We also show that the learned embeddings perform
+                  well on the task of sentence semantic similarity prediction.",
+  address      = "Melbourne, Australia",
+  month        = jul,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@article{cer-2018-use,
+  author       = "Cer, Daniel and Yang, Yinfei and Kong, Sheng-yi and Hua, Nan
+                  and Limtiaco, Nicole and John, Rhomni St. and Constant, Noah
+                  and Guajardo-Cespedes, Mario and Yuan, Steve and Tar, Chris
+                  and Sung, Yun-Hsuan and Strope, Brian and Kurzweil, Ray",
+  title        = "Universal Sentence Encoder",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1803.11175v2",
+  abstract     = "We present models for encoding sentences into embedding
+                  vectors that specifically target transfer learning to other
+                  NLP tasks. The models are efficient and result in accurate
+                  performance on diverse transfer tasks. Two variants of the
+                  encoding models allow for trade-offs between accuracy and
+                  compute resources. For both variants, we investigate and
+                  report the relationship between model complexity, resource
+                  consumption, the availability of transfer task training data,
+                  and task performance. Comparisons are made with baselines
+                  that use word level transfer learning via pretrained word
+                  embeddings as well as baselines do not use any transfer
+                  learning. We find that transfer learning using sentence
+                  embeddings tends to outperform word level transfer.  With
+                  transfer learning via sentence embeddings, we observe
+                  surprisingly good performance with minimal amounts of
+                  supervised training data for a transfer task. We obtain
+                  encouraging results on Word Embedding Association Tests
+                  (WEAT) targeted at detecting model bias. Our pre-trained
+                  sentence encoding models are made freely available for
+                  download and on TF Hub.",
+  archivePrefix= "arXiv",
+  eprint       = "1803.11175",
+  primaryClass = "cs.CL"
+}
+@article{mueller-2019-label-smoothing,
+  author       = "M{\"u}ller, Rafael and Kornblith, Simon and Hinton, Geoffrey",
+  title        = "When Does Label Smoothing Help?",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1906.02629v3",
+  abstract     = "The generalization and learning speed of a multi-class neural
+                  network can often be significantly improved by using soft
+                  targets that are a weighted average of the hard targets and
+                  the uniform distribution over labels. Smoothing the labels in
+                  this way prevents the network from becoming over-confident
+                  and label smoothing has been used in many state-of-the-art
+                  models, including image classification, language translation
+                  and speech recognition. Despite its widespread use, label
+                  smoothing is still poorly understood. Here we show
+                  empirically that in addition to improving generalization,
+                  label smoothing improves model calibration which can
+                  significantly improve beam-search.  However, we also observe
+                  that if a teacher network is trained with label smoothing,
+                  knowledge distillation into a student network is much less
+                  effective. To explain these observations, we visualize how
+                  label smoothing changes the representations learned by the
+                  penultimate layer of the network. We show that label
+                  smoothing encourages the representations of training examples
+                  from the same class to group in tight clusters. This results
+                  in loss of information in the logits about resemblances
+                  between instances of different classes, which is necessary
+                  for distillation, but does not hurt generalization or
+                  calibration of the model's predictions.",
+  archivePrefix= "arXiv",
+  eprint       = "1906.02629",
+  primaryClass = "cs.LG"
+}
+@inproceedings{cer-2018-use,
+  author       = "Cer, Daniel and Yang, Yinfei and Kong, Sheng-yi and Hua, Nan
+                  and Limtiaco, Nicole and St. John, Rhomni and Constant, Noah
+                  and Guajardo-Cespedes, Mario and Yuan, Steve and Tar, Chris
+                  and Strope, Brian and Kurzweil, Ray",
+  title        = "Universal Sentence Encoder for {E}nglish",
+  booktitle    = "Proceedings of the 2018 Conference on Empirical Methods in
+                  Natural Language Processing: System Demonstrations",
+  year         = 2018,
+  pages        = "169-174",
+  doi          = "10.18653/v1/D18-2029",
+  url          = "https://doi.org/10.18653/v1/D18-2029",
+  abstract     = "We present easy-to-use TensorFlow Hub sentence embedding
+                  models having good task transfer performance. Model variants
+                  allow for trade-offs between accuracy and compute
+                  resources. We report the relationship between model
+                  complexity, resources, and transfer performance. Comparisons
+                  are made with baselines without transfer learning and to
+                  baselines that incorporate word-level transfer. Transfer
+                  learning using sentence-level embeddings is shown to
+                  outperform models without transfer learning and often those
+                  that use only word-level transfer. We show good transfer task
+                  performance with minimal training data and obtain encouraging
+                  results on word embedding association tests (WEAT) of model
+                  bias.",
+  address      = "Brussels, Belgium",
+  month        = nov,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@ARTICLE{sanh-2019-distilbert,
+  author       = "{Sanh}, Victor and {Debut}, Lysandre and {Chaumond}, Julien
+                  and {Wolf}, Thomas",
+  title        = "{DistilBERT, a distilled version of BERT: smaller, faster,
+                  cheaper and lighter}",
+  journal      = "arXiv e-prints",
+  keywords     = "Computer Science - Computation and Language",
+  year         = 2019,
+  month        = oct,
+  eid          = "arXiv:1910.01108",
+  pages        = "arXiv:1910.01108",
+  archivePrefix= "arXiv",
+  eprint       = "1910.01108",
+  primaryClass = "cs.CL",
+  adsurl       = "https://ui.adsabs.harvard.edu/abs/2019arXiv191001108S",
+  adsnote      = "Provided by the SAO/NASA Astrophysics Data System"
+}
+
+@article{sun-2020-mobilebert,
+  author       = "Sun, Zhiqing and Yu, Hongkun and Song, Xiaodan and Liu,
+                  Renjie and Yang, Yiming and Zhou, Denny",
+  title        = "Mobilebert: a Compact Task-Agnostic Bert for Resource-Limited
+                  Devices",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2004.02984v2",
+  abstract     = "Natural Language Processing (NLP) has recently achieved great
+                  success by using huge pre-trained models with hundreds of
+                  millions of parameters. However, these models suffer from
+                  heavy model sizes and high latency such that they cannot be
+                  deployed to resource-limited mobile devices. In this paper,
+                  we propose MobileBERT for compressing and accelerating the
+                  popular BERT model.  Like the original BERT, MobileBERT is
+                  task-agnostic, that is, it can be generically applied to
+                  various downstream NLP tasks via simple fine-tuning.
+                  Basically, MobileBERT is a thin version of BERT_LARGE, while
+                  equipped with bottleneck structures and a carefully designed
+                  balance between self-attentions and feed-forward networks. To
+                  train MobileBERT, we first train a specially designed teacher
+                  model, an inverted-bottleneck incorporated BERT_LARGE model.
+                  Then, we conduct knowledge transfer from this teacher to
+                  MobileBERT. Empirical studies show that MobileBERT is 4.3x
+                  smaller and 5.5x faster than BERT_BASE while achieving
+                  competitive results on well-known benchmarks. On the natural
+                  language inference tasks of GLUE, MobileBERT achieves a
+                  GLUEscore o 77.7 (0.6 lower than BERT_BASE), and 62 ms
+                  latency on a Pixel 4 phone. On the SQuAD v1.1/v2.0 question
+                  answering task, MobileBERT achieves a dev F1 score of
+                  90.0/79.2 (1.5/2.1 higher than BERT_BASE).",
+  archivePrefix= "arXiv",
+  eprint       = "2004.02984",
+  primaryClass = "cs.CL"
+}
+@article{conneau-2019-xlm-r,
+  author       = "Conneau, Alexis and Khandelwal, Kartikay and Goyal, Naman and
+                  Chaudhary, Vishrav and Wenzek, Guillaume and Guzm{\'a}n,
+                  Francisco and Grave, Edouard and Ott, Myle and Zettlemoyer,
+                  Luke and Stoyanov, Veselin",
+  title        = "Unsupervised Cross-Lingual Representation Learning At Scale",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1911.02116v2",
+  abstract     = "This paper shows that pretraining multilingual language
+                  models at scale leads to significant performance gains for a
+                  wide range of cross-lingual transfer tasks. We train a
+                  Transformer-based masked language model on one hundred
+                  languages, using more than two terabytes of filtered
+                  CommonCrawl data. Our model, dubbed XLM-R, significantly
+                  outperforms multilingual BERT (mBERT) on a variety of
+                  cross-lingual benchmarks, including +14.6 \% average accuracy
+                  on XNLI, +13 \% average F1 score on MLQA, and +2.4 \% F1
+                  score on NER. XLM-R performs particularly well on
+                  low-resource languages, improving 15.7 \% in XNLI accuracy
+                  for Swahili and 11.4 \% for Urdu over previous XLM models. We
+                  also present a detailed empirical analysis of the key factors
+                  that are required to achieve these gains, including the
+                  trade-offs between (1) positive transfer and capacity
+                  dilution and (2) the performance of high and low resource
+                  languages at scale. Finally, we show, for the first time, the
+                  possibility of multilingual modeling without sacrificing
+                  per-language performance; XLM-R is very competitive with
+                  strong monolingual models on the GLUE and XNLI benchmarks. We
+                  will make our code, data and models publicly available.",
+  archivePrefix= "arXiv",
+  eprint       = "1911.02116",
+  primaryClass = "cs.CL"
+}
+
+@article{danquah-2020-imblanced-data,
+  author       = "Danquah, Richmond Addo",
+  title        = "Handling Imbalanced Data: a Case Study for Binary Class
+                  Problems",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2010.04326v1",
+  abstract     = "For several years till date, the major issues in terms of
+                  solving for classification problems are the issues of
+                  Imbalanced data. Because majority of the machine learning
+                  algorithms by default assumes all data are balanced, the
+                  algorithms do not take into consideration the distribution of
+                  the data sample class. The results tend to be unsatisfactory
+                  and skewed towards the majority sample class
+                  distribution. This implies that the consequences as a result
+                  of using a model built using an Imbalanced data without
+                  handling for the Imbalance in the data could be misleading
+                  both in practice and theory. Most researchers have focused on
+                  the application of Synthetic Minority Oversampling Technique
+                  (SMOTE) and Adaptive Synthetic (ADASYN) Sampling Approach in
+                  handling data Imbalance independently in their works and have
+                  failed to better explain the algorithms behind these
+                  techniques with computed examples. This paper focuses on both
+                  synthetic oversampling techniques and manually computes
+                  synthetic data points to enhance easy comprehension of the
+                  algorithms. We analyze the application of these synthetic
+                  oversampling techniques on binary classification problems
+                  with different Imbalanced ratios and sample sizes.",
+  archivePrefix= "arXiv",
+  eprint       = "2010.04326",
+  primaryClass = "stat.ML"
+}
+
+@article{weng-2020-class-imbalance,
+  author       = "Weng, Wei-Hung and Deaton, Jonathan and Natarajan, Vivek and
+                  Elsayed, Gamaleldin F. and Liu, Yuan",
+  title        = "Addressing the Real-World Class Imbalance Problem in
+                  Dermatology",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2010.04308v1",
+  abstract     = "Class imbalance is a common problem in medical diagnosis,
+                  causing a standard classifier to be biased towards the common
+                  classes and perform poorly on the rare classes. This is
+                  especially true for dermatology, a specialty with thousands
+                  of skin conditions but many of which have rare prevalence in
+                  the real world. Motivated by recent advances, we explore
+                  few-shot learning methods as well as conventional class
+                  imbalance techniques for the skin condition recognition
+                  problem and propose an evaluation setup to fairly assess the
+                  real-world utility of such approaches. When compared to
+                  conventional class imbalance techniques, we find that
+                  few-shot learning methods are not as performant as those
+                  conventional methods, but combining the two approaches using
+                  a novel ensemble leads to improvement in model performance,
+                  especially for rare classes. We conclude that the ensemble
+                  can be useful to address the class imbalance problem, yet
+                  progress here can further be accelerated by the use of
+                  real-world evaluation setups for benchmarking new methods.",
+  archivePrefix= "arXiv",
+  eprint       = "2010.04308",
+  primaryClass = "cs.CV"
+}
+
+@article{kitaev-2020-reformer,
+  author       = "Kitaev, Nikita and Kaiser, Łukasz and Levskaya, Anselm",
+  title        = "Reformer: the Efficient Transformer",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2001.04451v2",
+  abstract     = "Large Transformer models routinely achieve state-of-the-art
+                  results on a number of tasks but training these models can be
+                  prohibitively costly, especially on long sequences. We
+                  introduce two techniques to improve the efficiency of
+                  Transformers. For one, we replace dot-product attention by
+                  one that uses locality-sensitive hashing, changing its
+                  complexity from O($L^2$) to O($L\log L$), where $L$ is the
+                  length of the sequence. Furthermore, we use reversible
+                  residual layers instead of the standard residuals, which
+                  allows storing activations only once in the training process
+                  instead of $N$ times, where $N$ is the number of layers. The
+                  resulting model, the Reformer, performs on par with
+                  Transformer models while being much more memory-efficient and
+                  much faster on long sequences.",
+  archivePrefix= "arXiv",
+  eprint       = "2001.04451",
+  primaryClass = "cs.LG"
+}
+
+@article{fan-2019-eli5,
+  author       = "Fan, Angela and Jernite, Yacine and Perez, Ethan and
+                  Grangier, David and Weston, Jason and Auli, Michael",
+  title        = "Eli5: Long Form Question Answering",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1907.09190v1",
+  abstract     = "We introduce the first large-scale corpus for long-form
+                  question answering, a task requiring elaborate and in-depth
+                  answers to open-ended questions. The dataset comprises 270K
+                  threads from the Reddit forum ``Explain Like I'm Five''
+                  (ELI5) where an online community provides answers to
+                  questions which are comprehensible by five year
+                  olds. Compared to existing datasets, ELI5 comprises diverse
+                  questions requiring multi-sentence answers. We provide a
+                  large set of web documents to help answer the
+                  question. Automatic and human evaluations show that an
+                  abstractive model trained with a multi-task objective
+                  outperforms conventional Seq2Seq, language modeling, as well
+                  as a strong extractive baseline. However, our best model is
+                  still far from human performance since raters prefer gold
+                  responses in over 86 \% of cases, leaving ample opportunity
+                  for future improvement.",
+  archivePrefix= "arXiv",
+  eprint       = "1907.09190",
+  primaryClass = "cs.CL"
+}
+
+@article{liu-2020-mbart,
+  author       = "Liu, Yinhan and Gu, Jiatao and Goyal, Naman and Li, Xian and
+                  Edunov, Sergey and Ghazvininejad, Marjan and Lewis, Mike and
+                  Zettlemoyer, Luke",
+  title        = "Multilingual Denoising Pre-Training for Neural Machine
+                  Translation",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2001.08210v2",
+  abstract     = "This paper demonstrates that multilingual denoising
+                  pre-training produces significant performance gains across a
+                  wide variety of machine translation (MT) tasks. We present
+                  mBART -- a sequence-to-sequence denoising auto-encoder
+                  pre-trained on large-scale monolingual corpora in many
+                  languages using the BART objective. mBART is one of the first
+                  methods for pre-training a complete sequence-to-sequence
+                  model by denoising full texts in multiple languages, while
+                  previous approaches have focused only on the encoder,
+                  decoder, or reconstructing parts of the text. Pre-training a
+                  complete model allows it to be directly fine tuned for
+                  supervised (both sentence-level and document-level) and
+                  unsupervised machine translation, with no task-specific
+                  modifications. We demonstrate that adding mBART
+                  initialization produces performance gains in all but the
+                  highest-resource settings, including up to 12 BLEU points for
+                  low resource MT and over 5 BLEU points for many
+                  document-level and unsupervised models. We also show it also
+                  enables new types of transfer to language pairs with no
+                  bi-text or that were not in the pre-training corpus, and
+                  present extensive analysis of which factors contribute the
+                  most to effective pre-training.",
+  archivePrefix= "arXiv",
+  eprint       = "2001.08210",
+  primaryClass = "cs.CL"
+}
+
+@article{wu-2018-condit-bert-contex-augmen,
+  author       = "Wu, Xing and Lv, Shangwen and Zang, Liangjun and Han, Jizhong
+                  and Hu, Songlin",
+  title        = "Conditional Bert Contextual Augmentation",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1812.06705v1",
+  abstract     = "We propose a novel data augmentation method for labeled
+                  sentences called conditional BERT contextual
+                  augmentation. Data augmentation methods are often applied to
+                  prevent overfitting and improve generalization of deep neural
+                  network models. Recently proposed contextual augmentation
+                  augments labeled sentences by randomly replacing words with
+                  more varied substitutions predicted by language model. BERT
+                  demonstrates that a deep bidirectional language model is more
+                  powerful than either an unidirectional language model or the
+                  shallow concatenation of a forward and backward model. We
+                  retrofit BERT to conditional BERT by introducing a new
+                  conditional masked language model task. The well trained
+                  conditional BERT can be applied to enhance contextual
+                  augmentation.  Experiments on six various different text
+                  classification tasks show that our method can be easily
+                  applied to both convolutional or recurrent neural networks
+                  classifier to obtain obvious improvement.",
+  archivePrefix= "arXiv",
+  eprint       = "1812.06705",
+  primaryClass = "cs.CL"
+}
+
+@article{wang-2020-minilm,
+  author       = "Wang, Wenhui and Wei, Furu and Dong, Li and Bao, Hangbo and
+                  Yang, Nan and Zhou, Ming",
+  title        = "Minilm: Deep Self-Attention Distillation for Task-Agnostic
+                  Compression of Pre-Trained Transformers",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2002.10957v2",
+  abstract     = "Pre-trained language models (e.g., BERT (Devlin et al., 2018)
+                  and its variants) have achieved remarkable success in
+                  varieties of NLP tasks. However, these models usually consist
+                  of hundreds of millions of parameters which brings challenges
+                  for fine-tuning and online serving in real-life applications
+                  due to latency and capacity constraints. In this work, we
+                  present a simple and effective approach to compress large
+                  Transformer (Vaswani et al., 2017) based pre-trained models,
+                  termed as deep self-attention distillation. The small model
+                  (student) is trained by deeply mimicking the self-attention
+                  module, which plays a vital role in Transformer networks, of
+                  the large model (teacher).  Specifically, we propose
+                  distilling the self-attention module of the last Transformer
+                  layer of the teacher, which is effective and flexible for the
+                  student. Furthermore, we introduce the scaled dot-product
+                  between values in the self-attention module as the new deep
+                  self-attention knowledge, in addition to the attention
+                  distributions (i.e., the scaled dot-product of queries and
+                  keys) that have been used in existing works. Moreover, we
+                  show that introducing a teacher assistant (Mirzadeh et al.,
+                  2019) also helps the distillation of large pre-trained
+                  Transformer models. Experimental results demonstrate that our
+                  monolingual model outperforms state-of-the-art baselines in
+                  different parameter size of student models. In particular, it
+                  retains more than 99 \% accuracy on SQuAD 2.0 and several
+                  GLUE benchmark tasks using 50 \% of the Transformer
+                  parameters and computations of the teacher model. We also
+                  obtain competitive results in applying deep self-attention
+                  distillation to multilingual pre-trained models.",
+  archivePrefix= "arXiv",
+  eprint       = "2002.10957",
+  primaryClass = "cs.CL"
+}
+
+@article{aroca-ouellette-2020-mlm-losses,
+  author       = "Aroca-Ouellette, Stephane and Rudzicz, Frank",
+  title        = "On Losses for Modern Language Models",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2010.01694v1",
+  abstract     = "BERT set many state-of-the-art results over varied NLU
+                  benchmarks by pre-training over two tasks: masked language
+                  modelling (MLM) and next sentence prediction (NSP), the
+                  latter of which has been highly criticized. In this paper, we
+                  1) clarify NSP's effect on BERT pre-training, 2) explore
+                  fourteen possible auxiliary pre-training tasks, of which
+                  seven are novel to modern language models, and 3) investigate
+                  different ways to include multiple tasks into
+                  pre-training. We show that NSP is detrimental to training due
+                  to its context splitting and shallow semantic signal. We also
+                  identify six auxiliary pre-training tasks -- sentence
+                  ordering, adjacent sentence prediction, TF prediction, TF-IDF
+                  prediction, a FastSent variant, and a Quick Thoughts variant
+                  -- that outperform a pure MLM baseline. Finally, we
+                  demonstrate that using multiple tasks in a multi-task
+                  pre-training framework provides better results than using any
+                  single auxiliary task. Using these methods, we outperform
+                  BERT Base on the GLUE benchmark using fewer than a quarter of
+                  the training tokens.",
+  archivePrefix= "arXiv",
+  eprint       = "2010.01694",
+  primaryClass = "cs.CL"
+}
+
+@article{alnegheimish-2020-cardea,
+  author       = "Alnegheimish, Sarah and Alrashed, Najat and Aleissa, Faisal
+                  and Althobaiti, Shahad and Liu, Dongyu and Alsaleh, Mansour
+                  and Veeramachaneni, Kalyan",
+  title        = "Cardea: an Open Automated Machine Learning Framework for
+                  Electronic Health Records",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2010.00509v1",
+  abstract     = "An estimated 180 papers focusing on deep learning and EHR
+                  were published between 2010 and 2018. Despite the common
+                  workflow structure appearing in these publications, no
+                  trusted and verified software framework exists, forcing
+                  researchers to arduously repeat previous work. In this paper,
+                  we propose Cardea, an extensible open-source automated
+                  machine learning framework encapsulating common prediction
+                  problems in the health domain and allows users to build
+                  predictive models with their own data. This system relies on
+                  two components: Fast Healthcare Interoperability Resources
+                  (FHIR) -- a standardized data structure for electronic health
+                  systems -- and several AUTOML frameworks for automated
+                  feature engineering, model selection, and tuning. We augment
+                  these components with an adaptive data assembler and
+                  comprehensive data- and model- auditing capabilities. We
+                  demonstrate our framework via 5 prediction tasks on MIMIC-III
+                  and Kaggle datasets, which highlight Cardea's human
+                  competitiveness, flexibility in problem definition, extensive
+                  feature generation capability, adaptable automatic data
+                  assembler, and its usability.",
+  archivePrefix= "arXiv",
+  eprint       = "2010.00509",
+  primaryClass = "cs.LG"
+}
+
+@article{fan-2019-layerdrop,
+  author       = "Fan, Angela and Grave, Edouard and Joulin, Armand",
+  title        = "Reducing Transformer Depth on Demand With Structured Dropout",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1909.11556v1",
+  abstract     = "Overparameterized transformer networks have obtained state of
+                  the art results in various natural language processing tasks,
+                  such as machine translation, language modeling, and question
+                  answering. These models contain hundreds of millions of
+                  parameters, necessitating a large amount of computation and
+                  making them prone to overfitting. In this work, we explore
+                  LayerDrop, a form of structured dropout, which has a
+                  regularization effect during training and allows for
+                  efficient pruning at inference time. In particular, we show
+                  that it is possible to select sub-networks of any depth from
+                  one large network without having to finetune them and with
+                  limited impact on performance. We demonstrate the
+                  effectiveness of our approach by improving the state of the
+                  art on machine translation, language modeling, summarization,
+                  question answering, and language understanding
+                  benchmarks. Moreover, we show that our approach leads to
+                  small BERT-like models of higher quality compared to training
+                  from scratch or using distillation.",
+  archivePrefix= "arXiv",
+  eprint       = "1909.11556",
+  primaryClass = "cs.LG"
+}
+
+@article{holtzman-2019-nucleus-sampling,
+  author       = "Holtzman, Ari and Buys, Jan and Du, Li and Forbes, Maxwell
+                  and Choi, Yejin",
+  title        = "The Curious Case of Neural Text Degeneration",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1904.09751v2",
+  abstract     = "Despite considerable advancements with deep neural language
+                  models, the enigma of neural text degeneration persists when
+                  these models are tested as text generators. The
+                  counter-intuitive empirical observation is that even though
+                  the use of likelihood as training objective leads to high
+                  quality models for a broad range of language understanding
+                  tasks, using likelihood as a decoding objective leads to text
+                  that is bland and strangely repetitive.  In this paper, we
+                  reveal surprising distributional differences between human
+                  text and machine text. In addition, we find that decoding
+                  strategies alone can dramatically effect the quality of
+                  machine text, even when generated from exactly the same
+                  neural language model. Our findings motivate Nucleus
+                  Sampling, a simple but effective method to draw the best out
+                  of neural generation. By sampling text from the dynamic
+                  nucleus of the probability distribution, which allows for
+                  diversity while effectively truncating the less reliable tail
+                  of the distribution, the resulting text better demonstrates
+                  the quality of human text, yielding enhanced diversity
+                  without sacrificing fluency and coherence.",
+  archivePrefix= "arXiv",
+  eprint       = "1904.09751",
+  primaryClass = "cs.CL"
+}
+
+@article{shao-2017-glimpse-model,
+  author       = "Shao, Louis and Gouws, Stephan and Britz, Denny and Goldie,
+                  Anna and Strope, Brian and Kurzweil, Ray",
+  title        = "Generating High-Quality and Informative Conversation
+                  Responses With Sequence-To-Sequence Models",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1701.03185v2",
+  abstract     = "Sequence-to-sequence models have been applied to the
+                  conversation response generation problem where the source
+                  sequence is the conversation history and the target sequence
+                  is the response. Unlike translation, conversation responding
+                  is inherently creative. The generation of long, informative,
+                  coherent, and diverse responses remains a hard task. In this
+                  work, we focus on the single turn setting. We add
+                  self-attention to the decoder to maintain coherence in longer
+                  responses, and we propose a practical approach, called the
+                  glimpse-model, for scaling to large datasets. We introduce a
+                  stochastic beam-search algorithm with segment-by-segment
+                  reranking which lets us inject diversity earlier in the
+                  generation process. We trained on a combined data set of over
+                  2.3B conversation messages mined from the web. In human
+                  evaluation studies, our method produces longer responses
+                  overall, with a higher proportion rated as acceptable and
+                  excellent as length increases, compared to baseline
+                  sequence-to-sequence models with explicit length-promotion. A
+                  back-off strategy produces better responses overall, in the
+                  full spectrum of lengths.",
+  archivePrefix= "arXiv",
+  eprint       = "1701.03185",
+  primaryClass = "cs.CL"
+}
+
+@article{murray-2018-length-bias,
+  author       = "Murray, Kenton and Chiang, David",
+  title        = "Correcting Length Bias in Neural Machine Translation",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1808.10006v2",
+  abstract     = "We study two problems in neural machine translation
+                  (NMT). First, in beam search, whereas a wider beam should in
+                  principle help translation, it often hurts NMT. Second, NMT
+                  has a tendency to produce translations that are too
+                  short. Here, we argue that these problems are closely related
+                  and both rooted in label bias. We show that correcting the
+                  brevity problem almost eliminates the beam problem; we
+                  compare some commonly-used methods for doing this, finding
+                  that a simple per-word reward works well; and we introduce a
+                  simple and quick way to tune this reward using the perceptron
+                  algorithm.",
+  archivePrefix= "arXiv",
+  eprint       = "1808.10006",
+  primaryClass = "cs.CL"
+}
+
+@article{yang-2018-beam-search-curse,
+  author       = "Yang, Yilin and Huang, Liang and Ma, Mingbo",
+  title        = "Breaking the Beam Search Curse: a Study of (Re-)Scoring
+                  Methods and Stopping Criteria for Neural Machine Translation",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1808.09582v3",
+  abstract     = "Beam search is widely used in neural machine translation, and
+                  usually improves translation quality compared to greedy
+                  search. It has been widely observed that, however, beam sizes
+                  larger than 5 hurt translation quality. We explain why this
+                  happens, and propose several methods to address this problem.
+                  Furthermore, we discuss the optimal stopping criteria for
+                  these methods.  Results show that our hyperparameter-free
+                  methods outperform the widely-used hyperparameter-free
+                  heuristic of length normalization by +2.0 BLEU, and achieve
+                  the best results among all methods on Chinese-to-English
+                  translation.",
+  archivePrefix= "arXiv",
+  eprint       = "1808.09582",
+  primaryClass = "cs.CL"
+}
+
+@article{fan-2018-top-k-sampling,
+  author       = "Fan, Angela and Lewis, Mike and Dauphin, Yann",
+  title        = "Hierarchical Neural Story Generation",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1805.04833v1",
+  abstract     = "We explore story generation: creative systems that can build
+                  coherent and fluent passages of text about a topic. We
+                  collect a large dataset of 300K human-written stories paired
+                  with writing prompts from an online forum. Our dataset
+                  enables hierarchical story generation, where the model first
+                  generates a premise, and then transforms it into a passage of
+                  text. We gain further improvements with a novel form of model
+                  fusion that improves the relevance of the story to the
+                  prompt, and adding a new gated multi-scale self-attention
+                  mechanism to model long-range context. Experiments show large
+                  improvements over strong baselines on both automated and
+                  human evaluations. Human judges prefer stories generated by
+                  our approach to those from a strong non-hierarchical model by
+                  a factor of two to one.",
+  archivePrefix= "arXiv",
+  eprint       = "1805.04833",
+  primaryClass = "cs.CL"
+}
+
+@article{welleck-2019-neural-text,
+  author       = "Welleck, Sean and Kulikov, Ilia and Roller, Stephen and
+                  Dinan, Emily and Cho, Kyunghyun and Weston, Jason",
+  title        = "Neural Text Generation With Unlikelihood Training",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1908.04319v2",
+  abstract     = "Neural text generation is a key tool in natural language
+                  applications, but it is well known there are major problems
+                  at its core. In particular, standard likelihood training and
+                  decoding leads to dull and repetitive outputs. While some
+                  post-hoc fixes have been proposed, in particular top-$k$ and
+                  nucleus sampling, they do not address the fact that the
+                  token-level probabilities predicted by the model are poor. In
+                  this paper we show that the likelihood objective itself is at
+                  fault, resulting in a model that assigns too much probability
+                  to sequences containing repeats and frequent words, unlike
+                  those from the human training distribution. We propose a new
+                  objective, unlikelihood training, which forces unlikely
+                  generations to be assigned lower probability by the model. We
+                  show that both token and sequence level unlikelihood training
+                  give less repetitive, less dull text while maintaining
+                  perplexity, giving superior generations using standard greedy
+                  or beam search. According to human evaluations, our approach
+                  with standard beam search also outperforms the currently
+                  popular decoding methods of nucleus sampling or beam
+                  blocking, thus providing a strong alternative to existing
+                  techniques.",
+  archivePrefix= "arXiv",
+  eprint       = "1908.04319",
+  primaryClass = "cs.LG"
+}
+
+@article{welleck-2020-imcomplete-decoding,
+  author       = "Welleck, Sean and Kulikov, Ilia and Kim, Jaedeok and Pang,
+                  Richard Yuanzhe and Cho, Kyunghyun",
+  title        = "Consistency of a Recurrent Language Model With Respect To
+                  Incomplete Decoding",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2002.02492v2",
+  abstract     = "Despite strong performance on a variety of tasks, neural
+                  sequence models trained with maximum likelihood have been
+                  shown to exhibit issues such as length bias and degenerate
+                  repetition. We study the related issue of receiving
+                  infinite-length sequences from a recurrent language model
+                  when using common decoding algorithms. To analyze this issue,
+                  we first define inconsistency of a decoding algorithm,
+                  meaning that the algorithm can yield an infinite-length
+                  sequence that has zero probability under the model. We prove
+                  that commonly used incomplete decoding algorithms - greedy
+                  search, beam search, top-k sampling, and nucleus sampling -
+                  are inconsistent, despite the fact that recurrent language
+                  models are trained to produce sequences of finite
+                  length. Based on these insights, we propose two remedies
+                  which address inconsistency: consistent variants of top-k and
+                  nucleus sampling, and a self-terminating recurrent language
+                  model. Empirical results show that inconsistency occurs in
+                  practice, and that the proposed methods prevent
+                  inconsistency.",
+  archivePrefix= "arXiv",
+  eprint       = "2002.02492",
+  primaryClass = "cs.LG"
+}
+
+@article{grave-2016-cache,
+  author       = "Grave, Edouard and Joulin, Armand and Usunier, Nicolas",
+  title        = "Improving Neural Language Models With a Continuous Cache",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1612.04426v1",
+  abstract     = "We propose an extension to neural network language models to
+                  adapt their prediction to the recent history. Our model is a
+                  simplified version of memory augmented networks, which stores
+                  past hidden activations as memory and accesses them through a
+                  dot product with the current hidden activation. This
+                  mechanism is very efficient and scales to very large memory
+                  sizes. We also draw a link between the use of external memory
+                  in neural network and cache models used with count based
+                  language models. We demonstrate on several language model
+                  datasets that our approach performs significantly better than
+                  recent memory augmented networks.",
+  archivePrefix= "arXiv",
+  eprint       = "1612.04426",
+  primaryClass = "cs.CL"
 }

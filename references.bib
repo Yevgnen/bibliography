@@ -8991,7 +8991,7 @@
   location     = "Brussels, Belgium"
 }
 
-@article{lample-2019-xlms,
+@article{lample-2019-xlm,
   author       = "Guillaume Lample and Alexis Conneau",
   title        = "Cross-lingual Language Model Pretraining",
   journal      = "CoRR",
@@ -20683,7 +20683,7 @@
   publisher    = "Nature Publishing Group"
 }
 
-@article{reimers-2020-multilingua,
+@article{reimers-2020-multilingual,
   author       = "Reimers, Nils and Gurevych, Iryna",
   title        = "Making Monolingual Sentence Embeddings Multilingual Using
                   Knowledge Distillation",
@@ -21523,5 +21523,391 @@
                   recent memory augmented networks.",
   archivePrefix= "arXiv",
   eprint       = "1612.04426",
+  primaryClass = "cs.CL"
+}
+
+@article{zhang-2018-average-attention,
+  author       = "Zhang, Biao and Xiong, Deyi and Su, Jinsong",
+  title        = "Accelerating Neural Transformer Via an Average Attention
+                  Network",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1805.00631v3",
+  abstract     = "With parallelizable attention networks, the neural
+                  Transformer is very fast to train. However, due to the
+                  auto-regressive architecture and self-attention in the
+                  decoder, the decoding procedure becomes slow. To alleviate
+                  this issue, we propose an average attention network as an
+                  alternative to the self-attention network in the decoder of
+                  the neural Transformer. The average attention network
+                  consists of two layers, with an average layer that models
+                  dependencies on previous positions and a gating layer that is
+                  stacked over the average layer to enhance the expressiveness
+                  of the proposed attention network. We apply this network on
+                  the decoder part of the neural Transformer to replace the
+                  original target-side self-attention model. With masking
+                  tricks and dynamic programming, our model enables the neural
+                  Transformer to decode sentences over four times faster than
+                  its original version with almost no loss in training time and
+                  translation performance. We conduct a series of experiments
+                  on WMT17 translation tasks, where on 6 different language
+                  pairs, we obtain robust and consistent speed-ups in
+                  decoding.",
+  archivePrefix= "arXiv",
+  eprint       = "1805.00631",
+  primaryClass = "cs.CL"
+}
+
+@article{xiao-2019-san,
+  author       = "Xiao, Tong and Li, Yinqiao and Zhu, Jingbo and Yu, Zhengtao
+                  and Liu, Tongran",
+  title        = "Sharing Attention Weights for Fast Transformer",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1906.11024v1",
+  abstract     = "Recently, the Transformer machine translation system has
+                  shown strong results by stacking attention layers on both the
+                  source and target-language sides. But the inference of this
+                  model is slow due to the heavy use of dot-product attention
+                  in auto-regressive decoding. In this paper we speed up
+                  Transformer via a fast and lightweight attention model. More
+                  specifically, we share attention weights in adjacent layers
+                  and enable the efficient re-use of hidden states in a
+                  vertical manner. Moreover, the sharing policy can be jointly
+                  learned with the MT model. We test our approach on ten WMT
+                  and NIST OpenMT tasks. Experimental results show that it
+                  yields an average of 1.3X speed-up (with almost no decrease
+                  in BLEU) on top of a state-of-the-art implementation that has
+                  already adopted a cache for fast inference. Also, our
+                  approach obtains a 1.8X speed-up when it works with the
+                  \textsc{Aan} model. This is even 16 times faster than the
+                  baseline with no use of the attention cache.",
+  archivePrefix= "arXiv",
+  eprint       = "1906.11024",
+  primaryClass = "cs.CL"
+}
+
+@article{yang-2019-mkdm,
+  author       = "Yang, Ze and Shou, Linjun and Gong, Ming and Lin, Wutao and
+                  Jiang, Daxin",
+  title        = "Model Compression With Multi-Task Knowledge Distillation for
+                  Web-Scale Question Answering System",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1904.09636v1",
+  abstract     = "Deep pre-training and fine-tuning models (like BERT, OpenAI
+                  GPT) have demonstrated excellent results in question
+                  answering areas. However, due to the sheer amount of model
+                  parameters, the inference speed of these models is very
+                  slow. How to apply these complex models to real business
+                  scenarios becomes a challenging but practical
+                  problem. Previous works often leverage model compression
+                  approaches to resolve this problem. However, these methods
+                  usually induce information loss during the model compression
+                  procedure, leading to incomparable results between compressed
+                  model and the original model. To tackle this challenge, we
+                  propose a Multi-task Knowledge Distillation Model (MKDM for
+                  short) for web-scale Question Answering system, by distilling
+                  knowledge from multiple teacher models to a light-weight
+                  student model. In this way, more generalized knowledge can be
+                  transferred. The experiment results show that our method can
+                  significantly outperform the baseline methods and even
+                  achieve comparable results with the original teacher models,
+                  along with significant speedup of model inference.",
+  archivePrefix= "arXiv",
+  eprint       = "1904.09636",
+  primaryClass = "cs.CL"
+}
+
+@article{tsai-2019-small-practical,
+  author       = "Tsai, Henry and Riesa, Jason and Johnson, Melvin and
+                  Arivazhagan, Naveen and Li, Xin and Archer, Amelia",
+  title        = "Small and Practical Bert Models for Sequence Labeling",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1909.00100v1",
+  abstract     = "We propose a practical scheme to train a single multilingual
+                  sequence labeling model that yields state of the art results
+                  and is small and fast enough to run on a single CPU. Starting
+                  from a public multilingual BERT checkpoint, our final model
+                  is 6x smaller and 27x faster, and has higher accuracy than a
+                  state-of-the-art multilingual baseline. We show that our
+                  model especially outperforms on low-resource languages, and
+                  works on codemixed input text without being explicitly
+                  trained on codemixed examples. We showcase the effectiveness
+                  of our method by reporting on part-of-speech tagging and
+                  morphological prediction on 70 treebanks and 48 languages.",
+  archivePrefix= "arXiv",
+  eprint       = "1909.00100",
+  primaryClass = "cs.CL"
+}
+@article{edunov-2019-pre-trained,
+  author       = "Edunov, Sergey and Baevski, Alexei and Auli, Michael",
+  title        = "Pre-Trained Language Model Representations for Language
+                  Generation",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1903.09722v2",
+  abstract     = "Pre-trained language model representations have been
+                  successful in a wide range of language understanding
+                  tasks. In this paper, we examine different strategies to
+                  integrate pre-trained representations into sequence to
+                  sequence models and apply it to neural machine translation
+                  and abstractive summarization. We find that pre-trained
+                  representations are most effective when added to the encoder
+                  network which slows inference by only 14 \%. Our experiments
+                  in machine translation show gains of up to 5.3 BLEU in a
+                  simulated resource-poor setup. While returns diminish with
+                  more labeled data, we still observe improvements when
+                  millions of sentence-pairs are available. Finally, on
+                  abstractive summarization we achieve a new state of the art
+                  on the full text version of CNN/DailyMail.",
+  archivePrefix= "arXiv",
+  eprint       = "1903.09722",
+  primaryClass = "cs.CL"
+}
+
+@article{houlsby-2019-adapter,
+  author       = "Houlsby, Neil and Giurgiu, Andrei and Jastrzebski, Stanislaw
+                  and Morrone, Bruna and Laroussilhe, Quentin de and Gesmundo,
+                  Andrea and Attariyan, Mona and Gelly, Sylvain",
+  title        = "Parameter-Efficient Transfer Learning for Nlp",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1902.00751v2",
+  abstract     = "Fine-tuning large pre-trained models is an effective transfer
+                  mechanism in NLP. However, in the presence of many downstream
+                  tasks, fine-tuning is parameter inefficient: an entire new
+                  model is required for every task. As an alternative, we
+                  propose transfer with adapter modules. Adapter modules yield
+                  a compact and extensible model; they add only a few trainable
+                  parameters per task, and new tasks can be added without
+                  revisiting previous ones. The parameters of the original
+                  network remain fixed, yielding a high degree of parameter
+                  sharing. To demonstrate adapter's effectiveness, we transfer
+                  the recently proposed BERT Transformer model to 26 diverse
+                  text classification tasks, including the GLUE
+                  benchmark. Adapters attain near state-of-the-art performance,
+                  whilst adding only a few parameters per task. On GLUE, we
+                  attain within 0.4 \% of the performance of full fine-tuning,
+                  adding only 3.6 \% parameters per task. By contrast,
+                  fine-tuning trains 100 \% of the parameters per task.",
+  archivePrefix= "arXiv",
+  eprint       = "1902.00751",
+  primaryClass = "cs.LG"
+}
+
+@inproceedings{reimers-2016-sts-eval,
+  author       = "Reimers, Nils and Beyer, Philip and Gurevych, Iryna",
+  title        = "Task-Oriented Intrinsic Evaluation of Semantic Textual
+                  Similarity",
+  booktitle    = "Proceedings of {COLING} 2016, the 26th International
+                  Conference on Computational Linguistics: Technical Papers",
+  year         = 2016,
+  pages        = "87-96",
+  url          = "https://www.aclweb.org/anthology/C16-1009",
+  abstract     = "Semantic Textual Similarity (STS) is a foundational NLP task
+                  and can be used in a wide range of tasks. To determine the
+                  STS of two texts, hundreds of different STS systems exist,
+                  however, for an NLP system designer, it is hard to decide
+                  which system is the best one. To answer this question, an
+                  intrinsic evaluation of the STS systems is conducted by
+                  comparing the output of the system to human judgments on
+                  semantic similarity. The comparison is usually done using
+                  Pearson correlation. In this work, we show that relying on
+                  intrinsic evaluations with Pearson correlation can be
+                  misleading. In three common STS based tasks we could observe
+                  that the Pearson correlation was especially ill-suited to
+                  detect the best STS system for the task and other evaluation
+                  measures were much better suited. In this work we define how
+                  the validity of an intrinsic evaluation can be assessed and
+                  compare different intrinsic evaluation methods. Understanding
+                  of the properties of the targeted task is crucial and we
+                  propose a framework for conducting the intrinsic evaluation
+                  which takes the properties of the targeted task into
+                  account.",
+  address      = "Osaka, Japan",
+  month        = dec,
+  publisher    = "The COLING 2016 Organizing Committee"
+}
+
+@article{zhang-2019-lookahead,
+  author       = "Zhang, Michael R. and Lucas, James and Hinton, Geoffrey and
+                  Ba, Jimmy",
+  title        = "Lookahead Optimizer: K Steps Forward, 1 Step Back",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1907.08610v2",
+  abstract     = "The vast majority of successful deep neural networks are
+                  trained using variants of stochastic gradient descent (SGD)
+                  algorithms. Recent attempts to improve SGD can be broadly
+                  categorized into two approaches: (1) adaptive learning rate
+                  schemes, such as AdaGrad and Adam, and (2) accelerated
+                  schemes, such as heavy-ball and Nesterov momentum. In this
+                  paper, we propose a new optimization algorithm, Lookahead,
+                  that is orthogonal to these previous approaches and
+                  iteratively updates two sets of weights. Intuitively, the
+                  algorithm chooses a search direction by looking ahead at the
+                  sequence of fast weights generated by another optimizer. We
+                  show that Lookahead improves the learning stability and
+                  lowers the variance of its inner optimizer with negligible
+                  computation and memory cost. We empirically demonstrate
+                  Lookahead can significantly improve the performance of SGD
+                  and Adam, even with their default hyperparameter settings on
+                  ImageNet, CIFAR-10/100, neural machine translation, and Penn
+                  Treebank.",
+  archivePrefix= "arXiv",
+  eprint       = "1907.08610",
+  primaryClass = "cs.LG"
+}
+
+@article{chen-2020-adabert,
+  author       = "Chen, Daoyuan and Li, Yaliang and Qiu, Minghui and Wang, Zhen
+                  and Li, Bofang and Ding, Bolin and Deng, Hongbo and Huang,
+                  Jun and Lin, Wei and Zhou, Jingren",
+  title        = "Adabert: Task-Adaptive Bert Compression With Differentiable
+                  Neural Architecture Search",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2001.04246v1",
+  abstract     = "Large pre-trained language models such as BERT have shown
+                  their effectiveness in various natural language processing
+                  tasks. However, the huge parameter size makes them difficult
+                  to be deployed in real-time applications that require quick
+                  inference with limited resources. Existing methods compress
+                  BERT into small models while such compression is
+                  task-independent, i.e., the same compressed BERT for all
+                  different downstream tasks. Motivated by the necessity and
+                  benefits of task-oriented BERT compression, we propose a
+                  novel compression method, AdaBERT, that leverages
+                  differentiable Neural Architecture Search to automatically
+                  compress BERT into task-adaptive small models for specific
+                  tasks.  We incorporate a task-oriented knowledge distillation
+                  loss to provide search hints and an efficiency-aware loss as
+                  search constraints, which enables a good trade-off between
+                  efficiency and effectiveness for task-adaptive BERT
+                  compression. We evaluate AdaBERT on several NLP tasks, and
+                  the results demonstrate that those task-adaptive compressed
+                  models are 12.7x to 29.3x faster than BERT in inference time
+                  and 11.5x to 17.0x smaller in terms of parameter size, while
+                  comparable performance is maintained.",
+  archivePrefix= "arXiv",
+  eprint       = "2001.04246",
+  primaryClass = "cs.CL"
+}
+
+@article{thakur-2020-augmented-sbert,
+  author       = "Thakur, Nandan and Reimers, Nils and Daxenberger, Johannes
+                  and Gurevych, Iryna",
+  title        = "Augmented Sbert: Data Augmentation Method for Improving
+                  Bi-Encoders for Pairwise Sentence Scoring Tasks",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2010.08240v1",
+  abstract     = "There are two approaches for pairwise sentence scoring:
+                  Cross-encoders, which perform full-attention over the input
+                  pair, and Bi-encoders, which map each input independently to
+                  a dense vector space. While cross-encoders often achieve
+                  higher performance, they are too slow for many practical use
+                  cases.  Bi-encoders, on the other hand, require substantial
+                  training data and fine-tuning over the target task to achieve
+                  competitive performance. We present a simple yet efficient
+                  data augmentation strategy called Augmented SBERT, where we
+                  use the cross-encoder to label a larger set of input pairs to
+                  augment the training data for the bi-encoder. We show that,
+                  in this process, selecting the sentence pairs is non-trivial
+                  and crucial for the success of the method. We evaluate our
+                  approach on multiple tasks (in-domain) as well as on a domain
+                  adaptation task. Augmented SBERT achieves an improvement of
+                  up to 6 points for in-domain and of up to 37 points for
+                  domain adaptation tasks compared to the original bi-encoder
+                  performance.",
+  archivePrefix= "arXiv",
+  eprint       = "2010.08240",
+  primaryClass = "cs.CL"
+}
+
+@article{dodge-2020-seed,
+  author       = "Dodge, Jesse and Ilharco, Gabriel and Schwartz, Roy and
+                  Farhadi, Ali and Hajishirzi, Hannaneh and Smith, Noah",
+  title        = "Fine-Tuning Pretrained Language Models: Weight
+                  Initializations, Data Orders, and Early Stopping",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2002.06305v1",
+  abstract     = "Fine-tuning pretrained contextual word embedding models to
+                  supervised downstream tasks has become commonplace in natural
+                  language processing. This process, however, is often brittle:
+                  even with the same hyperparameter values, distinct random
+                  seeds can lead to substantially different results. To better
+                  understand this phenomenon, we experiment with four datasets
+                  from the GLUE benchmark, fine-tuning BERT hundreds of times
+                  on each while varying only the random seeds. We find
+                  substantial performance increases compared to previously
+                  reported results, and we quantify how the performance of the
+                  best-found model varies as a function of the number of
+                  fine-tuning trials. Further, we examine two factors
+                  influenced by the choice of random seed: weight
+                  initialization and training data order. We find that both
+                  contribute comparably to the variance of out-of-sample
+                  performance, and that some weight initializations perform
+                  well across all tasks explored. On small datasets, we observe
+                  that many fine-tuning trials diverge part of the way through
+                  training, and we offer best practices for practitioners to
+                  stop training less promising runs early. We publicly release
+                  all of our experimental data, including training and
+                  validation scores for 2,100 trials, to encourage further
+                  analysis of training dynamics during fine-tuning.",
+  archivePrefix= "arXiv",
+  eprint       = "2002.06305",
+  primaryClass = "cs.CL"
+}
+
+@article{xue-2020-mt5,
+  author       = "Xue, Linting and Constant, Noah and Roberts, Adam and Kale,
+                  Mihir and Al-Rfou, Rami and Siddhant, Aditya and Barua,
+                  Aditya and Raffel, Colin",
+  title        = "Mt5: a Massively Multilingual Pre-Trained Text-To-Text
+                  Transformer",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2010.11934v1",
+  abstract     = "The recent ``Text-to-Text Transfer Transformer`` (T5)
+                  leveraged a unified text-to-text format and scale to attain
+                  state-of-the-art results on a wide variety of
+                  English-language NLP tasks. In this paper, we introduce mT5,
+                  a multilingual variant of T5 that was pre-trained on a new
+                  Common Crawl-based dataset covering 101 languages. We
+                  describe the design and modified training of mT5 and
+                  demonstrate its state-of-the-art performance on many
+                  multilingual benchmarks. All of the code and model
+                  checkpoints used in this work are publicly available.",
+  archivePrefix= "arXiv",
+  eprint       = "2010.11934",
+  primaryClass = "cs.CL"
+}
+@article{wenzek-2019-ccnet,
+  author       = "Wenzek, Guillaume and Lachaux, Marie-Anne and Conneau, Alexis
+                  and Chaudhary, Vishrav and Guzm{\'a}n, Francisco and Joulin,
+                  Armand and Grave, Edouard",
+  title        = "Ccnet: Extracting High Quality Monolingual Datasets From Web
+                  Crawl Data",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1911.00359v2",
+  abstract     = "Pre-training text representations have led to significant
+                  improvements in many areas of natural language
+                  processing. The quality of these models benefits greatly from
+                  the size of the pretraining corpora as long as its quality is
+                  preserved. In this paper, we describe an automatic pipeline
+                  to extract massive high-quality monolingual datasets from
+                  Common Crawl for a variety of languages.  Our pipeline
+                  follows the data processing introduced in fastText (Mikolov
+                  et al., 2017; Grave et al., 2018), that deduplicates
+                  documents and identifies their language. We augment this
+                  pipeline with a filtering step to select documents that are
+                  close to high quality corpora like Wikipedia.",
+  archivePrefix= "arXiv",
+  eprint       = "1911.00359",
   primaryClass = "cs.CL"
 }

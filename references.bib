@@ -9029,7 +9029,7 @@
   bibsource    = "dblp computer science bibliography, https://dblp.org"
 }
 
-@article{al-rfou-2018-charac-level,
+@article{al-rfou-2018-char-level,
   author       = "Rami Al{-}Rfou and Dokook Choe and Noah Constant and Mandy
                   Guo and Llion Jones",
   title        = "Character-Level Language Modeling with Deeper Self-Attention",
@@ -21909,5 +21909,315 @@
                   close to high quality corpora like Wikipedia.",
   archivePrefix= "arXiv",
   eprint       = "1911.00359",
+  primaryClass = "cs.CL"
+}
+@inproceedings{faruqui-2014-improv-vector,
+  author       = "Faruqui, Manaal and Dyer, Chris",
+  title        = "Improving Vector Space Word Representations Using
+                  Multilingual Correlation",
+  booktitle    = "Proceedings of the 14th Conference of the {E}uropean Chapter
+                  of the Association for Computational Linguistics",
+  year         = 2014,
+  pages        = "462-471",
+  doi          = "10.3115/v1/E14-1049",
+  url          = "https://doi.org/10.3115/v1/E14-1049",
+  address      = "Gothenburg, Sweden",
+  month        = apr,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@inproceedings{xing-2015-normal-word,
+  author       = "Xing, Chao and Wang, Dong and Liu, Chao and Lin, Yiye",
+  title        = "Normalized Word Embedding and Orthogonal Transform for
+                  Bilingual Word Translation",
+  booktitle    = "Proceedings of the 2015 Conference of the North {A}merican
+                  Chapter of the Association for Computational Linguistics:
+                  Human Language Technologies",
+  year         = 2015,
+  pages        = "1006-1011",
+  doi          = "10.3115/v1/N15-1104",
+  url          = "https://doi.org/10.3115/v1/N15-1104",
+  address      = "Denver, Colorado",
+  month        = may # "{--}" # jun,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@article{smith-2017-offlin-bilin,
+  author       = "Smith, Samuel L. and Turban, David H. P. and Hamblin, Steven
+                  and Hammerla, Nils Y.",
+  title        = "Offline Bilingual Word Vectors, Orthogonal Transformations
+                  and the Inverted Softmax",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1702.03859v1",
+  abstract     = "Usually bilingual word vectors are trained
+                  ``online``. Mikolov et al. showed they can also be found
+                  ``offline``, whereby two pre-trained embeddings are aligned
+                  with a linear transformation, using dictionaries compiled
+                  from expert knowledge. In this work, we prove that the linear
+                  transformation between two spaces should be orthogonal. This
+                  transformation can be obtained using the singular value
+                  decomposition. We introduce a novel ``inverted softmax`` for
+                  identifying translation pairs, with which we improve the
+                  precision @1 of Mikolov's original mapping from 34 \% to 43
+                  \%, when translating a test set composed of both common and
+                  rare English words into Italian. Orthogonal transformations
+                  are more robust to noise, enabling us to learn the
+                  transformation without expert bilingual signal by
+                  constructing a ``pseudo-dictionary`` from the identical
+                  character strings which appear in both languages, achieving
+                  40 \% precision on the same test set. Finally, we extend our
+                  method to retrieve the true translations of English sentences
+                  from a corpus of 200k Italian sentences with a precision @1
+                  of 68 \%.",
+  archivePrefix= "arXiv",
+  eprint       = "1702.03859",
+  primaryClass = "cs.CL"
+}
+@article{conneau-2017-without-parallel-data,
+  author       = "Conneau, Alexis and Lample, Guillaume and Ranzato,
+                  Marc'Aurelio and Denoyer, Ludovic and J{\'e}gou, Herv{\'e}",
+  title        = "Word Translation Without Parallel Data",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1710.04087v3",
+  abstract     = "State-of-the-art methods for learning cross-lingual word
+                  embeddings have relied on bilingual dictionaries or parallel
+                  corpora. Recent studies showed that the need for parallel
+                  data supervision can be alleviated with character-level
+                  information. While these methods showed encouraging results,
+                  they are not on par with their supervised counterparts and
+                  are limited to pairs of languages sharing a common
+                  alphabet. In this work, we show that we can build a bilingual
+                  dictionary between two languages without using any parallel
+                  corpora, by aligning monolingual word embedding spaces in an
+                  unsupervised way.  Without using any character information,
+                  our model even outperforms existing supervised methods on
+                  cross-lingual tasks for some language pairs. Our experiments
+                  demonstrate that our method works very well also for distant
+                  language pairs, like English-Russian or English-Chinese. We
+                  finally describe experiments on the English-Esperanto
+                  low-resource language pair, on which there only exists a
+                  limited amount of parallel data, to show the potential impact
+                  of our method in fully unsupervised machine translation. Our
+                  code, embeddings and dictionaries are publicly available.",
+  archivePrefix= "arXiv",
+  eprint       = "1710.04087",
+  primaryClass = "cs.CL"
+}
+@article{wang-2018-glue,
+  author       = "Wang, Alex and Singh, Amanpreet and Michael, Julian and Hill,
+                  Felix and Levy, Omer and Bowman, Samuel R.",
+  title        = "Glue: a Multi-Task Benchmark and Analysis Platform for
+                  Natural Language Understanding",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1804.07461v3",
+  abstract     = "For natural language understanding (NLU) technology to be
+                  maximally useful, both practically and as a scientific object
+                  of study, it must be general: it must be able to process
+                  language in a way that is not exclusively tailored to any one
+                  specific task or dataset. In pursuit of this objective, we
+                  introduce the General Language Understanding Evaluation
+                  benchmark (GLUE), a tool for evaluating and analyzing the
+                  performance of models across a diverse range of existing NLU
+                  tasks. GLUE is model-agnostic, but it incentivizes sharing
+                  knowledge across tasks because certain tasks have very
+                  limited training data.  We further provide a hand-crafted
+                  diagnostic test suite that enables detailed linguistic
+                  analysis of NLU models. We evaluate baselines based on
+                  current methods for multi-task and transfer learning and find
+                  that they do not immediately give substantial improvements
+                  over the aggregate performance of training a separate model
+                  per task, indicating room for improvement in developing
+                  general and robust NLU systems.",
+  archivePrefix= "arXiv",
+  eprint       = "1804.07461",
+  primaryClass = "cs.CL"
+}
+@inproceedings{ramachandran-2017-unsupervised-pretraining-seq2seq,
+  author       = "Ramachandran, Prajit and Liu, Peter and Le, Quoc",
+  title        = "Unsupervised Pretraining for Sequence to Sequence Learning",
+  booktitle    = "Proceedings of the 2017 Conference on Empirical Methods in
+                  Natural Language Processing",
+  year         = 2017,
+  pages        = "383-391",
+  doi          = "10.18653/v1/D17-1039",
+  url          = "https://doi.org/10.18653/v1/D17-1039",
+  abstract     = "This work presents a general unsupervised learning method to
+                  improve the accuracy of sequence to sequence (seq2seq)
+                  models. In our method, the weights of the encoder and decoder
+                  of a seq2seq model are initialized with the pretrained
+                  weights of two language models and then fine-tuned with
+                  labeled data. We apply this method to challenging benchmarks
+                  in machine translation and abstractive summarization and find
+                  that it significantly improves the subsequent supervised
+                  models. Our main result is that pretraining improves the
+                  generalization of seq2seq models. We achieve state-of-the-art
+                  results on the WMT English {\leftarrow} German task,
+                  surpassing a range of methods using both phrase-based machine
+                  translation and neural machine translation. Our method
+                  achieves a significant improvement of 1.3 BLEU from th
+                  previous best models on both WMT{'}14 and WMT{'}15 English
+                  {\leftarrow} German. We also conduct human evaluations on
+                  abstractive summarization and find that our method
+                  outperforms a purely supervised learning baseline in a
+                  statistically significant manner.",
+  address      = "Copenhagen, Denmark",
+  month        = sep,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@inproceedings{hermann-2014-compositional,
+  author       = "Hermann, Karl Moritz and Blunsom, Phil",
+  title        = "Multilingual Models for Compositional Distributed Semantics",
+  booktitle    = "Proceedings of the 52nd Annual Meeting of the Association for
+                  Computational Linguistics (Volume 1: Long Papers)",
+  year         = 2014,
+  pages        = "58-68",
+  doi          = "10.3115/v1/P14-1006",
+  url          = "https://doi.org/10.3115/v1/P14-1006",
+  address      = "Baltimore, Maryland",
+  month        = jun,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@article{eriguchi-2018-zero-shot-cross-lingual,
+  author       = "Eriguchi, Akiko and Johnson, Melvin and Firat, Orhan and
+                  Kazawa, Hideto and Macherey, Wolfgang",
+  title        = "Zero-Shot Cross-Lingual Classification Using Multilingual
+                  Neural Machine Translation",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1809.04686v1",
+  abstract     = "Transferring representations from large supervised tasks to
+                  downstream tasks has shown promising results in AI fields
+                  such as Computer Vision and Natural Language Processing
+                  (NLP). In parallel, the recent progress in Machine
+                  Translation (MT) has enabled one to train multilingual Neural
+                  MT (NMT) systems that can translate between multiple
+                  languages and are also capable of performing zero-shot
+                  translation. However, little attention has been paid to
+                  leveraging representations learned by a multilingual NMT
+                  system to enable zero-shot multilinguality in other NLP
+                  tasks. In this paper, we demonstrate a simple framework, a
+                  multilingual Encoder-Classifier, for cross-lingual transfer
+                  learning by reusing the encoder from a multilingual NMT
+                  system and stitching it with a task-specific classifier
+                  component. Our proposed model achieves significant
+                  improvements in the English setup on three benchmark tasks -
+                  Amazon Reviews, SST and SNLI. Further, our system can perform
+                  classification in a new language for which no classification
+                  data was seen during training, showing that zero-shot
+                  classification is possible and remarkably competitive. In
+                  order to understand the underlying factors contributing to
+                  this finding, we conducted a series of analyses on the effect
+                  of the shared vocabulary, the training data type for NMT,
+                  classifier complexity, encoder representation power, and
+                  model generalization on zero-shot performance. Our results
+                  provide strong evidence that the representations learned from
+                  multilingual NMT systems are widely applicable across
+                  languages and tasks.",
+  archivePrefix= "arXiv",
+  eprint       = "1809.04686",
+  primaryClass = "cs.CL"
+}
+
+@article{johnson-2017-google-multilingual,
+  author       = "Johnson, Melvin and Schuster, Mike and Le, Quoc V.  and
+                  Krikun, Maxim and Wu, Yonghui and Chen, Zhifeng and Thorat,
+                  Nikhil and Vi{\'e}gas, Fernanda and Wattenberg, Martin and
+                  Corrado, Greg and Hughes, Macduff and Dean, Jeffrey",
+  title        = "{G}oogle{'}s Multilingual Neural Machine Translation System:
+                  Enabling Zero-Shot Translation",
+  journal      = "Transactions of the Association for Computational
+                  Linguistics",
+  volume       = 5,
+  pages        = "339-351",
+  year         = 2017,
+  doi          = "10.1162/tacl_a_00065",
+  url          = "https://doi.org/10.1162/tacl_a_00065",
+  abstract     = "We propose a simple solution to use a single Neural Machine
+                  Translation (NMT) model to translate between multiple
+                  languages. Our solution requires no changes to the model
+                  architecture from a standard NMT system but instead
+                  introduces an artificial token at the beginning of the input
+                  sentence to specify the required target language. Using a
+                  shared wordpiece vocabulary, our approach enables
+                  Multilingual NMT systems using a single model. On the
+                  WMT{'}14 benchmarks, a single multilingual model achieves
+                  comparable performance for English {\leftarrow} French and
+                  surpasses state-of-theart results for English {\leftarrow}
+                  German. Similarly, a single multilingual model surpasses
+                  state-of-the-art results for French {\leftarrow} English and
+                  German {\leftarrow} English on WMT{'}14 and WMT{'}15
+                  benchmarks, respectively. On production corpora, multilingual
+                  models of up to twelve language pairs allow for better
+                  translation of many individual pairs. Our models can also
+                  learn to perform implicit bridging between language pairs
+                  never seen explicitly during training, showing that transfer
+                  learning and zero-shot translation is possible for neural
+                  translation. Finally, we show analyses that hints at a
+                  universal interlingua representation in our models and also
+                  show some interesting examples when mixing languages."
+}
+
+@article{artetxe-2018-massiv-multil,
+  author       = "Artetxe, Mikel and Schwenk, Holger",
+  title        = "Massively Multilingual Sentence Embeddings for Zero-Shot
+                  Cross-Lingual Transfer and Beyond",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1812.10464v2",
+  abstract     = "We introduce an architecture to learn joint multilingual
+                  sentence representations for 93 languages, belonging to more
+                  than 30 different families and written in 28 different
+                  scripts. Our system uses a single BiLSTM encoder with a
+                  shared BPE vocabulary for all languages, which is coupled
+                  with an auxiliary decoder and trained on publicly available
+                  parallel corpora. This enables us to learn a classifier on
+                  top of the resulting embeddings using English annotated data
+                  only, and transfer it to any of the 93 languages without any
+                  modification. Our experiments in cross-lingual natural
+                  language inference (XNLI dataset), cross-lingual document
+                  classification (MLDoc dataset) and parallel corpus mining
+                  (BUCC dataset) show the effectiveness of our approach.  We
+                  also introduce a new test set of aligned sentences in 112
+                  languages, and show that our sentence embeddings obtain
+                  strong results in multilingual similarity search even for
+                  low-resource languages. Our implementation, the pre-trained
+                  encoder and the multilingual test set are available at
+                  https://github.com/facebookresearch/LASER",
+  archivePrefix= "arXiv",
+  eprint       = "1812.10464",
+  primaryClass = "cs.CL"
+}
+@article{lample-2017-monolingual-only,
+  author       = "Lample, Guillaume and Conneau, Alexis and Denoyer, Ludovic
+                  and Ranzato, Marc'Aurelio",
+  title        = "Unsupervised Machine Translation Using Monolingual Corpora
+                  Only",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1711.00043v2",
+  abstract     = "Machine translation has recently achieved impressive
+                  performance thanks to recent advances in deep learning and
+                  the availability of large-scale parallel corpora. There have
+                  been numerous attempts to extend these successes to
+                  low-resource language pairs, yet requiring tens of thousands
+                  of parallel sentences. In this work, we take this research
+                  direction to the extreme and investigate whether it is
+                  possible to learn to translate even without any parallel
+                  data. We propose a model that takes sentences from
+                  monolingual corpora in two different languages and maps them
+                  into the same latent space. By learning to reconstruct in
+                  both languages from this shared feature space, the model
+                  effectively learns to translate without using any labeled
+                  data. We demonstrate our model on two widely used datasets
+                  and two language pairs, reporting BLEU scores of 32.8 and
+                  15.1 on the Multi30k and WMT English-French datasets, without
+                  using even a single parallel sentence at training time.",
+  archivePrefix= "arXiv",
+  eprint       = "1711.00043",
   primaryClass = "cs.CL"
 }

@@ -1218,21 +1218,6 @@
   publisher    = "SIAM"
 }
 
-@ARTICLE{redmon-2015-you-only-look-once,
-  adsnote      = "Provided by the SAO/NASA Astrophysics Data System",
-  adsurl       = "http://adsabs.harvard.edu/abs/2015arXiv150602640R",
-  archivePrefix= "arXiv",
-  author       = "{Redmon}, J. and {Divvala}, S. and {Girshick}, R. and
-                  {Farhadi}, A.",
-  eprint       = "1506.02640",
-  journal      = "ArXiv e-prints",
-  keywords     = "Computer Science - Computer Vision and Pattern Recognition",
-  month        = jun,
-  primaryClass = "cs.CV",
-  title        = "{You Only Look Once: Unified, Real-Time Object Detection}",
-  year         = 2015
-}
-
 @ARTICLE{rastegari-2016-xnor-net,
   adsnote      = "Provided by the SAO/NASA Astrophysics Data System",
   adsurl       = "http://adsabs.harvard.edu/abs/2016arXiv160305279R",
@@ -1691,7 +1676,7 @@
   year         = 2009
 }
 
-@inproceedings{davis-2006-rela-pre-rec,
+@inproceedings{davis-2006-roc-pr-curve,
   title        = "The relationship between Precision-Recall and ROC curves",
   author       = "Davis, Jesse and Goadrich, Mark",
   booktitle    = "Proceedings of the 23rd international conference on Machine
@@ -22254,4 +22239,1138 @@
   archivePrefix= "arXiv",
   eprint       = "1804.07755",
   primaryClass = "cs.CL"
+}
+
+@inproceedings{jeni-2013-imbalance-metrics,
+  title        = "Facing imbalanced data--recommendations for the use of
+                  performance metrics",
+  author       = "Jeni, L{\'a}szl{\'o} A and Cohn, Jeffrey F and De La Torre,
+                  Fernando",
+  booktitle    = "2013 Humaine association conference on affective computing
+                  and intelligent interaction",
+  pages        = "245-251",
+  year         = 2013,
+  organization = "IEEE"
+}
+
+@article{fawcett-2004-roc-graph,
+  author       = "Fawcett, Tom",
+  year         = 2004,
+  month        = 01,
+  pages        = "1-38",
+  title        = "ROC Graphs: Notes and Practical Considerations for
+                  Researchers",
+  volume       = 31,
+  journal      = "Machine Learning"
+}
+
+@article{saito-2015-roc-pr-curve,
+  title        = "The precision-recall plot is more informative than the ROC
+                  plot when evaluating binary classifiers on imbalanced
+                  datasets",
+  author       = "Saito, Takaya and Rehmsmeier, Marc",
+  journal      = "PloS one",
+  volume       = 10,
+  number       = 3,
+  pages        = "e0118432",
+  year         = 2015,
+  publisher    = "Public Library of Science"
+}
+
+@article{hanczar-2010-roc-estimates,
+  author       = "Hanczar, Blaise and Hua, Jianping and Sima, Chao and
+                  Weinstein, John and Bittner, Michael and Dougherty, Edward
+                  R.",
+  title        = "{Small-sample precision of ROC-related estimates}",
+  journal      = "Bioinformatics",
+  volume       = 26,
+  number       = 6,
+  pages        = "822-830",
+  year         = 2010,
+  month        = 02,
+  abstract     = "{Motivation: The receiver operator characteristic (ROC)
+                  curves are commonly used in biomedical applications to judge
+                  the performance of a discriminant across varying decision
+                  thresholds. The estimated ROC curve depends on the true
+                  positive rate (TPR) and false positive rate (FPR), with the
+                  key metric being the area under the curve (AUC). With small
+                  samples these rates need to be estimated from the training
+                  data, so a natural question arises: How well do the estimates
+                  of the AUC, TPR and FPR compare with the true
+                  metrics?Results: Through a simulation study using data models
+                  and analysis of real microarray data, we show that (i) for
+                  small samples the root mean square differences of the
+                  estimated and true metrics are considerable; (ii) even for
+                  large samples, there is only weak correlation between the
+                  true and estimated metrics; and (iii) generally, there is
+                  weak regression of the true metric on the estimated
+                  metric. For classification rules, we consider linear
+                  discriminant analysis, linear support vector machine (SVM)
+                  and radial basis function SVM. For error estimation, we
+                  consider resubstitution, three kinds of cross-validation and
+                  bootstrap. Using resampling, we show the unreliability of
+                  some published ROC results.Availability: Companion web site
+                  at
+                  http://compbio.tgen.org/paper\_supp/ROC/roc.htmlContact:edward@mail.ece.tamu.edu}",
+  issn         = "1367-4803",
+  doi          = "10.1093/bioinformatics/btq037",
+  url          = "https://doi.org/10.1093/bioinformatics/btq037",
+  eprint       =
+                  "https://academic.oup.com/bioinformatics/article-pdf/26/6/822/676553/btq037.pdf"
+}
+
+@article{lobo-2008-auc-misleading,
+  title        = "AUC: a misleading measure of the performance of predictive
+                  distribution models",
+  author       = "J. Lobo and A. Jim{\'e}nez-Valverde and R. Real",
+  journal      = "Global Ecology and Biogeography",
+  year         = 2008,
+  volume       = 17,
+  pages        = "145-151"
+}
+
+@article{hand-2009-roc-alternative,
+  title        = "Measuring classifier performance: a coherent alternative to
+                  the area under the ROC curve",
+  author       = "Hand, David J",
+  journal      = "Machine learning",
+  volume       = 77,
+  number       = 1,
+  pages        = "103-123",
+  year         = 2009,
+  publisher    = "Springer"
+}
+
+@article{lopez-paz-2015-privileged-info,
+  author       = "Lopez-Paz, David and Bottou, L{\'e}on and Sch{\"o}lkopf,
+                  Bernhard and Vapnik, Vladimir",
+  title        = "Unifying Distillation and Privileged Information",
+  journal      = "CoRR",
+  year         = 2015,
+  url          = "http://arxiv.org/abs/1511.03643v3",
+  abstract     = "Distillation (Hinton et al., 2015) and privileged information
+                  (Vapnik & Izmailov, 2015) are two techniques that enable
+                  machines to learn from other machines. This paper unifies
+                  these two techniques into generalized distillation, a
+                  framework to learn from multiple machines and data
+                  representations. We provide theoretical and causal insight
+                  about the inner workings of generalized distillation, extend
+                  it to unsupervised, semisupervised and multitask learning
+                  scenarios, and illustrate its efficacy on a variety of
+                  numerical simulations on both synthetic and real-world data.",
+  archivePrefix= "arXiv",
+  eprint       = "1511.03643",
+  primaryClass = "stat.ML"
+}
+
+@article{baevski-2019-cloze,
+  author       = "Baevski, Alexei and Edunov, Sergey and Liu, Yinhan and
+                  Zettlemoyer, Luke and Auli, Michael",
+  title        = "Cloze-Driven Pretraining of Self-Attention Networks",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1903.07785v1",
+  abstract     = "We present a new approach for pretraining a bi-directional
+                  transformer model that provides significant performance gains
+                  across a variety of language understanding problems. Our
+                  model solves a cloze-style word reconstruction task, where
+                  each word is ablated and must be predicted given the rest of
+                  the text. Experiments demonstrate large performance gains on
+                  GLUE and new state of the art results on NER as well as
+                  constituency parsing benchmarks, consistent with the
+                  concurrently introduced BERT model. We also present a
+                  detailed analysis of a number of factors that contribute to
+                  effective pretraining, including data domain and size, model
+                  capacity, and variations on the cloze objective.",
+  archivePrefix= "arXiv",
+  eprint       = "1903.07785",
+  primaryClass = "cs.CL"
+}
+
+@article{ott-2018-scaling-nmt,
+  author       = "Ott, Myle and Edunov, Sergey and Grangier, David and Auli,
+                  Michael",
+  title        = "Scaling Neural Machine Translation",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1806.00187v3",
+  abstract     = "Sequence to sequence learning models still require several
+                  days to reach state of the art performance on large benchmark
+                  datasets using a single machine. This paper shows that
+                  reduced precision and large batch training can speedup
+                  training by nearly 5x on a single 8-GPU machine with careful
+                  tuning and implementation. On WMT'14 English-German
+                  translation, we match the accuracy of Vaswani et al. (2017)
+                  in under 5 hours when training on 8 GPUs and we obtain a new
+                  state of the art of 29.3 BLEU after training for 85 minutes
+                  on 128 GPUs. We further improve these results to 29.8 BLEU by
+                  training on the much larger Paracrawl dataset. On the WMT'14
+                  English-French task, we obtain a state-of-the-art BLEU of
+                  43.2 in 8.5 hours on 128 GPUs.",
+  archivePrefix= "arXiv",
+  eprint       = "1806.00187",
+  primaryClass = "cs.CL"
+}
+
+@article{girshick-2013-r-cnn,
+  author       = "Girshick, Ross and Donahue, Jeff and Darrell, Trevor
+                  and Malik, Jitendra",
+  title        = "Rich Feature Hierarchies for Accurate Object Detection
+                  and Semantic Segmentation",
+  journal      = "CoRR",
+  year         = 2013,
+  url          = "http://arxiv.org/abs/1311.2524v5",
+  abstract     = "Object detection performance, as measured on the
+                  canonical PASCAL VOC dataset, has plateaued in the
+                  last few years. The best-performing methods are
+                  complex ensemble systems that typically combine
+                  multiple low-level image features with high-level
+                  context. In this paper, we propose a simple and
+                  scalable detection algorithm that improves mean
+                  average precision (mAP) by more than 30 \% relative to
+                  the previous best result on VOC 2012---achieving a mAP
+                  of 53.3 \%. Our approach combines two key insights:
+                  (1) one can apply high-capacity convolutional neural
+                  networks (CNNs) to bottom-up region proposals in order
+                  to localize and segment objects and (2) when labeled
+                  training data is scarce, supervised pre-training for
+                  an auxiliary task, followed by domain-specific
+                  fine-tuning, yields a significant performance
+                  boost. Since we combine region proposals with CNNs, we
+                  call our method R-CNN: Regions with CNN features. We
+                  also compare R-CNN to OverFeat, a recently proposed
+                  sliding-window detector based on a similar CNN
+                  architecture. We find that R-CNN outperforms OverFeat
+                  by a large margin on the 200-class ILSVRC2013
+                  detection dataset. Source code for the complete system
+                  is available at http://www.cs.berkeley.edu/~rbg/rcnn.",
+  archivePrefix= "arXiv",
+  eprint       = "1311.2524",
+  primaryClass = "cs.CV"
+}
+
+@article{girshick-2015-fast-r-cnn,
+  author       = "Girshick, Ross",
+  title        = "Fast R-Cnn",
+  journal      = "CoRR",
+  year         = 2015,
+  url          = "http://arxiv.org/abs/1504.08083v2",
+  abstract     = "This paper proposes a Fast Region-based Convolutional
+                  Network method (Fast R-CNN) for object detection. Fast
+                  R-CNN builds on previous work to efficiently classify
+                  object proposals using deep convolutional
+                  networks. Compared to previous work, Fast R-CNN
+                  employs several innovations to improve training and
+                  testing speed while also increasing detection
+                  accuracy. Fast R-CNN trains the very deep VGG16
+                  network 9x faster than R-CNN, is 213x faster at
+                  test-time, and achieves a higher mAP on PASCAL VOC
+                  2012. Compared to SPPnet, Fast R-CNN trains VGG16 3x
+                  faster, tests 10x faster, and is more accurate. Fast
+                  R-CNN is implemented in Python and C++ (using Caffe)
+                  and is available under the open-source MIT License at
+                  https://github.com/rbgirshick/fast-rcnn.",
+  archivePrefix= "arXiv",
+  eprint       = "1504.08083",
+  primaryClass = "cs.CV"
+}
+
+@article{ren-2015-faster-r-cnn,
+  author       = "Ren, Shaoqing and He, Kaiming and Girshick, Ross and
+                  Sun, Jian",
+  title        = "Faster R-Cnn: Towards Real-Time Object Detection With
+                  Region Proposal Networks",
+  journal      = "CoRR",
+  year         = 2015,
+  url          = "http://arxiv.org/abs/1506.01497v3",
+  abstract     = "State-of-the-art object detection networks depend on
+                  region proposal algorithms to hypothesize object
+                  locations. Advances like SPPnet and Fast R-CNN have
+                  reduced the running time of these detection networks,
+                  exposing region proposal computation as a
+                  bottleneck. In this work, we introduce a Region
+                  Proposal Network (RPN) that shares full-image
+                  convolutional features with the detection network,
+                  thus enabling nearly cost-free region proposals. An
+                  RPN is a fully convolutional network that
+                  simultaneously predicts object bounds and objectness
+                  scores at each position. The RPN is trained end-to-end
+                  to generate high-quality region proposals, which are
+                  used by Fast R-CNN for detection. We further merge RPN
+                  and Fast R-CNN into a single network by sharing their
+                  convolutional features---using the recently popular
+                  terminology of neural networks with 'attention'
+                  mechanisms, the RPN component tells the unified
+                  network where to look. For the very deep VGG-16 model,
+                  our detection system has a frame rate of 5fps
+                  (including all steps) on a GPU, while achieving
+                  state-of-the-art object detection accuracy on PASCAL
+                  VOC 2007, 2012, and MS COCO datasets with only 300
+                  proposals per image. In ILSVRC and COCO 2015
+                  competitions, Faster R-CNN and RPN are the foundations
+                  of the 1st-place winning entries in several
+                  tracks. Code has been made publicly available.",
+  archivePrefix= "arXiv",
+  eprint       = "1506.01497",
+  primaryClass = "cs.CV"
+}
+
+@article{he-2017-mask-r-cnn,
+  author       = "He, Kaiming and Gkioxari, Georgia and Doll{\'a}r,
+                  Piotr and Girshick, Ross",
+  title        = "Mask R-Cnn",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1703.06870v3",
+  abstract     = "We present a conceptually simple, flexible, and
+                  general framework for object instance
+                  segmentation. Our approach efficiently detects objects
+                  in an image while simultaneously generating a
+                  high-quality segmentation mask for each instance. The
+                  method, called Mask R-CNN, extends Faster R-CNN by
+                  adding a branch for predicting an object mask in
+                  parallel with the existing branch for bounding box
+                  recognition. Mask R-CNN is simple to train and adds
+                  only a small overhead to Faster R-CNN, running at 5
+                  fps. Moreover, Mask R-CNN is easy to generalize to
+                  other tasks, e.g., allowing us to estimate human poses
+                  in the same framework. We show top results in all
+                  three tracks of the COCO suite of challenges,
+                  including instance segmentation, bounding-box object
+                  detection, and person keypoint detection. Without
+                  bells and whistles, Mask R-CNN outperforms all
+                  existing, single-model entries on every task,
+                  including the COCO 2016 challenge winners. We hope our
+                  simple and effective approach will serve as a solid
+                  baseline and help ease future research in
+                  instance-level recognition.  Code has been made
+                  available at:
+                  https://github.com/facebookresearch/Detectron",
+  archivePrefix= "arXiv",
+  eprint       = "1703.06870",
+  primaryClass = "cs.CV"
+}
+
+@article{li-2017-light-head-r-cnn,
+  author       = "Li, Zeming and Peng, Chao and Yu, Gang and Zhang,
+                  Xiangyu and Deng, Yangdong and Sun, Jian",
+  title        = "Light-Head R-Cnn: in Defense of Two-Stage Object
+                  Detector",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1711.07264v2",
+  abstract     = "In this paper, we first investigate why typical
+                  two-stage methods are not as fast as single-stage,
+                  fast detectors like YOLO and SSD. We find that Faster
+                  R-CNN and R-FCN perform an intensive computation after
+                  or before RoI warping.  Faster R-CNN involves two
+                  fully connected layers for RoI recognition, while
+                  R-FCN produces a large score maps. Thus, the speed of
+                  these networks is slow due to the heavy-head design in
+                  the architecture. Even if we significantly reduce the
+                  base model, the computation cost cannot be largely
+                  decreased accordingly.  We propose a new two-stage
+                  detector, Light-Head R-CNN, to address the shortcoming
+                  in current two-stage approaches. In our design, we
+                  make the head of network as light as possible, by
+                  using a thin feature map and a cheap R-CNN subnet
+                  (pooling and single fully-connected layer). Our
+                  ResNet-101 based light-head R-CNN outperforms
+                  state-of-art object detectors on COCO while keeping
+                  time efficiency. More importantly, simply replacing
+                  the backbone with a tiny network (e.g, Xception), our
+                  Light-Head R-CNN gets 30.7 mmAP at 102 FPS on COCO,
+                  significantly outperforming the single-stage, fast
+                  detectors like YOLO and SSD on both speed and
+                  accuracy. Code will be made publicly available.",
+  archivePrefix= "arXiv",
+  eprint       = "1711.07264",
+  primaryClass = "cs.CV"
+}
+
+@article{cai-2017-cascade-r-cnn,
+  author       = "Cai, Zhaowei and Vasconcelos, Nuno",
+  title        = "Cascade R-Cnn: Delving Into High Quality Object
+                  Detection",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1712.00726v1",
+  abstract     = "In object detection, an intersection over union (IoU)
+                  threshold is required to define positives and
+                  negatives. An object detector, trained with low IoU
+                  threshold, e.g. 0.5, usually produces noisy
+                  detections. However, detection performance tends to
+                  degrade with increasing the IoU thresholds. Two main
+                  factors are responsible for this: 1) overfitting
+                  during training, due to exponentially vanishing
+                  positive samples, and 2) inference-time mismatch
+                  between the IoUs for which the detector is optimal and
+                  those of the input hypotheses. A multi-stage object
+                  detection architecture, the Cascade R-CNN, is proposed
+                  to address these problems. It consists of a sequence
+                  of detectors trained with increasing IoU thresholds,
+                  to be sequentially more selective against close false
+                  positives. The detectors are trained stage by stage,
+                  leveraging the observation that the output of a
+                  detector is a good distribution for training the next
+                  higher quality detector. The resampling of
+                  progressively improved hypotheses guarantees that all
+                  detectors have a positive set of examples of
+                  equivalent size, reducing the overfitting problem. The
+                  same cascade procedure is applied at inference,
+                  enabling a closer match between the hypotheses and the
+                  detector quality of each stage. A simple
+                  implementation of the Cascade R-CNN is shown to
+                  surpass all single-model object detectors on the
+                  challenging COCO dataset. Experiments also show that
+                  the Cascade R-CNN is widely applicable across detector
+                  architectures, achieving consistent gains
+                  independently of the baseline detector strength. The
+                  code will be made available at
+                  https://github.com/zhaoweicai/cascade-rcnn.",
+  archivePrefix= "arXiv",
+  eprint       = "1712.00726",
+  primaryClass = "cs.CV"
+}
+
+@article{he-2014-spp-net,
+  author       = "He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and
+                  Sun, Jian",
+  title        = "Spatial Pyramid Pooling in Deep Convolutional Networks
+                  for Visual Recognition",
+  journal      = "CoRR",
+  year         = 2014,
+  url          = "http://arxiv.org/abs/1406.4729v4",
+  abstract     = "Existing deep convolutional neural networks (CNNs)
+                  require a fixed-size (e.g., 224x224) input image. This
+                  requirement is ``artificial`` and may reduce the
+                  recognition accuracy for the images or sub-images of
+                  an arbitrary size/scale. In this work, we equip the
+                  networks with another pooling strategy, ``spatial
+                  pyramid pooling``, to eliminate the above
+                  requirement. The new network structure, called
+                  SPP-net, can generate a fixed-length representation
+                  regardless of image size/scale. Pyramid pooling is
+                  also robust to object deformations. With these
+                  advantages, SPP-net should in general improve all
+                  CNN-based image classification methods. On the
+                  ImageNet 2012 dataset, we demonstrate that SPP-net
+                  boosts the accuracy of a variety of CNN architectures
+                  despite their different designs. On the Pascal VOC
+                  2007 and Caltech101 datasets, SPP-net achieves
+                  state-of-the-art classification results using a single
+                  full-image representation and no fine-tuning.  The
+                  power of SPP-net is also significant in object
+                  detection. Using SPP-net, we compute the feature maps
+                  from the entire image only once, and then pool
+                  features in arbitrary regions (sub-images) to generate
+                  fixed-length representations for training the
+                  detectors. This method avoids repeatedly computing the
+                  convolutional features. In processing test images, our
+                  method is 24-102x faster than the R-CNN method, while
+                  achieving better or comparable accuracy on Pascal VOC
+                  2007.  In ImageNet Large Scale Visual Recognition
+                  Challenge (ILSVRC) 2014, our methods rank #2 in object
+                  detection and #3 in image classification among all 38
+                  teams. This manuscript also introduces the improvement
+                  made for this competition.",
+  archivePrefix= "arXiv",
+  eprint       = "1406.4729",
+  primaryClass = "cs.CV"
+}
+
+@article{redmon-2015-yolo,
+  author       = "Redmon, Joseph and Divvala, Santosh and Girshick, Ross
+                  and Farhadi, Ali",
+  title        = "You Only Look Once: Unified, Real-Time Object
+                  Detection",
+  journal      = "CoRR",
+  year         = 2015,
+  url          = "http://arxiv.org/abs/1506.02640v5",
+  abstract     = "We present YOLO, a new approach to object
+                  detection. Prior work on object detection repurposes
+                  classifiers to perform detection. Instead, we frame
+                  object detection as a regression problem to spatially
+                  separated bounding boxes and associated class
+                  probabilities. A single neural network predicts
+                  bounding boxes and class probabilities directly from
+                  full images in one evaluation. Since the whole
+                  detection pipeline is a single network, it can be
+                  optimized end-to-end directly on detection
+                  performance.  Our unified architecture is extremely
+                  fast. Our base YOLO model processes images in
+                  real-time at 45 frames per second. A smaller version
+                  of the network, Fast YOLO, processes an astounding 155
+                  frames per second while still achieving double the mAP
+                  of other real-time detectors. Compared to
+                  state-of-the-art detection systems, YOLO makes more
+                  localization errors but is far less likely to predict
+                  false detections where nothing exists. Finally, YOLO
+                  learns very general representations of objects. It
+                  outperforms all other detection methods, including DPM
+                  and R-CNN, by a wide margin when generalizing from
+                  natural images to artwork on both the Picasso Dataset
+                  and the People-Art Dataset.",
+  archivePrefix= "arXiv",
+  eprint       = "1506.02640",
+  primaryClass = "cs.CV"
+}
+
+@article{redmon-2016-yolo-v2,
+  author       = "Redmon, Joseph and Farhadi, Ali",
+  title        = "Yolo9000: Better, Faster, Stronger",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1612.08242v1",
+  abstract     = "We introduce YOLO9000, a state-of-the-art, real-time
+                  object detection system that can detect over 9000
+                  object categories. First we propose various
+                  improvements to the YOLO detection method, both novel
+                  and drawn from prior work. The improved model, YOLOv2,
+                  is state-of-the-art on standard detection tasks like
+                  PASCAL VOC and COCO. At 67 FPS, YOLOv2 gets 76.8 mAP
+                  on VOC 2007. At 40 FPS, YOLOv2 gets 78.6 mAP,
+                  outperforming state-of-the-art methods like Faster
+                  RCNN with ResNet and SSD while still running
+                  significantly faster.  Finally we propose a method to
+                  jointly train on object detection and
+                  classification. Using this method we train YOLO9000
+                  simultaneously on the COCO detection dataset and the
+                  ImageNet classification dataset. Our joint training
+                  allows YOLO9000 to predict detections for object
+                  classes that don't have labelled detection data. We
+                  validate our approach on the ImageNet detection
+                  task. YOLO9000 gets 19.7 mAP on the ImageNet detection
+                  validation set despite only having detection data for
+                  44 of the 200 classes. On the 156 classes not in COCO,
+                  YOLO9000 gets 16.0 mAP. But YOLO can detect more than
+                  just 200 classes; it predicts detections for more than
+                  9000 different object categories. And it still runs in
+                  real-time.",
+  archivePrefix= "arXiv",
+  eprint       = "1612.08242",
+  primaryClass = "cs.CV"
+}
+
+@article{redmon-2018-yolo-v3,
+  author       = "Redmon, Joseph and Farhadi, Ali",
+  title        = "Yolov3: an Incremental Improvement",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1804.02767v1",
+  abstract     = "We present some updates to YOLO! We made a bunch of
+                  little design changes to make it better. We also
+                  trained this new network that's pretty swell. It's a
+                  little bigger than last time but more accurate. It's
+                  still fast though, don't worry. At 320x320 YOLOv3 runs
+                  in 22 ms at 28.2 mAP, as accurate as SSD but three
+                  times faster. When we look at the old .5 IOU mAP
+                  detection metric YOLOv3 is quite good. It achieves
+                  57.9 mAP@50 in 51 ms on a Titan X, compared to 57.5
+                  mAP@50 in 198 ms by RetinaNet, similar performance but
+                  3.8x faster. As always, all the code is online at
+                  https://pjreddie.com/yolo/",
+  archivePrefix= "arXiv",
+  eprint       = "1804.02767",
+  primaryClass = "cs.CV"
+}
+
+@article{bochkovskiy-2020-yolo-v4,
+  author       = "Bochkovskiy, Alexey and Wang, Chien-Yao and Liao,
+                  Hong-Yuan Mark",
+  title        = "Yolov4: Optimal Speed and Accuracy of Object
+                  Detection",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2004.10934v1",
+  abstract     = "There are a huge number of features which are said to
+                  improve Convolutional Neural Network (CNN)
+                  accuracy. Practical testing of combinations of such
+                  features on large datasets, and theoretical
+                  justification of the result, is required. Some
+                  features operate on certain models exclusively and for
+                  certain problems exclusively, or only for small-scale
+                  datasets; while some features, such as
+                  batch-normalization and residual-connections, are
+                  applicable to the majority of models, tasks, and
+                  datasets. We assume that such universal features
+                  include Weighted-Residual-Connections (WRC),
+                  Cross-Stage-Partial-connections (CSP), Cross
+                  mini-Batch Normalization (CmBN),
+                  Self-adversarial-training (SAT) and
+                  Mish-activation. We use new features: WRC, CSP, CmBN,
+                  SAT, Mish activation, Mosaic data augmentation, CmBN,
+                  DropBlock regularization, and CIoU loss, and combine
+                  some of them to achieve state-of-the-art results: 43.5
+                  \% AP (65.7 \% AP50) for the MS COCO dataset at a
+                  realtime speed of ~65 FPS on Tesla V100. Source code
+                  is at https://github.com/AlexeyAB/darknet",
+  archivePrefix= "arXiv",
+  eprint       = "2004.10934",
+  primaryClass = "cs.CV"
+}
+
+@article{liu-2015-ssd,
+  author       = "Liu, Wei and Anguelov, Dragomir and Erhan, Dumitru and
+                  Szegedy, Christian and Reed, Scott and Fu, Cheng-Yang
+                  and Berg, Alexander C.",
+  title        = "Ssd: Single Shot Multibox Detector",
+  journal      = "CoRR",
+  year         = 2015,
+  url          = "http://arxiv.org/abs/1512.02325v5",
+  abstract     = "We present a method for detecting objects in images
+                  using a single deep neural network. Our approach,
+                  named SSD, discretizes the output space of bounding
+                  boxes into a set of default boxes over different
+                  aspect ratios and scales per feature map location. At
+                  prediction time, the network generates scores for the
+                  presence of each object category in each default box
+                  and produces adjustments to the box to better match
+                  the object shape. Additionally, the network combines
+                  predictions from multiple feature maps with different
+                  resolutions to naturally handle objects of various
+                  sizes. Our SSD model is simple relative to methods
+                  that require object proposals because it completely
+                  eliminates proposal generation and subsequent pixel or
+                  feature resampling stage and encapsulates all
+                  computation in a single network. This makes SSD easy
+                  to train and straightforward to integrate into systems
+                  that require a detection component. Experimental
+                  results on the PASCAL VOC, MS COCO, and ILSVRC
+                  datasets confirm that SSD has comparable accuracy to
+                  methods that utilize an additional object proposal
+                  step and is much faster, while providing a unified
+                  framework for both training and inference. Compared to
+                  other single stage methods, SSD has much better
+                  accuracy, even with a smaller input image size. For
+                  $300\times 300$ input, SSD achieves 72.1 \% mAP on
+                  VOC2007 test at 58 FPS on a Nvidia Titan X and for
+                  $500\times 500$ input, SSD achieves 75.1 \% mAP,
+                  outperforming a comparable state of the art Faster
+                  R-CNN model. Code is available at
+                  https://github.com/weiliu89/caffe/tree/ssd .",
+  archivePrefix= "arXiv",
+  eprint       = "1512.02325",
+  primaryClass = "cs.CV"
+}
+
+@article{fu-2017-dssd,
+  author       = "Fu, Cheng-Yang and Liu, Wei and Ranga, Ananth and
+                  Tyagi, Ambrish and Berg, Alexander C.",
+  title        = "Dssd : Deconvolutional Single Shot Detector",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1701.06659v1",
+  abstract     = "The main contribution of this paper is an approach for
+                  introducing additional context into state-of-the-art
+                  general object detection. To achieve this we first
+                  combine a state-of-the-art classifier
+                  (Residual-101[14]) with a fast detection framework
+                  (SSD[18]). We then augment SSD+Residual-101 with
+                  deconvolution layers to introduce additional
+                  large-scale context in object detection and improve
+                  accuracy, especially for small objects, calling our
+                  resulting system DSSD for deconvolutional single shot
+                  detector. While these two contributions are easily
+                  described at a high-level, a naive implementation does
+                  not succeed. Instead we show that carefully adding
+                  additional stages of learned transformations,
+                  specifically a module for feed-forward connections in
+                  deconvolution and a new output module, enables this
+                  new approach and forms a potential way forward for
+                  further detection research. Results are shown on both
+                  PASCAL VOC and COCO detection. Our DSSD with
+                  $513 \times 513$ input achieves 81.5 \% mAP on VOC2007
+                  test, 80.0 \% mAP on VOC2012 test, and 33.2 \% mAP on
+                  COCO, outperforming a state-of-the-art method R-FCN[3]
+                  on each dataset.",
+  archivePrefix= "arXiv",
+  eprint       = "1701.06659",
+  primaryClass = "cs.CV"
+}
+
+@article{liu-2017-rfb-ssd,
+  author       = "Liu, Songtao and Huang, Di and Wang, Yunhong",
+  title        = "Receptive Field Block Net for Accurate and Fast Object
+                  Detection",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1711.07767v3",
+  abstract     = "Current top-performing object detectors depend on deep
+                  CNN backbones, such as ResNet-101 and Inception,
+                  benefiting from their powerful feature representations
+                  but suffering from high computational
+                  costs. Conversely, some lightweight model based
+                  detectors fulfil real time processing, while their
+                  accuracies are often criticized. In this paper, we
+                  explore an alternative to build a fast and accurate
+                  detector by strengthening lightweight features using a
+                  hand-crafted mechanism. Inspired by the structure of
+                  Receptive Fields (RFs) in human visual systems, we
+                  propose a novel RF Block (RFB) module, which takes the
+                  relationship between the size and eccentricity of RFs
+                  into account, to enhance the feature discriminability
+                  and robustness. We further assemble RFB to the top of
+                  SSD, constructing the RFB Net detector. To evaluate
+                  its effectiveness, experiments are conducted on two
+                  major benchmarks and the results show that RFB Net is
+                  able to reach the performance of advanced very deep
+                  detectors while keeping the real-time speed. Code is
+                  available at https://github.com/ruinmessi/RFBNet.",
+  archivePrefix= "arXiv",
+  eprint       = "1711.07767",
+  primaryClass = "cs.CV"
+}
+
+@article{lin-2016-refinenet,
+  author       = "Lin, Guosheng and Milan, Anton and Shen, Chunhua and
+                  Reid, Ian",
+  title        = "Refinenet: Multi-Path Refinement Networks for
+                  High-Resolution Semantic Segmentation",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1611.06612v3",
+  abstract     = "Recently, very deep convolutional neural networks
+                  (CNNs) have shown outstanding performance in object
+                  recognition and have also been the first choice for
+                  dense classification problems such as semantic
+                  segmentation.  However, repeated subsampling
+                  operations like pooling or convolution striding in
+                  deep CNNs lead to a significant decrease in the
+                  initial image resolution.  Here, we present RefineNet,
+                  a generic multi-path refinement network that
+                  explicitly exploits all the information available
+                  along the down-sampling process to enable
+                  high-resolution prediction using long-range residual
+                  connections. In this way, the deeper layers that
+                  capture high-level semantic features can be directly
+                  refined using fine-grained features from earlier
+                  convolutions. The individual components of RefineNet
+                  employ residual connections following the identity
+                  mapping mindset, which allows for effective end-to-end
+                  training. Further, we introduce chained residual
+                  pooling, which captures rich background context in an
+                  efficient manner. We carry out comprehensive
+                  experiments and set new state-of-the-art results on
+                  seven public datasets. In particular, we achieve an
+                  intersection-over-union score of 83.4 on the
+                  challenging PASCAL VOC 2012 dataset, which is the best
+                  reported result to date.",
+  archivePrefix= "arXiv",
+  eprint       = "1611.06612",
+  primaryClass = "cs.CV"
+}
+
+@article{law-2018-cornernet,
+  author       = "Law, Hei and Deng, Jia",
+  title        = "Cornernet: Detecting Objects As Paired Keypoints",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1808.01244v2",
+  abstract     = "We propose CornerNet, a new approach to object
+                  detection where we detect an object bounding box as a
+                  pair of keypoints, the top-left corner and the
+                  bottom-right corner, using a single convolution neural
+                  network. By detecting objects as paired keypoints, we
+                  eliminate the need for designing a set of anchor boxes
+                  commonly used in prior single-stage detectors. In
+                  addition to our novel formulation, we introduce corner
+                  pooling, a new type of pooling layer that helps the
+                  network better localize corners. Experiments show that
+                  CornerNet achieves a 42.2 \% AP on MS COCO,
+                  outperforming all existing one-stage detectors.",
+  archivePrefix= "arXiv",
+  eprint       = "1808.01244",
+  primaryClass = "cs.CV"
+}
+
+@article{law-2019-cornernet-lite,
+  author       = "Law, Hei and Teng, Yun and Russakovsky, Olga and Deng,
+                  Jia",
+  title        = "Cornernet-Lite: Efficient Keypoint Based Object
+                  Detection",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1904.08900v2",
+  abstract     = "Keypoint-based methods are a relatively new paradigm
+                  in object detection, eliminating the need for anchor
+                  boxes and offering a simplified detection
+                  framework. Keypoint-based CornerNet achieves state of
+                  the art accuracy among single-stage
+                  detectors. However, this accuracy comes at high
+                  processing cost.  In this work, we tackle the problem
+                  of efficient keypoint-based object detection and
+                  introduce CornerNet-Lite. CornerNet-Lite is a
+                  combination of two efficient variants of CornerNet:
+                  CornerNet-Saccade, which uses an attention mechanism
+                  to eliminate the need for exhaustively processing all
+                  pixels of the image, and CornerNet-Squeeze, which
+                  introduces a new compact backbone
+                  architecture. Together these two variants address the
+                  two critical use cases in efficient object detection:
+                  improving efficiency without sacrificing accuracy, and
+                  improving accuracy at real-time
+                  efficiency. CornerNet-Saccade is suitable for offline
+                  processing, improving the efficiency of CornerNet by
+                  6.0x and the AP by 1.0 \% on COCO. CornerNet-Squeeze
+                  is suitable for real-time detection, improving both
+                  the efficiency and accuracy of the popular real-time
+                  detector YOLOv3 (34.4 \% AP at 30ms for
+                  CornerNet-Squeeze compared to 33.0 \% AP at 39ms for
+                  YOLOv3 on COCO). Together these contributions for the
+                  first time reveal the potential of keypoint-based
+                  detection to be useful for applications requiring
+                  processing efficiency.",
+  archivePrefix= "arXiv",
+  eprint       = "1904.08900",
+  primaryClass = "cs.CV"
+}
+
+@article{tian-2019-fcos,
+  author       = "Tian, Zhi and Shen, Chunhua and Chen, Hao and He,
+                  Tong",
+  title        = "Fcos: Fully Convolutional One-Stage Object Detection",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1904.01355v5",
+  abstract     = "We propose a fully convolutional one-stage object
+                  detector (FCOS) to solve object detection in a
+                  per-pixel prediction fashion, analogue to semantic
+                  segmentation. Almost all state-of-the-art object
+                  detectors such as RetinaNet, SSD, YOLOv3, and Faster
+                  R-CNN rely on pre-defined anchor boxes. In contrast,
+                  our proposed detector FCOS is anchor box free, as well
+                  as proposal free. By eliminating the predefined set of
+                  anchor boxes, FCOS completely avoids the complicated
+                  computation related to anchor boxes such as
+                  calculating overlapping during training. More
+                  importantly, we also avoid all hyper-parameters
+                  related to anchor boxes, which are often very
+                  sensitive to the final detection performance. With the
+                  only post-processing non-maximum suppression (NMS),
+                  FCOS with ResNeXt-64x4d-101 achieves 44.7 \% in AP
+                  with single-model and single-scale testing, surpassing
+                  previous one-stage detectors with the advantage of
+                  being much simpler. For the first time, we demonstrate
+                  a much simpler and flexible detection framework
+                  achieving improved detection accuracy. We hope that
+                  the proposed FCOS framework can serve as a simple and
+                  strong alternative for many other instance-level
+                  tasks. Code is available at:Code is available at:
+                  https://tinyurl.com/FCOSv1",
+  archivePrefix= "arXiv",
+  eprint       = "1904.01355",
+  primaryClass = "cs.CV"
+}
+
+@inproceedings{zhou-2018-stdn,
+  title        = "Scale-transferrable object detection",
+  author       = "Zhou, Peng and Ni, Bingbing and Geng, Cong and Hu,
+                  Jianguo and Xu, Yi",
+  booktitle    = "proceedings of the IEEE conference on computer vision
+                  and pattern recognition",
+  pages        = "528-537",
+  year         = 2018
+}
+
+@article{zhou-2019-extremenet,
+  author       = "Zhou, Xingyi and Zhuo, Jiacheng and
+                  Kr{\"a}henb{\"u}hl, Philipp",
+  title        = "Bottom-Up Object Detection By Grouping Extreme and
+                  Center Points",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1901.08043v3",
+  abstract     = "With the advent of deep learning, object detection
+                  drifted from a bottom-up to a top-down recognition
+                  problem. State of the art algorithms enumerate a
+                  near-exhaustive list of object locations and classify
+                  each into: object or not.  In this paper, we show that
+                  bottom-up approaches still perform competitively.  We
+                  detect four extreme points (top-most, left-most,
+                  bottom-most, right-most) and one center point of
+                  objects using a standard keypoint estimation network.
+                  We group the five keypoints into a bounding box if
+                  they are geometrically aligned. Object detection is
+                  then a purely appearance-based keypoint estimation
+                  problem, without region classification or implicit
+                  feature learning. The proposed method performs on-par
+                  with the state-of-the-art region based detection
+                  methods, with a bounding box AP of 43.2 \% on COCO
+                  test-dev. In addition, our estimated extreme points
+                  directly span a coarse octagonal mask, with a COCO
+                  Mask AP of 18.9 \%, much better than the Mask AP of
+                  vanilla bounding boxes. Extreme point guided
+                  segmentation further improves this to 34.6 \% Mask
+                  AP.",
+  archivePrefix= "arXiv",
+  eprint       = "1901.08043",
+  primaryClass = "cs.CV"
+}
+
+@article{zhu-2018-scratchdet,
+  author       = "Zhu, Rui and Zhang, Shifeng and Wang, Xiaobo and Wen,
+                  Longyin and Shi, Hailin and Bo, Liefeng and Mei, Tao",
+  title        = "Scratchdet: Training Single-Shot Object Detectors From
+                  Scratch",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1810.08425v4",
+  abstract     = "Current state-of-the-art object objectors are
+                  fine-tuned from the off-the-shelf networks pretrained
+                  on large-scale classification dataset ImageNet, which
+                  incurs some additional problems: 1) The classification
+                  and detection have different degrees of sensitivity to
+                  translation, resulting in the learning objective bias;
+                  2) The architecture is limited by the classification
+                  network, leading to the inconvenience of
+                  modification. To cope with these problems, training
+                  detectors from scratch is a feasible solution.
+                  However, the detectors trained from scratch generally
+                  perform worse than the pretrained ones, even suffer
+                  from the convergence issue in training. In this paper,
+                  we explore to train object detectors from scratch
+                  robustly. By analysing the previous work on
+                  optimization landscape, we find that one of the
+                  overlooked points in current trained-from-scratch
+                  detector is the BatchNorm. Resorting to the stable and
+                  predictable gradient brought by BatchNorm, detectors
+                  can be trained from scratch stably while keeping the
+                  favourable performance independent to the network
+                  architecture. Taking this advantage, we are able to
+                  explore various types of networks for object
+                  detection, without suffering from the poor
+                  convergence. By extensive experiments and analyses on
+                  downsampling factor, we propose the Root-ResNet
+                  backbone network, which makes full use of the
+                  information from original images. Our ScratchDet
+                  achieves the state-of-the-art accuracy on PASCAL VOC
+                  2007, 2012 and MS COCO among all the
+                  train-from-scratch detectors and even performs better
+                  than several one-stage pretrained methods. Codes will
+                  be made publicly available at
+                  https://github.com/KimSoybean/ScratchDet.",
+  archivePrefix= "arXiv",
+  eprint       = "1810.08425",
+  primaryClass = "cs.CV"
+}
+
+@ARTICLE{zhao-2018-m2det,
+  author       = "{Zhao}, Qijie and {Sheng}, Tao and {Wang}, Yongtao and
+                  {Tang}, Zhi and {Chen}, Ying and {Cai}, Ling and
+                  {Ling}, Haibin",
+  title        = "{M2Det: A Single-Shot Object Detector based on
+                  Multi-Level Feature Pyramid Network}",
+  journal      = "arXiv e-prints",
+  keywords     = "Computer Science - Computer Vision and Pattern
+                  Recognition",
+  year         = 2018,
+  month        = nov,
+  eid          = "arXiv:1811.04533",
+  pages        = "arXiv:1811.04533",
+  archivePrefix= "arXiv",
+  eprint       = "1811.04533",
+  primaryClass = "cs.CV",
+  adsurl       = "https://ui.adsabs.harvard.edu/abs/2018arXiv181104533Z",
+  adsnote      = "Provided by the SAO/NASA Astrophysics Data System"
+}
+
+@article{liu-2018-panet,
+  author       = "Liu, Shu and Qi, Lu and Qin, Haifang and Shi, Jianping
+                  and Jia, Jiaya",
+  title        = "Path Aggregation Network for Instance Segmentation",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1803.01534v4",
+  abstract     = "The way that information propagates in neural networks
+                  is of great importance. In this paper, we propose Path
+                  Aggregation Network (PANet) aiming at boosting
+                  information flow in proposal-based instance
+                  segmentation framework.  Specifically, we enhance the
+                  entire feature hierarchy with accurate localization
+                  signals in lower layers by bottom-up path
+                  augmentation, which shortens the information path
+                  between lower layers and topmost feature. We present
+                  adaptive feature pooling, which links feature grid and
+                  all feature levels to make useful information in each
+                  feature level propagate directly to following proposal
+                  subnetworks. A complementary branch capturing
+                  different views for each proposal is created to
+                  further improve mask prediction. These improvements
+                  are simple to implement, with subtle extra
+                  computational overhead.  Our PANet reaches the 1st
+                  place in the COCO 2017 Challenge Instance Segmentation
+                  task and the 2nd place in Object Detection task
+                  without large-batch training. It is also
+                  state-of-the-art on MVD and Cityscapes. Code is
+                  available at https://github.com/ShuLiu1993/PANet",
+  archivePrefix= "arXiv",
+  eprint       = "1803.01534",
+  primaryClass = "cs.CV"
+}
+
+@article{li-2019-tridentnet,
+  author       = "Li, Yanghao and Chen, Yuntao and Wang, Naiyan and
+                  Zhang, Zhaoxiang",
+  title        = "Scale-Aware Trident Networks for Object Detection",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1901.01892v2",
+  abstract     = "Scale variation is one of the key challenges in object
+                  detection. In this work, we first present a controlled
+                  experiment to investigate the effect of receptive
+                  fields for scale variation in object detection. Based
+                  on the findings from the exploration experiments, we
+                  propose a novel Trident Network (TridentNet) aiming to
+                  generate scale-specific feature maps with a uniform
+                  representational power. We construct a parallel
+                  multi-branch architecture in which each branch shares
+                  the same transformation parameters but with different
+                  receptive fields. Then, we adopt a scale-aware
+                  training scheme to specialize each branch by sampling
+                  object instances of proper scales for training. As a
+                  bonus, a fast approximation version of TridentNet
+                  could achieve significant improvements without any
+                  additional parameters and computational cost compared
+                  with the vanilla detector. On the COCO dataset, our
+                  TridentNet with ResNet-101 backbone achieves
+                  state-of-the-art single-model results of 48.4
+                  mAP. Codes are available at https://git.io/fj5vR.",
+  archivePrefix= "arXiv",
+  eprint       = "1901.01892",
+  primaryClass = "cs.CV"
+}
+
+@article{pang-2019-libra-r-cnn,
+  author       = "Pang, Jiangmiao and Chen, Kai and Shi, Jianping and
+                  Feng, Huajun and Ouyang, Wanli and Lin, Dahua",
+  title        = "Libra R-Cnn: Towards Balanced Learning for Object
+                  Detection",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1904.02701v1",
+  abstract     = "Compared with model architectures, the training
+                  process, which is also crucial to the success of
+                  detectors, has received relatively less attention in
+                  object detection. In this work, we carefully revisit
+                  the standard training practice of detectors, and find
+                  that the detection performance is often limited by the
+                  imbalance during the training process, which generally
+                  consists in three levels - sample level, feature
+                  level, and objective level. To mitigate the adverse
+                  effects caused thereby, we propose Libra R-CNN, a
+                  simple but effective framework towards balanced
+                  learning for object detection. It integrates three
+                  novel components: IoU-balanced sampling, balanced
+                  feature pyramid, and balanced L1 loss, respectively
+                  for reducing the imbalance at sample, feature, and
+                  objective level. Benefitted from the overall balanced
+                  design, Libra R-CNN significantly improves the
+                  detection performance. Without bells and whistles, it
+                  achieves 2.5 points and 2.0 points higher Average
+                  Precision (AP) than FPN Faster R-CNN and RetinaNet
+                  respectively on MSCOCO.",
+  archivePrefix= "arXiv",
+  eprint       = "1904.02701",
+  primaryClass = "cs.CV"
+}
+
+@article{tan-2019-efficientdet,
+  author       = "Tan, Mingxing and Pang, Ruoming and Le, Quoc V.",
+  title        = "Efficientdet: Scalable and Efficient Object Detection",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1911.09070v7",
+  abstract     = "Model efficiency has become increasingly important in
+                  computer vision. In this paper, we systematically
+                  study neural network architecture design choices for
+                  object detection and propose several key optimizations
+                  to improve efficiency. First, we propose a weighted
+                  bi-directional feature pyramid network (BiFPN), which
+                  allows easy and fast multiscale feature fusion;
+                  Second, we propose a compound scaling method that
+                  uniformly scales the resolution, depth, and width for
+                  all backbone, feature network, and box/class
+                  prediction networks at the same time. Based on these
+                  optimizations and better backbones, we have developed
+                  a new family of object detectors, called EfficientDet,
+                  which consistently achieve much better efficiency than
+                  prior art across a wide spectrum of resource
+                  constraints. In particular, with single model and
+                  single-scale, our EfficientDet-D7 achieves
+                  state-of-the-art 55.1 AP on COCO test-dev with 77M
+                  parameters and 410B FLOPs, being 4x - 9x smaller and
+                  using 13x - 42x fewer FLOPs than previous
+                  detectors. Code is available at
+                  https://github.com/google/automl/tree/master/efficientdet.",
+  archivePrefix= "arXiv",
+  eprint       = "1911.09070",
+  primaryClass = "cs.CV"
+}
+
+@article{he-2018-kl-loss,
+  author       = "He, Yihui and Zhu, Chenchen and Wang, Jianren and
+                  Savvides, Marios and Zhang, Xiangyu",
+  title        = "Bounding Box Regression With Uncertainty for Accurate
+                  Object Detection",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1809.08545v3",
+  abstract     = "Large-scale object detection datasets (e.g., MS-COCO)
+                  try to define the ground truth bounding boxes as clear
+                  as possible. However, we observe that ambiguities are
+                  still introduced when labeling the bounding boxes. In
+                  this paper, we propose a novel bounding box regression
+                  loss for learning bounding box transformation and
+                  localization variance together. Our loss greatly
+                  improves the localization accuracies of various
+                  architectures with nearly no additional
+                  computation. The learned localization variance allows
+                  us to merge neighboring bounding boxes during
+                  non-maximum suppression (NMS), which further improves
+                  the localization performance. On MS-COCO, we boost the
+                  Average Precision (AP) of VGG-16 Faster R-CNN from
+                  23.6 \% to 29.1 \%. More importantly, for
+                  ResNet-50-FPN Mask R-CNN, our method improves the AP
+                  and AP90 by 1.8 \% and 6.2 \% respectively, which
+                  significantly outperforms previous state-of-the-art
+                  bounding box refinement methods. Our code and models
+                  are available at: github.com/yihui-he/KL-Loss",
+  archivePrefix= "arXiv",
+  eprint       = "1809.08545",
+  primaryClass = "cs.CV"
+}
+
+@article{lu-2018-grid-r-cnn,
+  author       = "Lu, Xin and Li, Buyu and Yue, Yuxin and Li, Quanquan
+                  and Yan, Junjie",
+  title        = "Grid R-Cnn",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1811.12030v1",
+  abstract     = "This paper proposes a novel object detection framework
+                  named Grid R-CNN, which adopts a grid guided
+                  localization mechanism for accurate object
+                  detection. Different from the traditional regression
+                  based methods, the Grid R-CNN captures the spatial
+                  information explicitly and enjoys the position
+                  sensitive property of fully convolutional
+                  architecture. Instead of using only two independent
+                  points, we design a multi-point supervision
+                  formulation to encode more clues in order to reduce
+                  the impact of inaccurate prediction of specific
+                  points. To take the full advantage of the correlation
+                  of points in a grid, we propose a two-stage
+                  information fusion strategy to fuse feature maps of
+                  neighbor grid points. The grid guided localization
+                  approach is easy to be extended to different
+                  state-of-the-art detection frameworks. Grid R-CNN
+                  leads to high quality object localization, and
+                  experiments demonstrate that it achieves a 4.1 \% AP
+                  gain at IoU=0.8 and a 10.0 \% AP gain at IoU=0.9 on
+                  COCO benchmark compared to Faster R-CNN with Res50
+                  backbone and FPN architecture.",
+  archivePrefix= "arXiv",
+  eprint       = "1811.12030",
+  primaryClass = "cs.CV"
 }

@@ -18554,7 +18554,7 @@
   primaryClass = "cs.CL"
 }
 
-@article{jegou-2011-product-quantization,
+@article{jegou-2011-pq,
   author       = "Jegou, Herve and Douze, Matthijs and Schmid, Cordelia",
   title        = "Product Quantization for Nearest Neighbor Search",
   year         = 2011,
@@ -24598,4 +24598,300 @@
   archivePrefix= "arXiv",
   eprint       = "1811.12030",
   primaryClass = "cs.CV"
+}
+
+@article{cheng-2017-model-compression,
+  author       = "Cheng, Yu and Wang, Duo and Zhou, Pan and Zhang, Tao",
+  title        = "A Survey of Model Compression and Acceleration for
+                  Deep Neural Networks",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1710.09282v9",
+  abstract     = "Deep neural networks (DNNs) have recently achieved
+                  great success in many visual recognition
+                  tasks. However, existing deep neural network models
+                  are computationally expensive and memory intensive,
+                  hindering their deployment in devices with low memory
+                  resources or in applications with strict latency
+                  requirements. Therefore, a natural thought is to
+                  perform model compression and acceleration in deep
+                  networks without significantly decreasing the model
+                  performance. During the past five years, tremendous
+                  progress has been made in this area. In this paper, we
+                  review the recent techniques for compacting and
+                  accelerating DNN models. In general, these techniques
+                  are divided into four categories: parameter pruning
+                  and quantization, low-rank factorization,
+                  transferred/compact convolutional filters, and
+                  knowledge distillation. Methods of parameter pruning
+                  and quantization are described first, after that the
+                  other techniques are introduced. For each category, we
+                  also provide insightful analysis about the
+                  performance, related applications, advantages, and
+                  drawbacks. Then we go through some very recent
+                  successful methods, for example, dynamic capacity
+                  networks and stochastic depths networks. After that,
+                  we survey the evaluation matrices, the main datasets
+                  used for evaluating the model performance, and recent
+                  benchmark efforts. Finally, we conclude this paper,
+                  discuss remaining the challenges and possible
+                  directions for future work.",
+  archivePrefix= "arXiv",
+  eprint       = "1710.09282",
+  primaryClass = "cs.LG"
+}
+
+@article{uijlings-2013-selective-search,
+  title        = "Selective search for object recognition",
+  author       = "Uijlings, Jasper RR and Van De Sande, Koen EA and
+                  Gevers, Theo and Smeulders, Arnold WM",
+  journal      = "International journal of computer vision",
+  volume       = 104,
+  number       = 2,
+  pages        = "154-171",
+  year         = 2013,
+  publisher    = "Springer"
+}
+
+@InProceedings{sande-2011-selective-search,
+  author       = "van de Sande, K. E. A. and Uijlings, J. R. R. and
+                  Gevers, T. and Smeulders, A. W. M.",
+  title        = "Segmentation As Selective Search for Object
+                  Recognition",
+  booktitle    = "IEEE International Conference on Computer Vision",
+  year         = 2011,
+  url          =
+                  "https://ivi.fnwi.uva.nl/isis/publications/2011/vandeSandeICCV2011",
+  pdf          =
+                  "https://ivi.fnwi.uva.nl/isis/publications/2011/vandeSandeICCV2011/vandeSandeICCV2011.pdf",
+  has_image    = 1
+}
+
+@inproceedings{li-2014-parameter-server,
+  title        = "Scaling distributed machine learning with the
+                  parameter server",
+  author       = "Li, Mu and Andersen, David G and Park, Jun Woo and
+                  Smola, Alexander J and Ahmed, Amr and Josifovski,
+                  Vanja and Long, James and Shekita, Eugene J and Su,
+                  Bor-Yiing",
+  booktitle    = "11th $\{$USENIX$\}$ Symposium on Operating Systems
+                  Design and Implementation ($\{$OSDI$\}$ 14)",
+  pages        = "583-598",
+  year         = 2014
+}
+
+@article{wang-2018-am-softmax,
+  author       = "Wang, Feng and Liu, Weiyang and Liu, Haijun and Cheng,
+                  Jian",
+  title        = "Additive Margin Softmax for Face Verification",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1801.05599v4",
+  abstract     = "In this paper, we propose a conceptually simple and
+                  geometrically interpretable objective function,
+                  i.e. additive margin Softmax (AM-Softmax), for deep
+                  face verification. In general, the face verification
+                  task can be viewed as a metric learning problem, so
+                  learning large-margin face features whose intra-class
+                  variation is small and inter-class difference is large
+                  is of great importance in order to achieve good
+                  performance. Recently, Large-margin Softmax and
+                  Angular Softmax have been proposed to incorporate the
+                  angular margin in a multiplicative manner. In this
+                  work, we introduce a novel additive angular margin for
+                  the Softmax loss, which is intuitively appealing and
+                  more interpretable than the existing works. We also
+                  emphasize and discuss the importance of feature
+                  normalization in the paper. Most importantly, our
+                  experiments on LFW BLUFR and MegaFace show that our
+                  additive margin softmax loss consistently performs
+                  better than the current state-of-the-art methods using
+                  the same network architecture and training
+                  dataset. Our code has also been made available at
+                  https://github.com/happynear/AMSoftmax",
+  archivePrefix= "arXiv",
+  eprint       = "1801.05599",
+  primaryClass = "cs.CV"
+}
+
+@article{do-2019-upper-bound-triplet-loss,
+  author       = "Do, Thanh-Toan and Tran, Toan and Reid, Ian and Kumar,
+                  Vijay and Hoang, Tuan and Carneiro, Gustavo",
+  title        = "A Theoretically Sound Upper Bound on the Triplet Loss
+                  for Improving the Efficiency of Deep Distance Metric
+                  Learning",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1904.08720v1",
+  abstract     = "We propose a method that substantially improves the
+                  efficiency of deep distance metric learning based on
+                  the optimization of the triplet loss function. One
+                  epoch of such training process based on a naive
+                  optimization of the triplet loss function has a
+                  run-time complexity O(N^3), where N is the number of
+                  training samples. Such optimization scales poorly, and
+                  the most common approach proposed to address this high
+                  complexity issue is based on sub-sampling the set of
+                  triplets needed for the training process. Another
+                  approach explored in the field relies on an ad-hoc
+                  linearization (in terms of N) of the triplet loss that
+                  introduces class centroids, which must be optimized
+                  using the whole training set for each mini-batch -
+                  this means that a naive implementation of this
+                  approach has run-time complexity O(N^2). This
+                  complexity issue is usually mitigated with poor, but
+                  computationally cheap, approximate centroid
+                  optimization methods. In this paper, we first propose
+                  a solid theory on the linearization of the triplet
+                  loss with the use of class centroids, where the main
+                  conclusion is that our new linear loss represents a
+                  tight upper-bound to the triplet loss. Furthermore,
+                  based on the theory above, we propose a training
+                  algorithm that no longer requires the centroid
+                  optimization step, which means that our approach is
+                  the first in the field with a guaranteed linear
+                  run-time complexity. We show that the training of deep
+                  distance metric learning methods using the proposed
+                  upper-bound is substantially faster than triplet-based
+                  methods, while producing competitive retrieval
+                  accuracy results on benchmark datasets (CUB-200-2011
+                  and CAR196).",
+  archivePrefix= "arXiv",
+  eprint       = "1904.08720",
+  primaryClass = "cs.CV"
+}
+
+@article{schroff-2015-facenet,
+  author       = "Schroff, Florian and Kalenichenko, Dmitry and Philbin,
+                  James",
+  title        = "Facenet: a Unified Embedding for Face Recognition and
+                  Clustering",
+  journal      = "CoRR",
+  year         = 2015,
+  url          = "http://arxiv.org/abs/1503.03832v3",
+  abstract     = "Despite significant recent advances in the field of
+                  face recognition, implementing face verification and
+                  recognition efficiently at scale presents serious
+                  challenges to current approaches. In this paper we
+                  present a system, called FaceNet, that directly learns
+                  a mapping from face images to a compact Euclidean
+                  space where distances directly correspond to a measure
+                  of face similarity. Once this space has been produced,
+                  tasks such as face recognition, verification and
+                  clustering can be easily implemented using standard
+                  techniques with FaceNet embeddings as feature vectors.
+                  Our method uses a deep convolutional network trained
+                  to directly optimize the embedding itself, rather than
+                  an intermediate bottleneck layer as in previous deep
+                  learning approaches. To train, we use triplets of
+                  roughly aligned matching / non-matching face patches
+                  generated using a novel online triplet mining
+                  method. The benefit of our approach is much greater
+                  representational efficiency: we achieve
+                  state-of-the-art face recognition performance using
+                  only 128-bytes per face.  On the widely used Labeled
+                  Faces in the Wild (LFW) dataset, our system achieves a
+                  new record accuracy of 99.63 \%. On YouTube Faces DB
+                  it achieves 95.12 \%. Our system cuts the error rate
+                  in comparison to the best published result by 30 \% on
+                  both datasets.  We also introduce the concept of
+                  harmonic embeddings, and a harmonic triplet loss,
+                  which describe different versions of face embeddings
+                  (produced by different networks) that are compatible
+                  to each other and allow for direct comparison between
+                  each other.",
+  archivePrefix= "arXiv",
+  eprint       = "1503.03832",
+  primaryClass = "cs.CV"
+}
+
+@article{hermans-2017-triplet-loss-defense,
+  author       = "Hermans, Alexander and Beyer, Lucas and Leibe,
+                  Bastian",
+  title        = "In Defense of the Triplet Loss for Person
+                  Re-Identification",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1703.07737v4",
+  abstract     = "In the past few years, the field of computer vision
+                  has gone through a revolution fueled mainly by the
+                  advent of large datasets and the adoption of deep
+                  convolutional neural networks for end-to-end
+                  learning. The person re-identification subfield is no
+                  exception to this. Unfortunately, a prevailing belief
+                  in the community seems to be that the triplet loss is
+                  inferior to using surrogate losses (classification,
+                  verification) followed by a separate metric learning
+                  step. We show that, for models trained from scratch as
+                  well as pretrained ones, using a variant of the
+                  triplet loss to perform end-to-end deep metric
+                  learning outperforms most other published methods by a
+                  large margin.",
+  archivePrefix= "arXiv",
+  eprint       = "1703.07737",
+  primaryClass = "cs.CV"
+}
+
+@article{cui-2020-macbert,
+  author       = "Cui, Yiming and Che, Wanxiang and Liu, Ting and Qin,
+                  Bing and Wang, Shijin and Hu, Guoping",
+  title        = "Revisiting Pre-Trained Models for Chinese Natural
+                  Language Processing",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2004.13922v2",
+  abstract     = "Bidirectional Encoder Representations from
+                  Transformers (BERT) has shown marvelous improvements
+                  across various NLP tasks, and consecutive variants
+                  have been proposed to further improve the performance
+                  of the pre-trained language models. In this paper, we
+                  target on revisiting Chinese pre-trained language
+                  models to examine their effectiveness in a non-English
+                  language and release the Chinese pre-trained language
+                  model series to the community. We also propose a
+                  simple but effective model called MacBERT, which
+                  improves upon RoBERTa in several ways, especially the
+                  masking strategy that adopts MLM as correction
+                  (Mac). We carried out extensive experiments on eight
+                  Chinese NLP tasks to revisit the existing pre-trained
+                  language models as well as the proposed
+                  MacBERT. Experimental results show that MacBERT could
+                  achieve state-of-the-art performances on many NLP
+                  tasks, and we also ablate details with several
+                  findings that may help future research. Resources
+                  available: https://github.com/ymcui/MacBERT",
+  archivePrefix= "arXiv",
+  eprint       = "2004.13922",
+  primaryClass = "cs.CL"
+}
+
+@article{chronopoulou-2019-siatl,
+  author       = "Chronopoulou, Alexandra and Baziotis, Christos and
+                  Potamianos, Alexandros",
+  title        = "An Embarrassingly Simple Approach for Transfer
+                  Learning From Pretrained Language Models",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1902.10547v3",
+  abstract     = "A growing number of state-of-the-art transfer learning
+                  methods employ language models pretrained on large
+                  generic corpora. In this paper we present a
+                  conceptually simple and effective transfer learning
+                  approach that addresses the problem of catastrophic
+                  forgetting. Specifically, we combine the task-specific
+                  optimization function with an auxiliary language model
+                  objective, which is adjusted during the training
+                  process. This preserves language regularities captured
+                  by language models, while enabling sufficient
+                  adaptation for solving the target task. Our method
+                  does not require pretraining or finetuning separate
+                  components of the network and we train our models
+                  end-to-end in a single step.  We present results on a
+                  variety of challenging affective and text
+                  classification tasks, surpassing well established
+                  transfer learning methods with greater level of
+                  complexity.",
+  archivePrefix= "arXiv",
+  eprint       = "1902.10547",
+  primaryClass = "cs.CL"
 }

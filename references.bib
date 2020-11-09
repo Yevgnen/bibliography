@@ -20821,45 +20821,6 @@
   primaryClass = "cs.LG"
 }
 
-@article{wei-2019-casrel,
-  author       = "Wei, Zhepei and Su, Jianlin and Wang, Yue and Tian,
-                  Yuan and Chang, Yi",
-  title        = "A Novel Cascade Binary Tagging Framework for
-                  Relational Triple Extraction",
-  journal      = "CoRR",
-  year         = 2019,
-  url          = "http://arxiv.org/abs/1909.03227v4",
-  abstract     = "Extracting relational triples from unstructured text
-                  is crucial for large-scale knowledge graph
-                  construction. However, few existing works excel in
-                  solving the overlapping triple problem where multiple
-                  relational triples in the same sentence share the same
-                  entities. In this work, we introduce a fresh
-                  perspective to revisit the relational triple
-                  extraction task and propose a novel cascade binary
-                  tagging framework (CasRel) derived from a principled
-                  problem formulation. Instead of treating relations as
-                  discrete labels as in previous works, our new
-                  framework models relations as functions that map
-                  subjects to objects in a sentence, which naturally
-                  handles the overlapping problem. Experiments show that
-                  the CasRel framework already outperforms
-                  state-of-the-art methods even when its encoder module
-                  uses a randomly initialized BERT encoder, showing the
-                  power of the new tagging framework. It enjoys further
-                  performance boost when employing a pre-trained BERT
-                  encoder, outperforming the strongest baseline by 17.5
-                  and 30.2 absolute gain in F1-score on two public
-                  datasets NYT and WebNLG, respectively. In-depth
-                  analysis on different scenarios of overlapping triples
-                  shows that the method delivers consistent performance
-                  gain across all these scenarios. The source code and
-                  data are released online.",
-  archivePrefix= "arXiv",
-  eprint       = "1909.03227",
-  primaryClass = "cs.CL"
-}
-
 @inproceedings{ma-2020-simple-lexicon,
   title        = "Simplify the Usage of Lexicon in {C}hinese {NER}",
   author       = "Ma, Ruotian and Peng, Minlong and Zhang, Qi and Wei,
@@ -24893,5 +24854,317 @@
                   complexity.",
   archivePrefix= "arXiv",
   eprint       = "1902.10547",
+  primaryClass = "cs.CL"
+}
+
+@article{yang-2018-metaanchor,
+  author       = "Yang, Tong and Zhang, Xiangyu and Li, Zeming and
+                  Zhang, Wenqiang and Sun, Jian",
+  title        = "Metaanchor: Learning To Detect Objects With Customized
+                  Anchors",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1807.00980v2",
+  abstract     = "We propose a novel and flexible anchor mechanism named
+                  MetaAnchor for object detection frameworks. Unlike
+                  many previous detectors model anchors via a predefined
+                  manner, in MetaAnchor anchor functions could be
+                  dynamically generated from the arbitrary customized
+                  prior boxes. Taking advantage of weight prediction,
+                  MetaAnchor is able to work with most of the
+                  anchor-based object detection systems such as
+                  RetinaNet. Compared with the predefined anchor scheme,
+                  we empirically find that MetaAnchor is more robust to
+                  anchor settings and bounding box distributions; in
+                  addition, it also shows the potential on transfer
+                  tasks. Our experiment on COCO detection task shows
+                  that MetaAnchor consistently outperforms the
+                  counterparts in various scenarios.",
+  archivePrefix= "arXiv",
+  eprint       = "1807.00980",
+  primaryClass = "cs.CV"
+}
+
+@article{zhong-2020-frustratingly,
+  author       = "Zhong, Zexuan and Chen, Danqi",
+  title        = "A Frustratingly Easy Approach for Joint Entity and
+                  Relation Extraction",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2010.12812v1",
+  abstract     = "End-to-end relation extraction aims to identify named
+                  entities and extract relations between them
+                  simultaneously. Most recent work models these two
+                  subtasks jointly, either by unifying them in one
+                  structured prediction framework, or multi-task
+                  learning through shared representations. In this work,
+                  we describe a very simple approach for joint entity
+                  and relation extraction, and establish the new
+                  state-of-the-art on standard benchmarks (ACE04, ACE05,
+                  and SciERC). Our approach essentially builds on two
+                  independent pre-trained encoders and merely uses the
+                  entity model to provide input features for the
+                  relation model. Through a series of careful
+                  examinations, we validate the importance of learning
+                  distinct contextual representations for entities and
+                  relations, fusing entity information at the input
+                  layer of the relation model, and incorporating global
+                  context. Finally, we also present an efficient
+                  approximation to our approach which requires only one
+                  pass of both encoders at inference time, obtaining a
+                  8-16$\times$ speedup with a small accuracy drop.",
+  archivePrefix= "arXiv",
+  eprint       = "2010.12812",
+  primaryClass = "cs.CL"
+}
+
+@article{wei-2019-casrel,
+  author       = "Wei, Zhepei and Su, Jianlin and Wang, Yue and Tian,
+                  Yuan and Chang, Yi",
+  title        = "A Novel Cascade Binary Tagging Framework for
+                  Relational Triple Extraction",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1909.03227v4",
+  abstract     = "Extracting relational triples from unstructured text
+                  is crucial for large-scale knowledge graph
+                  construction. However, few existing works excel in
+                  solving the overlapping triple problem where multiple
+                  relational triples in the same sentence share the same
+                  entities. In this work, we introduce a fresh
+                  perspective to revisit the relational triple
+                  extraction task and propose a novel cascade binary
+                  tagging framework (CasRel) derived from a principled
+                  problem formulation. Instead of treating relations as
+                  discrete labels as in previous works, our new
+                  framework models relations as functions that map
+                  subjects to objects in a sentence, which naturally
+                  handles the overlapping problem. Experiments show that
+                  the CasRel framework already outperforms
+                  state-of-the-art methods even when its encoder module
+                  uses a randomly initialized BERT encoder, showing the
+                  power of the new tagging framework. It enjoys further
+                  performance boost when employing a pre-trained BERT
+                  encoder, outperforming the strongest baseline by 17.5
+                  and 30.2 absolute gain in F1-score on two public
+                  datasets NYT and WebNLG, respectively. In-depth
+                  analysis on different scenarios of overlapping triples
+                  shows that the method delivers consistent performance
+                  gain across all these scenarios. The source code and
+                  data are released online.",
+  archivePrefix= "arXiv",
+  eprint       = "1909.03227",
+  primaryClass = "cs.CL"
+}
+
+@article{eberts-2019-spert,
+  author       = "Eberts, Markus and Ulges, Adrian",
+  title        = "Span-Based Joint Entity and Relation Extraction With
+                  Transformer Pre-Training",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1909.07755v3",
+  abstract     = "We introduce SpERT, an attention model for span-based
+                  joint entity and relation extraction. Our key
+                  contribution is a light-weight reasoning on BERT
+                  embeddings, which features entity recognition and
+                  filtering, as well as relation classification with a
+                  localized, marker-free context representation.  The
+                  model is trained using strong within-sentence negative
+                  samples, which are efficiently extracted in a single
+                  BERT pass. These aspects facilitate a search over all
+                  spans in the sentence.  In ablation studies, we
+                  demonstrate the benefits of pre-training, strong
+                  negative sampling and localized context. Our model
+                  outperforms prior work by up to 2.6 \% F1 score on
+                  several datasets for joint entity and relation
+                  extraction.",
+  archivePrefix= "arXiv",
+  eprint       = "1909.07755",
+  primaryClass = "cs.CL"
+}
+
+@article{li-2019-multi-turn-qa-4-ner,
+  author       = "Li, Xiaoya and Yin, Fan and Sun, Zijun and Li, Xiayu
+                  and Yuan, Arianna and Chai, Duo and Zhou, Mingxin and
+                  Li, Jiwei",
+  title        = "Entity-Relation Extraction As Multi-Turn Question
+                  Answering",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1905.05529v4",
+  abstract     = "In this paper, we propose a new paradigm for the task
+                  of entity-relation extraction. We cast the task as a
+                  multi-turn question answering problem, i.e., the
+                  extraction of entities and relations is transformed to
+                  the task of identifying answer spans from the
+                  context. This multi-turn QA formalization comes with
+                  several key advantages: firstly, the question query
+                  encodes important information for the entity/relation
+                  class we want to identify; secondly, QA provides a
+                  natural way of jointly modeling entity and relation;
+                  and thirdly, it allows us to exploit the well
+                  developed machine reading comprehension (MRC)
+                  models. Experiments on the ACE and the CoNLL04 corpora
+                  demonstrate that the proposed paradigm significantly
+                  outperforms previous best models. We are able to
+                  obtain the state-of-the-art results on all of the
+                  ACE04, ACE05 and CoNLL04 datasets, increasing the SOTA
+                  results on the three datasets to 49.4 (+1.0), 60.2
+                  (+0.6) and 68.9 (+2.1), respectively. Additionally, we
+                  construct a newly developed dataset RESUME in Chinese,
+                  which requires multi-step reasoning to construct
+                  entity dependencies, as opposed to the single-step
+                  dependency extraction in the triplet exaction in
+                  previous datasets.  The proposed multi-turn QA model
+                  also achieves the best performance on the RESUME
+                  dataset.",
+  archivePrefix= "arXiv",
+  eprint       = "1905.05529",
+  primaryClass = "cs.CL"
+}
+
+@article{peng-2020-empirical-study-nre,
+  author       = "Peng, Hao and Gao, Tianyu and Han, Xu and Lin, Yankai
+                  and Li, Peng and Liu, Zhiyuan and Sun, Maosong and
+                  Zhou, Jie",
+  title        = "Learning From Context Or Names? an Empirical Study on
+                  Neural Relation Extraction",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2010.01923v1",
+  abstract     = "Neural models have achieved remarkable success on
+                  relation extraction (RE) benchmarks. However, there is
+                  no clear understanding which type of information
+                  affects existing RE models to make decisions and how
+                  to further improve the performance of these models. To
+                  this end, we empirically study the effect of two main
+                  information sources in text: textual context and
+                  entity mentions (names). We find that (i) while
+                  context is the main source to support the predictions,
+                  RE models also heavily rely on the information from
+                  entity mentions, most of which is type information,
+                  and (ii) existing datasets may leak shallow heuristics
+                  via entity mentions and thus contribute to the high
+                  performance on RE benchmarks. Based on the analyses,
+                  we propose an entity-masked contrastive pre-training
+                  framework for RE to gain a deeper understanding on
+                  both textual context and type information while
+                  avoiding rote memorization of entities or use of
+                  superficial cues in mentions. We carry out extensive
+                  experiments to support our views, and show that our
+                  framework can improve the effectiveness and robustness
+                  of neural models in different RE scenarios. All the
+                  code and datasets are released at
+                  https://github.com/thunlp/RE-Context-or-Names.",
+  archivePrefix= "arXiv",
+  eprint       = "2010.01923",
+  primaryClass = "cs.CL"
+}
+
+@article{wang-2020-two-are-better-than-one,
+  author       = "Wang, Jue and Lu, Wei",
+  title        = "Two Are Better Than One: Joint Entity and Relation
+                  Extraction With Table-Sequence Encoders",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2010.03851v1",
+  abstract     = "Named entity recognition and relation extraction are
+                  two important fundamental problems. Joint learning
+                  algorithms have been proposed to solve both tasks
+                  simultaneously, and many of them cast the joint task
+                  as a table-filling problem. However, they typically
+                  focused on learning a single encoder (usually learning
+                  representation in the form of a table) to capture
+                  information required for both tasks within the same
+                  space. We argue that it can be beneficial to design
+                  two distinct encoders to capture such two different
+                  types of information in the learning process. In this
+                  work, we propose the novel {\em table-sequence
+                  encoders} where two different encoders -- a table
+                  encoder and a sequence encoder are designed to help
+                  each other in the representation learning process. Our
+                  experiments confirm the advantages of having {\em two}
+                  encoders over {\em one} encoder. On several standard
+                  datasets, our model shows significant improvements
+                  over existing approaches.",
+  archivePrefix= "arXiv",
+  eprint       = "2010.03851",
+  primaryClass = "cs.CL"
+}
+
+@article{wang-2020-tplinker,
+  author       = "Wang, Yucheng and Yu, Bowen and Zhang, Yueyang and
+                  Liu, Tingwen and Zhu, Hongsong and Sun, Limin",
+  title        = "Tplinker: Single-Stage Joint Extraction of Entities
+                  and Relations Through Token Pair Linking",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2010.13415v1",
+  abstract     = "Extracting entities and relations from unstructured
+                  text has attracted increasing attention in recent
+                  years but remains challenging, due to the intrinsic
+                  difficulty in identifying overlapping relations with
+                  shared entities.  Prior works show that joint learning
+                  can result in a noticeable performance gain. However,
+                  they usually involve sequential interrelated steps and
+                  suffer from the problem of exposure bias. At training
+                  time, they predict with the ground truth conditions
+                  while at inference it has to make extraction from
+                  scratch. This discrepancy leads to error
+                  accumulation. To mitigate the issue, we propose in
+                  this paper a one-stage joint extraction model, namely,
+                  TPLinker, which is capable of discovering overlapping
+                  relations sharing one or both entities while immune
+                  from the exposure bias. TPLinker formulates joint
+                  extraction as a token pair linking problem and
+                  introduces a novel handshaking tagging scheme that
+                  aligns the boundary tokens of entity pairs under each
+                  relation type. Experiment results show that TPLinker
+                  performs significantly better on overlapping and
+                  multiple relation extraction, and achieves
+                  state-of-the-art performance on two public datasets.",
+  archivePrefix= "arXiv",
+  eprint       = "2010.13415",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{carbonell-1998-mmr,
+  title        = "The use of MMR, diversity-based reranking for
+                  reordering documents and producing summaries",
+  author       = "Carbonell, Jaime and Goldstein, Jade",
+  booktitle    = "Proceedings of the 21st annual international ACM SIGIR
+                  conference on Research and development in information
+                  retrieval",
+  pages        = "335-336",
+  year         = 1998
+}
+
+@article{sun-2020-bert-kpe,
+  author       = "Sun, Si and Xiong, Chenyan and Liu, Zhenghao and Liu,
+                  Zhiyuan and Bao, Jie",
+  title        = "Joint Keyphrase Chunking and Salience Ranking With
+                  Bert",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2004.13639v1",
+  abstract     = "An effective keyphrase extraction system requires to
+                  produce self-contained high quality phrases that are
+                  also key to the document topic. This paper presents
+                  BERT-JointKPE, a multi-task BERT-based model for
+                  keyphrase extraction.  JointKPE employs a chunking
+                  network to identify high-quality phrases and a ranking
+                  network to learn their salience in the document. The
+                  model is trained jointly on the chunking task and the
+                  ranking task, balancing the estimation of keyphrase
+                  quality and salience. Experiments on two benchmarks
+                  demonstrate JointKPE's robust effectiveness with
+                  different BERT variants. Our analyses show that
+                  JointKPE has advantages in predicting long keyphrases
+                  and extracting phrases that are not entities but also
+                  meaningful. The source code of this paper can be
+                  obtained from https://github.com/thunlp/BERT-KPE",
+  archivePrefix= "arXiv",
+  eprint       = "2004.13639",
   primaryClass = "cs.CL"
 }

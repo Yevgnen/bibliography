@@ -25336,3 +25336,318 @@
   eprint       = "2001.06937",
   primaryClass = "cs.LG"
 }
+
+@article{wang-2020-linformer,
+  author       = "Wang, Sinong and Li, Belinda Z. and Khabsa, Madian and
+                  Fang, Han and Ma, Hao",
+  title        = "Linformer: Self-Attention With Linear Complexity",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2006.04768v3",
+  abstract     = "Large transformer models have shown extraordinary
+                  success in achieving state-of-the-art results in many
+                  natural language processing applications.  However,
+                  training and deploying these models can be
+                  prohibitively costly for long sequences, as the
+                  standard self-attention mechanism of the Transformer
+                  uses $O(n^2)$ time and space with respect to sequence
+                  length. In this paper, we demonstrate that the
+                  self-attention mechanism can be approximated by a
+                  low-rank matrix. We further exploit this finding to
+                  propose a new self-attention mechanism, which reduces
+                  the overall self-attention complexity from $O(n^2)$ to
+                  $O(n)$ in both time and space. The resulting linear
+                  transformer, the \textit{Linformer}, performs on par
+                  with standard Transformer models, while being much
+                  more memory- and time-efficient.",
+  archivePrefix= "arXiv",
+  eprint       = "2006.04768",
+  primaryClass = "cs.LG"
+}
+
+@article{choromanski-2020-performer,
+  author       = "Choromanski, Krzysztof and Likhosherstov, Valerii and
+                  Dohan, David and Song, Xingyou and Gane, Andreea and
+                  Sarlos, Tamas and Hawkins, Peter and Davis, Jared and
+                  Mohiuddin, Afroz and Kaiser, Lukasz and Belanger,
+                  David and Colwell, Lucy and Weller, Adrian",
+  title        = "Rethinking Attention With Performers",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2009.14794v1",
+  abstract     = "We introduce Performers, Transformer architectures
+                  which can estimate regular (softmax)
+                  full-rank-attention Transformers with provable
+                  accuracy, but using only linear (as opposed to
+                  quadratic) space and time complexity, without relying
+                  on any priors such as sparsity or low-rankness. To
+                  approximate softmax attention-kernels, Performers use
+                  a novel Fast Attention Via positive Orthogonal Random
+                  features approach (FAVOR+), which may be of
+                  independent interest for scalable kernel
+                  methods. FAVOR+ can be also used to efficiently model
+                  kernelizable attention mechanisms beyond softmax. This
+                  representational power is crucial to accurately
+                  compare softmax with other kernels for the first time
+                  on large-scale tasks, beyond the reach of regular
+                  Transformers, and investigate optimal
+                  attention-kernels. Performers are linear architectures
+                  fully compatible with regular Transformers and with
+                  strong theoretical guarantees: unbiased or
+                  nearly-unbiased estimation of the attention matrix,
+                  uniform convergence and low estimation variance. We
+                  tested Performers on a rich set of tasks stretching
+                  from pixel-prediction through text models to protein
+                  sequence modeling. We demonstrate competitive results
+                  with other examined efficient sparse and dense
+                  attention methods, showcasing effectiveness of the
+                  novel attention-learning paradigm leveraged by
+                  Performers.",
+  archivePrefix= "arXiv",
+  eprint       = "2009.14794",
+  primaryClass = "cs.LG"
+}
+
+@article{tay-2020-synthesizer,
+  author       = "Tay, Yi and Bahri, Dara and Metzler, Donald and Juan,
+                  Da-Cheng and Zhao, Zhe and Zheng, Che",
+  title        = "Synthesizer: Rethinking Self-Attention in Transformer
+                  Models",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2005.00743v2",
+  abstract     = "The dot product self-attention is known to be central
+                  and indispensable to state-of-the-art Transformer
+                  models. But is it really required? This paper
+                  investigates the true importance and contribution of
+                  the dot product-based self-attention mechanism on the
+                  performance of Transformer models. Via extensive
+                  experiments, we find that (1) random alignment
+                  matrices surprisingly perform quite competitively and
+                  (2) learning attention weights from token-token
+                  (query-key) interactions is useful but not that
+                  important after all. To this end, we propose
+                  \textsc{Synthesizer}, a model that learns synthetic
+                  attention weights without token-token interactions. In
+                  our experiments, we first show that simple
+                  Synthesizers achieve highly competitive performance
+                  when compared against vanilla Transformer models
+                  across a range of tasks, including machine
+                  translation, language modeling, text generation and
+                  GLUE/SuperGLUE benchmarks.  When composed with dot
+                  product attention, we find that Synthesizers
+                  consistently outperform Transformers. Moreover, we
+                  conduct additional comparisons of Synthesizers against
+                  Dynamic Convolutions, showing that simple Random
+                  Synthesizer is not only $60\%$ faster but also
+                  improves perplexity by a relative $3.5\%$. Finally, we
+                  show that simple factorized Synthesizers can
+                  outperform Linformers on encoding only tasks.",
+  archivePrefix= "arXiv",
+  eprint       = "2005.00743",
+  primaryClass = "cs.CL"
+}
+
+@article{beltagy-2020-longformer,
+  author       = "Beltagy, Iz and Peters, Matthew E. and Cohan, Arman",
+  title        = "Longformer: the Long-Document Transformer",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2004.05150v1",
+  abstract     = "Transformer-based models are unable to process long
+                  sequences due to their self-attention operation, which
+                  scales quadratically with the sequence length.  To
+                  address this limitation, we introduce the Longformer
+                  with an attention mechanism that scales linearly with
+                  sequence length, making it easy to process documents
+                  of thousands of tokens or longer. Longformer's
+                  attention mechanism is a drop-in replacement for the
+                  standard self-attention and combines a local windowed
+                  attention with a task motivated global
+                  attention. Following prior work on long-sequence
+                  transformers, we evaluate Longformer on
+                  character-level language modeling and achieve
+                  state-of-the-art results on text8 and enwik8. In
+                  contrast to most prior work, we also pretrain
+                  Longformer and finetune it on a variety of downstream
+                  tasks. Our pretrained Longformer consistently
+                  outperforms RoBERTa on long document tasks and sets
+                  new state-of-the-art results on WikiHop and TriviaQA.",
+  archivePrefix= "arXiv",
+  eprint       = "2004.05150",
+  primaryClass = "cs.CL"
+}
+
+@article{zaheer-2020-big-bird,
+  author       = "Zaheer, Manzil and Guruganesh, Guru and Dubey, Avinava
+                  and Ainslie, Joshua and Alberti, Chris and Ontanon,
+                  Santiago and Pham, Philip and Ravula, Anirudh and
+                  Wang, Qifan and Yang, Li and Ahmed, Amr",
+  title        = "Big Bird: Transformers for Longer Sequences",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2007.14062v1",
+  abstract     = "Transformers-based models, such as BERT, have been one
+                  of the most successful deep learning models for
+                  NLP. Unfortunately, one of their core limitations is
+                  the quadratic dependency (mainly in terms of memory)
+                  on the sequence length due to their full attention
+                  mechanism. To remedy this, we propose, BigBird, a
+                  sparse attention mechanism that reduces this quadratic
+                  dependency to linear. We show that BigBird is a
+                  universal approximator of sequence functions and is
+                  Turing complete, thereby preserving these properties
+                  of the quadratic, full attention model. Along the way,
+                  our theoretical analysis reveals some of the benefits
+                  of having $O(1)$ global tokens (such as CLS), that
+                  attend to the entire sequence as part of the sparse
+                  attention mechanism. The proposed sparse attention can
+                  handle sequences of length up to 8x of what was
+                  previously possible using similar hardware. As a
+                  consequence of the capability to handle longer
+                  context, BigBird drastically improves performance on
+                  various NLP tasks such as question answering and
+                  summarization. We also propose novel applications to
+                  genomics data.",
+  archivePrefix= "arXiv",
+  eprint       = "2007.14062",
+  primaryClass = "cs.LG"
+}
+
+@article{tay-2020-sinkhorn-transformer,
+  author       = "Tay, Yi and Bahri, Dara and Yang, Liu and Metzler,
+                  Donald and Juan, Da-Cheng",
+  title        = "Sparse Sinkhorn Attention",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2002.11296v1",
+  abstract     = "We propose Sparse Sinkhorn Attention, a new efficient
+                  and sparse method for learning to attend. Our method
+                  is based on differentiable sorting of internal
+                  representations. Concretely, we introduce a meta
+                  sorting network that learns to generate latent
+                  permutations over sequences. Given sorted sequences,
+                  we are then able to compute quasi-global attention
+                  with only local windows, improving the memory
+                  efficiency of the attention module. To this end, we
+                  propose new algorithmic innovations such as Causal
+                  Sinkhorn Balancing and SortCut, a dynamic sequence
+                  truncation method for tailoring Sinkhorn Attention for
+                  encoding and/or decoding purposes. Via extensive
+                  experiments on algorithmic seq2seq sorting, language
+                  modeling, pixel-wise image generation, document
+                  classification and natural language inference, we
+                  demonstrate that our memory efficient Sinkhorn
+                  Attention method is competitive with vanilla attention
+                  and consistently outperforms recently proposed
+                  efficient Transformer models such as Sparse
+                  Transformers.",
+  archivePrefix= "arXiv",
+  eprint       = "2002.11296",
+  primaryClass = "cs.LG"
+}
+
+@article{child-2019-sparse-transformer,
+  author       = "Child, Rewon and Gray, Scott and Radford, Alec and
+                  Sutskever, Ilya",
+  title        = "Generating Long Sequences With Sparse Transformers",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1904.10509v1",
+  abstract     = "Transformers are powerful sequence models, but require
+                  time and memory that grows quadratically with the
+                  sequence length. In this paper we introduce sparse
+                  factorizations of the attention matrix which reduce
+                  this to $O(n \sqrt{n})$. We also introduce a) a
+                  variation on architecture and initialization to train
+                  deeper networks, b) the recomputation of attention
+                  matrices to save memory, and c) fast attention kernels
+                  for training. We call networks with these changes
+                  Sparse Transformers, and show they can model sequences
+                  tens of thousands of timesteps long using hundreds of
+                  layers. We use the same architecture to model images,
+                  audio, and text from raw bytes, setting a new state of
+                  the art for density modeling of Enwik8, CIFAR-10, and
+                  ImageNet-64. We generate unconditional samples that
+                  demonstrate global coherence and great diversity, and
+                  show it is possible in principle to use self-attention
+                  to model sequences of length one million or more.",
+  archivePrefix= "arXiv",
+  eprint       = "1904.10509",
+  primaryClass = "cs.LG"
+}
+
+@article{tay-2020-long-range-arena,
+  author       = "Tay, Yi and Dehghani, Mostafa and Abnar, Samira and
+                  Shen, Yikang and Bahri, Dara and Pham, Philip and Rao,
+                  Jinfeng and Yang, Liu and Ruder, Sebastian and
+                  Metzler, Donald",
+  title        = "Long Range Arena: a Benchmark for Efficient
+                  Transformers",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2011.04006v1",
+  abstract     = "Transformers do not scale very well to long sequence
+                  lengths largely because of quadratic self-attention
+                  complexity. In the recent months, a wide spectrum of
+                  efficient, fast Transformers have been proposed to
+                  tackle this problem, more often than not claiming
+                  superior or comparable model quality to vanilla
+                  Transformer models. To this date, there is no
+                  well-established consensus on how to evaluate this
+                  class of models. Moreover, inconsistent benchmarking
+                  on a wide spectrum of tasks and datasets makes it
+                  difficult to assess relative model quality amongst
+                  many models. This paper proposes a systematic and
+                  unified benchmark, LRA, specifically focused on
+                  evaluating model quality under long-context
+                  scenarios. Our benchmark is a suite of tasks
+                  consisting of sequences ranging from $1K$ to $16K$
+                  tokens, encompassing a wide range of data types and
+                  modalities such as text, natural, synthetic images,
+                  and mathematical expressions requiring similarity,
+                  structural, and visual-spatial reasoning. We
+                  systematically evaluate ten well-established
+                  long-range Transformer models (Reformers, Linformers,
+                  Linear Transformers, Sinkhorn Transformers,
+                  Performers, Synthesizers, Sparse Transformers, and
+                  Longformers) on our newly proposed benchmark
+                  suite. LRA paves the way towards better understanding
+                  this class of efficient Transformer models,
+                  facilitates more research in this direction, and
+                  presents new challenging tasks to tackle. Our
+                  benchmark code will be released at
+                  https://github.com/google-research/long-range-arena.",
+  archivePrefix= "arXiv",
+  eprint       = "2011.04006",
+  primaryClass = "cs.LG"
+}
+
+@article{katharopoulos-2020-linear-transformer,
+  author       = "Katharopoulos, Angelos and Vyas, Apoorv and Pappas,
+                  Nikolaos and Fleuret, Fran{\c{c}}ois",
+  title        = "Transformers Are Rnns: Fast Autoregressive
+                  Transformers With Linear Attention",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2006.16236v3",
+  abstract     = "Transformers achieve remarkable performance in several
+                  tasks but due to their quadratic complexity, with
+                  respect to the input's length, they are prohibitively
+                  slow for very long sequences. To address this
+                  limitation, we express the self-attention as a linear
+                  dot-product of kernel feature maps and make use of the
+                  associativity property of matrix products to reduce
+                  the complexity from $\mathcal{O}\left(N^2\right)$ to
+                  $\mathcal{O}\left(N\right)$, where $N$ is the sequence
+                  length. We show that this formulation permits an
+                  iterative implementation that dramatically accelerates
+                  autoregressive transformers and reveals their
+                  relationship to recurrent neural networks. Our linear
+                  transformers achieve similar performance to vanilla
+                  transformers and they are up to 4000x faster on
+                  autoregressive prediction of very long sequences.",
+  archivePrefix= "arXiv",
+  eprint       = "2006.16236",
+  primaryClass = "cs.LG"
+}

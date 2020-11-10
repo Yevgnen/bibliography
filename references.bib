@@ -25168,3 +25168,109 @@
   eprint       = "2004.13639",
   primaryClass = "cs.CL"
 }
+
+@article{bennani-smires-2018-embedrank,
+  author       = "Bennani-Smires, Kamil and Musat, Claudiu and Hossmann,
+                  Andreea and Baeriswyl, Michael and Jaggi, Martin",
+  title        = "Simple Unsupervised Keyphrase Extraction Using
+                  Sentence Embeddings",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1801.04470v3",
+  abstract     = "Keyphrase extraction is the task of automatically
+                  selecting a small set of phrases that best describe a
+                  given free text document. Supervised keyphrase
+                  extraction requires large amounts of labeled training
+                  data and generalizes very poorly outside the domain of
+                  the training data. At the same time, unsupervised
+                  systems have poor accuracy, and often do not
+                  generalize well, as they require the input document to
+                  belong to a larger corpus also given as
+                  input. Addressing these drawbacks, in this paper, we
+                  tackle keyphrase extraction from single documents with
+                  EmbedRank: a novel unsupervised method, that leverages
+                  sentence embeddings. EmbedRank achieves higher
+                  F-scores than graph-based state of the art systems on
+                  standard datasets and is suitable for real-time
+                  processing of large amounts of Web data. With
+                  EmbedRank, we also explicitly increase coverage and
+                  diversity among the selected keyphrases by introducing
+                  an embedding-based maximal marginal relevance (MMR)
+                  for new phrases. A user study including over 200 votes
+                  showed that, although reducing the phrases' semantic
+                  overlap leads to no gains in F-score, our high
+                  diversity selection is preferred by humans.",
+  archivePrefix= "arXiv",
+  eprint       = "1801.04470",
+  primaryClass = "cs.CL"
+}
+
+@article{sharma-2019-keyphrase,
+  title        = "Self-Supervised Contextual Keyword and Keyphrase
+                  Retrieval with Self-Labelling",
+  author       = "Sharma, Prafull and Li, Yingbo",
+  year         = 2019,
+  publisher    = "Preprints",
+  journal      = ""
+}
+
+@article{liu-2020-fastbert,
+  author       = "Liu, Weijie and Zhou, Peng and Zhao, Zhe and Wang,
+                  Zhiruo and Deng, Haotang and Ju, Qi",
+  title        = "Fastbert: a Self-Distilling Bert With Adaptive
+                  Inference Time",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2004.02178v2",
+  abstract     = "Pre-trained language models like BERT have proven to
+                  be highly performant.  However, they are often
+                  computationally expensive in many practical scenarios,
+                  for such heavy models can hardly be readily
+                  implemented with limited resources.  To improve their
+                  efficiency with an assured model performance, we
+                  propose a novel speed-tunable FastBERT with adaptive
+                  inference time. The speed at inference can be flexibly
+                  adjusted under varying demands, while redundant
+                  calculation of samples is avoided. Moreover, this
+                  model adopts a unique self-distillation mechanism at
+                  fine-tuning, further enabling a greater computational
+                  efficacy with minimal loss in performance. Our model
+                  achieves promising results in twelve English and
+                  Chinese datasets. It is able to speed up by a wide
+                  range from 1 to 12 times than BERT if given different
+                  speedup thresholds to make a speed-performance
+                  tradeoff.",
+  archivePrefix= "arXiv",
+  eprint       = "2004.02178",
+  primaryClass = "cs.CL"
+}
+
+@article{xu-2020-bert-of-theseus,
+  author       = "Xu, Canwen and Zhou, Wangchunshu and Ge, Tao and Wei,
+                  Furu and Zhou, Ming",
+  title        = "Bert-Of-Theseus: Compressing Bert By Progressive
+                  Module Replacing",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2002.02925v4",
+  abstract     = "In this paper, we propose a novel model compression
+                  approach to effectively compress BERT by progressive
+                  module replacing. Our approach first divides the
+                  original BERT into several modules and builds their
+                  compact substitutes. Then, we randomly replace the
+                  original modules with their substitutes to train the
+                  compact modules to mimic the behavior of the original
+                  modules. We progressively increase the probability of
+                  replacement through the training. In this way, our
+                  approach brings a deeper level of interaction between
+                  the original and compact models. Compared to the
+                  previous knowledge distillation approaches for BERT
+                  compression, our approach does not introduce any
+                  additional loss function. Our approach outperforms
+                  existing knowledge distillation approaches on GLUE
+                  benchmark, showing a new perspective of model
+                  compression.",
+  archivePrefix= "arXiv",
+  eprint       = "2002.02925",
+  primaryClass = "cs.CL"
+}

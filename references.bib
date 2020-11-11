@@ -26274,3 +26274,41 @@
   eprint       = "1903.02351",
   primaryClass = "cs.CV"
 }
+
+@article{chen-2016-gradient-checkpointing,
+  author       = "Chen, Tianqi and Xu, Bing and Zhang, Chiyuan and
+                  Guestrin, Carlos",
+  title        = "Training Deep Nets With Sublinear Memory Cost",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1604.06174v2",
+  abstract     = "We propose a systematic approach to reduce the memory
+                  consumption of deep neural network
+                  training. Specifically, we design an algorithm that
+                  costs O(sqrt(n)) memory to train a n layer network,
+                  with only the computational cost of an extra forward
+                  pass per mini-batch. As many of the state-of-the-art
+                  models hit the upper bound of the GPU memory, our
+                  algorithm allows deeper and more complex models to be
+                  explored, and helps advance the innovations in deep
+                  learning research. We focus on reducing the memory
+                  cost to store the intermediate feature maps and
+                  gradients during training. Computation graph analysis
+                  is used for automatic in-place operation and memory
+                  sharing optimizations. We show that it is possible to
+                  trade computation for memory - giving a more memory
+                  efficient training algorithm with a little extra
+                  computation cost. In the extreme case, our analysis
+                  also shows that the memory consumption can be reduced
+                  to O(log n) with as little as O(n log n) extra cost
+                  for forward computation. Our experiments show that we
+                  can reduce the memory cost of a 1,000-layer deep
+                  residual network from 48G to 7G with only 30 percent
+                  additional running time cost on ImageNet
+                  problems. Similarly, significant memory cost reduction
+                  is observed in training complex recurrent neural
+                  networks on very long sequences.",
+  archivePrefix= "arXiv",
+  eprint       = "1604.06174",
+  primaryClass = "cs.LG"
+}

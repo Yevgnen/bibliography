@@ -25758,3 +25758,519 @@
   eprint       = "1909.03004",
   primaryClass = "cs.LG"
 }
+
+@article{long-2014-fcn,
+  author       = "Long, Jonathan and Shelhamer, Evan and Darrell,
+                  Trevor",
+  title        = "Fully Convolutional Networks for Semantic
+                  Segmentation",
+  journal      = "CoRR",
+  year         = 2014,
+  url          = "http://arxiv.org/abs/1411.4038v2",
+  abstract     = "Convolutional networks are powerful visual models that
+                  yield hierarchies of features. We show that
+                  convolutional networks by themselves, trained
+                  end-to-end, pixels-to-pixels, exceed the
+                  state-of-the-art in semantic segmentation. Our key
+                  insight is to build ``fully convolutional`` networks
+                  that take input of arbitrary size and produce
+                  correspondingly-sized output with efficient inference
+                  and learning. We define and detail the space of fully
+                  convolutional networks, explain their application to
+                  spatially dense prediction tasks, and draw connections
+                  to prior models. We adapt contemporary classification
+                  networks (AlexNet, the VGG net, and GoogLeNet) into
+                  fully convolutional networks and transfer their
+                  learned representations by fine-tuning to the
+                  segmentation task. We then define a novel architecture
+                  that combines semantic information from a deep, coarse
+                  layer with appearance information from a shallow, fine
+                  layer to produce accurate and detailed
+                  segmentations. Our fully convolutional network
+                  achieves state-of-the-art segmentation of PASCAL VOC
+                  (20 \% relative improvement to 62.2 \% mean IU on
+                  2012), NYUDv2, and SIFT Flow, while inference takes
+                  one third of a second for a typical image.",
+  archivePrefix= "arXiv",
+  eprint       = "1411.4038",
+  primaryClass = "cs.CV"
+}
+
+@article{badrinarayanan-2015-segnet,
+  author       = "Badrinarayanan, Vijay and Kendall, Alex and Cipolla,
+                  Roberto",
+  title        = "Segnet: a Deep Convolutional Encoder-Decoder
+                  Architecture for Image Segmentation",
+  journal      = "CoRR",
+  year         = 2015,
+  url          = "http://arxiv.org/abs/1511.00561v3",
+  abstract     = "We present a novel and practical deep fully
+                  convolutional neural network architecture for semantic
+                  pixel-wise segmentation termed SegNet. This core
+                  trainable segmentation engine consists of an encoder
+                  network, a corresponding decoder network followed by a
+                  pixel-wise classification layer. The architecture of
+                  the encoder network is topologically identical to the
+                  13 convolutional layers in the VGG16 network. The role
+                  of the decoder network is to map the low resolution
+                  encoder feature maps to full input resolution feature
+                  maps for pixel-wise classification. The novelty of
+                  SegNet lies is in the manner in which the decoder
+                  upsamples its lower resolution input feature
+                  map(s). Specifically, the decoder uses pooling indices
+                  computed in the max-pooling step of the corresponding
+                  encoder to perform non-linear upsampling. This
+                  eliminates the need for learning to upsample. The
+                  upsampled maps are sparse and are then convolved with
+                  trainable filters to produce dense feature maps. We
+                  compare our proposed architecture with the widely
+                  adopted FCN and also with the well known
+                  DeepLab-LargeFOV, DeconvNet architectures. This
+                  comparison reveals the memory versus accuracy
+                  trade-off involved in achieving good segmentation
+                  performance.  SegNet was primarily motivated by scene
+                  understanding applications. Hence, it is designed to
+                  be efficient both in terms of memory and computational
+                  time during inference. It is also significantly
+                  smaller in the number of trainable parameters than
+                  other competing architectures. We also performed a
+                  controlled benchmark of SegNet and other architectures
+                  on both road scenes and SUN RGB-D indoor scene
+                  segmentation tasks. We show that SegNet provides good
+                  performance with competitive inference time and more
+                  efficient inference memory-wise as compared to other
+                  architectures. We also provide a Caffe implementation
+                  of SegNet and a web demo at
+                  http://mi.eng.cam.ac.uk/projects/segnet/.",
+  archivePrefix= "arXiv",
+  eprint       = "1511.00561",
+  primaryClass = "cs.CV"
+}
+
+@article{chen-2016-deeplab-v1,
+  author       = "Chen, Liang-Chieh and Papandreou, George and Kokkinos,
+                  Iasonas and Murphy, Kevin and Yuille, Alan L.",
+  title        = "Deeplab: Semantic Image Segmentation With Deep
+                  Convolutional Nets, Atrous Convolution, and Fully
+                  Connected Crfs",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1606.00915v2",
+  abstract     = "In this work we address the task of semantic image
+                  segmentation with Deep Learning and make three main
+                  contributions that are experimentally shown to have
+                  substantial practical merit. First, we highlight
+                  convolution with upsampled filters, or 'atrous
+                  convolution', as a powerful tool in dense prediction
+                  tasks. Atrous convolution allows us to explicitly
+                  control the resolution at which feature responses are
+                  computed within Deep Convolutional Neural Networks. It
+                  also allows us to effectively enlarge the field of
+                  view of filters to incorporate larger context without
+                  increasing the number of parameters or the amount of
+                  computation. Second, we propose atrous spatial pyramid
+                  pooling (ASPP) to robustly segment objects at multiple
+                  scales. ASPP probes an incoming convolutional feature
+                  layer with filters at multiple sampling rates and
+                  effective fields-of-views, thus capturing objects as
+                  well as image context at multiple scales. Third, we
+                  improve the localization of object boundaries by
+                  combining methods from DCNNs and probabilistic
+                  graphical models.  The commonly deployed combination
+                  of max-pooling and downsampling in DCNNs achieves
+                  invariance but has a toll on localization accuracy. We
+                  overcome this by combining the responses at the final
+                  DCNN layer with a fully connected Conditional Random
+                  Field (CRF), which is shown both qualitatively and
+                  quantitatively to improve localization
+                  performance. Our proposed ``DeepLab`` system sets the
+                  new state-of-art at the PASCAL VOC-2012 semantic image
+                  segmentation task, reaching 79.7 \% mIOU in the test
+                  set, and advances the results on three other datasets:
+                  PASCAL-Context, PASCAL-Person-Part, and
+                  Cityscapes. All of our code is made publicly available
+                  online.",
+  archivePrefix= "arXiv",
+  eprint       = "1606.00915",
+  primaryClass = "cs.CV"
+}
+
+@article{chen-2014-deeplab-v2,
+  author       = "Chen, Liang-Chieh and Papandreou, George and Kokkinos,
+                  Iasonas and Murphy, Kevin and Yuille, Alan L.",
+  title        = "Semantic Image Segmentation With Deep Convolutional
+                  Nets and Fully Connected Crfs",
+  journal      = "CoRR",
+  year         = 2014,
+  url          = "http://arxiv.org/abs/1412.7062v4",
+  abstract     = "Deep Convolutional Neural Networks (DCNNs) have
+                  recently shown state of the art performance in high
+                  level vision tasks, such as image classification and
+                  object detection. This work brings together methods
+                  from DCNNs and probabilistic graphical models for
+                  addressing the task of pixel-level classification
+                  (also called ``semantic image segmentation``). We show
+                  that responses at the final layer of DCNNs are not
+                  sufficiently localized for accurate object
+                  segmentation. This is due to the very invariance
+                  properties that make DCNNs good for high level
+                  tasks. We overcome this poor localization property of
+                  deep networks by combining the responses at the final
+                  DCNN layer with a fully connected Conditional Random
+                  Field (CRF). Qualitatively, our ``DeepLab`` system is
+                  able to localize segment boundaries at a level of
+                  accuracy which is beyond previous
+                  methods. Quantitatively, our method sets the new
+                  state-of-art at the PASCAL VOC-2012 semantic image
+                  segmentation task, reaching 71.6 \% IOU accuracy in
+                  the test set. We show how these results can be
+                  obtained efficiently: Careful network re-purposing and
+                  a novel application of the 'hole' algorithm from the
+                  wavelet community allow dense computation of neural
+                  net responses at 8 frames per second on a modern GPU.",
+  archivePrefix= "arXiv",
+  eprint       = "1412.7062",
+  primaryClass = "cs.CV"
+}
+
+@article{zhao-2016-pspnet,
+  author       = "Zhao, Hengshuang and Shi, Jianping and Qi, Xiaojuan
+                  and Wang, Xiaogang and Jia, Jiaya",
+  title        = "Pyramid Scene Parsing Network",
+  journal      = "CoRR",
+  year         = 2016,
+  url          = "http://arxiv.org/abs/1612.01105v2",
+  abstract     = "Scene parsing is challenging for unrestricted open
+                  vocabulary and diverse scenes. In this paper, we
+                  exploit the capability of global context information
+                  by different-region-based context aggregation through
+                  our pyramid pooling module together with the proposed
+                  pyramid scene parsing network (PSPNet). Our global
+                  prior representation is effective to produce good
+                  quality results on the scene parsing task, while
+                  PSPNet provides a superior framework for pixel-level
+                  prediction tasks. The proposed approach achieves
+                  state-of-the-art performance on various datasets. It
+                  came first in ImageNet scene parsing challenge 2016,
+                  PASCAL VOC 2012 benchmark and Cityscapes benchmark. A
+                  single PSPNet yields new record of mIoU accuracy 85.4
+                  \% on PASCAL VOC 2012 and accuracy 80.2 \% on
+                  Cityscapes.",
+  archivePrefix= "arXiv",
+  eprint       = "1612.01105",
+  primaryClass = "cs.CV"
+}
+
+@article{chen-2017-deeplab-v3,
+  author       = "Chen, Liang-Chieh and Papandreou, George and Schroff,
+                  Florian and Adam, Hartwig",
+  title        = "Rethinking Atrous Convolution for Semantic Image
+                  Segmentation",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1706.05587v3",
+  abstract     = "In this work, we revisit atrous convolution, a
+                  powerful tool to explicitly adjust filter's
+                  field-of-view as well as control the resolution of
+                  feature responses computed by Deep Convolutional
+                  Neural Networks, in the application of semantic image
+                  segmentation. To handle the problem of segmenting
+                  objects at multiple scales, we design modules which
+                  employ atrous convolution in cascade or in parallel to
+                  capture multi-scale context by adopting multiple
+                  atrous rates. Furthermore, we propose to augment our
+                  previously proposed Atrous Spatial Pyramid Pooling
+                  module, which probes convolutional features at
+                  multiple scales, with image-level features encoding
+                  global context and further boost performance. We also
+                  elaborate on implementation details and share our
+                  experience on training our system. The proposed
+                  `DeepLabv3' system significantly improves over our
+                  previous DeepLab versions without DenseCRF
+                  post-processing and attains comparable performance
+                  with other state-of-art models on the PASCAL VOC 2012
+                  semantic image segmentation benchmark.",
+  archivePrefix= "arXiv",
+  eprint       = "1706.05587",
+  primaryClass = "cs.CV"
+}
+
+@article{peng-2017-large-kernel-matters,
+  author       = "Peng, Chao and Zhang, Xiangyu and Yu, Gang and Luo,
+                  Guiming and Sun, Jian",
+  title        = "Large Kernel Matters -- Improve Semantic Segmentation
+                  By Global Convolutional Network",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1703.02719v1",
+  abstract     = "One of recent trends [30, 31, 14] in network architec-
+                  ture design is stacking small filters (e.g., 1x1 or
+                  3x3) in the entire network because the stacked small
+                  filters is more ef- ficient than a large kernel, given
+                  the same computational complexity. However, in the
+                  field of semantic segmenta- tion, where we need to
+                  perform dense per-pixel prediction, we find that the
+                  large kernel (and effective receptive field) plays an
+                  important role when we have to perform the clas-
+                  sification and localization tasks
+                  simultaneously. Following our design principle, we
+                  propose a Global Convolutional Network to address both
+                  the classification and localization issues for the
+                  semantic segmentation. We also suggest a
+                  residual-based boundary refinement to further refine
+                  the ob- ject boundaries. Our approach achieves
+                  state-of-art perfor- mance on two public benchmarks
+                  and significantly outper- forms previous results, 82.2
+                  \% (vs 80.2 \%) on PASCAL VOC 2012 dataset and 76.9 \%
+                  (vs 71.8 \%) on Cityscapes dataset.",
+  archivePrefix= "arXiv",
+  eprint       = "1703.02719",
+  primaryClass = "cs.CV"
+}
+
+@article{zhang-2018-encnet,
+  author       = "Zhang, Hang and Dana, Kristin and Shi, Jianping and
+                  Zhang, Zhongyue and Wang, Xiaogang and Tyagi, Ambrish
+                  and Agrawal, Amit",
+  title        = "Context Encoding for Semantic Segmentation",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1803.08904v1",
+  abstract     = "Recent work has made significant progress in improving
+                  spatial resolution for pixelwise labeling with Fully
+                  Convolutional Network (FCN) framework by employing
+                  Dilated/Atrous convolution, utilizing multi-scale
+                  features and refining boundaries. In this paper, we
+                  explore the impact of global contextual information in
+                  semantic segmentation by introducing the Context
+                  Encoding Module, which captures the semantic context
+                  of scenes and selectively highlights class-dependent
+                  featuremaps. The proposed Context Encoding Module
+                  significantly improves semantic segmentation results
+                  with only marginal extra computation cost over
+                  FCN. Our approach has achieved new state-of-the-art
+                  results 51.7 \% mIoU on PASCAL-Context, 85.9 \% mIoU
+                  on PASCAL VOC 2012. Our single model achieves a final
+                  score of 0.5567 on ADE20K test set, which surpass the
+                  winning entry of COCO-Place Challenge in 2017. In
+                  addition, we also explore how the Context Encoding
+                  Module can improve the feature representation of
+                  relatively shallow networks for the image
+                  classification on CIFAR-10 dataset.  Our 14 layer
+                  network has achieved an error rate of 3.45 \%, which
+                  is comparable with state-of-the-art approaches with
+                  over 10 times more layers. The source code for the
+                  complete system are publicly available.",
+  archivePrefix= "arXiv",
+  eprint       = "1803.08904",
+  primaryClass = "cs.CV"
+}
+
+@inproceedings{yang-2018-denseaspp,
+  title        = "Denseaspp for semantic segmentation in street scenes",
+  author       = "Yang, Maoke and Yu, Kun and Zhang, Chi and Li, Zhiwei
+                  and Yang, Kuiyuan",
+  booktitle    = "Proceedings of the IEEE Conference on Computer Vision
+                  and Pattern Recognition",
+  pages        = "3684-3692",
+  year         = 2018
+}
+
+@article{wang-2017-gridding-issue,
+  author       = "Wang, Panqu and Chen, Pengfei and Yuan, Ye and Liu,
+                  Ding and Huang, Zehua and Hou, Xiaodi and Cottrell,
+                  Garrison",
+  title        = "Understanding Convolution for Semantic Segmentation",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1702.08502v3",
+  abstract     = "Recent advances in deep learning, especially deep
+                  convolutional neural networks (CNNs), have led to
+                  significant improvement over previous semantic
+                  segmentation systems. Here we show how to improve
+                  pixel-wise semantic segmentation by manipulating
+                  convolution-related operations that are of both
+                  theoretical and practical value. First, we design
+                  dense upsampling convolution (DUC) to generate
+                  pixel-level prediction, which is able to capture and
+                  decode more detailed information that is generally
+                  missing in bilinear upsampling.  Second, we propose a
+                  hybrid dilated convolution (HDC) framework in the
+                  encoding phase. This framework 1) effectively enlarges
+                  the receptive fields (RF) of the network to aggregate
+                  global information; 2) alleviates what we call the
+                  ``gridding issue`` caused by the standard dilated
+                  convolution operation. We evaluate our approaches
+                  thoroughly on the Cityscapes dataset, and achieve a
+                  state-of-art result of 80.1 \% mIOU in the test set at
+                  the time of submission. We also have achieved
+                  state-of-the-art overall on the KITTI road estimation
+                  benchmark and the PASCAL VOC2012 segmentation
+                  task. Our source code can be found at
+                  https://github.com/TuSimple/TuSimple-DUC .",
+  archivePrefix= "arXiv",
+  eprint       = "1702.08502",
+  primaryClass = "cs.CV"
+}
+
+@article{chen-2018-atrous-separable-convolution,
+  author       = "Chen, Liang-Chieh and Zhu, Yukun and Papandreou,
+                  George and Schroff, Florian and Adam, Hartwig",
+  title        = "Encoder-Decoder With Atrous Separable Convolution for
+                  Semantic Image Segmentation",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1802.02611v3",
+  abstract     = "Spatial pyramid pooling module or encode-decoder
+                  structure are used in deep neural networks for
+                  semantic segmentation task. The former networks are
+                  able to encode multi-scale contextual information by
+                  probing the incoming features with filters or pooling
+                  operations at multiple rates and multiple effective
+                  fields-of-view, while the latter networks can capture
+                  sharper object boundaries by gradually recovering the
+                  spatial information. In this work, we propose to
+                  combine the advantages from both
+                  methods. Specifically, our proposed model, DeepLabv3+,
+                  extends DeepLabv3 by adding a simple yet effective
+                  decoder module to refine the segmentation results
+                  especially along object boundaries. We further explore
+                  the Xception model and apply the depthwise separable
+                  convolution to both Atrous Spatial Pyramid Pooling and
+                  decoder modules, resulting in a faster and stronger
+                  encoder-decoder network. We demonstrate the
+                  effectiveness of the proposed model on PASCAL VOC 2012
+                  and Cityscapes datasets, achieving the test set
+                  performance of 89.0\% and 82.1\% without any
+                  post-processing. Our paper is accompanied with a
+                  publicly available reference implementation of the
+                  proposed models in Tensorflow at
+                  \url{https://github.com/tensorflow/models/tree/master/research/deeplab}.",
+  archivePrefix= "arXiv",
+  eprint       = "1802.02611",
+  primaryClass = "cs.CV"
+}
+
+@article{fu-2018-danet,
+  author       = "Fu, Jun and Liu, Jing and Tian, Haijie and Li, Yong
+                  and Bao, Yongjun and Fang, Zhiwei and Lu, Hanqing",
+  title        = "Dual Attention Network for Scene Segmentation",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1809.02983v4",
+  abstract     = "In this paper, we address the scene segmentation task
+                  by capturing rich contextual dependencies based on the
+                  selfattention mechanism. Unlike previous works that
+                  capture contexts by multi-scale features fusion, we
+                  propose a Dual Attention Networks (DANet) to
+                  adaptively integrate local features with their global
+                  dependencies. Specifically, we append two types of
+                  attention modules on top of traditional dilated FCN,
+                  which model the semantic interdependencies in spatial
+                  and channel dimensions respectively. The position
+                  attention module selectively aggregates the features
+                  at each position by a weighted sum of the features at
+                  all positions. Similar features would be related to
+                  each other regardless of their distances. Meanwhile,
+                  the channel attention module selectively emphasizes
+                  interdependent channel maps by integrating associated
+                  features among all channel maps. We sum the outputs of
+                  the two attention modules to further improve feature
+                  representation which contributes to more precise
+                  segmentation results. We achieve new state-of-the-art
+                  segmentation performance on three challenging scene
+                  segmentation datasets, i.e., Cityscapes, PASCAL
+                  Context and COCO Stuff dataset. In particular, a Mean
+                  IoU score of 81.5 \% on Cityscapes test set is
+                  achieved without using coarse data. We make the code
+                  and trained model publicly available at
+                  https://github.com/junfu1115/DANet",
+  archivePrefix= "arXiv",
+  eprint       = "1809.02983",
+  primaryClass = "cs.CV"
+}
+
+@article{liu-2019-auto-deeplab,
+  author       = "Liu, Chenxi and Chen, Liang-Chieh and Schroff, Florian
+                  and Adam, Hartwig and Hua, Wei and Yuille, Alan and
+                  Fei-Fei, Li",
+  title        = "Auto-Deeplab: Hierarchical Neural Architecture Search
+                  for Semantic Image Segmentation",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1901.02985v2",
+  abstract     = "Recently, Neural Architecture Search (NAS) has
+                  successfully identified neural network architectures
+                  that exceed human designed ones on large-scale image
+                  classification. In this paper, we study NAS for
+                  semantic image segmentation.  Existing works often
+                  focus on searching the repeatable cell structure,
+                  while hand-designing the outer network structure that
+                  controls the spatial resolution changes. This choice
+                  simplifies the search space, but becomes increasingly
+                  problematic for dense image prediction which exhibits
+                  a lot more network level architectural
+                  variations. Therefore, we propose to search the
+                  network level structure in addition to the cell level
+                  structure, which forms a hierarchical architecture
+                  search space. We present a network level search space
+                  that includes many popular designs, and develop a
+                  formulation that allows efficient gradient-based
+                  architecture search (3 P100 GPU days on Cityscapes
+                  images). We demonstrate the effectiveness of the
+                  proposed method on the challenging Cityscapes, PASCAL
+                  VOC 2012, and ADE20K datasets. Auto-DeepLab, our
+                  architecture searched specifically for semantic image
+                  segmentation, attains state-of-the-art performance
+                  without any ImageNet pretraining.",
+  archivePrefix= "arXiv",
+  eprint       = "1901.02985",
+  primaryClass = "cs.CV"
+}
+
+@inproceedings{he-2019-apcnet,
+  title        = "Adaptive pyramid context network for semantic
+                  segmentation",
+  author       = "He, Junjun and Deng, Zhongying and Zhou, Lei and Wang,
+                  Yali and Qiao, Yu",
+  booktitle    = "Proceedings of the IEEE Conference on Computer Vision
+                  and Pattern Recognition",
+  pages        = "7519-7528",
+  year         = 2019
+}
+
+@article{zhang-2019-canet,
+  author       = "Zhang, Chi and Lin, Guosheng and Liu, Fayao and Yao,
+                  Rui and Shen, Chunhua",
+  title        = "Canet: Class-Agnostic Segmentation Networks With
+                  Iterative Refinement and Attentive Few-Shot Learning",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1903.02351v1",
+  abstract     = "Recent progress in semantic segmentation is driven by
+                  deep Convolutional Neural Networks and large-scale
+                  labeled image datasets. However, data labeling for
+                  pixel-wise segmentation is tedious and
+                  costly. Moreover, a trained model can only make
+                  predictions within a set of pre-defined classes. In
+                  this paper, we present CANet, a class-agnostic
+                  segmentation network that performs few-shot
+                  segmentation on new classes with only a few annotated
+                  images available. Our network consists of a two-branch
+                  dense comparison module which performs multi-level
+                  feature comparison between the support image and the
+                  query image, and an iterative optimization module
+                  which iteratively refines the predicted
+                  results. Furthermore, we introduce an attention
+                  mechanism to effectively fuse information from
+                  multiple support examples under the setting of k-shot
+                  learning. Experiments on PASCAL VOC 2012 show that our
+                  method achieves a mean Intersection-over-Union score
+                  of 55.4 \% for 1-shot segmentation and 57.1 \% for
+                  5-shot segmentation, outperforming state-of-the-art
+                  methods by a large margin of 14.6 \% and 13.2 \%,
+                  respectively.",
+  archivePrefix= "arXiv",
+  eprint       = "1903.02351",
+  primaryClass = "cs.CV"
+}

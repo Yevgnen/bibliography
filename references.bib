@@ -26479,3 +26479,78 @@
   publisher    = "Association for Computational Linguistics"
 }
 
+@article{khosla-2020-scl,
+  author       = "Khosla, Prannay and Teterwak, Piotr and Wang, Chen and
+                  Sarna, Aaron and Tian, Yonglong and Isola, Phillip and
+                  Maschinot, Aaron and Liu, Ce and Krishnan, Dilip",
+  title        = "Supervised Contrastive Learning",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2004.11362v3",
+  abstract     = "Contrastive learning applied to self-supervised
+                  representation learning has seen a resurgence in
+                  recent years, leading to state of the art performance
+                  in the unsupervised training of deep image
+                  models. Modern batch contrastive approaches subsume or
+                  significantly outperform traditional contrastive
+                  losses such as triplet, max-margin and the N-pairs
+                  loss. In this work, we extend the self-supervised
+                  batch contrastive approach to the fully-supervised
+                  setting, allowing us to effectively leverage label
+                  information. Clusters of points belonging to the same
+                  class are pulled together in embedding space, while
+                  simultaneously pushing apart clusters of samples from
+                  different classes. We analyze two possible versions of
+                  the supervised contrastive (SupCon) loss, identifying
+                  the best-performing formulation of the loss. On
+                  ResNet-200, we achieve top-1 accuracy of 81.4 \% on
+                  the ImageNet dataset, which is 0.8 \% above the best
+                  number reported for this architecture. We show
+                  consistent outperformance over cross-entropy on other
+                  datasets and two ResNet variants.  The loss shows
+                  benefits for robustness to natural corruptions and is
+                  more stable to hyperparameter settings such as
+                  optimizers and data augmentations.  Our loss function
+                  is simple to implement, and reference TensorFlow code
+                  is released at https://t.ly/supcon.",
+  archivePrefix= "arXiv",
+  eprint       = "2004.11362",
+  primaryClass = "cs.LG"
+}
+
+@article{gunel-2020-scl4plm,
+  author       = "Gunel, Beliz and Du, Jingfei and Conneau, Alexis and
+                  Stoyanov, Ves",
+  title        = "Supervised Contrastive Learning for Pre-Trained
+                  Language Model Fine-Tuning",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2011.01403v2",
+  abstract     = "State-of-the-art natural language understanding
+                  classification models follow two-stages: pre-training
+                  a large language model on an auxiliary task, and then
+                  fine-tuning the model on a task-specific labeled
+                  dataset using cross-entropy loss. Cross-entropy loss
+                  has several shortcomings that can lead to sub-optimal
+                  generalization and instability. Driven by the
+                  intuition that good generalization requires capturing
+                  the similarity between examples in one class and
+                  contrasting them with examples in other classes, we
+                  propose a supervised contrastive learning (SCL)
+                  objective for the fine-tuning stage. Combined with
+                  cross-entropy, the SCL loss we propose obtains
+                  improvements over a strong RoBERTa-Large baseline on
+                  multiple datasets of the GLUE benchmark in both the
+                  high-data and low-data regimes, and it does not
+                  require any specialized architecture, data
+                  augmentation of any kind, memory banks, or additional
+                  unsupervised data. We also demonstrate that the new
+                  objective leads to models that are more robust to
+                  different levels of noise in the training data, and
+                  can generalize better to related tasks with limited
+                  labeled task data.",
+  archivePrefix= "arXiv",
+  eprint       = "2011.01403",
+  primaryClass = "cs.CL"
+}
+

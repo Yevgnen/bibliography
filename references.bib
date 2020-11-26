@@ -26590,3 +26590,171 @@
   eprint       = "2011.01403",
   primaryClass = "cs.CL"
 }
+
+@article{oord-2018-contrastive-predictive-coding,
+  author       = "Oord, Aaron van den and Li, Yazhe and Vinyals, Oriol",
+  title        = "Representation Learning With Contrastive Predictive
+                  Coding",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1807.03748v2",
+  abstract     = "While supervised learning has enabled great progress
+                  in many applications, unsupervised learning has not
+                  seen such widespread adoption, and remains an
+                  important and challenging endeavor for artificial
+                  intelligence. In this work, we propose a universal
+                  unsupervised learning approach to extract useful
+                  representations from high-dimensional data, which we
+                  call Contrastive Predictive Coding. The key insight of
+                  our model is to learn such representations by
+                  predicting the future in latent space by using
+                  powerful autoregressive models. We use a probabilistic
+                  contrastive loss which induces the latent space to
+                  capture information that is maximally useful to
+                  predict future samples. It also makes the model
+                  tractable by using negative sampling.  While most
+                  prior work has focused on evaluating representations
+                  for a particular modality, we demonstrate that our
+                  approach is able to learn useful representations
+                  achieving strong performance on four distinct domains:
+                  speech, images, text and reinforcement learning in 3D
+                  environments.",
+  archivePrefix= "arXiv",
+  eprint       = "1807.03748",
+  primaryClass = "cs.LG"
+}
+
+@article{hjelm-2018-deep-infomax,
+  author       = "Hjelm, R Devon and Fedorov, Alex and
+                  Lavoie-Marchildon, Samuel and Grewal, Karan and
+                  Bachman, Phil and Trischler, Adam and Bengio, Yoshua",
+  title        = "Learning Deep Representations By Mutual Information
+                  Estimation and Maximization",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1808.06670v5",
+  abstract     = "In this work, we perform unsupervised learning of
+                  representations by maximizing mutual information
+                  between an input and the output of a deep neural
+                  network encoder. Importantly, we show that structure
+                  matters: incorporating knowledge about locality of the
+                  input to the objective can greatly influence a
+                  representation's suitability for downstream tasks. We
+                  further control characteristics of the representation
+                  by matching to a prior distribution adversarially. Our
+                  method, which we call Deep InfoMax (DIM), outperforms
+                  a number of popular unsupervised learning methods and
+                  competes with fully-supervised learning on several
+                  classification tasks. DIM opens new avenues for
+                  unsupervised learning of representations and is an
+                  important step towards flexible formulations of
+                  representation-learning objectives for specific
+                  end-goals.",
+  archivePrefix= "arXiv",
+  eprint       = "1808.06670",
+  primaryClass = "stat.ML"
+}
+
+@article{tian-2019-contrastive-multiview-coding,
+  author       = "Tian, Yonglong and Krishnan, Dilip and Isola, Phillip",
+  title        = "Contrastive Multiview Coding",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1906.05849v4",
+  abstract     = "Humans view the world through many sensory channels,
+                  e.g., the long-wavelength light channel, viewed by the
+                  left eye, or the high-frequency vibrations channel,
+                  heard by the right ear. Each view is noisy and
+                  incomplete, but important factors, such as physics,
+                  geometry, and semantics, tend to be shared between all
+                  views (e.g., a ``dog`` can be seen, heard, and
+                  felt). We investigate the classic hypothesis that a
+                  powerful representation is one that models
+                  view-invariant factors. We study this hypothesis under
+                  the framework of multiview contrastive learning, where
+                  we learn a representation that aims to maximize mutual
+                  information between different views of the same scene
+                  but is otherwise compact. Our approach scales to any
+                  number of views, and is view-agnostic. We analyze key
+                  properties of the approach that make it work, finding
+                  that the contrastive loss outperforms a popular
+                  alternative based on cross-view prediction, and that
+                  the more views we learn from, the better the resulting
+                  representation captures underlying scene
+                  semantics. Our approach achieves state-of-the-art
+                  results on image and video unsupervised learning
+                  benchmarks. Code is released at:
+                  http://github.com/HobbitLong/CMC/.",
+  archivePrefix= "arXiv",
+  eprint       = "1906.05849",
+  primaryClass = "cs.CV"
+}
+
+@article{he-2019-moco,
+  author       = "He, Kaiming and Fan, Haoqi and Wu, Yuxin and Xie,
+                  Saining and Girshick, Ross",
+  title        = "Momentum Contrast for Unsupervised Visual
+                  Representation Learning",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1911.05722v3",
+  abstract     = "We present Momentum Contrast (MoCo) for unsupervised
+                  visual representation learning. From a perspective on
+                  contrastive learning as dictionary look-up, we build a
+                  dynamic dictionary with a queue and a moving-averaged
+                  encoder. This enables building a large and consistent
+                  dictionary on-the-fly that facilitates contrastive
+                  unsupervised learning. MoCo provides competitive
+                  results under the common linear protocol on ImageNet
+                  classification. More importantly, the representations
+                  learned by MoCo transfer well to downstream
+                  tasks. MoCo can outperform its supervised pre-training
+                  counterpart in 7 detection/segmentation tasks on
+                  PASCAL VOC, COCO, and other datasets, sometimes
+                  surpassing it by large margins. This suggests that the
+                  gap between unsupervised and supervised representation
+                  learning has been largely closed in many vision
+                  tasks.",
+  archivePrefix= "arXiv",
+  eprint       = "1911.05722",
+  primaryClass = "cs.CV"
+}
+
+@article{chen-2020-simclr,
+  author       = "Chen, Ting and Kornblith, Simon and Norouzi, Mohammad
+                  and Hinton, Geoffrey",
+  title        = "A Simple Framework for Contrastive Learning of Visual
+                  Representations",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2002.05709v3",
+  abstract     = "This paper presents SimCLR: a simple framework for
+                  contrastive learning of visual representations. We
+                  simplify recently proposed contrastive self-supervised
+                  learning algorithms without requiring specialized
+                  architectures or a memory bank. In order to understand
+                  what enables the contrastive prediction tasks to learn
+                  useful representations, we systematically study the
+                  major components of our framework. We show that (1)
+                  composition of data augmentations plays a critical
+                  role in defining effective predictive tasks, (2)
+                  introducing a learnable nonlinear transformation
+                  between the representation and the contrastive loss
+                  substantially improves the quality of the learned
+                  representations, and (3) contrastive learning benefits
+                  from larger batch sizes and more training steps
+                  compared to supervised learning. By combining these
+                  findings, we are able to considerably outperform
+                  previous methods for self-supervised and
+                  semi-supervised learning on ImageNet. A linear
+                  classifier trained on self-supervised representations
+                  learned by SimCLR achieves 76.5 \% top-1 accuracy,
+                  which is a 7 \% relative improvement over previous
+                  state-of-the-art, matching the performance of a
+                  supervised ResNet-50. When fine-tuned on only 1 \% of
+                  the labels, we achieve 85.8 \% top-5 accuracy,
+                  outperforming AlexNet with 100X fewer labels.",
+  archivePrefix= "arXiv",
+  eprint       = "2002.05709",
+  primaryClass = "cs.LG"
+}

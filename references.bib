@@ -27176,3 +27176,140 @@
   eprint       = "2004.04037",
   primaryClass = "cs.CL"
 }
+
+@inproceedings{li-2009-article-rank,
+  title        = "ArticleRank: a PageRank-based alternative to numbers
+                  of citations for analysing citation networks",
+  author       = "Li, Jiang and Willett, Peter",
+  booktitle    = "Aslib Proceedings",
+  year         = 2009,
+  organization = "Emerald Group Publishing Limited"
+}
+
+@inproceedings{boudin-2013-graph-based-ke,
+  author       = "Boudin, Florian",
+  title        = "A Comparison of Centrality Measures for Graph-Based
+                  Keyphrase Extraction",
+  booktitle    = "Proceedings of the Sixth International Joint
+                  Conference on Natural Language Processing",
+  year         = 2013,
+  pages        = "834-838",
+  url          = "https://www.aclweb.org/anthology/I13-1102",
+  address      = "Nagoya, Japan",
+  month        = oct,
+  publisher    = "Asian Federation of Natural Language Processing"
+}
+
+@article{blondel-2008-louvain,
+  author       = "Blondel, Vincent D. and Guillaume, Jean-Loup and
+                  Lambiotte, Renaud and Lefebvre, Etienne",
+  title        = "Fast Unfolding of Communities in Large Networks",
+  journal      = "CoRR",
+  year         = 2008,
+  url          = "http://arxiv.org/abs/0803.0476v2",
+  abstract     = "We propose a simple method to extract the community
+                  structure of large networks. Our method is a heuristic
+                  method that is based on modularity optimization. It is
+                  shown to outperform all other known community
+                  detection method in terms of computation
+                  time. Moreover, the quality of the communities
+                  detected is very good, as measured by the so-called
+                  modularity. This is shown first by identifying
+                  language communities in a Belgian mobile phone network
+                  of 2.6 million customers and by analyzing a web graph
+                  of 118 million nodes and more than one billion
+                  links. The accuracy of our algorithm is also verified
+                  on ad-hoc modular networks. .",
+  archivePrefix= "arXiv",
+  eprint       = "0803.0476",
+  primaryClass = "physics.soc-ph"
+}
+
+@article{lu-2015-parallel-louvain,
+  title        = "Parallel heuristics for scalable community detection",
+  journal      = "Parallel Computing",
+  volume       = 47,
+  pages        = "19-37",
+  year         = 2015,
+  note         = "Graph analysis for scientific discovery",
+  issn         = "0167-8191",
+  doi          = "https://doi.org/10.1016/j.parco.2015.03.003",
+  url          =
+                  "http://www.sciencedirect.com/science/article/pii/S0167819115000472",
+  author       = "Hao Lu and Mahantesh Halappanavar and Ananth
+                  Kalyanaraman",
+  keywords     = "Community detection, Parallel graph heuristics, Graph
+                  coloring, Graph clustering",
+  abstract     = "Community detection has become a fundamental operation
+                  in numerous graph-theoretic applications. It is used
+                  to reveal natural divisions that exist within real
+                  world networks without imposing prior size or
+                  cardinality constraints on the set of
+                  communities. Despite its potential for application,
+                  there is only limited support for community detection
+                  on large-scale parallel computers, largely owing to
+                  the irregular and inherently sequential nature of the
+                  underlying heuristics. In this paper, we present
+                  parallelization heuristics for fast community
+                  detection using the Louvain method as the serial
+                  template. The Louvain method is a multi-phase,
+                  iterative heuristic for modularity
+                  optimization. Originally developed by Blondel et
+                  al. (2008), the method has become increasingly popular
+                  owing to its ability to detect high modularity
+                  community partitions in a fast and memory-efficient
+                  manner. However, the method is also inherently
+                  sequential, thereby limiting its scalability. Here, we
+                  observe certain key properties of this method that
+                  present challenges for its parallelization, and
+                  consequently propose heuristics that are designed to
+                  break the sequential barrier. For evaluation purposes,
+                  we implemented our heuristics using OpenMP
+                  multithreading, and tested them over real world graphs
+                  derived from multiple application domains (e.g.,
+                  internet, citation, biological). Compared to the
+                  serial Louvain implementation, our parallel
+                  implementation is able to produce community outputs
+                  with a higher modularity for most of the inputs
+                  tested, in comparable number or fewer iterations,
+                  while providing absolute speedups of up to 16× using
+                  32 threads."
+}
+
+@article{catalyurek-2012-k-1-coloring,
+  author       = "Catalyurek, Umit and Feo, John and Gebremedhin,
+                  Assefaw and Halappanavar, Mahantesh and Pothen, Alex",
+  title        = "Graph Coloring Algorithms for Muti-Core and Massively
+                  Multithreaded Architectures",
+  journal      = "CoRR",
+  year         = 2012,
+  url          = "http://arxiv.org/abs/1205.3809v1",
+  abstract     = "We explore the interplay between architectures and
+                  algorithm design in the context of shared-memory
+                  platforms and a specific graph problem of central
+                  importance in scientific and high-performance
+                  computing, distance-1 graph coloring. We introduce two
+                  different kinds of multithreaded heuristic algorithms
+                  for the stated, NP-hard, problem. The first algorithm
+                  relies on speculation and iteration, and is suitable
+                  for any shared-memory system. The second algorithm
+                  uses dataflow principles, and is targeted at the
+                  non-conventional, massively multithreaded Cray XMT
+                  system. We study the performance of the algorithms on
+                  the Cray XMT and two multi-core systems, Sun Niagara 2
+                  and Intel Nehalem. Together, the three systems
+                  represent a spectrum of multithreading capabilities
+                  and memory structure. As testbed, we use synthetically
+                  generated large-scale graphs carefully chosen to cover
+                  a wide range of input types. The results show that the
+                  algorithms have scalable runtime performance and use
+                  nearly the same number of colors as the underlying
+                  serial algorithm, which in turn is effective in
+                  practice. The study provides insight into the design
+                  of high performance algorithms for irregular problems
+                  on many-core architectures.",
+  archivePrefix= "arXiv",
+  eprint       = "1205.3809",
+  primaryClass = "cs.DC"
+}
+

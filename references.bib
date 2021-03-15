@@ -8141,20 +8141,6 @@
   bibsource    = "dblp computer science bibliography, https://dblp.org"
 }
 
-@article{popel-2018-train-tips-trans-model,
-  author       = "Martin Popel and Ondrej Bojar",
-  title        = "Training Tips for the Transformer Model",
-  journal      = "CoRR",
-  volume       = "abs/1804.00247",
-  year         = 2018,
-  url          = "http://arxiv.org/abs/1804.00247",
-  archivePrefix= "arXiv",
-  eprint       = "1804.00247",
-  timestamp    = "Mon, 13 Aug 2018 16:47:13 +0200",
-  biburl       = "https://dblp.org/rec/bib/journals/corr/abs-1804-00247",
-  bibsource    = "dblp computer science bibliography, https://dblp.org"
-}
-
 @article{liu-2019-linguis-knowl,
   author       = "Nelson F. Liu and Matt Gardner and Yonatan Belinkov
                   and Matthew Peters and Noah A. Smith",
@@ -27361,3 +27347,306 @@
   eprint       = "2012.11747",
   primaryClass = "cs.LG"
 }
+@article{xiong-2020-layer-norm-transformer,
+  author       = "Xiong, Ruibin and Yang, Yunchang and He, Di and Zheng,
+                  Kai and Zheng, Shuxin and Xing, Chen and Zhang,
+                  Huishuai and Lan, Yanyan and Wang, Liwei and Liu,
+                  Tie-Yan",
+  title        = "On Layer Normalization in the Transformer
+                  Architecture",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2002.04745v2",
+  abstract     = "The Transformer is widely used in natural language
+                  processing tasks. To train a Transformer however, one
+                  usually needs a carefully designed learning rate
+                  warm-up stage, which is shown to be crucial to the
+                  final performance but will slow down the optimization
+                  and bring more hyper-parameter tunings. In this paper,
+                  we first study theoretically why the learning rate
+                  warm-up stage is essential and show that the location
+                  of layer normalization matters.  Specifically, we
+                  prove with mean field theory that at initialization,
+                  for the original-designed Post-LN Transformer, which
+                  places the layer normalization between the residual
+                  blocks, the expected gradients of the parameters near
+                  the output layer are large. Therefore, using a large
+                  learning rate on those gradients makes the training
+                  unstable. The warm-up stage is practically helpful for
+                  avoiding this problem. On the other hand, our theory
+                  also shows that if the layer normalization is put
+                  inside the residual blocks (recently proposed as
+                  Pre-LN Transformer), the gradients are well-behaved at
+                  initialization. This motivates us to remove the
+                  warm-up stage for the training of Pre-LN
+                  Transformers. We show in our experiments that Pre-LN
+                  Transformers without the warm-up stage can reach
+                  comparable results with baselines while requiring
+                  significantly less training time and hyper-parameter
+                  tuning on a wide range of applications.",
+  archivePrefix= "arXiv",
+  eprint       = "2002.04745",
+  primaryClass = "cs.LG"
+}
+
+@article{popel-2018-tips-transformer,
+  author       = "Popel, Martin and Bojar, Ond{\v{r}}ej",
+  title        = "Training Tips for the Transformer Model",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1804.00247v2",
+  abstract     = "This article describes our experiments in neural
+                  machine translation using the recent Tensor2Tensor
+                  framework and the Transformer sequence-to-sequence
+                  model (Vaswani et al., 2017). We examine some of the
+                  critical parameters that affect the final translation
+                  quality, memory usage, training stability and training
+                  time, concluding each experiment with a set of
+                  recommendations for fellow researchers. In addition to
+                  confirming the general mantra ``more data and larger
+                  models``, we address scaling to multiple GPUs and
+                  provide practical tips for improved training regarding
+                  batch size, learning rate, warmup steps, maximum
+                  sentence length and checkpoint averaging. We hope that
+                  our observations will allow others to get better
+                  results given their particular hardware and data
+                  constraints.",
+  archivePrefix= "arXiv",
+  eprint       = "1804.00247",
+  primaryClass = "cs.CL"
+}
+
+@article{liu-2019-radam,
+  author       = "Liu, Liyuan and Jiang, Haoming and He, Pengcheng and
+                  Chen, Weizhu and Liu, Xiaodong and Gao, Jianfeng and
+                  Han, Jiawei",
+  title        = "On the Variance of the Adaptive Learning Rate and
+                  Beyond",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1908.03265v3",
+  abstract     = "The learning rate warmup heuristic achieves remarkable
+                  success in stabilizing training, accelerating
+                  convergence and improving generalization for adaptive
+                  stochastic optimization algorithms like RMSprop and
+                  Adam. Here, we study its mechanism in
+                  details. Pursuing the theory behind warmup, we
+                  identify a problem of the adaptive learning rate
+                  (i.e., it has problematically large variance in the
+                  early stage), suggest warmup works as a variance
+                  reduction technique, and provide both empirical and
+                  theoretical evidence to verify our hypothesis. We
+                  further propose RAdam, a new variant of Adam, by
+                  introducing a term to rectify the variance of the
+                  adaptive learning rate. Extensive experimental results
+                  on image classification, language modeling, and neural
+                  machine translation verify our intuition and
+                  demonstrate the effectiveness and robustness of our
+                  proposed method. All implementations are available at:
+                  https://github.com/LiyuanLucasLiu/RAdam.",
+  archivePrefix= "arXiv",
+  eprint       = "1908.03265",
+  primaryClass = "cs.LG"
+}
+
+@article{nguyen-2019-transformer-tears,
+  author       = "Nguyen, Toan Q. and Salazar, Julian",
+  title        = "Transformers Without Tears: Improving the
+                  Normalization of Self-Attention",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1910.05895v2",
+  abstract     = "We evaluate three simple, normalization-centric
+                  changes to improve Transformer training. First, we
+                  show that pre-norm residual connections (PreNorm) and
+                  smaller initializations enable warmup-free,
+                  validation-based training with large learning
+                  rates. Second, we propose $\ell_2$ normalization with
+                  a single scale parameter (ScaleNorm) for faster
+                  training and better performance. Finally, we reaffirm
+                  the effectiveness of normalizing word embeddings to a
+                  fixed length (FixNorm). On five low-resource
+                  translation pairs from TED Talks-based corpora, these
+                  changes always converge, giving an average +1.1 BLEU
+                  over state-of-the-art bilingual baselines and a new
+                  32.8 BLEU on IWSLT'15 English-Vietnamese. We observe
+                  sharper performance curves, more consistent gradient
+                  norms, and a linear relationship between activation
+                  scaling and decoder depth. Surprisingly, in the
+                  high-resource setting (WMT'14 English-German),
+                  ScaleNorm and FixNorm remain competitive but PreNorm
+                  degrades performance.",
+  archivePrefix= "arXiv",
+  eprint       = "1910.05895",
+  primaryClass = "cs.CL"
+}
+
+@article{lei-2021-sru-plus-plus,
+  author       = "Lei, Tao",
+  title        = "When Attention Meets Fast Recurrence: Training
+                  Language Models With Reduced Compute",
+  journal      = "CoRR",
+  year         = 2021,
+  url          = "http://arxiv.org/abs/2102.12459v1",
+  abstract     = "Large language models have become increasingly
+                  difficult to train because of the required computation
+                  time and cost. In this work, we present SRU++, a
+                  recurrent unit with optional built-in attention that
+                  exhibits state-of-the-art modeling capacity and
+                  training efficiency. On standard language modeling
+                  benchmarks such as enwik8 and Wiki-103 datasets, our
+                  model obtains better perplexity and bits-per-character
+                  (bpc) while using 2.5x-10x less training time and cost
+                  compared to top-performing Transformer models. Our
+                  results reaffirm that attention is not all we need and
+                  can be complementary to other sequential modeling
+                  modules. Moreover, fast recurrence with little
+                  attention can be a leading model architecture.",
+  archivePrefix= "arXiv",
+  eprint       = "2102.12459",
+  primaryClass = "cs.CL"
+}
+
+@article{you-2019-76-minutes,
+  author       = "You, Yang and Li, Jing and Reddi, Sashank and Hseu,
+                  Jonathan and Kumar, Sanjiv and Bhojanapalli, Srinadh
+                  and Song, Xiaodan and Demmel, James and Keutzer, Kurt
+                  and Hsieh, Cho-Jui",
+  title        = "Large Batch Optimization for Deep Learning: Training
+                  Bert in 76 Minutes",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1904.00962v5",
+  abstract     = "Training large deep neural networks on massive
+                  datasets is computationally very challenging. There
+                  has been recent surge in interest in using large batch
+                  stochastic optimization methods to tackle this
+                  issue. The most prominent algorithm in this line of
+                  research is LARS, which by employing layerwise
+                  adaptive learning rates trains ResNet on ImageNet in a
+                  few minutes. However, LARS performs poorly for
+                  attention models like BERT, indicating that its
+                  performance gains are not consistent across tasks. In
+                  this paper, we first study a principled layerwise
+                  adaptation strategy to accelerate training of deep
+                  neural networks using large mini-batches. Using this
+                  strategy, we develop a new layerwise adaptive large
+                  batch optimization technique called LAMB; we then
+                  provide convergence analysis of LAMB as well as LARS,
+                  showing convergence to a stationary point in general
+                  nonconvex settings. Our empirical results demonstrate
+                  the superior performance of LAMB across various tasks
+                  such as BERT and ResNet-50 training with very little
+                  hyperparameter tuning. In particular, for BERT
+                  training, our optimizer enables use of very large
+                  batch sizes of 32868 without any degradation of
+                  performance. By increasing the batch size to the
+                  memory limit of a TPUv3 Pod, BERT training time can be
+                  reduced from 3 days to just 76 minutes (Table 1). The
+                  LAMB implementation is available at
+                  https://github.com/tensorflow/addons/blob/master/tensorflow_addons/optimizers/lamb.py",
+  archivePrefix= "arXiv",
+  eprint       = "1904.00962",
+  primaryClass = "cs.LG"
+}
+
+@article{lin-2020-bridge,
+  author       = "Lin, Xi Victoria and Socher, Richard and Xiong,
+                  Caiming",
+  title        = "Bridging Textual and Tabular Data for Cross-Domain
+                  Text-To-Sql Semantic Parsing",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2012.12627v2",
+  abstract     = "We present BRIDGE, a powerful sequential architecture
+                  for modeling dependencies between natural language
+                  questions and relational databases in cross-DB
+                  semantic parsing. BRIDGE represents the question and
+                  DB schema in a tagged sequence where a subset of the
+                  fields are augmented with cell values mentioned in the
+                  question. The hybrid sequence is encoded by BERT with
+                  minimal subsequent layers and the text-DB
+                  contextualization is realized via the fine-tuned deep
+                  attention in BERT. Combined with a pointer-generator
+                  decoder with schema-consistency driven search space
+                  pruning, BRIDGE attained state-of-the-art performance
+                  on popular cross-DB text-to-SQL benchmarks, Spider
+                  (71.1\% dev, 67.5\% test with ensemble model) and
+                  WikiSQL (92.6\% dev, 91.9\% test). Our analysis shows
+                  that BRIDGE effectively captures the desired
+                  cross-modal dependencies and has the potential to
+                  generalize to more text-DB related tasks. Our
+                  implementation is available at
+                  \url{https://github.com/salesforce/TabularSemanticParsing}.",
+  archivePrefix= "arXiv",
+  eprint       = "2012.12627",
+  primaryClass = "cs.CL"
+}
+
+@article{zhang-2020-few-sampler-bert-ft,
+  author       = "Zhang, Tianyi and Wu, Felix and Katiyar, Arzoo and
+                  Weinberger, Kilian Q. and Artzi, Yoav",
+  title        = "Revisiting Few-Sample Bert Fine-Tuning",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2006.05987v3",
+  abstract     = "This paper is a study of fine-tuning of BERT
+                  contextual representations, with focus on commonly
+                  observed instabilities in few-sample scenarios. We
+                  identify several factors that cause this instability:
+                  the common use of a non-standard optimization method
+                  with biased gradient estimation; the limited
+                  applicability of significant parts of the BERT network
+                  for down-stream tasks; and the prevalent practice of
+                  using a pre-determined, and small number of training
+                  iterations. We empirically test the impact of these
+                  factors, and identify alternative practices that
+                  resolve the commonly observed instability of the
+                  process. In light of these observations, we re-visit
+                  recently proposed methods to improve few-sample
+                  fine-tuning with BERT and re-evaluate their
+                  effectiveness. Generally, we observe the impact of
+                  these methods diminishes significantly with our
+                  modified process.",
+  archivePrefix= "arXiv",
+  eprint       = "2006.05987",
+  primaryClass = "cs.CL"
+}
+
+@article{li-2020-bert-flow,
+  author       = "Li, Bohan and Zhou, Hao and He, Junxian and Wang,
+                  Mingxuan and Yang, Yiming and Li, Lei",
+  title        = "On the Sentence Embeddings From Pre-Trained Language
+                  Models",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2011.05864v1",
+  abstract     = "Pre-trained contextual representations like BERT have
+                  achieved great success in natural language
+                  processing. However, the sentence embeddings from the
+                  pre-trained language models without fine-tuning have
+                  been found to poorly capture semantic meaning of
+                  sentences. In this paper, we argue that the semantic
+                  information in the BERT embeddings is not fully
+                  exploited. We first reveal the theoretical connection
+                  between the masked language model pre-training
+                  objective and the semantic similarity task
+                  theoretically, and then analyze the BERT sentence
+                  embeddings empirically. We find that BERT always
+                  induces a non-smooth anisotropic semantic space of
+                  sentences, which harms its performance of semantic
+                  similarity. To address this issue, we propose to
+                  transform the anisotropic sentence embedding
+                  distribution to a smooth and isotropic Gaussian
+                  distribution through normalizing flows that are
+                  learned with an unsupervised objective. Experimental
+                  results show that our proposed BERT-flow method
+                  obtains significant performance gains over the
+                  state-of-the-art sentence embeddings on a variety of
+                  semantic textual similarity tasks. The code is
+                  available at https://github.com/bohanli/BERT-flow.",
+  archivePrefix= "arXiv",
+  eprint       = "2011.05864",
+  primaryClass = "cs.CL"
+}
+

@@ -27674,3 +27674,197 @@
   primaryClass = "cs.CL"
 }
 
+@inproceedings{wang-2018-transition-based-ner,
+  author       = "Wang, Bailin and Lu, Wei and Wang, Yu and Jin,
+                  Hongxia",
+  title        = "A Neural Transition-based Model for Nested Mention
+                  Recognition",
+  booktitle    = "Proceedings of the 2018 Conference on Empirical
+                  Methods in Natural Language Processing",
+  year         = 2018,
+  pages        = "1011-1017",
+  doi          = "10.18653/v1/D18-1124",
+  url          = "https://doi.org/10.18653/v1/D18-1124",
+  abstract     = "It is common that entity mentions can contain other
+                  mentions recursively. This paper introduces a scalable
+                  transition-based method to model the nested structure
+                  of mentions. We first map a sentence with nested
+                  mentions to a designated forest where each mention
+                  corresponds to a constituent of the forest. Our
+                  shift-reduce based system then learns to construct the
+                  forest structure in a bottom-up manner through an
+                  action sequence whose maximal length is guaranteed to
+                  be three times of the sentence length. Based on
+                  Stack-LSTM which is employed to efficiently and
+                  effectively represent the states of the system in a
+                  continuous space, our system is further incorporated
+                  with a character-based component to capture
+                  letter-level patterns. Our model gets the
+                  state-of-the-art performances in ACE datasets, showing
+                  its effectiveness in detecting nested mentions.",
+  address      = "Brussels, Belgium",
+  month        = oct # "-" # nov,
+  publisher    = "Association for Computational Linguistics"
+}
+
+@article{dai-2020-da-ner,
+  author       = "Dai, Xiang and Adel, Heike",
+  title        = "An Analysis of Simple Data Augmentation for Named
+                  Entity Recognition",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2010.11683v1",
+  abstract     = "Simple yet effective data augmentation techniques have
+                  been proposed for sentence-level and sentence-pair
+                  natural language processing tasks. Inspired by these
+                  efforts, we design and compare data augmentation for
+                  named entity recognition, which is usually modeled as
+                  a token-level sequence labeling problem. Through
+                  experiments on two data sets from the biomedical and
+                  materials science domains (i2b2-2010 and MaSciP), we
+                  show that simple augmentation can boost performance
+                  for both recurrent and transformer-based models,
+                  especially for small training sets.",
+  archivePrefix= "arXiv",
+  eprint       = "2010.11683",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{ding-2020-daga,
+  title        = "{DAGA}: Data Augmentation with a Generation Approach
+                  for Low-resource Tagging Tasks",
+  author       = "Ding, Bosheng and Liu, Linlin and Bing, Lidong and
+                  Kruengkrai, Canasai and Nguyen, Thien Hai and Joty,
+                  Shafiq and Si, Luo and Miao, Chunyan",
+  booktitle    = "Proceedings of the 2020 Conference on Empirical
+                  Methods in Natural Language Processing (EMNLP)",
+  month        = nov,
+  year         = 2020,
+  address      = "Online",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://www.aclweb.org/anthology/2020.emnlp-main.488",
+  doi          = "10.18653/v1/2020.emnlp-main.488",
+  pages        = "6045-6057",
+  abstract     = "Data augmentation techniques have been widely used to
+                  improve machine learning performance as they
+                  facilitate generalization. In this work, we propose a
+                  novel augmentation method to generate high quality
+                  synthetic data for low-resource tagging tasks with
+                  language models trained on the linearized labeled
+                  sentences. Our method is applicable to both supervised
+                  and semi-supervised settings. For the supervised
+                  settings, we conduct extensive experiments on named
+                  entity recognition (NER), part of speech (POS) tagging
+                  and end-to-end target based sentiment analysis
+                  (E2E-TBSA) tasks. For the semi-supervised settings, we
+                  evaluate our method on the NER task under the
+                  conditions of given unlabeled data only and unlabeled
+                  data plus a knowledge base. The results show that our
+                  method can consistently outperform the baselines,
+                  particularly when the given gold training data are
+                  less."
+}
+
+@article{zeng-2021-valid-label-ner,
+  author       = "Zeng, Qingkai and Yu, Mengxia and Yu, Wenhao and
+                  Jiang, Tianwen and Weninger, Tim and Jiang, Meng",
+  title        = "Validating Label Consistency in Ner Data Annotation",
+  journal      = "CoRR",
+  year         = 2021,
+  url          = "http://arxiv.org/abs/2101.08698v1",
+  abstract     = "Data annotation plays a crucial role in ensuring your
+                  named entity recognition (NER) projects are trained
+                  with the right information to learn from. Producing
+                  the most accurate labels is a challenge due to the
+                  complexity involved with annotation. Label
+                  inconsistency between multiple subsets of data
+                  annotation (e.g., training set and test set, or
+                  multiple training subsets) is an indicator of label
+                  mistakes. In this work, we present an empirical method
+                  to explore the relationship between label
+                  (in-)consistency and NER model performance. It can be
+                  used to validate the label consistency (or catches the
+                  inconsistency) in multiple sets of NER data
+                  annotation. In experiments, our method identified the
+                  label inconsistency of test data in SCIERC and CoNLL03
+                  datasets (with 26.7 \% and 5.4 \% label mistakes). It
+                  validated the consistency in the corrected version of
+                  both datasets.",
+  archivePrefix= "arXiv",
+  eprint       = "2101.08698",
+  primaryClass = "cs.CL"
+}
+
+@article{li-2020-unlabeled-entity,
+  author       = "Li, Yangming and Liu, Lemao and Shi, Shuming",
+  title        = "Empirical Analysis of Unlabeled Entity Problem in
+                  Named Entity Recognition",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2012.05426v5",
+  abstract     = "In many scenarios, named entity recognition (NER)
+                  models severely suffer from unlabeled entity problem,
+                  where the entities of a sentence may not be fully
+                  annotated. Through empirical studies performed on
+                  synthetic datasets, we find two causes of performance
+                  degradation. One is the reduction of annotated
+                  entities and the other is treating unlabeled entities
+                  as negative instances.  The first cause has less
+                  impact than the second one and can be mitigated by
+                  adopting pretraining language models. The second cause
+                  seriously misguides a model in training and greatly
+                  affects its performances. Based on the above
+                  observations, we propose a general approach, which can
+                  almost eliminate the misguidance brought by unlabeled
+                  entities. The key idea is to use negative sampling
+                  that, to a large extent, avoids training NER models
+                  with unlabeled entities. Experiments on synthetic
+                  datasets and real-world datasets show that our model
+                  is robust to unlabeled entity problem and surpasses
+                  prior baselines.  On well-annotated datasets, our
+                  model is competitive with the state-of-the-art
+                  method.",
+  archivePrefix= "arXiv",
+  eprint       = "2012.05426",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{wadden-2019-dygie,
+  author       = "Wadden, David and Wennberg, Ulme and Luan, Yi and
+                  Hajishirzi, Hannaneh",
+  title        = "Entity, Relation, and Event Extraction with
+                  Contextualized Span Representations",
+  booktitle    = "Proceedings of the 2019 Conference on Empirical
+                  Methods in Natural Language Processing and the 9th
+                  International Joint Conference on Natural Language
+                  Processing (EMNLP-IJCNLP)",
+  year         = 2019,
+  pages        = "5784-5789",
+  doi          = "10.18653/v1/D19-1585",
+  url          = "https://doi.org/10.18653/v1/D19-1585",
+  abstract     = "We examine the capabilities of a unified, multi-task
+                  framework for three information extraction tasks:
+                  named entity recognition, relation extraction, and
+                  event extraction. Our framework (called DyGIE++)
+                  accomplishes all tasks by enumerating, refining, and
+                  scoring text spans designed to capture local
+                  (within-sentence) and global (cross-sentence)
+                  context. Our framework achieves state-of-the-art
+                  results across all tasks, on four datasets from a
+                  variety of domains. We perform experiments comparing
+                  different techniques to construct span
+                  representations. Contextualized embeddings like BERT
+                  perform well at capturing relationships among entities
+                  in the same or adjacent sentences, while dynamic span
+                  graph updates model long-range cross-sentence
+                  relationships. For instance, propagating span
+                  representations via predicted coreference links can
+                  enable the model to disambiguate challenging entity
+                  mentions. Our code is publicly available at
+                  https://github.com/dwadden/dygiepp and can be easily
+                  adapted for new tasks or datasets.",
+  address      = "Hong Kong, China",
+  month        = nov,
+  publisher    = "Association for Computational Linguistics"
+}
+

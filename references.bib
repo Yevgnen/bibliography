@@ -24871,7 +24871,7 @@
   primaryClass = "cs.CV"
 }
 
-@article{zhong-2020-frustratingly,
+@article{zhong-2020-pure,
   author       = "Zhong, Zexuan and Chen, Danqi",
   title        = "A Frustratingly Easy Approach for Joint Entity and
                   Relation Extraction",
@@ -27829,7 +27829,7 @@
   primaryClass = "cs.CL"
 }
 
-@inproceedings{wadden-2019-dygie,
+@inproceedings{wadden-2019-dygiepp,
   author       = "Wadden, David and Wennberg, Ulme and Luan, Yi and
                   Hajishirzi, Hannaneh",
   title        = "Entity, Relation, and Event Extraction with
@@ -27868,3 +27868,41 @@
   publisher    = "Association for Computational Linguistics"
 }
 
+@article{gao-2021-simcse,
+  author       = "Gao, Tianyu and Yao, Xingcheng and Chen, Danqi",
+  title        = "Simcse: Simple Contrastive Learning of Sentence
+                  Embeddings",
+  journal      = "CoRR",
+  year         = 2021,
+  url          = "http://arxiv.org/abs/2104.08821v1",
+  abstract     = "This paper presents SimCSE, a simple contrastive
+                  learning framework that greatly advances the
+                  state-of-the-art sentence embeddings. We first
+                  describe an unsupervised approach, which takes an
+                  input sentence and predicts itself in a contrastive
+                  objective, with only standard dropout used as
+                  noise. This simple method works surprisingly well,
+                  performing on par with previous supervised
+                  counterparts. We hypothesize that dropout acts as
+                  minimal data augmentation and removing it leads to a
+                  representation collapse. Then, we draw inspiration
+                  from the recent success of learning sentence
+                  embeddings from natural language inference (NLI)
+                  datasets and incorporate annotated pairs from NLI
+                  datasets into contrastive learning by using
+                  ``entailment`` pairs as positives and
+                  ``contradiction`` pairs as hard negatives. We evaluate
+                  SimCSE on standard semantic textual similarity (STS)
+                  tasks, and our unsupervised and supervised models
+                  using BERT-base achieve an average of 74.5 \% and 81.6
+                  \% Spearman's correlation respectively, a 7.9 and 4.6
+                  points improvement compared to previous best
+                  results. We also show that contrastive learning
+                  theoretically regularizes pre-trained embeddings'
+                  anisotropic space to be more uniform, and it better
+                  aligns positive pairs when supervised signals are
+                  available.",
+  archivePrefix= "arXiv",
+  eprint       = "2104.08821",
+  primaryClass = "cs.CL"
+}

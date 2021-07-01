@@ -27906,3 +27906,149 @@
   eprint       = "2104.08821",
   primaryClass = "cs.CL"
 }
+
+@article{hsu-2020-generalized-odin,
+  author       = "Hsu, Yen-Chang and Shen, Yilin and Jin, Hongxia and
+                  Kira, Zsolt",
+  title        = "Generalized Odin: Detecting Out-Of-Distribution Image
+                  Without Learning From Out-Of-Distribution Data",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2002.11297v2",
+  abstract     = "Deep neural networks have attained remarkable
+                  performance when applied to data that comes from the
+                  same distribution as that of the training set, but can
+                  significantly degrade otherwise. Therefore, detecting
+                  whether an example is out-of-distribution (OoD) is
+                  crucial to enable a system that can reject such
+                  samples or alert users. Recent works have made
+                  significant progress on OoD benchmarks consisting of
+                  small image datasets. However, many recent methods
+                  based on neural networks rely on training or tuning
+                  with both in-distribution and out-of-distribution
+                  data. The latter is generally hard to define a-priori,
+                  and its selection can easily bias the learning. We
+                  base our work on a popular method ODIN, proposing two
+                  strategies for freeing it from the needs of tuning
+                  with OoD data, while improving its OoD detection
+                  performance. We specifically propose to decompose
+                  confidence scoring as well as a modified input
+                  pre-processing method. We show that both of these
+                  significantly help in detection performance. Our
+                  further analysis on a larger scale image dataset shows
+                  that the two types of distribution shifts,
+                  specifically semantic shift and non-semantic shift,
+                  present a significant difference in the difficulty of
+                  the problem, providing an analysis of when ODIN-like
+                  strategies do or do not work.",
+  archivePrefix= "arXiv",
+  eprint       = "2002.11297",
+  primaryClass = "cs.CV"
+}
+
+@article{liang-2017-odin,
+  author       = "Liang, Shiyu and Li, Yixuan and Srikant, R.",
+  title        = "Enhancing the Reliability of Out-Of-Distribution Image
+                  Detection in Neural Networks",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1706.02690v5",
+  abstract     = "We consider the problem of detecting
+                  out-of-distribution images in neural networks. We
+                  propose ODIN, a simple and effective method that does
+                  not require any change to a pre-trained neural
+                  network. Our method is based on the observation that
+                  using temperature scaling and adding small
+                  perturbations to the input can separate the softmax
+                  score distributions between in- and
+                  out-of-distribution images, allowing for more
+                  effective detection. We show in a series of
+                  experiments that ODIN is compatible with diverse
+                  network architectures and datasets. It consistently
+                  outperforms the baseline approach by a large margin,
+                  establishing a new state-of-the-art performance on
+                  this task. For example, ODIN reduces the false
+                  positive rate from the baseline 34.7 \% to 4.3 \% on
+                  the DenseNet (applied to CIFAR-10) when the true
+                  positive rate is 95 \%.",
+  archivePrefix= "arXiv",
+  eprint       = "1706.02690",
+  primaryClass = "cs.LG"
+}
+
+@article{shen-2021-drm,
+  author       = "Shen, Yilin and Hsu, Yen-Chang and Ray, Avik and Jin,
+                  Hongxia",
+  title        = "Enhancing the Generalization for Intent Classification
+                  and Out-Of-Domain Detection in Slu",
+  journal      = "CoRR",
+  year         = 2021,
+  url          = "http://arxiv.org/abs/2106.14464v1",
+  abstract     = "Intent classification is a major task in spoken
+                  language understanding (SLU).  Since most models are
+                  built with pre-collected in-domain (IND) training
+                  utterances, their ability to detect unsupported
+                  out-of-domain (OOD) utterances has a critical effect
+                  in practical use. Recent works have shown that using
+                  extra data and labels can improve the OOD detection
+                  performance, yet it could be costly to collect such
+                  data. This paper proposes to train a model with only
+                  IND data while supporting both IND intent
+                  classification and OOD detection. Our method designs a
+                  novel domain-regularized module (DRM) to reduce the
+                  overconfident phenomenon of a vanilla classifier,
+                  achieving a better generalization in both
+                  cases. Besides, DRM can be used as a drop-in
+                  replacement for the last layer in any neural
+                  network-based intent classifier, providing a low-cost
+                  strategy for a significant improvement. The evaluation
+                  on four datasets shows that our method built on BERT
+                  and RoBERTa models achieves state-of-the-art
+                  performance against existing approaches and the strong
+                  baselines we created for the comparisons.",
+  archivePrefix= "arXiv",
+  eprint       = "2106.14464",
+  primaryClass = "cs.CL"
+}
+
+@article{lee-2018-mahalanobis,
+  author       = "Lee, Kimin and Lee, Kibok and Lee, Honglak and Shin,
+                  Jinwoo",
+  title        = "A Simple Unified Framework for Detecting
+                  Out-Of-Distribution Samples and Adversarial Attacks",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1807.03888v2",
+  abstract     = "Detecting test samples drawn sufficiently far away
+                  from the training distribution statistically or
+                  adversarially is a fundamental requirement for
+                  deploying a good classifier in many real-world machine
+                  learning applications.  However, deep neural networks
+                  with the softmax classifier are known to produce
+                  highly overconfident posterior distributions even for
+                  such abnormal samples. In this paper, we propose a
+                  simple yet effective method for detecting any abnormal
+                  samples, which is applicable to any pre-trained
+                  softmax neural classifier. We obtain the class
+                  conditional Gaussian distributions with respect to
+                  (low- and upper-level) features of the deep models
+                  under Gaussian discriminant analysis, which result in
+                  a confidence score based on the Mahalanobis
+                  distance. While most prior methods have been evaluated
+                  for detecting either out-of-distribution or
+                  adversarial samples, but not both, the proposed method
+                  achieves the state-of-the-art performances for both
+                  cases in our experiments. Moreover, we found that our
+                  proposed method is more robust in harsh cases, e.g.,
+                  when the training dataset has noisy labels or small
+                  number of samples. Finally, we show that the proposed
+                  method enjoys broader usage by applying it to
+                  class-incremental learning: whenever
+                  out-of-distribution samples are detected, our
+                  classification rule can incorporate new classes well
+                  without further training deep models.",
+  archivePrefix= "arXiv",
+  eprint       = "1807.03888",
+  primaryClass = "stat.ML"
+}
+

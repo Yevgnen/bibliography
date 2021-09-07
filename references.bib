@@ -28401,3 +28401,262 @@
                   problem solving. The results have shown the
                   effectiveness of our proposed model."
 }
+
+@article{skianis-2019-repset,
+  author       = "Skianis, Konstantinos and Nikolentzos, Giannis and
+                  Limnios, Stratis and Vazirgiannis, Michalis",
+  title        = "Rep the Set: Neural Networks for Learning Set
+                  Representations",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1904.01962v2",
+  abstract     = "In several domains, data objects can be decomposed
+                  into sets of simpler objects. It is then natural to
+                  represent each object as the set of its components or
+                  parts. Many conventional machine learning algorithms
+                  are unable to process this kind of representations,
+                  since sets may vary in cardinality and elements lack a
+                  meaningful ordering. In this paper, we present a new
+                  neural network architecture, called RepSet, that can
+                  handle examples that are represented as sets of
+                  vectors. The proposed model computes the
+                  correspondences between an input set and some hidden
+                  sets by solving a series of network flow
+                  problems. This representation is then fed to a
+                  standard neural network architecture to produce the
+                  output. The architecture allows end-to-end
+                  gradient-based learning. We demonstrate RepSet on
+                  classification tasks, including text categorization,
+                  and graph classification, and we show that the
+                  proposed neural network achieves performance better or
+                  comparable to state-of-the-art algorithms.",
+  archivePrefix= "arXiv",
+  eprint       = "1904.01962",
+  primaryClass = "cs.LG"
+}
+
+@article{zaheer-2017-deep-sets,
+  author       = "Zaheer, Manzil and Kottur, Satwik and Ravanbakhsh,
+                  Siamak and Poczos, Barnabas and Salakhutdinov, Ruslan
+                  and Smola, Alexander",
+  title        = "Deep Sets",
+  journal      = "CoRR",
+  year         = 2017,
+  url          = "http://arxiv.org/abs/1703.06114v3",
+  abstract     = "We study the problem of designing models for machine
+                  learning tasks defined on \emph{sets}. In contrast to
+                  traditional approach of operating on fixed dimensional
+                  vectors, we consider objective functions defined on
+                  sets that are invariant to permutations. Such problems
+                  are widespread, ranging from estimation of population
+                  statistics \cite{poczos13aistats}, to anomaly
+                  detection in piezometer data of embankment dams
+                  \cite{Jung15Exploration}, to cosmology
+                  \cite{Ntampaka16Dynamical,Ravanbakhsh16ICML1}. Our
+                  main theorem characterizes the permutation invariant
+                  functions and provides a family of functions to which
+                  any permutation invariant objective function must
+                  belong.  This family of functions has a special
+                  structure which enables us to design a deep network
+                  architecture that can operate on sets and which can be
+                  deployed on a variety of scenarios including both
+                  unsupervised and supervised learning tasks. We also
+                  derive the necessary and sufficient conditions for
+                  permutation equivariance in deep models. We
+                  demonstrate the applicability of our method on
+                  population statistic estimation, point cloud
+                  classification, set expansion, and outlier detection.",
+  archivePrefix= "arXiv",
+  eprint       = "1703.06114",
+  primaryClass = "cs.LG"
+}
+
+@inproceedings{stelzner-2020-set-transformers,
+  title        = "Generative adversarial set transformers",
+  author       = "Stelzner, Karl and Kersting, Kristian and Kosiorek,
+                  Adam R",
+  booktitle    = "Workshop on Object-Oriented Learning at ICML",
+  volume       = 2020,
+  year         = 2020
+}
+
+@article{zhang-2019-deep-set,
+  author       = "Zhang, Yan and Hare, Jonathon and Pr{\"u}gel-Bennett,
+                  Adam",
+  title        = "Deep Set Prediction Networks",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1906.06565v6",
+  abstract     = "Current approaches for predicting sets from feature
+                  vectors ignore the unordered nature of sets and suffer
+                  from discontinuity issues as a result. We propose a
+                  general model for predicting sets that properly
+                  respects the structure of sets and avoids this
+                  problem. With a single feature vector as input, we
+                  show that our model is able to auto-encode point sets,
+                  predict the set of bounding boxes of objects in an
+                  image, and predict the set of attributes of these
+                  objects.",
+  archivePrefix= "arXiv",
+  eprint       = "1906.06565",
+  primaryClass = "cs.LG"
+}
+
+@inproceedings{eslami-2016-air,
+  author       = "Eslami, S. M. Ali and Heess, Nicolas and Weber,
+                  Theophane and Tassa, Yuval and Szepesvari, David and
+                  kavukcuoglu, koray and Hinton, Geoffrey E",
+  booktitle    = "Advances in Neural Information Processing Systems",
+  editor       = "D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and
+                  R. Garnett",
+  publisher    = "Curran Associates, Inc.",
+  title        = "Attend, Infer, Repeat: Fast Scene Understanding with
+                  Generative Models",
+  url          =
+                  "https://proceedings.neurips.cc/paper/2016/file/52947e0ade57a09e4a1386d08f17b656-Paper.pdf",
+  volume       = 29,
+  year         = 2016
+}
+
+@article{lee-2018-set-transformer,
+  author       = "Lee, Juho and Lee, Yoonho and Kim, Jungtaek and
+                  Kosiorek, Adam R. and Choi, Seungjin and Teh, Yee
+                  Whye",
+  title        = "Set Transformer: a Framework for Attention-Based
+                  Permutation-Invariant Neural Networks",
+  journal      = "CoRR",
+  year         = 2018,
+  url          = "http://arxiv.org/abs/1810.00825v3",
+  abstract     = "Many machine learning tasks such as multiple instance
+                  learning, 3D shape recognition, and few-shot image
+                  classification are defined on sets of instances. Since
+                  solutions to such problems do not depend on the order
+                  of elements of the set, models used to address them
+                  should be permutation invariant. We present an
+                  attention-based neural network module, the Set
+                  Transformer, specifically designed to model
+                  interactions among elements in the input set. The
+                  model consists of an encoder and a decoder, both of
+                  which rely on attention mechanisms. In an effort to
+                  reduce computational complexity, we introduce an
+                  attention scheme inspired by inducing point methods
+                  from sparse Gaussian process literature. It reduces
+                  the computation time of self-attention from quadratic
+                  to linear in the number of elements in the set. We
+                  show that our model is theoretically attractive and we
+                  evaluate it on a range of tasks, demonstrating the
+                  state-of-the-art performance compared to recent
+                  methods for set-structured data.",
+  archivePrefix= "arXiv",
+  eprint       = "1810.00825",
+  primaryClass = "cs.LG"
+}
+
+@article{kosiorek-2020-tspn,
+  author       = "Kosiorek, Adam R and Kim, Hyunjik and Rezende, Danilo
+                  J",
+  title        = "Conditional Set Generation With Transformers",
+  journal      = "CoRR",
+  year         = 2020,
+  url          = "http://arxiv.org/abs/2006.16841v2",
+  abstract     = "A set is an unordered collection of unique
+                  elements--and yet many machine learning models that
+                  generate sets impose an implicit or explicit ordering.
+                  Since model performance can depend on the choice of
+                  order, any particular ordering can lead to sub-optimal
+                  results. An alternative solution is to use a
+                  permutation-equivariant set generator, which does not
+                  specify an order-ing. An example of such a generator
+                  is the DeepSet Prediction Network (DSPN). We introduce
+                  the Transformer Set Prediction Network (TSPN), a
+                  flexible permutation-equivariant model for set
+                  prediction based on the transformer, that builds upon
+                  and outperforms DSPN in the quality of predicted set
+                  elements and in the accuracy of their predicted
+                  sizes. We test our model on MNIST-as-point-clouds
+                  (SET-MNIST) for point-cloud generation and on CLEVR
+                  for object detection.",
+  archivePrefix= "arXiv",
+  eprint       = "2006.16841",
+  primaryClass = "cs.CV"
+}
+
+@article{soelch-2019-deep-set,
+  title        = "On Deep Set Learning and the Choice of Aggregations",
+  ISBN         = 9783030304874,
+  ISSN         = "1611-3349",
+  url          = "http://dx.doi.org/10.1007/978-3-030-30487-4_35",
+  DOI          = "10.1007/978-3-030-30487-4_35",
+  journal      = "Lecture Notes in Computer Science",
+  publisher    = "Springer International Publishing",
+  author       = "Soelch, Maximilian and Akhundov, Adnan and van der
+                  Smagt, Patrick and Bayer, Justin",
+  year         = 2019,
+  pages        = "444–457"
+}
+
+@article{wagstaff-2019-limit-repres-funct-sets,
+  author       = "Wagstaff, Edward and Fuchs, Fabian B. and Engelcke,
+                  Martin and Posner, Ingmar and Osborne, Michael",
+  title        = "On the Limitations of Representing Functions on Sets",
+  journal      = "CoRR",
+  year         = 2019,
+  url          = "http://arxiv.org/abs/1901.09006v2",
+  abstract     = "Recent work on the representation of functions on sets
+                  has considered the use of summation in a latent space
+                  to enforce permutation invariance. In particular, it
+                  has been conjectured that the dimension of this latent
+                  space may remain fixed as the cardinality of the sets
+                  under consideration increases.  However, we
+                  demonstrate that the analysis leading to this
+                  conjecture requires mappings which are highly
+                  discontinuous and argue that this is only of limited
+                  practical use. Motivated by this observation, we prove
+                  that an implementation of this model via continuous
+                  mappings (as provided by e.g. neural networks or
+                  Gaussian processes) actually imposes a constraint on
+                  the dimensionality of the latent space. Practical
+                  universal function representation for set inputs can
+                  only be achieved with a latent dimension at least the
+                  size of the maximum number of input elements.",
+  archivePrefix= "arXiv",
+  eprint       = "1901.09006",
+  primaryClass = "cs.LG"
+}
+
+@article{yamaguchi-2021-simple-mlm,
+  author       = "Yamaguchi, Atsuki and Chrysostomou, George and
+                  Margatina, Katerina and Aletras, Nikolaos",
+  title        = "Frustratingly Simple Pretraining Alternatives To
+                  Masked Language Modeling",
+  journal      = "CoRR",
+  year         = 2021,
+  url          = "http://arxiv.org/abs/2109.01819v1",
+  abstract     = "Masked language modeling (MLM), a self-supervised
+                  pretraining objective, is widely used in natural
+                  language processing for learning text representations.
+                  MLM trains a model to predict a random sample of input
+                  tokens that have been replaced by a [MASK] placeholder
+                  in a multi-class setting over the entire
+                  vocabulary. When pretraining, it is common to use
+                  alongside MLM other auxiliary objectives on the token
+                  or sequence level to improve downstream performance
+                  (e.g. next sentence prediction). However, no previous
+                  work so far has attempted in examining whether other
+                  simpler linguistically intuitive or not objectives can
+                  be used standalone as main pretraining objectives. In
+                  this paper, we explore five simple pretraining
+                  objectives based on token-level classification tasks
+                  as replacements of MLM. Empirical results on GLUE and
+                  SQuAD show that our proposed methods achieve
+                  comparable or better performance to MLM using a
+                  BERT-BASE architecture. We further validate our
+                  methods using smaller models, showing that pretraining
+                  a model with 41 \% of the BERT-BASE's parameters,
+                  BERT-MEDIUM results in only a 1 \% drop in GLUE scores
+                  with our best objective.",
+  archivePrefix= "arXiv",
+  eprint       = "2109.01819",
+  primaryClass = "cs.CL"
+}
+

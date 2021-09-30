@@ -29161,7 +29161,7 @@
                   (DSTC8)."
 }
 
-@article{zhang-2020-recent-advances,
+@article{zhang-2020-recent-advances-tod,
   title        = "Recent advances and challenges in task-oriented dialog
                   systems",
   author       = "Zhang, Zheng and Takanobu, Ryuichi and Zhu, Qi and
@@ -29223,7 +29223,7 @@
                   restaurant search domain."
 }
 
-@article{takanobu-2020-system-wise-evaluation,
+@article{takanobu-2020-tod-eval,
   author       = "Ryuichi Takanobu and Qi Zhu and Jinchao Li and Baolin
                   Peng and Jianfeng Gao and Minlie Huang",
   title        = "Is Your Goal-Oriented Dialog Model Performing Really
@@ -30711,4 +30711,228 @@
   numpages     = 34,
   keywords     = "separation logic, logical relations, type systems,
                   concurrency, Rust"
+}
+
+@misc{xompero-2021-clinn,
+  title        = "Every time I fire a conversational designer, the
+                  performance of the dialog system goes down",
+  author       = "Giancarlo A. Xompero and Michele Mastromattei and
+                  Samir Salman and Cristina Giannone and Andrea Favalli
+                  and Raniero Romagnoli and Fabio Massimo Zanzotto",
+  year         = 2021,
+  eprint       = "2109.13029",
+  archivePrefix= "arXiv",
+  primaryClass = "cs.CL"
+}
+
+@misc{qin-2021-ci-tod,
+  title        = "Don't be Contradicted with Anything! CI-ToD: Towards
+                  Benchmarking Consistency for Task-oriented Dialogue
+                  System",
+  author       = "Libo Qin and Tianbao Xie and Shijue Huang and Qiguang
+                  Chen and Xiao Xu and Wanxiang Che",
+  year         = 2021,
+  eprint       = "2109.11292",
+  archivePrefix= "arXiv",
+  primaryClass = "cs.CL"
+}
+
+@misc{higgins-2021-acqis,
+  title        = "Actionable Conversational Quality Indicators for
+                  Improving Task-Oriented Dialog Systems",
+  author       = "Michael Higgins and Dominic Widdows and Chris Brew and
+                  Gwen Christian and Andrew Maurer and Matthew Dunn and
+                  Sujit Mathi and Akshay Hazare and George Bonev and
+                  Beth Ann Hockey and Kristen Howell and Joe Bradley",
+  year         = 2021,
+  eprint       = "2109.11064",
+  archivePrefix= "arXiv",
+  primaryClass = "cs.CL"
+}
+
+@misc{chen-2021-abcd,
+  title        = "Action-Based Conversations Dataset: A Corpus for
+                  Building More In-Depth Task-Oriented Dialogue Systems",
+  author       = "Derek Chen and Howard Chen and Yi Yang and Alex Lin
+                  and Zhou Yu",
+  year         = 2021,
+  eprint       = "2104.00783",
+  archivePrefix= "arXiv",
+  primaryClass = "cs.CL"
+}
+
+@misc{budzianowski-2020-multiwoz,
+  title        = "MultiWOZ -- A Large-Scale Multi-Domain Wizard-of-Oz
+                  Dataset for Task-Oriented Dialogue Modelling",
+  author       = "Paweł Budzianowski and Tsung-Hsien Wen and Bo-Hsiang
+                  Tseng and Iñigo Casanueva and Stefan Ultes and Osman
+                  Ramadan and Milica Gašić",
+  year         = 2020,
+  eprint       = "1810.00278",
+  archivePrefix= "arXiv",
+  primaryClass = "cs.CL"
+}
+
+@inproceedings{budzianowski-2019-gpt2-tod,
+  title        = "Hello, It{'}s {GPT}-2 - How Can {I} Help You? Towards
+                  the Use of Pretrained Language Models for
+                  Task-Oriented Dialogue Systems",
+  author       = "Budzianowski, Pawe{\l} and Vuli{\'c}, Ivan",
+  booktitle    = "Proceedings of the 3rd Workshop on Neural Generation
+                  and Translation",
+  month        = nov,
+  year         = 2019,
+  address      = "Hong Kong",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://aclanthology.org/D19-5602",
+  doi          = "10.18653/v1/D19-5602",
+  pages        = "15-22",
+  abstract     = "Data scarcity is a long-standing and crucial challenge
+                  that hinders quick development of task-oriented
+                  dialogue systems across multiple domains:
+                  task-oriented dialogue models are expected to learn
+                  grammar, syntax, dialogue reasoning, decision making,
+                  and language generation from absurdly small amounts of
+                  task-specific data. In this paper, we demonstrate that
+                  recent progress in language modeling pre-training and
+                  transfer learning shows promise to overcome this
+                  problem. We propose a task-oriented dialogue model
+                  that operates solely on text input: it effectively
+                  bypasses explicit policy and language generation
+                  modules. Building on top of the TransferTransfo
+                  framework (Wolf et al., 2019) and generative model
+                  pre-training (Radford et al., 2019), we validate the
+                  approach on complex multi-domain task-oriented
+                  dialogues from the MultiWOZ dataset. Our automatic and
+                  human evaluations show that the proposed model is on
+                  par with a strong task-specific neural baseline. In
+                  the long run, our approach holds promise to mitigate
+                  the data scarcity problem, and to support the
+                  construction of more engaging and more eloquent
+                  task-oriented conversational agents."
+}
+
+@inproceedings{post-2018-sacrebleu,
+  title        = "A Call for Clarity in Reporting {BLEU} Scores",
+  author       = "Post, Matt",
+  booktitle    = "Proceedings of the Third Conference on Machine
+                  Translation: Research Papers",
+  month        = oct,
+  year         = 2018,
+  address      = "Brussels, Belgium",
+  publisher    = "Association for Computational Linguistics",
+  url          = "https://aclanthology.org/W18-6319",
+  doi          = "10.18653/v1/W18-6319",
+  pages        = "186-191",
+  abstract     = "The field of machine translation faces an
+                  under-recognized problem because of inconsistency in
+                  the reporting of scores from its dominant
+                  metric. Although people refer to {``}the{''} BLEU
+                  score, BLEU is in fact a parameterized metric whose
+                  values can vary wildly with changes to these
+                  parameters. These parameters are often not reported or
+                  are hard to find, and consequently, BLEU scores
+                  between papers cannot be directly compared. I quantify
+                  this variation, finding differences as high as 1.8
+                  between commonly used configurations. The main culprit
+                  is different tokenization and normalization schemes
+                  applied to the reference. Pointing to the success of
+                  the parsing community, I suggest machine translation
+                  researchers settle upon the BLEU scheme used by the
+                  annual Conference on Machine Translation (WMT), which
+                  does not allow for user-supplied reference processing,
+                  and provide a new tool, SACREBLEU, to facilitate
+                  this."
+}
+
+@misc{nekvinda-2021-shades-bleu,
+  title        = "Shades of BLEU, Flavours of Success: The Case of
+                  MultiWOZ",
+  author       = "Tomáš Nekvinda and Ondřej Dušek",
+  year         = 2021,
+  eprint       = "2106.05555",
+  archivePrefix= "arXiv",
+  primaryClass = "cs.CL"
+}
+
+@article{zhang-2021-kg-grounded-tod,
+  author       = "Weijie Zhang and Jiaoxuan Chen and Haipang Wu and
+                  Sanhui Wan and Gongfeng Li",
+  title        = "A Knowledge-Grounded Dialog System Based on
+                  Pre-Trained Language Models",
+  journal      = "CoRR",
+  volume       = "abs/2106.14444",
+  year         = 2021,
+  url          = "https://arxiv.org/abs/2106.14444",
+  eprinttype   = "arXiv",
+  eprint       = "2106.14444",
+  timestamp    = "Wed, 30 Jun 2021 16:14:10 +0200",
+  biburl       = "https://dblp.org/rec/journals/corr/abs-2106-14444.bib",
+  bibsource    = "dblp computer science bibliography, https://dblp.org"
+}
+
+@misc{quan-2021-rule-plm,
+  title        = "Integrating Pre-trained Model into Rule-based Dialogue
+                  Management",
+  author       = "Jun Quan and Meng Yang and Qiang Gan and Deyi Xiong
+                  and Yiming Liu and Yuchen Dong and Fangxin Ouyang and
+                  Jun Tian and Ruiling Deng and Yongzhi Li and Yang Yang
+                  and Daxin Jiang",
+  year         = 2021,
+  eprint       = "2102.08553",
+  archivePrefix= "arXiv",
+  primaryClass = "cs.CL"
+}
+
+@misc{santra-2021-hierarchical-transformer,
+  title        = "Hierarchical Transformer for Task Oriented Dialog
+                  Systems",
+  author       = "Bishal Santra and Potnuru Anusha and Pawan Goyal",
+  year         = 2021,
+  eprint       = "2011.08067",
+  archivePrefix= "arXiv",
+  primaryClass = "cs.CL"
+}
+
+@misc{liu-2021-emotional-ds,
+  title        = "Towards Emotional Support Dialog Systems",
+  author       = "Siyang Liu and Chujie Zheng and Orianna Demasi and
+                  Sahand Sabour and Yu Li and Zhou Yu and Yong Jiang and
+                  Minlie Huang",
+  year         = 2021,
+  eprint       = "2106.01144",
+  archivePrefix= "arXiv",
+  primaryClass = "cs.CL"
+}
+
+@misc{malmi-2019-lasertagger,
+  title        = "Encode, Tag, Realize: High-Precision Text Editing",
+  author       = "Eric Malmi and Sebastian Krause and Sascha Rothe and
+                  Daniil Mirylenka and Aliaksei Severyn",
+  year         = 2019,
+  eprint       = "1909.01187",
+  archivePrefix= "arXiv",
+  primaryClass = "cs.CL"
+}
+
+@misc{liang-2021-r-drop,
+  title        = "R-Drop: Regularized Dropout for Neural Networks",
+  author       = "Xiaobo Liang and Lijun Wu and Juntao Li and Yue Wang
+                  and Qi Meng and Tao Qin and Wei Chen and Min Zhang and
+                  Tie-Yan Liu",
+  year         = 2021,
+  eprint       = "2106.14448",
+  archivePrefix= "arXiv",
+  primaryClass = "cs.LG"
+}
+
+@misc{qin-2021-slu-survey,
+  title        = "A Survey on Spoken Language Understanding: Recent
+                  Advances and New Frontiers",
+  author       = "Libo Qin and Tianbao Xie and Wanxiang Che and Ting
+                  Liu",
+  year         = 2021,
+  eprint       = "2103.03095",
+  archivePrefix= "arXiv",
+  primaryClass = "cs.CL"
 }
